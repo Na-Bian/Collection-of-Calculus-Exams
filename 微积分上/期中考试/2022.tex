@@ -1,0 +1,335 @@
+\documentclass[../Main.tex]{subfiles}
+\begin{document}
+  \chapter{2022-2023学年微积分（一）（上）期中考试}
+
+  \section{基本计算题(每小题 6 分，共 60 分)}
+  \begin{enumerate}
+    \item 求极限$l=\lim_{n\to\infty}\left(\sin\frac{\pi}{\sqrt{n^{2}+1}}+\sin\frac{\pi}{\sqrt{n^{2}+2}}
+      +\cdots+\sin\frac{\pi}{\sqrt{n^{2}+n}}\right)$.
+      \vspace{11em}
+
+    \item 求极限$l=\lim_{x\to0}\frac{1}{\ln(1+x)}\left(\frac{1}{x}-\frac{1}{\sin
+      x}\right)$.
+      \vspace{11em}
+
+    \item 求当$x\to 0$时，无穷小量$x-\arctan x$的主部和阶数.
+      \vspace{11em}
+
+    \item 设$b=\lim_{x\to0}\frac{x+a\cos x-2}{\tan x}$为常数，求$a,b$.
+      \vspace{11em}
+
+    \item 设函数$f(x)=\frac{\ln |x|}{|x-1|}\sin x$，求$f(x)$的间断点并判断类型.
+      \vspace{9em}
+
+    \item 设$y(x)=\frac{\sqrt{1+x}-\sqrt{1-x}}{\sqrt{1+x}+\sqrt{1-x}}(x\neq0,x\neq
+      \pm1)$，求$y'(x)$.
+      \vspace{10em}
+
+    \item 设二阶可导函数$y=y(x)$由方程$y=1+x\mathrm{e}^{y}$确定，求$\left.\frac{\mathrm{d}^{2}
+      y}{\mathrm{d}x^{2}}\right|_{x=0}$.
+      \vspace{10em}
+
+    \item 设$y=(1+x^{2})^{\sin x}$，求$\mathrm{d}y$.
+      \vspace{10em}
+
+    \item 已知$f(x)=x^{3}\ln(1+x)$，求$f^{(10)}(0)$.
+      \vspace{8em}
+
+    \item 求曲线$r=1-\cos \theta$在$\theta=\frac{\pi}{2}$处的切线方程.
+      \vspace{8em}
+  \end{enumerate}
+
+  \section{综合题(每小题 6 分，共 30 分)}
+  \begin{enumerate}
+    \item[11.] 研究函数$f(x)=\lim_{x\to\infty}\frac{x+x^{2}\mathrm{e}^{nx}}{1+\mathrm{e}^{nx}}$的连续性.
+      \vspace{10em}
+
+    \item[12.] 设$y=g(x)$是$y=f(x)$的反函数，$f(x)$可导，$f(1)=2,f'(1)=-4$，求$y=
+      g(1+x^{2})$在$x=1$处的导数.
+      \vspace{10em}
+
+    \item[13.] 设函数$f(x)$在$x=1$处二阶可导，且$f'(1)=0$，$f''(1)=0$，$y=f^{2}(x
+      )$，求$\left.\frac{\mathrm{d}^{2} y}{\mathrm{d}x^{2}}\right|_{x=1}$.
+      \vspace{8em}
+
+    \item[14.] 设函数$g(x)=
+      \begin{cases}
+        x^{3}\sin\frac{1}{x}, & x\neq0, \\
+        0,                    & x=0
+      \end{cases}$，函数$f(x)$可导，求$F(x)=f(g(x))$的导数.
+      \vspace{10em}
+
+    \item[15.] 将水以$4\mathrm{m}^{3}/\mathrm{min}$的速率注入一个圆锥形容器中，容器顶朝下倒立，它的高度为$8
+      \mathrm{m}$，底面半径为$4\mathrm{m}$，当容器内的水深达$5\mathrm{m}$时，水面升高的速率是多少？
+      \vspace{12em}
+  \end{enumerate}
+
+  \section{证明题(每小题 5 分，共 10 分)}
+  \begin{enumerate}
+    \item[16.] 设$x_{n}>0$，$x_{n+1}+\frac{4}{x_{n}}<4(n=1,2,\cdots)$，证明：$\lim
+      _{n\to\infty}x_{n}$存在并求其值.
+      \vspace{12em}
+
+    \item[17.] 设函数$f(x)$在$[0,b]$上具有二阶导数，且$|f''(x)|\leq M$，$f(x)$在$(
+      0,b)$内取得最大值，试证：$|f'(0)|+|f'(b)|\leq Mb$.
+      \vspace{10em}
+  \end{enumerate}
+
+  \chapter{2023-2024学年微积分（B）（上）期中考试参考答案}
+  \section{基本计算题(每小题 6 分，共 60 分)}
+  \begin{enumerate}
+    \item \textbf{Solution}. 设$x_{n}=\sin\frac{\pi}{\sqrt{n^{2}+1}}+\sin\frac{\pi}{\sqrt{n^{2}+2}}
+      +\cdots+\sin\frac{\pi}{\sqrt{n^{2}+n}}$，则
+      \[
+        n\sin\frac{\pi}{\sqrt{n^{2}+n}}\leq x_{n} \leq n\sin\frac{\pi}{\sqrt{n^{2}+1}}
+        ,\quad n>1.
+      \]
+
+      而$\lim_{n\to\infty}n\sin\frac{\pi}{\sqrt{n^{2}+1}}=\lim_{n\to\infty}n\cdot
+      \frac{\pi}{\sqrt{n^{2}+1}}=\pi$，$\lim_{n\to\infty}n\sin\frac{\pi}{\sqrt{n^{2}+n}}
+      =\lim_{n\to\infty}n\cdot\frac{\pi}{\sqrt{n^{2}+n}}=\pi$，
+
+      所以$l=\pi$.
+
+    \item \textbf{Solution}.
+      \[
+        \begin{aligned}
+          l= & \lim_{x\to 0}\frac{1}{x}\cdot\frac{\sin x-x}{x\sin x} \\
+          =  & \lim_{x\to0}\frac{\sin x-x}{x^3}                      \\
+          =  & \lim_{x\to0}\frac{\cos x-1}{3x^2}=-\frac{1}{6}.
+        \end{aligned}
+      \]
+
+    \item \textbf{Solution}.
+
+      \textbf{法一.} 设$f(x)=\arctan x$，则$f(0)=0$，$f'(0)=\left.\frac{1}{1+x^{2}}
+      \right|_{x=0}=1$，
+
+      $f''(0)=\left.-\frac{2x}{(1+x^{2})^{2}}\right|_{x=0}=0$，$f'''(0)=\left.\frac{-2(1+x^{2})^{2}+8x^{2}(1+x^{2})}{(1+x^{2})^{4}}
+      \right|_{x=0}=-2$，
+
+      所以$\arctan x=x-\frac{1}{3}x^{3}+o(x^{3})$，于是
+      \[
+        x-\arctan x=\frac{1}{3}x^{3}+o(x^{3})\sim\frac{1}{3}x^{3}.
+      \]
+
+      即主部为$\frac{1}{3}x^{3}$，阶数为$3$.
+
+      \textbf{法二.} 设$x\to0$，$x-\arctan x$的主部为$cx^{r}$，则$\lim_{x\to0}\frac{x-\arctan
+      x}{cx^{r}}=1$.
+
+      因
+      \[
+        \begin{aligned}
+          \lim_{x\to0}\frac{(x-\arctan x)'}{(cx^r)'}= & \frac{1-\frac{1}{1+x^2}}{crx^{r-1}} \\
+          =                                           & \lim_{x\to0}\frac{1}{crx^{r-3}},
+        \end{aligned}
+      \]
+
+      所以$\lim_{x\to0}\frac{1}{crx^{r-3}}=1$，从而$r=3,c=\frac{1}{3}$，即主部为$\frac{1}{3}
+      x^{3}$，阶数为$3$.
+
+    \item \textbf{Solution}. 由$b$是常数，$\lim_{x\to0}\tan x=0$知，$\lim_{x\to0}
+      (x+a\cos x-2)=0$，于是$a=2$.
+
+      进而$b=\lim_{x\to0}\frac{x+2(\cos x-1)}{x}=1$，即$a=2,b=1$.
+
+    \item \textbf{Solution}. 当$x=0,x=1$时，$f(x)$无定义，故$x=0,x=1$是$f(x)$的间断点.
+
+      因
+      \[
+        \begin{aligned}
+          \lim_{x\to0^+}f(x)= & \lim_{x\to0^+}\frac{\ln x}{\csc x}\cdot\frac{1}{|x-1|} \\
+          =                   & \lim_{x\to0^+}\frac{\frac{1}{x}}{-\csc x\cot x}        \\
+          =                   & -\lim_{x\to0^+}\frac{\sin ^2 x}{x\cos x}=0.
+        \end{aligned}
+      \]
+
+      类似可得$\lim_{x\to0^-}f(x)=0$，所以$x=0$是可去间断点.
+
+      （或$\lim_{x\to0}f(x)=\lim_{x\to0}x\ln|x|\cdot\frac{1}{|x-1|}=\lim_{x\to 0}
+      x\ln|x|=\lim_{x\to0}\frac{\ln|x|}{\frac{1}{x}}=\lim_{x\to0}\frac{\frac{1}{x}}{-\frac{1}{x^{2}}}
+      =0$）
+
+      又
+      \[
+        \begin{aligned}
+          \lim_{x\to1^+}f(x)= & \lim_{x\to1^+}\frac{\ln x}{x-1}\sin x=\lim_{x\to1^+}\frac{x-1}{x-1}\sin x=\sin 1 \\
+          \lim_{x\to1^-}f(x)= & \lim_{x\to1^-}\frac{-\ln x}{x-1}\sin x=-\sin 1,
+        \end{aligned}
+      \]
+
+      所以$x=1$是跳跃间断点.
+
+    \item \textbf{Solution}. 化简得$y(x)=\frac{1-\sqrt{1-x^{2}}}{x}$.
+
+      所以$y'(x)=\frac{-\frac{2x}{2\sqrt{1-x^{2}}}\cdot x-(1-\sqrt{1-x^{2}})}{x^{2}}
+      =\frac{1-\sqrt{1-x^{2}}}{x^{2}\sqrt{1-x^2}}$.
+
+    \item \textbf{Solution}. 由题设有$x=0,y=1$，方程两边关于$x$求导得
+      \[
+        \begin{gathered}
+          (1-x\mathrm{e}^y)y'=\mathrm{e}^y,\qquad\text{(*)} \\
+          y'(0)=\mathrm{e}.
+        \end{gathered}
+      \]
+
+      方程(*)两边再关于$x$求导得
+      \[
+        (1-x\mathrm{e}^{y})y''=2y'\mathrm{e}^{y}+x\cdot(y')^{2}\cdot\mathrm{e}^{y}
+        ,
+      \]
+
+      所以
+      \[
+        y''(0)=2\mathrm{e}^{2},\quad\text{即}\,\left.\frac{\mathrm{d}^{2} y}{\mathrm{d}x^{2}}
+        \right|_{x=0}=2\mathrm{e}^{2}.
+      \]
+
+    \item \textbf{Solution}. 因$\ln y=\sin x\ln(1+x^{2})$，所以
+
+      \[
+        \frac{1}{y}y'=\cos x\ln(1+x^{2})+\sin x\cdot\frac{2x}{1+x^{2}},
+      \]
+
+      即$y'=\left(\cos x\ln(1+x^{2})+\frac{2x\sin x}{1+x^{2}}\right)y=(1+x^{2})^{\sin
+      x}\left(\cos x\ln(1+x^{2})+\frac{2x\sin x}{1+x^{2}}\right)$，
+
+      因此$\mathrm{d}y=(1+x^{2})^{\sin x}\left(\cos x\ln(1+x^{2})+\frac{2x\sin x}{1+x^{2}}
+      \right)\mathrm{d}x$.
+
+    \item \textbf{Solution}. 取$v(x)=x^{3}$，它的四阶以上的导数为0，
+      \[
+        u^{(k)}(x)=\left(\ln(1+x)\right)^{(k)}=\frac{(-1)^{k-1}(k-1)!}{(1+x)^{k}}
+        ,k=1,2,\cdots,
+      \]
+
+      由Leibniz公式$(uv)^{(n)}=\sum_{k=0}^{n}\mathrm{C}_{n}^{k}u^{(n-k)}v^{(k)}$，得
+      \[
+        f^{(10)}(x)=x^{3}\frac{(-1)^{9} 9!}{(1+x)^{10}}+30x^{2}\frac{(-1)^{8} 8!}{(1+x)^{9}}
+        +3\times10\times9x\frac{(-1)^{7} 7!}{(1+x)^{8}}+10\times9\times8\frac{(-1)^{6}
+        6!}{(1+x)^{7}}.
+      \]
+
+      所以$f^{(10)}(0)=\frac{10!}{7}$.
+
+    \item \textbf{Solution}.曲线的参数方程为$\begin{cases}
+        x=(1-\cos\theta)\cos\theta, \\
+        y=(1-\cos\theta)\sin\theta
+      \end{cases}$.于是得到
+      \[
+        \frac{\mathrm{d}y}{\mathrm{d}x}=\frac{\frac{\mathrm{d}y}{\mathrm{d}\theta}}{\frac{\mathrm{d}x}{\mathrm{d}\theta}}
+        =\frac{\sin^{2}\theta+(1-\cos\theta)\cos\theta}{2\sin\theta\cos\theta-\sin\theta}
+        .
+      \]
+      代入$\theta=\frac{\pi}{2}$得到$\left.\frac{\mathrm{d}y}{\mathrm{d}x}\right|
+      _{\theta=\frac{\pi}{2}}=-1$，$x=0,y=1$，因此切线方程为$y=-x+1$.
+  \end{enumerate}
+
+  \section{综合题(每小题 6 分，共 30 分)}
+  \begin{enumerate}
+    \item[11.] \textbf{Solution}. 当$x>0$时，$\mathrm{e}^{nx}\to+\infty(n\to\infty
+      )$，因此$\lim_{n\to\infty}\frac{x^{2}+x^{2}\mathrm{e}^{nx}}{1+\mathrm{e}^{nx}}
+      =x^{2}$；
+
+      当$x<0$时，$\mathrm{e}^{nx}\to0(n\to\infty)$，因此$\lim_{n\to\infty}\frac{x+x^{2}\mathrm{e}^{nx}}{1+\mathrm{e}^{nx}}
+      =x$；
+
+      当$x=0$时，$\lim_{n\to\infty}\frac{x+x^{2}\mathrm{e}^{nx}}{1+\mathrm{e}^{nx}}
+      =0$，
+
+      综上所述，$f(x)=
+      \begin{cases}
+        x^{2}, & x>0,    \\
+        x,     & x\leq0.
+      \end{cases}$
+
+      当$x\neq0$时，$f(x)=x^{2}$及$f(x)=x$均为幂函数，连续；
+
+      当$x=0$时，$\lim_{x\to0^+}f(x)=0=\lim_{x\to0^-}f(x)$，且$f(0)=0$，故$f(x)$在$x
+      =0$处连续.
+
+      因此$f(x)$在$(-\infty,+\infty)$上处处连续.
+
+    \item[12.] \textbf{Solution}. 由题意得$g'(2)=\frac{1}{f'(1)}=-\frac{1}{4}$.
+
+      所以
+      \[
+        y'(1)=\left.[2xg'(2)]\right|_{x=1}=-\frac{1}{2}.
+      \]
+
+    \item[13.] \textbf{Solution}. $y'(x)=2f(x)f'(x)$，
+
+      \[
+        \begin{aligned}
+          \left.\frac{\mathrm{d}^2 y}{\mathrm{d}x^2}\right|_{x=1}= & \lim_{x\to1}\frac{y'(x)-y'(1)}{x-1}        \\
+          =                                                        & \lim_{x\to1}\frac{2f(x)f'(x)}{x-1}         \\
+          =                                                        & \lim_{x\to1}\frac{2f(x)(f'(x)-f'(1))}{x-1} \\
+          =                                                        & 2f(1)f''(1)=0.
+        \end{aligned}
+      \]
+
+    \item[14.] \textbf{Solution}. $F(x)=
+      \begin{cases}
+        f\left(x^{3}\sin\frac{1}{x}\right), & x\neq0, \\
+        f(0),                               & x=0.
+      \end{cases}$
+
+      当$x\neq0$时，$F'(x)=f'\left(x^{3}\sin\frac{1}{x}\right)\left(3x^{2}\sin\frac{1}{x}
+      -x\cos\frac{1}{x}\right)$，
+
+      当$x=0$时，
+      \[
+        \begin{aligned}
+          g'(0)=  & \lim_{x\to0}\frac{x^3\sin\frac{1}{x}-0}{x}=0, \\
+          F'(0) = & f'\left(g(0)\right)\cdot g'(0)=f'(0)\cdot0=0.
+        \end{aligned}
+      \]
+
+    \item[15.] \textbf{Solution}. 设时刻$t$容器中水的体积为$V\mathrm{m}^{3}$，水的高度为为$h
+      \mathrm{m}$，水面半径为$r\mathrm{m}$，则
+      \[
+        \frac{r}{4}=\frac{h}{8},\quad\text{即}\,r=\frac{h}{2},\quad\text{因而}\,V
+        =\frac{1}{12}\pi h^{3},
+      \]
+
+      于是$\frac{\mathrm{d}V}{\mathrm{d}t}=\frac{1}{4}\pi h^{2}\cdot\frac{\mathrm{d}h}{\mathrm{d}t}$.
+
+      当$h=5\mathrm{m}$时，$\frac{\mathrm{d}V}{\mathrm{d}t}=4\mathrm{m}^{3}/\mathrm{min}$时，$\frac{\mathrm{d}h}{\mathrm{d}t}
+      =\frac{16}{25\pi}\mathrm{m}/\mathrm{min}$.
+
+      即水面升高的速率是$\frac{16}{25\pi}\mathrm{m}/\mathrm{min}$.
+  \end{enumerate}
+
+  \section{证明题(每小题 5 分，共 10 分)}
+  \begin{enumerate}
+    \item[16.] \textbf{Proof}.由$x_{n+1}-x_{n}<4-\frac{4}{x_{n}}-x_{n}=-\left(\sqrt{x_{n}}
+      -\frac{2}{\sqrt{x_{n}}}\right)^{2}\leq0$得到$\{x_{n}\}$单调递减.
+
+      （或由均值不等式$\sqrt{x_{n+1}\cdot\frac{4}{x_n}}\leq\frac{x_{n+1}+\frac{4}{x_n}}{2}$及$x
+      _{n+1}+\frac{4}{x_{n}}<4$得
+
+      $\sqrt{x_{n+1}\cdot\frac{4}{x_n}}<2$，即$\frac{x_{n+1}}{x_{n}}<1$，从而$\{x
+      _{n}\}$单调递减.）
+
+      又$x_{n}>0$，由单调有界准则可知$\lim_{n\to\infty}x_{n}$存在.
+
+      设$\lim_{n\to\infty}x_{n}=A$，则$A>0$.由$x_{n+1}+\frac{4}{x_{n}}<4$得$\lim_{n\to\infty}
+      \left(x_{n+1}+\frac{4}{x_{n}}\right)\leq 4$，即$A+\frac{4}{A}\leq4$，解得$A
+      =2$.
+
+    \item[17.] \textbf{Proof}. 设$f(x)$在$x_{0}\in(0,b)$处取得最大值，则$f'(x_{0}
+      )=0$.
+
+      对函数$f'(x)$在$[0,x_{0}],[x_{0},b]$上分别应用Lagrange中值定理，得
+      \[
+        \begin{aligned}
+          f'(x_{0})-f'(0)=f''(\eta)x_{0},\quad    & \exists\,\eta\in(0,x_{0}) \\
+          f'(b)-f'(x_{0})=f''(\xi)(b-x_{0}),\quad & \exists\,\xi\in(x_{0},b)
+        \end{aligned}
+      \]
+
+      $|f'(0)|+|f'(b)|=|f''(\eta)|x_{0}+|f''(\xi)|(b-x_{0})\leq Mx_{0}+M(b-x_{0})
+      =Mb$.
+  \end{enumerate}
+\end{document}

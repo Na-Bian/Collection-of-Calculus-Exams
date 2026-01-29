@@ -1,0 +1,339 @@
+\documentclass[../Main.tex]{subfiles}
+\begin{document}
+  \chapter{2021-2022学年微积分（一）（上）期中考试}
+
+  \section{基本计算题(每小题 6 分，共 60 分)}
+  \begin{enumerate}
+    \item 求极限$\lim_{n\to +\infty}\left(\frac{a^{n}+b^{n}+c^{n}}{3}\right)^{\frac{1}{n}}
+      (a,b,c>0)$.
+      \vspace{11em}
+
+    \item 求当$x\to0^{+}$时，无穷小量$\sqrt{1+x\sqrt{x}}-\mathrm{e}^{2x}$的主部和阶数.
+      \vspace{11em}
+
+    \item 求极限$l=\lim_{x\to0}\frac{1}{x^{3}}\left[\left(\frac{3+\cos x}{4}\right
+      )^{x}-1\right]$.
+      \vspace{11em}
+
+    \item 已知$\lim_{x\to+\infty}\left(\sqrt{2x^{2}+4x-1}-ax-b\right)=0$，求$a,b$.
+      \vspace{11em}
+
+    \item 求极限$l=\lim_{x\to0}\left(\frac{\ln(1+x)}{x}\right)^{\frac{1}{\mathrm{e}^{x}-1}}$.
+      \vspace{9em}
+
+    \item 确定$f(x)=\mathrm{e}^{\frac{|x|}{\tan x}}$的间断点及其类型.
+      \vspace{10em}
+
+    \item 设函数$y=y(x)$由参数方程$\begin{cases}
+        x=t+\mathrm{e}^{t}, \\
+        y=\sin t
+      \end{cases}$确定，求$\left.\frac{\mathrm{d}^{2} y}{\mathrm{d}x^{2}}\right|_{t=0}$.
+      \vspace{10em}
+
+    \item 设$y=x^{x^x}$，求$y'$.
+      \vspace{10em}
+
+    \item 求$y=x^{2}\ln(1+x)$在$x=0$处的$n$阶导数.
+      \vspace{8em}
+
+    \item 设$y=\frac{\cos x}{x^{2}}$，求$\frac{\mathrm{d}y}{\mathrm{d}(\cos x)}$，$\frac{\mathrm{d}y}{\mathrm{d}(x^{3})}$.
+      \vspace{8em}
+  \end{enumerate}
+
+  \section{综合题(每小题 6 分，共 30 分)}
+  \begin{enumerate}
+    \item[11.] 设$x=\varphi(y)$是$f(x)=\ln x+\arctan x$的反函数，求$\varphi'\left
+      (\frac{\pi}{4}\right)$.
+      \vspace{10em}
+
+    \item[12.] 设曲线$y=y(x)$由方程$\mathrm{e}^{xy}+\ln\frac{y}{x+1}=2$确定，求曲线在$x
+      =0$处的切线方程.
+      \vspace{10em}
+
+    \item[13.] 设函数$f(x)$在$x=0$处可导，且$f(0)=0$，$f'(0)=2$，计算$\lim_{x\to0}
+      \frac{x^{2}f(x)-2f(x^{3})}{x^{3}}$.
+      \vspace{10em}
+
+    \item[14.] 有一长度为$5\mathrm{m}$的梯子贴靠在铅直的墙上，假设其下端沿地板离开墙角而滑动.当梯子下端离开墙角$3
+      \mathrm{m}$时，已知梯子的下端离开墙角滑动速率为$2.2\mathrm{m/s}$，问此时梯子的上端向下滑的速率为多少？
+      \vspace{10em}
+
+    \item[15.] 设函数$f(x)=
+      \begin{cases}
+        x^{2}\cos\frac{1}{x}, & x\neq0, \\
+        0,                    & x=0
+      \end{cases}$，求$f'(x)$，并讨论$f'(x)$的连续性.
+      \vspace{12em}
+  \end{enumerate}
+
+  \section{证明题(每小题 5 分，共 10 分)}
+  \begin{enumerate}
+    \item[16.] 设$x_{1}>0$，$x_{n+1}=3+\frac{4}{x_{n}}(n=1,2,\cdots)$，证明：$\lim
+      _{n\to\infty}x_{n}$存在并求其值.
+      \vspace{12em}
+
+    \item[17.] 设函数$f(x)$在$[0,1]$上连续，$(0,1)$内可导，$c\in(0,1)$.证明：$\exists
+      \,\xi,\eta\in[0,1]$，使得
+      \[
+        2\eta f(1)+(c^{2}-1)f'(\eta)=f(\xi).
+      \]
+      \vspace{10em}
+  \end{enumerate}
+
+  \chapter{2021-2022学年微积分（一）（上）期中考试参考答案}
+  \section{基本计算题(每小题 6 分，共 60 分)}
+  \begin{enumerate}
+    \item \textbf{Solution}. 令$A=\max\{a,b,c\}$，则
+      \[
+        \frac{1}{3}A^{n}\leq\frac{a^{n}+b^{n}+c^{n}}{3}\leq A^{n},\quad \frac{1}{\sqrt[n]{3}}
+        A\leq\left(\frac{a^{n}+b^{n}+c^{n}}{3}\right)^{\frac{1}{n}}\leq A.
+      \]
+
+      由夹逼准则知，原式$=A=\max\{a,b,c\}$.
+
+    \item \textbf{Solution}.
+      \[
+        \begin{aligned}
+          f(x)= & \sqrt{1+x\sqrt{x}}-\mathrm{e}^{2x}=\left(\sqrt{1+x\sqrt{x}}-1\right)-\left(\mathrm{e}^{2x}-1\right)(x\to 0^{+}) \\
+          =     & \frac{1}{2}x\sqrt{x}+o(x)-(2x+o(x))                                                                             \\
+          =     & -2x+o(x)\sim -2x(x\to0^{+}).
+        \end{aligned}
+      \]
+
+      故主部为$-2x$，阶数为$1$.
+
+    \item \textbf{Solution}.
+
+      \[
+        \begin{aligned}
+          l= & \lim_{x\to0}\frac{\mathrm{e}^{x\ln\frac{3+\cos x}{4}}-1}{x^3}                               \\
+          =  & \lim_{x\to0}\frac{x\ln\frac{3+\cos x}{4}}{x^3}=\lim_{x\to0}\frac{\frac{3+\cos x}{4}-1}{x^2} \\
+          =  & \frac{1}{4}\lim_{x\to0}\frac{\cos x-1}{x^2}=-\frac{1}{8}.
+        \end{aligned}
+      \]
+
+    \item \textbf{Solution}. 要使$\lim_{x\to+\infty}\left(\sqrt{2x^{2}+4x-1}-ax-b
+      \right)=0$成立，必须
+      \[
+        \lim_{x\to+\infty}\left(\frac{\sqrt{2x^{2}+4x-1}}{x}-a-\frac{b}{x}\right)
+        =0,
+      \]
+
+      从而得
+      \[
+        a=\lim_{x\to+\infty}\frac{\sqrt{2x^{2}+4x-1}}{x}=\lim_{x\to+\infty}\sqrt{2+\frac{4}{x}-\frac{1}{x^{2}}}
+        =\sqrt{2}.
+      \]
+
+      \[
+        \begin{aligned}
+          b = & \lim_{x\to+\infty}\left(\sqrt{2x^2+4x-1}-ax\right)=\lim_{x\to\infty}\left(\sqrt{2x^2+4x-1}-\sqrt{2}x\right) \\
+          =   & \lim_{x\to+\infty}\sqrt{2}x\left[\sqrt{1+\left(\frac{2}{x}-\frac{1}{2x^2}\right)}-1\right]                  \\
+          =   & \lim_{x\to+\infty}\sqrt{2}x\cdot\frac{1}{2}\left(\frac{2}{x}-\frac{1}{2x^2}\right)=\sqrt{2}.
+        \end{aligned}
+      \]
+
+    \item \textbf{Solution}. $l=\lim_{x\to0}\mathrm{e}^{\frac{1}{\mathrm{e}^{x}-1}\ln\frac{\ln(1+x)}{x}}
+      =\mathrm{e}^{\lim_{x\to0}\frac{1}{\mathrm{e}^{x}-1}\ln\frac{\ln(1+x)}{x}}$.
+
+      而
+      \[
+        \begin{aligned}
+          \lim_{x\to0}\frac{1}{\mathrm{e}^x-1}\ln\frac{\ln(1+x)}{x}= & \lim_{x\to0}\frac{1}{\mathrm{e}^x-1}\left[\frac{\ln(1+x)}{x}-1\right] \\
+          =                                                          & \lim_{x\to}\frac{\ln(1+x)-x}{x^2}                                     \\
+          =                                                          & \lim_{x\to0}\frac{\frac{1}{1+x}-1}{2x}                                \\
+          =                                                          & \lim_{x\to0}\frac{1}{1+x}\cdot\frac{1-1-x}{2x}=-\frac{1}{2}.
+        \end{aligned}
+      \]
+
+      所以$l=\mathrm{e}^{-\frac{1}{2}}$.
+
+    \item \textbf{Solution}. $f(x)$的间断点为$x=k\pi$，$x=k\pi+\frac{\pi}{2}$，$k
+      =0,\pm1,\pm2,\cdots$.
+
+      $x=0$是跳跃间断点.因为
+      \[
+        \lim_{x\to0^+}\mathrm{e}^{\frac{|x|}{\tan x}}=\mathrm{e}^{\lim_{x\to0^+}\frac{x}{\tan
+        x}}=\mathrm{e},\quad \lim_{x\to0^-}\mathrm{e}^{\frac{|x|}{\tan x}}=\mathrm{e}
+        ^{\lim_{x\to0^-}\frac{-x}{\tan x}}=\mathrm{e}^{-1}.
+      \]
+
+      $x=k\pi(k=\pm1,\pm2,\cdots)$是无穷间断点.因为
+      \[
+        \lim_{x\to k\pi^+}\mathrm{e}^{\frac{|x|}{\tan x}}=\mathrm{e}^{+\infty}=+\infty
+        .
+      \]
+
+      $x=k\pi+\frac{\pi}{2}(k=0,\pm1,\pm2,\cdots)$是可去间断点.因为
+      \[
+        \lim_{x\to k\pi+\frac{\pi}{2}}\mathrm{e}^{\frac{|x|}{\tan x}}=\mathrm{e}^{0}
+        =1.
+      \]
+
+    \item \textbf{Solution}. $\frac{\mathrm{d}y}{\mathrm{d}x}=\frac{\frac{\mathrm{d}y}{\mathrm{d}t}}{\frac{\mathrm{d}x}{\mathrm{d}t}}
+      =\frac{\cos t}{1+\mathrm{e}^{t}}$，
+
+      $\frac{\mathrm{d}^{2} y}{\mathrm{d}x^{2}}=\frac{\frac{-\sin t\left(1+\mathrm{e}^{t}\right)-\cos
+      t\cdot\mathrm{e}^{t}}{\left(1+\mathrm{e}^{t}\right)^{2}}}{1+\mathrm{e}^{t}}
+      =\frac{-\sin t\left(1+\mathrm{e}^{t}\right)-\cos t\cdot\mathrm{e}^{t}}{\left(1+\mathrm{e}^{t}\right)^{3}}$，
+
+      $\left.\frac{\mathrm{d}^{2} y}{\mathrm{d}x^{2}}\right|_{t=0}=-\frac{1}{8}$.
+
+    \item \textbf{Solution}. 因$\left(x^{x}\right)'=\left(\mathrm{e}^{x\ln x}\right
+      )'=x^{x}(1+\ln x)$，又
+      \[
+        \ln y=x^{x}\ln x,
+      \]
+
+      所以$\frac{1}{y}y'=\left(x^{x}\ln x\right)'=x^{x}(1+\ln x)\ln x+x^{x-1}$，即
+      \[
+        y'=x^{x^x}x^{x}\left(\frac{1}{x}+\ln x+\ln^{2} x\right).
+      \]
+
+    \item \textbf{Solution}. 取$v(x)=x^{2}$，它的三阶以上的导数为0，
+      \[
+        u^{(k)}(x)=\left[\ln(1+x)\right]^{(k)}=\frac{(-1)^{k-1}(k-1)!}{(1+x)^{k}}
+        ,k=1,2,\cdots,
+      \]
+
+      由Leibniz公式$(uv)^{(n)}=\sum_{k=0}^{n}\mathrm{C}_{n}^{k}u^{(n-k)}v^{(k)}$，得
+      \[
+        y^{(n)}=x^{2}\frac{(-1)^{n-1}(n-1)!}{(1+x)^{n}}+2nx\frac{(-1)^{n-2}(n-2)!}{(1+x)^{n-1}}
+        +n(n-1)\frac{(-1)^{n-3}(n-3)!}{(1+x)^{n-2}}.
+      \]
+
+      所以$y^{(n)}(0)=(-1)^{n-3}n(n-1)(n-3)!=\frac{(-1)^{n}n!}{n-2}(n>2)$.
+
+      而$y'(0)=y''(0)=0$.
+
+    \item \textbf{Solution}. $\frac{\mathrm{d}y}{\mathrm{d}x}=\frac{-x^{2}\sin x-2x\cos
+      x}{x^{4}}=-\frac{x\sin x+2\cos x}{x^{3}}$.
+
+      $\frac{\mathrm{d}y}{\mathrm{d}(\cos x)}=\frac{-\frac{x\sin x+2\cos x}{x^{3}}\mathrm{d}x}{-\sin
+      x\mathrm{d}x}=\frac{x+2\cot x}{x^{3}}$.
+
+      $\frac{\mathrm{d}y}{\mathrm{d}(x^{3})}=\frac{-\frac{x\sin x+2\cos x}{x^{3}}\mathrm{d}x}{3x^{2}\mathrm{d}x}
+      =-\frac{x\sin x+2\cos x}{3x^{5}}$.
+  \end{enumerate}
+
+  \section{综合题(每小题 6 分，共 30 分)}
+  \begin{enumerate}
+    \item[11.] \textbf{Solution}. 当$x=1$时，$y=f(1)=\frac{\pi}{4}$.
+
+      $f'(x)=\left(\ln x+\arctan x\right)'=\frac{1}{x}+\frac{1}{1+x^{2}}$，
+
+      得$f'(1)=1+\frac{1}{2}=\frac{3}{2}$，故$\varphi'\left(\frac{\pi}{4}\right)=
+      \frac{1}{f'(1)}=\frac{2}{3}$.
+
+    \item[12.] \textbf{Solution}. 原方程变为$\mathrm{e}^{xy}(y+xy')+\frac{y'}{y}-
+      \frac{1}{x+1}=0$，
+
+      将$x=0,y=\mathrm{e}$代入，得$\mathrm{e}+\frac{y'(0)}{\mathrm{e}}=1$，故$y'(
+      0)=\mathrm{e}(1-\mathrm{e})$.
+
+      所以切线方程为$y=\mathrm{e}(1-\mathrm{e})x+\mathrm{e}$.
+
+    \item[13.] \textbf{Solution}. $y'(x)=2f(x)f'(x)$，
+
+      \[
+        \begin{aligned}
+          \lim_{x\to0}\frac{x^2f(x)-2f(x^3)}{x^3}= & \lim_{x\to0}\left[\frac{f(x)-f(0)}{x}-2\frac{f(x^3)-f(0)}{x^3}\right] \\
+          =                                        & f'(0)-2f'(0)=-f'(0)                                                   \\
+          =                                        & -2.
+        \end{aligned}
+      \]
+
+    \item[14.] \textbf{Solution}. 设梯子上端离墙角距离为$s(m)$，下端离开墙角的距离为$x
+      (m)$，有一长度为
+      \[
+        s=\sqrt{5^{2}-x^{2}}.
+      \]
+
+      于是$\frac{\mathrm{d}s}{\mathrm{d}t}=-\frac{x}{\sqrt{25-x^{2}}}\frac{\mathrm{d}x}{\mathrm{d}t}$.
+
+      当$x=3\mathrm{m}$，$\frac{\mathrm{d}x}{\mathrm{d}t}=2.2\mathrm{m/s}$时，$\frac{\mathrm{d}s}{\mathrm{d}t}
+      =-\frac{3}{4}\cdot2.2=-1.65\mathrm{m/s}$.
+
+      即梯子上端向下滑的速率为$1.65\mathrm{m/s}$.
+
+    \item[15.] \textbf{Solution}. 因$f'(0)=\lim_{x\to0}\frac{f(x)-f(0)}{x}=\lim_{x\to0}
+      x\cos\frac{1}{x}=0$，
+
+      且$x\neq0$时，$f'(x)=2x\cos\frac{1}{x}+\sin\frac{1}{x}$，所以
+      \[
+        f(x)=
+        \begin{cases}
+          2x\cos\frac{1}{x}+\sin\frac{1}{x}， & x\neq 0, \\
+          0,                                 & x=0.
+        \end{cases}
+      \]
+
+      当$x\neq0$时，初等函数$f'(x)=2x\cos\frac{1}{x}+\sin\frac{1}{x}$有定义，所以连续；
+
+      而$\lim_{x\to0}\left(2x\cos\frac{1}{x}+\sin\frac{1}{x}\right)$不存在，所以$f
+      '(x)$在$x=0$处不连续.
+  \end{enumerate}
+
+  \section{证明题(每小题 5 分，共 10 分)}
+  \begin{enumerate}
+    \item[16.] \textbf{Proof}.
+
+      \textbf{法一.} 由题设知$n>1$时，$x_{n}>3$；$n>2$时，$x_{n}<3+\frac{4}{3}$，即$\{
+      x_{n}\}$有界.
+
+      由$x_{n+1}-x_{n}=\frac{4}{x_{n}}-\frac{4}{x_{n-1}}=\frac{4(x_{n-1}-x_{n})}{x_{n}
+      x_{n-1}}$知不能确定$\{x_{n}\}$的单调性，但由
+      \[
+        x_{n+1}-x_{n-1}=\frac{4}{x_{n}}-\frac{4}{x_{n-2}}=\frac{4(x_{n-2}-x_{n})}{x_{n}
+        x_{n-2}}=\frac{16(x_{n-1}-x_{n-3})}{x_{n} x_{n-1}x_{n-2}x_{n-3}}
+      \]
+
+      知奇子列$\{x_{2k-1}\}$与偶子列$\{x_{2k}\}$均分别单调.由单调有界原理知奇子列$\{
+      x_{2k-1}\}$与偶子列$\{x_{2k}\}$均收敛.
+
+      设$\lim_{k\to\infty}x_{2k-1}=l_{1}$，$\lim_{k\to\infty}x_{2k}=l_{2}$，
+
+      在
+      \[
+        x_{2k+1}=3+\frac{4}{x_{2k}},\quad x_{2k}=3+\frac{4}{x_{2k-1}}
+      \]
+
+      两边取极限，得$l_{1}=3+\frac{4}{l_{2}}$以及$l_{2}=3+\frac{4}{l_{1}}$，解得$l
+      _{1}=l_{2}=4$.
+
+      因此数列$\{x_{n}\}$的极限存在，且$\lim_{n\to\infty}x_{n}=4$.
+
+      \textbf{法二.} 常数$l=4$满足$l=3+\frac{4}{l}$.下证数列$\{x_{n}\}$以$l$为极限.
+
+      \[
+        \begin{aligned}
+          0\leq|x_{n+1}-l|= & \left|\left(3+\frac{4}{x_n}\right)-4\right|=\frac{|x_n-4|}{x_n} \\
+          \leq              & \frac{1}{3}|x_{n}-4|                                            \\
+          \leq              & \cdots \leq \frac{1}{3^{n-1}}|x_{2}-4|.
+        \end{aligned}
+      \]
+
+      由迫敛性知$|x_{n}-l|$收敛到$0$，故数列$\{x_{n}\}$以$l$为极限.
+
+    \item[17.] \textbf{Proof}. 构造函数$F(x)=x^{2}f(1)+(c^{2}-1)f(x)$，则$F(x)$在$[
+      0,1]$上连续，$(0,1)$内可导.
+
+      由Lagrange中值定理，$\exists\,\eta\in(0,1)$，使得
+      \[
+        F(1)-F(0)=F'(\eta),
+      \]
+
+      即$2\eta f(1)+(c^{2}-1)f'(\eta)=(1-c^{2})f(0)+c^{2}f(1)$，
+
+      因$(1-c^{2})f(0)+c^{2} f(1)$是$f(0)$与$f(1)$的加权平均值，由介值定理知，$\exists
+      \,\xi\in[0,1]$，使得
+      \[
+        f(\xi)=(1-c^{2})f(0)+c^{2} f(1),
+      \]
+
+      故$\exists\,\xi,\eta\in[0,1]$，使得
+      \[
+        2\eta f(1)+(c^{2}-1)f'(\eta)=f(\xi).
+      \]
+  \end{enumerate}
+\end{document}

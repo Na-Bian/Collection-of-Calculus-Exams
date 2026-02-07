@@ -1,0 +1,291 @@
+\documentclass[../Main.tex]{subfiles}
+\begin{document}
+  \chapter{2017-2018学年微积分（一）（上）期中考试}
+
+  \section{基本计算题(每小题 6 分，共 60 分)}
+  \begin{enumerate}
+    \item 设数列$x_{n}$满足$x_{1}=1,x_{n+1}=\sin x_{n}(n>1)$，求极限$\lim_{n\to\infty}
+      x_{n}$.
+      \vspace{11em}
+
+    \item 求数列极限$\lim_{n\to \infty}\cos\left(\pi\sqrt{n^{2}+n}\right)$.
+      \vspace{10em}
+
+    \item 计算极限$l=\lim_{x\to 0}\frac{x\cos x-\sin x}{(\cos x-1)\ln(1+x)}$.
+      \vspace{11em}
+
+    \item 已知$\lim_{x\to1}\frac{ax^{3}+2x+1}{x-1}=b$，求常数$a,b$的值.
+      \vspace{10em}
+
+    \item 求极限$l=\lim_{x\to1}\left[\frac{2}{1-\mathrm{e}^{\frac{x}{1-x}}}-\frac{|\sin(x-1)|}{x-1}
+      \right]$.
+      \vspace{10em}
+
+    \item 指出函数$f(x)=\frac{|x|}{\tan x}$的间断点，并确定间断点的类型.
+      \vspace{10em}
+
+    \item 设函数$y=(2+x)^{\sin x}+\frac{1}{x+1}(x>-2)$，求微分$\left.\mathrm{d}y\right
+      |_{x=0}$.
+      \vspace{11em}
+
+    \item 设函数$v=f(u)$有反函数$u=\varphi(v)$，满足$f(0)=\frac{\pi}{2}$，且$\varphi
+      (v)$是可导的，在$v=0$的某个邻域内有$\varphi'(v)=\frac{1}{2+\sin v}$，求复合函数$y
+      =f^{2}(x)$在$x=0$处的导数.
+      \vspace{12em}
+
+    \item 设$y=(x-1)\ln x$，求$y^{(10)}(1)$.
+      \vspace{8em}
+
+    \item 设函数$y=y(x)$由方程$\begin{cases}
+        x=t\cos t, \\
+        y=t\sin t
+      \end{cases}$确定，求在$t=0$时的导数$\frac{\mathrm{d}y}{\mathrm{d}x}$和$\frac{\mathrm{d}^{2}y}{\mathrm{d}x^{2}}$.
+      \vspace{8em}
+  \end{enumerate}
+
+  \section{综合题(每小题 6 分，共 30 分)}
+  \begin{enumerate}
+    \item[11.] 设函数$f(x)$在原点附近有界，$F(x)=f(x)\cdot\sin\left(x^{2}\right)$，计算导数$F
+      '(0)$.
+      \vspace{8em}
+
+    \item[12.] 求函数$f(x)=
+      \begin{cases}
+        \frac{1-\cos x}{x}, & x\neq0, \\
+        0,                  & x=0
+      \end{cases}$的导函数$f'(x)$，并讨论$f'(x)$的连续性.
+      \vspace{8em}
+
+    \item[13.] 设函数$f(x)$在$x=0$的某个邻域内有界，满足$\lim_{x\to0}\frac{\sqrt[n]{1+f(x)\sin
+      x}-1}{\mathrm{e}^{3x}-1}=2$，其中$n$为正整数.求$\lim_{x\to0}f(x)$.
+      \vspace{9em}
+
+    \item[14.] 求无穷小量$u(x)=x-\arctan x(x\to0)$的主部和阶数.
+      \vspace{10em}
+
+    \item[15.] 一个长方体的铁皮盒子，其对角线的长度随着长宽高的变化而连续变化.当长宽高分别是$3
+      \mathrm{m},4\mathrm{m},5\mathrm{m}$时，如果此时对角线长度增加的速率为$5\sqrt{2}
+      \mathrm{m/s}$，长宽增加的速率分别为$8\mathrm{m/s}$和$9\mathrm{m/s}$，问此时高是在增加还是在减少？增加或减少的速率为多少？
+      \vspace{12em}
+  \end{enumerate}
+
+  \section{证明题(每小题 5 分，共 10 分)}
+  \begin{enumerate}
+    \item[16.] 证明函数$f(x)=
+      \begin{cases}
+        x^{2}, & x\in\mathbf{Q},                   \\
+        0,     & x\in\mathbf{R}\setminus\mathbf{Q}
+      \end{cases}$在$x=0$处可导，但函数本身除零点外处处不连续.
+      \vspace{12em}
+
+    \item[17.] 设$f(x)$在$[0,3]$上连续，在$(0,3)$内一阶可导，且$f(0)=0,f(1)=3,f(3
+      )=1$，证明至少存在一点$\xi\in(0,3)$使得$f'(\xi)=0$.
+  \end{enumerate}
+
+  \chapter{2017-2018学年微积分（一）（上）期中考试参考答案}
+  \section{基本计算题(每小题 6 分，共 60 分)}
+  \begin{enumerate}
+    \item \textbf{Solution}. 显然$0<x_{2}=\sin x_{1}<\frac{\pi}{2}$.设$0<x_{k}<\frac{\pi}{2}$，则$0
+      <x_{k+1}=\sin x_{k}<x_{k}<\frac{\pi}{2}$，
+
+      由数学归纳法知$\{x_{n}\}$单调递减且有下界0，故$\{x_{n}\}$收敛.
+
+      设$\lim_{n\to\infty}x_{n}=l$，在方程$x_{n+1}=\sin x_{n}$两边取极限得到$l=\sin
+      l$，解得$l=0$.
+
+    \item \textbf{Solution}.
+      \[
+        \begin{aligned}
+          \lim_{n\to\infty}\cos\left(\pi\sqrt{n^2+n}\right)= & \lim_{n\to\infty}(-1)^{n}\cos\left(\pi\sqrt{n^2+n}-n\pi\right)               \\
+          =                                                  & \lim_{n\to\infty}(-1)^{n}\cos\left(\frac{n\pi}{\sqrt{n^2+n}+n}\right)        \\
+          =                                                  & \lim_{n\to\infty}(-1)^{n}\cos\left(\frac{\pi}{\sqrt{1+\frac{1}{n}}+1}\right) \\
+          =                                                  & 0.
+        \end{aligned}
+      \]
+
+    \item \textbf{Solution}.
+      \[
+        \begin{aligned}
+          l= & \lim_{x\to0}\frac{x\cos x-\sin x}{(\cos x-1)\ln(1+x)}= \lim_{x\to0}\frac{x\left(1-\frac{x^2}{2}+o(x^2)\right)-\left(x-\frac{x^3}{6}+o(x^3)\right)}{\left(1-\frac{x^2}{2}+o(x^2)-1\right)\left(x+o(x)\right)} \\
+          =  & \lim_{x\to0}\frac{-\frac{1}{3}x^3+o(x^3)}{-\frac{1}{2}x^3+o(x^3)}                                                                                                                                            \\
+          =  & \frac{2}{3}.
+        \end{aligned}
+      \]
+
+    \item \textbf{Solution}.由
+      \[
+        \lim_{x\to1}(ax^{3}+2x+1)=a+3=\lim_{x\to1}\frac{ax^{3}+2x+1}{x-1}\cdot(x-
+        1)=0
+      \]
+
+      解得$a=-3$，从而
+      \[
+        b=\lim_{x\to1}\frac{-3x^{3}+2x+1}{x-1}=\lim_{x\to1}\frac{-9x^{2}+2}{1}= -
+        7.
+      \]
+
+    \item \textbf{Solution}. 当$x\to1^{-}$时，$\mathrm{e}^{\frac{x}{1-x}}\to+\infty$，$\frac{|\sin(x-1)|}{x-1}
+      \to-1$，所以
+      \[
+        \lim_{x\to1^-}\left[\frac{2}{1-\mathrm{e}^{\frac{x}{1-x}}}-\frac{|\sin(x-1)|}{x-1}
+        \right]= 0-(-1)=1.
+      \]
+
+      当$x\to1^{+}$时，$\mathrm{e}^{\frac{x}{1-x}}\to0$，$\frac{|\sin(x-1)|}{x-1}
+      \to1$，所以
+      \[
+        \lim_{x\to1^+}\left[\frac{2}{1-\mathrm{e}^{\frac{x}{1-x}}}-\frac{|\sin(x-1)|}{x-1}
+        \right]= 2-1=1.
+      \]
+
+      因此$l=1$.
+
+    \item \textbf{Solution}. 函数$f(x)$的间断点为$x=k\pi,k\pi+\frac{\pi}{2}(k\in\mathbf{Z}
+      )$.
+
+      当$x=0$时，$\lim_{x\to0^+}\frac{|x|}{\tan x}=1$，$\lim_{x\to0^-}\frac{|x|}{\tan
+      x}=-1$，所以$x=0$为跳跃间断点.
+
+      当$x=k\pi(k\neq0)$时，$\lim_{x\to k\pi}\frac{|x|}{\tan x}=\infty$，所以$x=k
+      \pi(k\neq0)$为无穷间断点.
+
+      当$x=k\pi+\frac{\pi}{2}$时，$\lim_{x\to k\pi+\frac{\pi}{2}}\frac{|x|}{\tan
+      x}=0$，所以$x=k\pi+\frac{\pi}{2}$为可去间断点.
+
+    \item \textbf{Solution}. 记$u=(2+x)^{\sin x}$，$v=\frac{1}{x+1}$，则$\ln u = \sin
+      x\cdot\ln(2+x)$，所以
+      \[
+        \begin{gathered}
+          \mathrm{d}u =u\cdot\mathrm{d}\left(\sin x\ln(2+x)\right)=(2+x)^{\sin x}\left(\cos
+          x\ln(2+x)+\frac{\sin x}{2+x}\right)\mathrm{d}x,\\
+          \mathrm{d}v =-\frac{1}{(x+1)^{2}}\mathrm{d}x.
+        \end{gathered}
+      \]
+
+      代入$x=0$得$\left.\mathrm{d}y\right|_{x=0}=\left.\mathrm{d}u\right|_{x=0}+\left
+      .\mathrm{d}v\right|_{x=0}=(\ln2-1)\mathrm{d}x$.
+
+    \item \textbf{Solution}.
+      \[
+        \begin{aligned}
+          y'(0) & =\left.2f(x)f'(x)\right|_{x=0}                          \\
+                & = 2f(0)f'(0)                                            \\
+                & =\frac{2f(0)}{\varphi'\left(\frac{\pi}{2}\right)}=3\pi.
+        \end{aligned}
+      \]
+
+    \item \textbf{Solution}. $y'=\ln x+1-\frac{1}{x}$，所以
+      \[
+        \begin{aligned}
+          y^{(10)}= & \left(\ln x\right)^{(9)}-\left(\frac{1}{x}\right)^{(9)} \\
+          =         & \frac{(-1)^8\,8!}{x^9}-\frac{(-1)^9\,9!}{x^{10}}.
+        \end{aligned}
+      \]
+
+      代入$x=1$得$y^{(10)}(1)=8!+9!=10\cdot8!$.
+
+    \item \textbf{Solution}. $\frac{\mathrm{d}y}{\mathrm{d}x}=\frac{\frac{\mathrm{d}y}{\mathrm{d}t}}{\frac{\mathrm{d}x}{\mathrm{d}t}}
+      =\frac{\sin t+t\cos t}{\cos t-t\sin t}$，所以$\left.\frac{\mathrm{d}y}{\mathrm{d}x}
+      \right|_{t=0}=0$.
+
+      $\frac{\mathrm{d}^{2}y}{\mathrm{d}x^{2}}=\frac{\mathrm{d}}{\mathrm{d}t}\left
+      (\frac{\mathrm{d}y}{\mathrm{d}x}\right)\cdot\frac{\mathrm{d}t}{\mathrm{d}x}
+      =\left(\frac{\sin t+t\cos t}{\cos t-t\sin t}\right)'_{t}\cdot\frac{1}{\cos
+      t-t\sin t}=\frac{2+t^{2}}{(\cos t-t\sin t)^{3}}$，所以$\left.\frac{\mathrm{d}^{2}y}{\mathrm{d}x^{2}}
+      \right|_{t=0}=2$.
+  \end{enumerate}
+
+  \section{综合题(每小题 6 分，共 30 分)}
+  \begin{enumerate}
+    \item[11.] \textbf{Solution}.
+      \[
+        \begin{aligned}
+          F'(0)= & \lim_{x\to0}\frac{f(x)\sin(x^2)-0}{x}              \\
+          =      & \lim_{x\to0}\frac{x^2f(x)}{x}=\lim_{x\to0}xf(x)=0.
+        \end{aligned}
+      \]
+
+    \item[12.] \textbf{Solution}. 当$x\neq0$时，$f'(x)=\frac{x\sin x-1+\cos x}{x^{2}}$；
+
+      当$x=0$时，$f'(0)=\lim_{x\to0}\frac{\frac{1-\cos x}{x}-0}{x}=\lim_{x\to0}\frac{1-\cos
+      x}{x^{2}}=\frac{1}{2}$.
+
+      所以$f'(x)=
+      \begin{cases}
+        \frac{x\sin x-1+\cos x}{x^2}, & x\neq0, \\
+        \frac{1}{2},                  & x=0.
+      \end{cases}$
+
+      当$x\neq0$时，$f'(x)$显然连续.又
+      \[
+        \lim_{x\to0}f'(x)=\lim_{x\to0}\frac{x\sin x-1+\cos x}{x^{2}}=1-\frac{1}{2}
+        =\frac{1}{2}=f'(0),
+      \]
+
+      所以$f'(x)$在$x=0$处连续.综上所述，$f'(x)$在$\mathbf{R}$上处处连续.
+
+    \item[13.] \textbf{Solution}. 由于$f(x)$在$x=0$的某个邻域内有界，所以$\lim_{x\to0}
+      f(x)\sin x=0$，故
+      \[
+        \begin{aligned}
+          \lim_{x\to0}\frac{\sqrt[n]{1+f(x)\sin x}-1}{\mathrm{e}^{3x}-1} & =\lim_{x\to0}\frac{f(x)\sin x}{n\cdot 3x} \\
+                                                                         & = \frac{1}{3n}\lim_{x\to0}f(x)=2,
+        \end{aligned}
+      \]
+
+      从而$\lim_{x\to0}f(x)=6n$.
+
+    \item[14.] \textbf{Solution}. 设$\lim_{x\to0}\frac{u(x)}{cx^{r}}=1$，则
+      \[
+        1=\lim_{x\to0}\frac{x-\arctan x}{cx^{r}}=\lim_{x\to0}\frac{1-\frac{1}{1+x^{2}}}{crx^{r-1}}
+        =\lim_{x\to0}\frac{1}{1+x^{2}}\cdot\frac{x^{2}}{crx^{r-1}},
+      \]
+
+      因此必须$\begin{cases}
+        r-1=2, \\
+        cr=1
+      \end{cases}$，解得$r=3,c=\frac{1}{3}$.
+
+      所以$u(x)$的主部为$\frac{1}{3}x^{3}$，阶数为3.
+
+    \item[15.] \textbf{Solution}. 设$t$时刻长方体的长宽高及对角线长分别为$x(t),y(
+      t),z(t),s(t)$，则
+      \[
+        s^{2}(t)=x^{2}(t)+y^{2}(t)+z^{2}(t).
+      \]
+
+      方程两边对$t$求导得
+      \[
+        s(t)s'(t)=x(t)x'(t)+y(t)y'(t)+z(t)z'(t).
+      \]
+
+      将$x(t)=3\mathrm{m},y(t)=4\mathrm{m},z(t)=5\mathrm{m},s(t)=5\sqrt{2}\mathrm{m}
+      ,x'(t)=8\mathrm{m/s},y'(t)=9\mathrm{m/s},s'(t)=5\sqrt{2}\mathrm{m/s}$
+
+      代入上式得$z'(t)=-2\mathrm{m/s}$，说明此时长方体的高在减少，减少的速率为$2\mathrm{m/s}$.
+  \end{enumerate}
+
+  \section{证明题(每小题 5 分，共 10 分)}
+  \begin{enumerate}
+    \item[16.] \textbf{Proof}. 计算$\lim_{x\to0}\frac{f(x)-0}{x-0}=
+      \begin{cases}
+        \lim_{x\to0}\frac{x^2}{x}=0, & x\in\mathbf{Q},                    \\
+        0,                           & x\in\mathbf{R}\setminus\mathbf{Q}.
+      \end{cases}$
+
+      故$f(x)$在$x=0$处可导，且$f'(0)=0$.
+
+      考虑非零点$a$. 若$a\in\mathbf{Q}$，取点列$\{x_{n},x_{n}\in\mathbf{R}\setminus
+      \mathbf{Q}\}$使得$\lim_{n\to\infty}x_{n}=a$，
+
+      则$\lim_{n\to\infty}f(x_{n})=0\neq f(a)=a^{2}$，说明$f(x)$在$x=a$处不连续.
+
+      同理可证当$a\in\mathbf{R}\setminus\mathbf{Q}$时，$f(x)$也不连续.所以函数除零点外处处不连续.
+
+    \item[17.] \textbf{Proof}. 由于$f(x)$在$[0,3]$上连续，由介值定理，存在$\eta\in
+      (0,1)$使得$f(0)<f(\eta)=1<f(1)$.
+
+      $f(x)$在$[\eta,3]$上连续，在$(\eta,3)$内可导，由Rolle定理知存在$\xi\in(\eta
+      ,3)\subset(0,3)$使得$f'(\xi)=0$.
+  \end{enumerate}
+\end{document}

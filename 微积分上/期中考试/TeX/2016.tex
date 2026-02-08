@@ -1,0 +1,336 @@
+\documentclass[../Main.tex]{subfiles}
+\begin{document}
+  \chapter{2016-2017学年微积分（一）（上）期中考试}
+
+  \section{基本计算题(每小题 6 分，共 60 分)}
+  \begin{enumerate}
+    \item 设数列$x_{n}$满足$x_{1}>0,x_{n+1}=x_{n}\cdot\frac{n+10}{3n-2}(n>1)$，求极限$\lim
+      _{n\to\infty}x_{n}$.
+      \vspace{11em}
+
+    \item 计算极限$l=\lim_{x\to 0}\left(\frac{a^{x}+b^{x}+c^{x}}{3}\right)^{\frac{1}{x}}$（$a
+      ,b,c>0$是常数）.
+      \vspace{10em}
+
+    \item 计算极限$l=\lim_{x\to 0}\frac{\sin(3x)+x^{2}\sin\frac{1}{x}}{(\cos x+1)\ln(1+x)}$.
+      \vspace{11em}
+
+    \item 已知$\lim_{x\to+\infty}\frac{ax^{3}+2x+1}{x-1}=b$，求常数$a,b$的值.
+      \vspace{10em}
+
+    \item 求极限$l=\lim_{x\to0}\frac{1+x+2^{\frac{1}{x}}}{1+2^{\frac{1}{x}}}$.
+      \vspace{10em}
+
+    \item 指出函数$f(x)=\frac{\sin(x^{2}-3x+2)}{x(x-1)|x-2|}$的间断点，并判断间断点的类型.
+      \vspace{10em}
+
+    \item 设函数$y=\sqrt{\frac{\mathrm{e}^{x}}{x+1}\sqrt{\mathrm{e}^{x}+1}}(x>-1)$，求微分$\left
+      .\mathrm{d}y\right |_{x=0}$.
+      \vspace{9em}
+
+    \item 设函数$v=f(u)$有反函数$u=\varphi(v)$，满足$f(0)=0$，且$\varphi(v)$是可导的，在$v
+      =0$的某个邻域内有$\varphi'(v)=\frac{1}{2+\sin v}$，求复合函数$y=f(2x+x^{2})$在$x
+      =0$处的导数.
+      \vspace{9em}
+
+    \item 设$y=\ln(2x^{2}-3x+1)$，求$y^{(10)}(0)$.
+      \vspace{8em}
+
+    \item 设函数$y=y(x)$由方程$\begin{cases}
+        x=\cos^{3} t, \\
+        y=\sin^{3} t
+      \end{cases}$确定，求在$t=\frac{\pi}{4}$时的导数$\frac{\mathrm{d}y}{\mathrm{d}x}$和$\frac{\mathrm{d}^{2}y}{\mathrm{d}x^{2}}$.
+      \vspace{8em}
+  \end{enumerate}
+
+  \section{综合题(每小题 6 分，共 30 分)}
+  \begin{enumerate}
+    \item[11.] 设函数$f(x)$在$x=a$处连续，$F(x)=(\mathrm{e}^{x}-\mathrm{e}^{a})f(
+      x)$，计算导数$F'(a)$.
+      \vspace{10em}
+
+    \item[12.] 求函数$f(x)=
+      \begin{cases}
+        \frac{\sin x}{x}, & x\neq0, \\
+        1,                & x=0
+      \end{cases}$的导函数$f'(x)$，并讨论$f'(x)$的连续性.
+      \vspace{10em}
+
+    \item[13.] 设函数$f(x)$在$x=1$处二阶可导，且$f(1+x)-3f(1-x)\sim 3x^{2}(x\to 0
+      )$，求$f(1),f'(1),f''(1)$的值.
+      \vspace{10em}
+
+    \item[14.] 求无穷小量$u(x)=\arcsin x-\arctan x(x\to0)$的主部和阶数.
+      \vspace{10em}
+
+    \item[15.] 一根长为5米的竹竿斜靠着墙，地面与墙面垂直，竹竿在地面的投影也与墙面垂直.设墙面和地面是光滑的，使得竹竿顶端A沿着墙壁竖直往下滑动，同时，底端B沿着其投影线向外滑动.如果在底端B距离墙根为3米时，点B的速度为4米/秒，问此时顶端A下滑的速度为多少？
+      \vspace{12em}
+  \end{enumerate}
+
+  \section{证明题(每小题 5 分，共 10 分)}
+  \begin{enumerate}
+    \item[16.] 由函数在一点可导可否推出它在该点的某个邻域内连续？认为可以请证明，认为不行请举反例.
+      \vspace{12em}
+
+    \item[17.] 设$f(x)$在$[0,1]$上连续，在$(0,1)$内可导，且$f(0)=0,f(1)=1$.设正实数$\lambda
+      _{1},\lambda_{2},\lambda_{3}$满足$\lambda_{1}+\lambda_{2}+\lambda_{3}=1$.证明：存在三个不相等的实数$\xi
+      _{1},\xi_{2},\xi_{3}\in(0,1)$，使得$\frac{\lambda_{1}}{f'(\xi_{1})}+\frac{\lambda_{2}}{f'(\xi_{2})}
+      +\frac{\lambda_{3}}{f'(\xi_{3})}=1$.
+      \vspace{12em}
+  \end{enumerate}
+
+  \chapter{2016-2017学年微积分（一）（上）期中考试参考答案}
+  \section{基本计算题(每小题 6 分，共 60 分)}
+  \begin{enumerate}
+    \item \textbf{Solution}.
+
+      \textbf{法一}. 当$n>22$时，$\frac{n+10}{3n-2}<\frac{1}{2}$，所以$0<x_{n+1}<
+      \frac{1}{2}x_{n}<\cdots<\frac{1}{2^{n-22}}x_{22}$，
+
+      且$\lim_{n\to\infty}\frac{1}{2^{n-22}}x_{22}=0$，由夹逼定理得$\lim_{n\to\infty}
+      x_{n}=0$.
+
+      \textbf{法二}. 当$n>6$时，$\frac{n+10}{3n-2}<1$，所以$0<x_{n+1}<x_{n}<\cdots
+      <x_{6}$，由单调有界定理知数列$\{x_{n}\}$收敛.
+
+      设$\lim_{n\to\infty}x_{n}=a$，则
+      \[
+        a=\lim_{n\to\infty}x_{n+1}=\lim_{n\to\infty}x_{n}\cdot\lim_{n\to\infty}\frac{n+10}{3n-2}
+        =\frac{1}{3}a,
+      \]
+
+      解得$a=0$，所以$\lim_{n\to\infty}x_{n}=0$.
+
+    \item \textbf{Solution}.
+      \[
+        \begin{aligned}
+          \lim_{x\to0}\left(\frac{a^x+b^x+c^x}{3}\right)^{\frac{1}{x}}= & \mathrm{e}^{\lim\limits_{x\to0}\frac{1}{x}\left[\frac{a^x+b^x+c^x}{3}-1\right]}           \\
+          =                                                             & \mathrm{e}^{\lim\limits_{x\to0}\frac{1}{3}\left[\frac{(a^x-1)+(b^x-1)+(c^x-1)}{x}\right]} \\
+          =                                                             & \mathrm{e}^{\frac{1}{3}(\ln a+\ln b+\ln c)}                                               \\
+          =                                                             & \sqrt[3]{abc}.
+        \end{aligned}
+      \]
+
+    \item \textbf{Solution}.
+      \[
+        \begin{aligned}
+          l= & \lim_{x\to0}\frac{\sin(3x)+x^2\sin\frac{1}{x}}{(\cos x+1)\ln(1+x)}= \lim_{x\to0}\frac{\sin(3x)+x^2\sin\frac{1}{x}}{2x} \\
+          =  & \lim_{x\to0}\frac{\sin(3x)}{2x}+\lim_{x\to0}\frac{x^2\sin\frac{1}{x}}{2x}                                              \\
+          =  & \frac{3}{2}.
+        \end{aligned}
+      \]
+
+    \item \textbf{Solution}.原极限式可变形为
+      \[
+        0=\lim_{x\to+\infty}\frac{ax^{3}+(2-b)x+1+b}{x-1},
+      \]
+
+      得$a=0,2-b=0$，即$a=0,b=2$.
+
+    \item \textbf{Solution}. 当$x\to0^{-}$时，$2^{\frac{1}{x}}\to0$，所以
+      \[
+        \lim_{x\to0^-}\frac{1+x+2^{\frac{1}{x}}}{1+2^{\frac{1}{x}}}=1.
+      \]
+
+      当$x\to0^{+}$时，$2^{\frac{1}{x}}\to+\infty$，所以
+      \[
+        \lim_{x\to0^+}\frac{1+x+2^{\frac{1}{x}}}{1+2^{\frac{1}{x}}}=1.
+      \]
+
+      因此$l=1$.
+
+    \item \textbf{Solution}. 函数$f(x)$的间断点为$x=0,1,2$.
+
+      当$x=0$时，$\lim_{x\to0}f(x)=\infty$，所以$x=0$为无穷间断点.
+
+      当$x=1$时，$\lim_{x\to 1}f(x)=\lim_{x\to1}\frac{\sin[(x-1)(x-2)]}{x(x-1)|x-2|}
+      =-1$，所以$x=1$为可去间断点.
+
+      当$x=2$时，$\lim_{x\to 2^+}f(x)=\lim_{x\to2^+}\frac{(x-1)(x-2)}{x(x-1)(x-2)}
+      =\frac{1}{2}$，$\lim_{x\to 2^-}f(x)=\lim_{x\to2^-}\frac{(x-1)(x-2)}{-x(x-1)(x-2)}
+      =-\frac{1}{2}$，
+
+      所以$x=2$为跳跃间断点.
+
+    \item \textbf{Solution}. $\ln y=\frac{1}{2}\left[\ln\left(\frac{\mathrm{e}^{x}}{x+1}
+      \right)+\ln\sqrt{\mathrm{e}^{x}+1}\right]=\frac{1}{2}\left[x-\ln(x+1)+\frac{1}{2}
+      \ln(\mathrm{e}^{x}+1)\right]$，
+
+      所以
+      \[
+        \begin{aligned}
+          y' & =y\cdot \frac{1}{2}\left[x-\ln(x+1)+\frac{1}{2}\ln(\mathrm{e}^{x}+1)\right]'                                                                      \\
+             & =\frac{1}{2}\sqrt{\frac{\mathrm{e}^x}{x+1}\sqrt{\mathrm{e}^x+1}}\left[1-\frac{1}{x+1}+\frac{1}{2}\cdot\frac{\mathrm{e}^x}{\mathrm{e}^x+1}\right].
+        \end{aligned}
+      \]
+
+      代入$x=0$得$\left.\mathrm{d}y\right|_{x=0}=y'(0)\mathrm{d}x=\frac{\sqrt[4]{2}}{8}
+      \mathrm{d}x$.
+
+    \item \textbf{Solution}.
+      \[
+        \begin{aligned}
+          y'(0) & =\left.f'(2x+x^{2})(2+2x)\right|_{x=0} \\
+                & = 2f'(0)                               \\
+                & = \frac{2}{\varphi'(0)}=4.
+        \end{aligned}
+      \]
+
+    \item \textbf{Solution}. $y=\ln(x-1)+\ln(2x-1)$，所以
+      \[
+        y^{(10)}=\frac{(-1)^{9}\,9!}{(x-1)^{10}}+\frac{(-1)^{9}\,9!\cdot 2^{10}}{(2x-1)^{10}}
+        .
+      \]
+
+      代入$x=0$得$y^{(10)}(0)=-9!\cdot(2^{10}+1)$.
+
+    \item \textbf{Solution}. $\frac{\mathrm{d}y}{\mathrm{d}x}=\frac{\frac{\mathrm{d}y}{\mathrm{d}t}}{\frac{\mathrm{d}x}{\mathrm{d}t}}
+      =\frac{3\sin^{2} t\cos t}{-3\cos^{2} t\sin t}=-\tan t$，所以$\left.\frac{\mathrm{d}y}{\mathrm{d}x}
+      \right|_{t=\frac{\pi}{4}}=-1$.
+
+      $\frac{\mathrm{d}^{2}y}{\mathrm{d}x^{2}}=\frac{\mathrm{d}}{\mathrm{d}t}\left
+      (\frac{\mathrm{d}y}{\mathrm{d}x}\right)\cdot\frac{\mathrm{d}t}{\mathrm{d}x}
+      =\left(-\tan t\right)'\cdot\frac{1}{-3\cos^{2} t\sin t}=\frac{1}{3\cos^{4}
+      t\sin t}$，所以$\left.\frac{\mathrm{d}^{2}y}{\mathrm{d}x^{2}}\right|_{t=\frac{\pi}{4}}
+      =\frac{4\sqrt{2}}{3}$.
+  \end{enumerate}
+
+  \section{综合题(每小题 6 分，共 30 分)}
+  \begin{enumerate}
+    \item[11.] \textbf{Solution}.
+      \[
+        \begin{aligned}
+          F'(a)= & \lim_{x\to a}\frac{(\mathrm{e}^x-\mathrm{e}^a)f(x)}{x-a}                                                                     \\
+          =      & \lim_{x\to a}\frac{\mathrm{e}^a(\mathrm{e}^{x-a}-1)f(x)}{x-a}=\lim_{x\to a}\mathrm{e}^{a} f(x)\frac{\mathrm{e}^{x-a}-1}{x-a} \\
+          =      & \mathrm{e}^{a} f(a).
+        \end{aligned}
+      \]
+
+    \item[12.] \textbf{Solution}. 当$x\neq0$时，$f'(x)=\frac{x\cos x-\sin x}{x^{2}}$.
+
+      当$x=0$时，$f'(0)=\lim_{x\to0}\frac{f(x)-f(0)}{x-0}=\lim_{x\to0}\frac{\frac{\sin
+      x}{x}-1}{x}=\lim_{x\to0}\frac{\sin x-x}{x^{2}}=0$，
+
+      所以$f'(x)=
+      \begin{cases}
+        \frac{x\cos x-\sin x}{x^2}, & x\neq0, \\
+        0,                          & x=0.
+      \end{cases}$
+
+      当$x\neq0$时，$f'(x)$显然连续.又
+      \[
+        \lim_{x\to0}f'(x)=\lim_{x\to0}\frac{x\cos x-\sin x}{x^{2}}=0=f'(0),
+      \]
+
+      所以$f'(x)$在$x=0$处连续.综上所述，$f'(x)$在$\mathbf{R}$上处处连续.
+
+    \item[13.] \textbf{Solution}. 由题意可知$\lim_{x\to0}\left[f(1+x)-3f(1-x)\right
+      ]=-2f(1)=0$，所以$f(1)=0$.
+
+      且
+      \[
+        \lim_{x\to0}\frac{f(1+x)-3f(1-x)}{x}=\lim_{x\to0}\frac{f(1+x)-f(1)}{x}-3\lim
+        _{x\to0}\frac{f(1-x)-f(1)}{-x}=4f'(1)=0,
+      \]
+
+      所以$f'(1)=0$.
+
+      又
+      \[
+        \begin{aligned}
+          \lim_{x\to0}\frac{f(1+x)-3f(1-x)}{x^2}= & \lim_{x\to0}\frac{f'(1+x)-3f'(1-x)}{2x}                                     \\
+          =                                       & \lim_{x\to0}\frac{f'(1+x)-f'(1)}{2x}-3\lim_{x\to0}\frac{f'(1-x)-f'(1)}{-2x} \\
+          =                                       & -f''(1)=3,
+        \end{aligned}
+      \]
+
+      所以$f''(1)=-3$.
+
+    \item[14.] \textbf{Solution}. 设$\lim_{x\to0}\frac{u(x)}{cx^{r}}=1$，则
+      \[
+        \begin{aligned}
+          1= & \lim_{x\to0}\frac{\arcsin x-\arctan x}{cx^{r}}=\lim_{x\to0}\frac{\frac{1}{\sqrt{1-x^{2}}}-\frac{1}{1+x^{2}}}{crx^{r-1}} \\
+          =  & \lim_{x\to0}\frac{1}{(1+x^{2})\sqrt{1-x^2}}\cdot\frac{x^{2}+(1-\sqrt{1-x^2})}{crx^{r-1}}                                \\
+          =  & \lim_{x\to0}\frac{x^2+\frac{1}{2}x^2}{crx^{r-1}}=\lim_{x\to0}\frac{\frac{3}{2}x^2}{crx^{r-1}},
+        \end{aligned}
+      \]
+
+      因此必须$\begin{cases}
+        r-1=2,          \\
+        cr=\frac{3}{2},
+      \end{cases}$，解得$r=3,c=\frac{1}{2}$.
+
+      所以$u(x)$的主部为$\frac{1}{2}x^{3}$，阶数为3.
+
+    \item[15.] \textbf{Solution}. 设$t$时刻竹竿底端距离墙根的水平距离$x(t)$，竹竿顶端距离墙根的垂直距离为$y
+      (t)$，则
+      \[
+        x^{2}(t)+y^{2}(t)=25.
+      \]
+
+      方程两边对$t$求导得
+      \[
+        x\frac{\mathrm{d}x}{\mathrm{d}t}+y\frac{\mathrm{d}y}{\mathrm{d}t}=0,
+      \]
+
+      将$x(t)=3\mathrm{m}$，$y(t)=4\mathrm{m}$，$\frac{\mathrm{d}x}{\mathrm{d}t}=
+      4\mathrm{m/s}$
+
+      代入上式得$\frac{\mathrm{d}y}{\mathrm{d}t}=-3\mathrm{m/s}$，即竹竿顶端下滑的速度为$3
+      \mathrm{m/s}$.
+  \end{enumerate}
+
+  \section{证明题(每小题 5 分，共 10 分)}
+  \begin{enumerate}
+    \item[16.] \textbf{Proof}. 不能.反例：$f(x)=
+      \begin{cases}
+        x^{2}, & x\in\mathbf{Q},                    \\
+        0,     & x\in\mathbf{R}\setminus\mathbf{Q}.
+      \end{cases}$
+
+      计算$\lim_{x\to0}\frac{f(x)-0}{x-0}=
+      \begin{cases}
+        \lim_{x\to0}\frac{x^2}{x}=0, & x\in\mathbf{Q},                    \\
+        0,                           & x\in\mathbf{R}\setminus\mathbf{Q}.
+      \end{cases}$
+
+      故$f(x)$在$x=0$处可导，且$f'(0)=0$.
+
+      考虑非零点$a$. 若$a\in\mathbf{Q}$，取点列$\{x_{n},x_{n}\in\mathbf{R}\setminus
+      \mathbf{Q}\}$使得$\lim_{n\to\infty}x_{n}=a$，
+
+      则$\lim_{n\to\infty}f(x_{n})=0\neq f(a)=a^{2}$，说明$f(x)$在$x=a$处不连续.
+
+      同理可证当$a\in\mathbf{R}\setminus\mathbf{Q}$时，$f(x)$也不连续.所以函数除零点外处处不连续.
+
+      于是，函数在$x=0$处可导，但在该点的任何邻域内不连续.
+
+    \item[17.] \textbf{Proof}. 由于$f(x)$在$[0,1]$上连续，且$f(0)=0 < \lambda_{1}
+      < 1=f(1)$，
+
+      由介值定理，存在$c_{1}\in(0,1)$使得$f(c_{1})=\lambda_{1}$.
+
+      又因为$f(c_{1})=\lambda_{1} < \lambda_{1}+\lambda_{2} < 1=f(1)$，
+
+      在区间$[c_{1}, 1]$上应用介值定理，存在$c_{2}\in(c_{1},1)$使得$f(c_{2})=\lambda
+      _{1}+\lambda_{2}$.
+
+      在区间$[0,c_{1}],[c_{1},c_{2}],[c_{2},1]$上对函数$f(x)$依次使用Lagrange中值定理，
+
+      存在$\xi_{1}\in(0,c_{1}),\xi_{2}\in(c_{1},c_{2}),\xi_{3}\in(c_{2},1)$，使得
+      \[
+        \begin{gathered}
+          f'(\xi_1)=\frac{f(c_{1})-f(0)}{c_{1}-0}=\frac{\lambda_{1}}{c_{1}}, \\
+          f'(\xi_2)=\frac{f(c_{2})-f(c_{1})}{c_{2}-c_{1}}=\frac{\lambda_{2}}{c_{2}-c_{1}},
+          \\
+          f'(\xi_3)=\frac{f(1)-f(c_{2})}{1-c_{2}}=\frac{\lambda_{3}}{1-c_{2}}.
+        \end{gathered}
+      \]
+
+      于是
+      \[
+        \frac{\lambda_{1}}{f'(\xi_{1})}+\frac{\lambda_{2}}{f'(\xi_{2})}+\frac{\lambda_{3}}{f'(\xi_{3})}
+        =c_{1}+(c_{2}-c_{1})+(1-c_{2})=1.
+      \]
+  \end{enumerate}
+\end{document}

@@ -49,31 +49,33 @@
 
   \section{综合题(每小题 7 分，共 28 分)}
   \begin{enumerate}
-    \item[11.] 设函数$f(x)=
+    \setcounter{enumi}{10}
+    \item 设函数$f(x)=
       \begin{cases}
         \frac{\cos x}{x+2},            & x\geq0, \\
         \frac{\sqrt{a}-\sqrt{a-x}}{x}, & x<0
       \end{cases}$，问$a(a\geq0)$为何值时，$x=0$是$f(x)$的间断点，并指出该间断点的类型.
       \vspace{12em}
 
-    \item[12.] 设函数$f(x)$在$x=0$处二阶可导.$f'(0)=0,f''(0)=2$.求$l=\lim_{x\to0}
+    \item 设函数$f(x)$在$x=0$处二阶可导.$f'(0)=0,f''(0)=2$.求$l=\lim_{x\to0}
       \frac{f(\tan x)-f(x)}{x^{4}}$.
       \vspace{12em}
 
-    \item[13.] 设$f'(x)$处处连续，$g(x)=f(x)\sin^{2} x$，求$g''(0)$.
+    \item 设$f'(x)$处处连续，$g(x)=f(x)\sin^{2} x$，求$g''(0)$.
       \vspace{12em}
 
-    \item[14.] 一个13英尺长的梯子斜靠在墙边上，当梯子的顶端沿着墙面向墙底滑落时，梯子底端沿地面移动的速度是5英尺/秒，问当梯子底端的地面长度为12英尺时，直角三角形的面积的变化率是多少？
+    \item 一个13英尺长的梯子斜靠在墙边上，当梯子的顶端沿着墙面向墙底滑落时，梯子底端沿地面移动的速度是5英尺/秒，问当梯子底端的地面长度为12英尺时，直角三角形的面积的变化率是多少？
       \vspace{11em}
   \end{enumerate}
 
   \section{证明题(每小题 6 分，共 12 分)}
   \begin{enumerate}
-    \item[15.] 设函数$f(x),g(x)$在$[a,b]$上连续，在$(a,b)$内可导，证明存在$\xi\in
+    \setcounter{enumi}{14}
+    \item 设函数$f(x),g(x)$在$[a,b]$上连续，在$(a,b)$内可导，证明存在$\xi\in
       (a,b)$，使得$\frac{f'(\xi)}{g'(\xi)}=\frac{f(\xi)-f(a)}{g(b)-g(\xi)}$.
       \vspace{12em}
 
-    \item[16.] 设函数$f(x)=\alpha_{1}\varphi(x)+\alpha_{2}\varphi(2x)+\cdots+\alpha
+    \item 设函数$f(x)=\alpha_{1}\varphi(x)+\alpha_{2}\varphi(2x)+\cdots+\alpha
       _{n}\varphi(nx)$，其中$\alpha_{1},\alpha_{2},\cdots,\alpha_{n}$是常数，$\varphi
       (0)=0$，$\varphi'(0)=1$，已知对一切实数$x$，有$|f(x)|\leq |x|$，试证：$|\alpha
       _{1}+2\alpha_{2}+\cdots+n\alpha_{n}|\leq 1$.
@@ -177,7 +179,8 @@
 
   \section{综合题(每小题 7 分，共 28 分)}
   \begin{enumerate}
-    \item[11.] \textbf{Solution}. $\lim_{x\to 0^+}f(x)=\lim_{x\to 0^+}\frac{\cos
+    \setcounter{enumi}{10}
+    \item \textbf{Solution}. $\lim_{x\to 0^+}f(x)=\lim_{x\to 0^+}\frac{\cos
       x}{x+2}=\frac{1}{2}$.
 
       若$a=0$，则$\lim_{x\to 0^-}f(x)=\lim_{x\to 0^-}\frac{-\sqrt{-x}}{x}=+\infty$，此时$x
@@ -193,7 +196,7 @@
       若$a\neq 1$，$\lim_{x\to 0^+}f(x)=\frac{1}{2\sqrt{a}}\neq \frac{1}{2}$，此时$x
       =0$为跳跃间断点.
 
-    \item[12.] \textbf{Solution}. 由于$f''(0)$存在，则$f(x)$在$x=0$的邻域内可导.
+    \item \textbf{Solution}. 由于$f''(0)$存在，则$f(x)$在$x=0$的邻域内可导.
 
       由Lagrange中值定理，存在$\xi$介于$\tan x$与$x$之间，使得
       \[
@@ -214,7 +217,7 @@
         \end{aligned}
       \]
 
-    \item[13.] \textbf{Solution}. $g'(x)=f'(x)\sin^{2} x+f(x)\cdot 2\sin x\cos x$，所以$g
+    \item \textbf{Solution}. $g'(x)=f'(x)\sin^{2} x+f(x)\cdot 2\sin x\cos x$，所以$g
       '(0)=0$.
       \[
         \begin{aligned}
@@ -225,7 +228,7 @@
         \end{aligned}
       \]
 
-    \item[14.] \textbf{Solution}. 设$t$时刻梯子底端的地面长度为$x(t)$英尺，梯子顶端距地面的距离为$y
+    \item \textbf{Solution}. 设$t$时刻梯子底端的地面长度为$x(t)$英尺，梯子顶端距地面的距离为$y
       (t)$英尺，
 
       直角三角形的面积为$S(t)$平方英尺. 则$x^{2}+y^{2}=13^{2}$，$S=\frac{1}{2}xy$.
@@ -245,7 +248,8 @@
 
   \section{证明题(每小题 6 分，共 12 分)}
   \begin{enumerate}
-    \item[15.] \textbf{Proof}. 令$F(x)=f(x)g(x)-f(x)g(b)-f(a)g(x)$，则函数$F(x)$在$[
+    \setcounter{enumi}{14}
+    \item \textbf{Proof}. 令$F(x)=f(x)g(x)-f(x)g(b)-f(a)g(x)$，则函数$F(x)$在$[
       a,b]$上连续，在$(a,b)$内可导，
 
       且$F(a)=F(b)=-f(a)g(b)$.由Rolle定理，存在$\xi\in(a,b)$使得$F'(\xi)=0$，
@@ -253,7 +257,7 @@
       即$f'(\xi)g(\xi)+f(\xi)g'(\xi)-f'(\xi)g(b)-f(a)g'(\xi)=0$，化简得$\frac{f'(\xi)}{g'(\xi)}
       =\frac{f(\xi)-f(a)}{g(b)-g(\xi)}$.
 
-    \item[16.] \textbf{Proof}. $f(0)=\alpha_{1}\varphi(0)+\alpha_{2}\varphi(0)+\cdots
+    \item \textbf{Proof}. $f(0)=\alpha_{1}\varphi(0)+\alpha_{2}\varphi(0)+\cdots
       +\alpha_{n}\varphi(0)=0$.
       \[
         \begin{aligned}

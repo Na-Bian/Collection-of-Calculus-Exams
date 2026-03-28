@@ -41,30 +41,31 @@
 
   \section{综合题(每小题 8 分，共 40 分)}
   \begin{enumerate}
-    \item[11.] 设$f(x)$为连续函数，且满足积分方程$f(x)=\mathrm{e}^{x}-\int_{0}^{x}
+    \setcounter{enumi}{10}
+    \item 设$f(x)$为连续函数，且满足积分方程$f(x)=\mathrm{e}^{x}-\int_{0}^{x}
       (x-t)f(t)\mathrm{d}t$，试求$f(x)$.
       \vspace{12em}
 
-    \item[12.] 设$S$是曲线$L:
+    \item 设$S$是曲线$L:
       \begin{cases}
         z=1-x^{2}, \\
         y=0
       \end{cases}$绕$z$轴的旋转曲面，求$S$的切平面，使其与已知平面$x+y+z=1$平行.
       \vspace{12em}
 
-    \item[13.] 已知曲线$C:
+    \item 已知曲线$C:
       \begin{cases}
         x^{2}+2y^{2}-z=6, \\
         4x+2y+z=30
       \end{cases}$，求$C$上的点到$xOy$坐标面的距离的最大值.
       \vspace{12em}
 
-    \item[14.] 计算$I=\iint\limits_{D}\left(y\mathrm{e}^{x}+\sqrt{x^{2}+y^{2}}\right
+    \item 计算$I=\iint\limits_{D}\left(y\mathrm{e}^{x}+\sqrt{x^{2}+y^{2}}\right
       )\mathrm{d}x\mathrm{d}y$，其中$D$是由心形线$r=a\left(1+\cos\theta\right)(a>
       0)$围成的区域.
       \vspace{12em}
 
-    \item[15.] 讨论$f(x,y)=\sqrt{|xy|}$在点$(0,0)$处的连续性、偏导数存在性与可微性.
+    \item 讨论$f(x,y)=\sqrt{|xy|}$在点$(0,0)$处的连续性、偏导数存在性与可微性.
       \vspace{12em}
   \end{enumerate}
 
@@ -264,7 +265,8 @@
 
   \section{综合题(每小题 8 分，共 40 分)}
   \begin{enumerate}
-    \item[11.] \textbf{Solution}. 因为$f(x)$是连续函数，所以$\mathrm{e}^{x}-\int_{0}
+    \setcounter{enumi}{10}
+    \item \textbf{Solution}. 因为$f(x)$是连续函数，所以$\mathrm{e}^{x}-\int_{0}
       ^{x}(x-t)f(t)\mathrm{d}t$是可导的，从而$f(x)$也是可导的.
 
       对方程两边求导，得$f'(x) = \mathrm{e}^{x} - \int_{0}^{x}f(t)\mathrm{d}t$.同理可知$f
@@ -301,7 +303,7 @@
 
       因此$f(x) = \frac{1}{2}\cos x + \frac{1}{2}\sin x + \frac{1}{2}\mathrm{e}^{x}$.
 
-    \item[12.] \textbf{Solution}. 由题可知旋转曲面的方程为$z=1-x^{2}-y^{2}$，令$F
+    \item \textbf{Solution}. 由题可知旋转曲面的方程为$z=1-x^{2}-y^{2}$，令$F
       (x,y,z) = x^{2}+y^{2}+z-1$，
 
       则$\nabla F = (2x,2y,1)$. 令$\nabla F // (1,1,1)$，得$x=y=\frac{1}{2}$，
@@ -309,7 +311,7 @@
       代入方程可得$z=\frac{1}{2}$，所以切平面方程为$x-\frac{1}{2}+y-\frac{1}{2}+z
       -\frac{1}{2}=0$，即$2x + 2y + 2z = 3$.
 
-    \item[13.] \textbf{Solution}. 即在约束条件$\begin{cases}
+    \item \textbf{Solution}. 即在约束条件$\begin{cases}
         x^{2}+2y^{2}-z=6, \\
         4x+2y+z=30
       \end{cases}$下，求$|z|$的最大值.
@@ -348,7 +350,7 @@
 
       比较可知距离$xOy$平面的距离的最大值为$66$.
 
-    \item[14.] \textbf{Solution}.
+    \item \textbf{Solution}.
 
       \noindent
       \begin{minipage}[c]{0.6\textwidth}
@@ -369,7 +371,7 @@
         \includegraphics[width=6cm]{2021x-figure2.pdf} % 引入图片源
       \end{minipage}
 
-    \item[15.] \textbf{Solution}. $\forall\,\varepsilon > 0$，取$\delta = \sqrt{2}
+    \item \textbf{Solution}. $\forall\,\varepsilon > 0$，取$\delta = \sqrt{2}
       \varepsilon$，则当$||(x,y)||= \sqrt{x^{2}+y^{2}}<\delta$时，有
       \[
         |f(x,y)-f(0,0)| = \sqrt{|xy|}\leq \sqrt{\frac{x^{2}+y^{2}}{2}}< \frac{\delta}{\sqrt{2}}

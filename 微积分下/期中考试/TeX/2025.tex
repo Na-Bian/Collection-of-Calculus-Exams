@@ -56,31 +56,32 @@
 
   \section{综合题(每小题 8 分，共 40 分)}
   \begin{enumerate}
-    \item[11.] 设向量$\boldsymbol{a}=(2,-1,1)$，$\boldsymbol{b}=(1,2,3)$，向量$\boldsymbol
+    \setcounter{enumi}{10}
+    \item 设向量$\boldsymbol{a}=(2,-1,1)$，$\boldsymbol{b}=(1,2,3)$，向量$\boldsymbol
       {d}$与向量$\boldsymbol{a}$，$\boldsymbol{b}$均垂直，且与$z$轴夹锐角，求函数$u
       =xy+2y+3zx$在点$M_{0}(1,-2,1)$处沿方向$\boldsymbol{d}$的方向导数.
       \vspace{13em}
 
-    \item[12.] 设曲线$\begin{cases}
+    \item 设曲线$\begin{cases}
         x^{2}+y^{2}+z^{2}=6, \\
         x+y+z=0
       \end{cases}$在点$Q(1,1,-2)$处的切线为$l$，曲面$xy+z=0$在点$P_{0}(2,1,-2)$处的切平面为$\pi$，求切线$l$在平面$\pi$上的投影直线的方程.
       \vspace{10em}
 
-    \item[13.] 记曲面$z=x^{2}+y^{2}-xy+x+y$在区域$D:x\leq 0,y\leq 0,x+y\geq -3$上的最低点为$Q$，求过点$Q$且与直线$\begin{cases}
+    \item 记曲面$z=x^{2}+y^{2}-xy+x+y$在区域$D:x\leq 0,y\leq 0,x+y\geq -3$上的最低点为$Q$，求过点$Q$且与直线$\begin{cases}
         x+2y-z=1, \\
         2x+y-z=0
       \end{cases}$垂直的平面方程.
       \vspace{10em}
 
-    \item[14.] 讨论函数$f(x,y)=
+    \item 讨论函数$f(x,y)=
       \begin{cases}
         \frac{\sin(xy^{2})}{x^{2}+y^{2}}, & (x,y)\neq(0,0), \\
         0,                                & (x,y)=(0,0)
       \end{cases}$在原点处的连续性、偏导数存在性及可微性.
       \vspace{10em}
 
-    \item[15.] 设函数$f(x,y)$在全平面内可微，且满足$x\frac{\partial f}{\partial
+    \item 设函数$f(x,y)$在全平面内可微，且满足$x\frac{\partial f}{\partial
       x}+y\frac{\partial f}{\partial y}=0$，证明：
 
       $\forall\,t\in\mathbf{R}$，$f(tx,ty)=f(x,y)$，即$f(x,y)$恒为常数.
@@ -237,7 +238,8 @@
 
   \section{综合题(每小题 8 分，共 40 分)}
   \begin{enumerate}
-    \item[11.] \textbf{Solution}. $\boldsymbol{a}\times \boldsymbol{b}= (-5,-5,5)$，取$\boldsymbol
+    \setcounter{enumi}{10}
+    \item \textbf{Solution}. $\boldsymbol{a}\times \boldsymbol{b}= (-5,-5,5)$，取$\boldsymbol
       {d}= \frac{1}{\sqrt{3}}(-1,-1,1)$.
 
       $\nabla u = (y+3z, x+2, 3x)$，所以$\nabla u|_{M_0}= (1,3,3)$.
@@ -245,7 +247,7 @@
       $\frac{\partial u}{\partial \boldsymbol{d}}= \nabla u|_{M_0}\cdot \boldsymbol
       {d}= -\frac{1}{\sqrt{3}}-\sqrt{3}+\sqrt{3}= -\frac{\sqrt{3}}{3}$.
 
-    \item[12.] \textbf{Solution}. 设$l$的一个方向向量为$\boldsymbol{l}$，$\pi$的一个法向量为$\boldsymbol
+    \item \textbf{Solution}. 设$l$的一个方向向量为$\boldsymbol{l}$，$\pi$的一个法向量为$\boldsymbol
       {n}$.
 
       令$F(x,y,z)= x^{2}+y^{2}+z^{2}-6$，$G(x,y,z)=x+y+z$，$H(x,y,z)=xy+z$，
@@ -269,7 +271,7 @@
         x+2y+z-2=0.
       \end{cases}$
 
-    \item[13.] \textbf{Solution}. 先求曲面在区域$D$上的最低点.
+    \item \textbf{Solution}. 先求曲面在区域$D$上的最低点.
 
       考虑$D$的内部. 令$z'_{x} = 2x-y+1 = z'_{y} = 2y-x+1 = 0$，解得唯一驻点$(-1,
       -1)$，$z(-1,-1)=-1$.
@@ -290,7 +292,7 @@
 
       所以平面方程为$x+1+y+1+3(z+1)=0$，即$x+y+3z+5=0$.
 
-    \item[14.] \textbf{Solution}.
+    \item \textbf{Solution}.
 
       由于当$(x,y)\to(0,0)$时，$\left|\frac{\sin(xy^{2})}{x^{2}+y^{2}}\right| \leq
       \left|\frac{xy^{2}}{x^{2}+y^{2}}\right| \leq |x|$，且$|x|\to 0$，
@@ -309,7 +311,7 @@
 
       所以函数$f(x,y)$在原点处不可微.
 
-    \item[15.] \textbf{Solution}. 令$\varphi(t)=f(tx,ty)-f(x,y)$，则$\varphi'(t)=
+    \item \textbf{Solution}. 令$\varphi(t)=f(tx,ty)-f(x,y)$，则$\varphi'(t)=
       x\frac{\partial f}{\partial x}+y\frac{\partial f}{\partial y}\equiv0$，
 
       所以$\varphi(t)\equiv \varphi(1)=f(x,y)-f(x,y)=0$，$f(x,y)\equiv f(tx,ty)\Big

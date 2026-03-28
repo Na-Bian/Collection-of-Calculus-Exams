@@ -41,36 +41,38 @@
 
   \section{综合题(每小题 6 分，共 30 分)}
   \begin{enumerate}
-    \item[11.] 研究函数$f(x)=\lim_{x\to\infty}\frac{x+x^{2}\mathrm{e}^{nx}}{1+\mathrm{e}^{nx}}$的连续性.
+    \setcounter{enumi}{10}
+    \item 研究函数$f(x)=\lim_{x\to\infty}\frac{x+x^{2}\mathrm{e}^{nx}}{1+\mathrm{e}^{nx}}$的连续性.
       \vspace{10em}
 
-    \item[12.] 设$y=g(x)$是$y=f(x)$的反函数，$f(x)$可导，$f(1)=2,f'(1)=-4$，求$y=
+    \item 设$y=g(x)$是$y=f(x)$的反函数，$f(x)$可导，$f(1)=2,f'(1)=-4$，求$y=
       g(1+x^{2})$在$x=1$处的导数.
       \vspace{10em}
 
-    \item[13.] 设函数$f(x)$在$x=1$处二阶可导，且$f'(1)=0$，$f''(1)=0$，$y=f^{2}(x
+    \item 设函数$f(x)$在$x=1$处二阶可导，且$f'(1)=0$，$f''(1)=0$，$y=f^{2}(x
       )$，求$\left.\frac{\mathrm{d}^{2} y}{\mathrm{d}x^{2}}\right|_{x=1}$.
       \vspace{8em}
 
-    \item[14.] 设函数$g(x)=
+    \item 设函数$g(x)=
       \begin{cases}
         x^{3}\sin\frac{1}{x}, & x\neq0, \\
         0,                    & x=0
       \end{cases}$，函数$f(x)$可导，求$F(x)=f(g(x))$的导数.
       \vspace{10em}
 
-    \item[15.] 将水以$4\mathrm{m}^{3}/\mathrm{min}$的速率注入一个圆锥形容器中，容器顶朝下倒立，它的高度为$8
+    \item 将水以$4\mathrm{m}^{3}/\mathrm{min}$的速率注入一个圆锥形容器中，容器顶朝下倒立，它的高度为$8
       \mathrm{m}$，底面半径为$4\mathrm{m}$，当容器内的水深达$5\mathrm{m}$时，水面升高的速率是多少？
       \vspace{12em}
   \end{enumerate}
 
   \section{证明题(每小题 5 分，共 10 分)}
   \begin{enumerate}
-    \item[16.] 设$x_{n}>0$，$x_{n+1}+\frac{4}{x_{n}}<4(n=1,2,\cdots)$，证明：$\lim
+    \setcounter{enumi}{15}
+    \item 设$x_{n}>0$，$x_{n+1}+\frac{4}{x_{n}}<4(n=1,2,\cdots)$，证明：$\lim
       _{n\to\infty}x_{n}$存在并求其值.
       \vspace{12em}
 
-    \item[17.] 设函数$f(x)$在$[0,b]$上具有二阶导数，且$|f''(x)|\leq M$，$f(x)$在$(
+    \item 设函数$f(x)$在$[0,b]$上具有二阶导数，且$|f''(x)|\leq M$，$f(x)$在$(
       0,b)$内取得最大值，试证：$|f'(0)|+|f'(b)|\leq Mb$.
       \vspace{10em}
   \end{enumerate}
@@ -228,7 +230,8 @@
 
   \section{综合题(每小题 6 分，共 30 分)}
   \begin{enumerate}
-    \item[11.] \textbf{Solution}. 当$x>0$时，$\mathrm{e}^{nx}\to+\infty(n\to\infty
+    \setcounter{enumi}{10}
+    \item \textbf{Solution}. 当$x>0$时，$\mathrm{e}^{nx}\to+\infty(n\to\infty
       )$，因此$\lim_{n\to\infty}\frac{x^{2}+x^{2}\mathrm{e}^{nx}}{1+\mathrm{e}^{nx}}
       =x^{2}$；
 
@@ -251,14 +254,14 @@
 
       因此$f(x)$在$(-\infty,+\infty)$上处处连续.
 
-    \item[12.] \textbf{Solution}. 由题意得$g'(2)=\frac{1}{f'(1)}=-\frac{1}{4}$.
+    \item \textbf{Solution}. 由题意得$g'(2)=\frac{1}{f'(1)}=-\frac{1}{4}$.
 
       所以
       \[
         y'(1)=\left.[2xg'(2)]\right|_{x=1}=-\frac{1}{2}.
       \]
 
-    \item[13.] \textbf{Solution}. $y'(x)=2f(x)f'(x)$，
+    \item \textbf{Solution}. $y'(x)=2f(x)f'(x)$，
 
       \[
         \begin{aligned}
@@ -269,7 +272,7 @@
         \end{aligned}
       \]
 
-    \item[14.] \textbf{Solution}. $F(x)=
+    \item \textbf{Solution}. $F(x)=
       \begin{cases}
         f\left(x^{3}\sin\frac{1}{x}\right), & x\neq0, \\
         f(0),                               & x=0.
@@ -286,7 +289,7 @@
         \end{aligned}
       \]
 
-    \item[15.] \textbf{Solution}. 设时刻$t$容器中水的体积为$V\mathrm{m}^{3}$，水的高度为为$h
+    \item \textbf{Solution}. 设时刻$t$容器中水的体积为$V\mathrm{m}^{3}$，水的高度为为$h
       \mathrm{m}$，水面半径为$r\mathrm{m}$，则
       \[
         \frac{r}{4}=\frac{h}{8},\quad\text{即}\,r=\frac{h}{2},\quad\text{因而}\,V
@@ -303,7 +306,8 @@
 
   \section{证明题(每小题 5 分，共 10 分)}
   \begin{enumerate}
-    \item[16.] \textbf{Proof}.由$x_{n+1}-x_{n}<4-\frac{4}{x_{n}}-x_{n}=-\left(\sqrt{x_{n}}
+    \setcounter{enumi}{15}
+    \item \textbf{Proof}.由$x_{n+1}-x_{n}<4-\frac{4}{x_{n}}-x_{n}=-\left(\sqrt{x_{n}}
       -\frac{2}{\sqrt{x_{n}}}\right)^{2}\leq0$得到$\{x_{n}\}$单调递减.
 
       （或由均值不等式$\sqrt{x_{n+1}\cdot\frac{4}{x_n}}\leq\frac{x_{n+1}+\frac{4}{x_n}}{2}$及$x
@@ -318,7 +322,7 @@
       \left(x_{n+1}+\frac{4}{x_{n}}\right)\leq 4$，即$A+\frac{4}{A}\leq4$，解得$A
       =2$.
 
-    \item[17.] \textbf{Proof}. 设$f(x)$在$x_{0}\in(0,b)$处取得最大值，则$f'(x_{0}
+    \item \textbf{Proof}. 设$f(x)$在$x_{0}\in(0,b)$处取得最大值，则$f'(x_{0}
       )=0$.
 
       对函数$f'(x)$在$[0,x_{0}],[x_{0},b]$上分别应用Lagrange中值定理，得

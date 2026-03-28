@@ -43,34 +43,36 @@
 
   \section{综合题(每小题 6 分，共 30 分)}
   \begin{enumerate}
-    \item[11.] 讨论函数$f(x)=\frac{\sin\pi x}{x^{2}-1}$的连续性，并对函数的间断点判别类型.
+    \setcounter{enumi}{10}
+    \item 讨论函数$f(x)=\frac{\sin\pi x}{x^{2}-1}$的连续性，并对函数的间断点判别类型.
       \vspace{8em}
 
-    \item[12.] 求无穷小量$u(x)=\left(\frac{1+2\cos x}{3}\right)^{x^2}-1(x\to0)$的主部和阶数.
+    \item 求无穷小量$u(x)=\left(\frac{1+2\cos x}{3}\right)^{x^2}-1(x\to0)$的主部和阶数.
       \vspace{8em}
 
-    \item[13.] 求函数与$f(x)=
+    \item 求函数与$f(x)=
       \begin{cases}
         \ln(1+x), & x\geq0, \\
         x,        & x<0
       \end{cases}$的导函数$f'(x)$，并讨论$f'(x)$的连续性.
       \vspace{9em}
 
-    \item[14.] 已知$a>1$，$n\geq1$，证明不等式$\frac{\sqrt[n]{a}-\sqrt[n+1]{a}}{\ln
+    \item 已知$a>1$，$n\geq1$，证明不等式$\frac{\sqrt[n]{a}-\sqrt[n+1]{a}}{\ln
       a}<\frac{\sqrt[n]{a}}{n^{2}}$.
       \vspace{10em}
 
-    \item[15.] 一架飞机在$H$米高空以$a$米/秒的速度水平匀速飞行.设在$t=0$时刻有一探照灯位于飞机正下方的地面上跟踪飞机.问$t$秒以后探照灯应以怎样的角速度转动才能照到飞机？
+    \item 一架飞机在$H$米高空以$a$米/秒的速度水平匀速飞行.设在$t=0$时刻有一探照灯位于飞机正下方的地面上跟踪飞机.问$t$秒以后探照灯应以怎样的角速度转动才能照到飞机？
       \vspace{12em}
   \end{enumerate}
 
   \section{证明题(每小题 5 分，共 10 分)}
   \begin{enumerate}
-    \item[16.] 设数列$\{x_{n}\}$由递推公式$x_{1}=1$，$x_{n+1}=x_{n}+\frac{2}{x_{n}^{2}}$给出.证明数列$\{
+    \setcounter{enumi}{15}
+    \item 设数列$\{x_{n}\}$由递推公式$x_{1}=1$，$x_{n+1}=x_{n}+\frac{2}{x_{n}^{2}}$给出.证明数列$\{
       x_{n}\}$无界.
       \vspace{12em}
 
-    \item[17.] 设$f(x)$在区间$[a,b]$有定义并且对于任何$x,y\in[a,b](x\neq y)$成立
+    \item 设$f(x)$在区间$[a,b]$有定义并且对于任何$x,y\in[a,b](x\neq y)$成立
       \[
         |f(x)-f(y)|\leq M(x-y)^{2},
       \]
@@ -175,7 +177,8 @@
 
   \section{综合题(每小题 6 分，共 30 分)}
   \begin{enumerate}
-    \item[11.] \textbf{Solution}. 函数$f(x)$的间断点为$-1,1$.因
+    \setcounter{enumi}{10}
+    \item \textbf{Solution}. 函数$f(x)$的间断点为$-1,1$.因
       \[
         \begin{aligned}
           \lim_{x\to-1}\frac{\sin\pi x}{x^2-1}= & \lim_{x\to-1}\frac{\pi\cos\pi x}{2x}=\frac{\pi\cos(-\pi)}{-2}=\frac{\pi}{2}, \\
@@ -185,7 +188,7 @@
 
       所以$x=-1,1$均为可去间断点.
 
-    \item[12.] \textbf{Solution}.
+    \item \textbf{Solution}.
       \[
         \begin{aligned}
           u=\left(\frac{1+2\cos x}{3}\right)^{x^2}-1= & \exp\left({x^2\ln\frac{1+2\cos x}{3}}\right)-1 \\
@@ -197,7 +200,7 @@
 
       所以$u$的主部为$-\frac{1}{3}x^{4}$，阶数为4.
 
-    \item[13.] \textbf{Solution}. 当$x>0$时，$f'(x)=\frac{1}{1+x}$；当$x<0$时，$f
+    \item \textbf{Solution}. 当$x>0$时，$f'(x)=\frac{1}{1+x}$；当$x<0$时，$f
       '(x)=1$；
 
       当$x=0$时，$\lim_{x\to0^+}f'(x)=1=\lim_{x\to0^-}f'(x)$，所以$f'(0)=1$.
@@ -218,7 +221,7 @@
 
       因此$f'(x)$在$\mathbf{R}$上处处连续.
 
-    \item[14.] \textbf{Solution}. 令$f(x)=a^{x}$，显然$f(x)$在区间$\left[\frac{1}{n+1}
+    \item \textbf{Solution}. 令$f(x)=a^{x}$，显然$f(x)$在区间$\left[\frac{1}{n+1}
       ,\frac{1}{n}\right]$内可导.由Lagrange中值定理知存在$\xi\in\left(\frac{1}{n+1}
       ,\frac{1}{n}\right)$使得
       \[
@@ -229,7 +232,7 @@
 
       即$\frac{\sqrt[n]{a}-\sqrt[n+1]{a}}{\ln a}<\frac{\sqrt[n]{a}}{n^{2}}$.
 
-    \item[15.] \textbf{Solution}. 设飞机飞过的距离为$x$米，飞机与探照灯的连线与竖直方向的夹角为$\theta$.
+    \item \textbf{Solution}. 设飞机飞过的距离为$x$米，飞机与探照灯的连线与竖直方向的夹角为$\theta$.
 
       由几何关系有$x=H\tan\theta$，故
       \[
@@ -245,7 +248,8 @@
 
   \section{证明题(每小题 5 分，共 10 分)}
   \begin{enumerate}
-    \item[16.] \textbf{Proof}.
+    \setcounter{enumi}{15}
+    \item \textbf{Proof}.
 
       显然$x_{n+1}-x_{n}=\frac{2}{x_{n}^{2}}>0$，即$\{x_{n}\}$严格单调增加.
 
@@ -253,7 +257,7 @@
 
       因此$\{x_{n}\}$无界.
 
-    \item[17.] \textbf{Proof}. 由题可知，$\forall\,x,y\in[a,b](x\neq y)$，有$0\leq
+    \item \textbf{Proof}. 由题可知，$\forall\,x,y\in[a,b](x\neq y)$，有$0\leq
       \left|\frac{f(x)-f(y)}{x-y}\right|\leq M|x-y|$.
 
       当$x\to y$时，$M|x-y|\to0$，由夹逼定理知$\lim_{x\to y}\left|\frac{f(x)-f(y)}{x-y}

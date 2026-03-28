@@ -45,25 +45,26 @@
 
   \section{综合题(每小题 6 分，共 30 分)}
   \begin{enumerate}
-    \item[11.] 设函数$f(x)$在原点附近有界，$F(x)=f(x)\cdot\sin\left(x^{2}\right)$，计算导数$F
+    \setcounter{enumi}{10}
+    \item 设函数$f(x)$在原点附近有界，$F(x)=f(x)\cdot\sin\left(x^{2}\right)$，计算导数$F
       '(0)$.
       \vspace{8em}
 
-    \item[12.] 求函数$f(x)=
+    \item 求函数$f(x)=
       \begin{cases}
         \frac{1-\cos x}{x}, & x\neq0, \\
         0,                  & x=0
       \end{cases}$的导函数$f'(x)$，并讨论$f'(x)$的连续性.
       \vspace{8em}
 
-    \item[13.] 设函数$f(x)$在$x=0$的某个邻域内有界，满足$\lim_{x\to0}\frac{\sqrt[n]{1+f(x)\sin
+    \item 设函数$f(x)$在$x=0$的某个邻域内有界，满足$\lim_{x\to0}\frac{\sqrt[n]{1+f(x)\sin
       x}-1}{\mathrm{e}^{3x}-1}=2$，其中$n$为正整数.求$\lim_{x\to0}f(x)$.
       \vspace{9em}
 
-    \item[14.] 求无穷小量$u(x)=x-\arctan x(x\to0)$的主部和阶数.
+    \item 求无穷小量$u(x)=x-\arctan x(x\to0)$的主部和阶数.
       \vspace{10em}
 
-    \item[15.] 一个长方体的铁皮盒子，其对角线的长度随着长宽高的变化而连续变化.当长宽高分别是$3
+    \item 一个长方体的铁皮盒子，其对角线的长度随着长宽高的变化而连续变化.当长宽高分别是$3
       \mathrm{m},4\mathrm{m},5\mathrm{m}$时，如果此时对角线长度增加的速率为$5\sqrt{2}
       \mathrm{m/s}$，长宽增加的速率分别为$8\mathrm{m/s}$和$9\mathrm{m/s}$，问此时高是在增加还是在减少？增加或减少的速率为多少？
       \vspace{12em}
@@ -71,14 +72,15 @@
 
   \section{证明题(每小题 5 分，共 10 分)}
   \begin{enumerate}
-    \item[16.] 证明函数$f(x)=
+    \setcounter{enumi}{15}
+    \item 证明函数$f(x)=
       \begin{cases}
         x^{2}, & x\in\mathbf{Q},                   \\
         0,     & x\in\mathbf{R}\setminus\mathbf{Q}
       \end{cases}$在$x=0$处可导，但函数本身除零点外处处不连续.
       \vspace{12em}
 
-    \item[17.] 设$f(x)$在$[0,3]$上连续，在$(0,3)$内一阶可导，且$f(0)=0,f(1)=3,f(3
+    \item 设$f(x)$在$[0,3]$上连续，在$(0,3)$内一阶可导，且$f(0)=0,f(1)=3,f(3
       )=1$，证明至少存在一点$\xi\in(0,3)$使得$f'(\xi)=0$.
   \end{enumerate}
 
@@ -197,7 +199,8 @@
 
   \section{综合题(每小题 6 分，共 30 分)}
   \begin{enumerate}
-    \item[11.] \textbf{Solution}.
+    \setcounter{enumi}{10}
+    \item \textbf{Solution}.
       \[
         \begin{aligned}
           F'(0)= & \lim_{x\to0}\frac{f(x)\sin(x^2)-0}{x}              \\
@@ -205,7 +208,7 @@
         \end{aligned}
       \]
 
-    \item[12.] \textbf{Solution}. 当$x\neq0$时，$f'(x)=\frac{x\sin x-1+\cos x}{x^{2}}$；
+    \item \textbf{Solution}. 当$x\neq0$时，$f'(x)=\frac{x\sin x-1+\cos x}{x^{2}}$；
 
       当$x=0$时，$f'(0)=\lim_{x\to0}\frac{\frac{1-\cos x}{x}-0}{x}=\lim_{x\to0}\frac{1-\cos
       x}{x^{2}}=\frac{1}{2}$.
@@ -224,7 +227,7 @@
 
       所以$f'(x)$在$x=0$处连续.综上所述，$f'(x)$在$\mathbf{R}$上处处连续.
 
-    \item[13.] \textbf{Solution}. 由于$f(x)$在$x=0$的某个邻域内有界，所以$\lim_{x\to0}
+    \item \textbf{Solution}. 由于$f(x)$在$x=0$的某个邻域内有界，所以$\lim_{x\to0}
       f(x)\sin x=0$，故
       \[
         \begin{aligned}
@@ -235,7 +238,7 @@
 
       从而$\lim_{x\to0}f(x)=6n$.
 
-    \item[14.] \textbf{Solution}. 设$\lim_{x\to0}\frac{u(x)}{cx^{r}}=1$，则
+    \item \textbf{Solution}. 设$\lim_{x\to0}\frac{u(x)}{cx^{r}}=1$，则
       \[
         1=\lim_{x\to0}\frac{x-\arctan x}{cx^{r}}=\lim_{x\to0}\frac{1-\frac{1}{1+x^{2}}}{crx^{r-1}}
         =\lim_{x\to0}\frac{1}{1+x^{2}}\cdot\frac{x^{2}}{crx^{r-1}},
@@ -248,7 +251,7 @@
 
       所以$u(x)$的主部为$\frac{1}{3}x^{3}$，阶数为3.
 
-    \item[15.] \textbf{Solution}. 设$t$时刻长方体的长宽高及对角线长分别为$x(t),y(
+    \item \textbf{Solution}. 设$t$时刻长方体的长宽高及对角线长分别为$x(t),y(
       t),z(t),s(t)$，则
       \[
         s^{2}(t)=x^{2}(t)+y^{2}(t)+z^{2}(t).
@@ -267,7 +270,8 @@
 
   \section{证明题(每小题 5 分，共 10 分)}
   \begin{enumerate}
-    \item[16.] \textbf{Proof}. 计算$\lim_{x\to0}\frac{f(x)-0}{x-0}=
+    \setcounter{enumi}{15}
+    \item \textbf{Proof}. 计算$\lim_{x\to0}\frac{f(x)-0}{x-0}=
       \begin{cases}
         \lim_{x\to0}\frac{x^2}{x}=0, & x\in\mathbf{Q},                    \\
         0,                           & x\in\mathbf{R}\setminus\mathbf{Q}.
@@ -282,7 +286,7 @@
 
       同理可证当$a\in\mathbf{R}\setminus\mathbf{Q}$时，$f(x)$也不连续.所以函数除零点外处处不连续.
 
-    \item[17.] \textbf{Proof}. 由于$f(x)$在$[0,3]$上连续，由介值定理，存在$\eta\in
+    \item \textbf{Proof}. 由于$f(x)$在$[0,3]$上连续，由介值定理，存在$\eta\in
       (0,1)$使得$f(0)<f(\eta)=1<f(1)$.
 
       $f(x)$在$[\eta,3]$上连续，在$(\eta,3)$内可导，由Rolle定理知存在$\xi\in(\eta

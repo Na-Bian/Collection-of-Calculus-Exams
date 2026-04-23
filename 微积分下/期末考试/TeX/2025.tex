@@ -1,0 +1,536 @@
+\documentclass[../Main.tex]{subfiles}
+\begin{document}
+  \chapter{2024-2025学年微积分（B）（下）期末考试}
+
+  \section{单项选择题(每小题 3 分，共 18 分)}
+  \begin{enumerate}
+    \item 函数$f(x,y,z)=x^2+y^2-z^2$的等值面\textbf{不可能}是【\quad】.
+
+      \begin{tasks}[label=\textbf{\Alph*.}, label-width=1.5em, column-sep=1em](2)
+        \task 圆锥面
+        \task 椭圆抛物面
+        \task 双叶双曲面
+        \task 单叶双曲面
+      \end{tasks}
+
+    \item 设$f(x,y)$在$(0,0)$处连续，且$\lim\limits_{\substack{x \to 0 \\ y \to 0}}\dfrac{f(x,y)-1}{x^2+y^2}=2$，则$f(x,y)$在点$(0,0)$处【\quad】.
+
+      \begin{tasks}[label=\textbf{\Alph*.}, label-width=1.5em, column-sep=1em](2)
+        \task 不存在偏导数
+        \task 存在偏导数，但不可微
+        \task 可微，$f_x(0,0)\neq 0,f_y(0,0)\neq 0$
+        \task 可微，$f_x(0,0)=0,f_y(0,0)=0$
+      \end{tasks}
+
+    \item \begin{minipage}[t]{0.93\linewidth}
+      计算$I=\displaystyle \iiint \limits_\Omega z \,\mathrm{d}v$，其中$\Omega$为锥面$z=\sqrt{x^2+y^2}$与平面$z=1$所围成的立体，化为累次积分为：
+      \[
+        \begin{aligned}
+          &(1)\ I=\int_0^{2\pi}\,\mathrm{d}\theta\int_0^1\rho\,\mathrm{d}\rho\int_0^1z\,\mathrm{d}z,\quad
+          (2)\ I=\int_0^{2\pi}\,\mathrm{d}\theta\int_0^1\rho\,\mathrm{d}\rho\int_\rho^1z\,\mathrm{d}z,\\
+          &(3)\ I=\int_0^{2\pi}\,\mathrm{d}\theta\int_0^1\,\mathrm{d}z\int_0^z z\,\mathrm{d}\rho,\quad
+          (4)\ I=\int_0^1z\,\mathrm{d}z\int_0^{2\pi}\,\mathrm{d}\theta\int_0^z\rho\,\mathrm{d}\rho.
+        \end{aligned}
+      \]
+      其中正确的为【\quad】.
+
+      \begin{tasks}[label=\textbf{\Alph*.}, label-width=1.5em, column-sep=1em](2)
+        \task （2）（4）
+        \task （1）（3）
+        \task （2）（3）
+        \task （1）（4）
+      \end{tasks}
+      \end{minipage}
+
+    \item 设幂级数$ \displaystyle\sum \limits_{n=0}^{\infty} a_n(x-1)^n $ 在 $ x = 3 $ 处条件收敛，则级数 $ \displaystyle\sum \limits_{n=1}^{\infty} \dfrac{a_n}{2^n}(x+1)^n$在$x=-3$处【\quad】.
+
+      \begin{tasks}[label=\textbf{\Alph*.}, label-width=1.5em, column-sep=1em](2)
+        \task 绝对收敛
+        \task 条件收敛
+        \task 发散
+        \task 敛散性不确定
+      \end{tasks}
+
+    \item 设函数 $Q(x,y)=\dfrac{x}{y^2}$，如果对于上半平面 $(y>0)$ 内的任意有向光滑封闭曲线 $C$ 都有
+    \[
+    \oint_C P(x,y)\,\mathrm{d}x + Q(x,y)\,\mathrm{d}y = 0,
+    \]
+    那么函数 $P(x,y)$ 可取为
+
+    \begin{tasks}[label=\textbf{\Alph*.}, label-width=1.5em, column-sep=1em](2)
+      \task $y-\dfrac{x^2}{y^3}$
+      \task $\dfrac{1}{y}-\dfrac{x^2}{y^3}$
+      \task $x-\dfrac{1}{y}$
+      \task $\dfrac{1}{x}-\dfrac{1}{y}$
+    \end{tasks}
+
+    \item 关于级数的描述，下列命题中正确的是【\quad】.
+
+      \begin{tasks}[label=\textbf{\Alph*.}, label-width=1.5em, column-sep=1em](1)
+        \task 若正项级数 \( \displaystyle \sum \limits_{n=1}^{\infty} u_n \) 发散，则 $u_n>\dfrac{1}{n}$
+        \task 若 \( \displaystyle \sum \limits_{n=1}^{\infty} u_n^2 \) 收敛，则 \( \displaystyle \sum \limits_{n=1}^{\infty} (-1)^n u_n \) 收敛
+        \task 若 \( \displaystyle \sum \limits_{n=1}^{\infty} (-1)^{n-1}u_n(u_n>0) \) 条件收敛，则 \( \displaystyle \sum \limits_{k=1}^{\infty} u_{2k} \) 与 \( \displaystyle \sum \limits_{k=1}^{\infty} u_{2k-1} \) 都收敛
+        \task 若 \( \displaystyle \sum \limits_{n=1}^{\infty} a_n^2 \) 收敛，则 \( \displaystyle \sum \limits_{n=1}^{\infty} \dfrac{a_n}{n} \) 绝对收敛
+      \end{tasks}
+  \end{enumerate}
+
+  \section{填空题(每小题 4 分，共 16 分)}
+  \begin{enumerate}
+    \setcounter{enumi}{6}
+    \item 设 \( S \) 为上半球面 \( z=\sqrt{a^2-x^2-y^2}(a>0) \) ，则 \( \displaystyle \iint \limits_S \left( x+z \right)^2 \,\mathrm{d}S = \underline{\hspace{5em}} \).
+
+    \item 设 \( u = \sqrt{x^2 + y^2 + z^2} \)，点\( P_0(1, 2, -2) \) 为空间曲线 \( L: x = t, y = 2t^2, z = -2t^4 \)上的点，则 \( u \) 在点 \( P_0(1,2,-2) \) 处沿曲线 \( L \) 的切线方向\( \boldsymbol{l} \) （$t$增大方向）的方向导数为  \(\underline{\hspace{5em}}\).
+
+    \item 设 \( \,f(x)=\arctan{\dfrac{1-x}{1+x}} \)， 则 \( f^{(2024)}(0)= \underline{\hspace{5em}} \).
+    
+    \item 设$f(x)=x-1(0 \leq x \leq \pi)$展开成傅里叶级数为 \(S(x)=\dfrac{a_0}{2}+ \displaystyle \sum \limits_{n=1}^{\infty} a_n \cos{nx},-\infty<x<+\infty \) ，其中$a_n=\dfrac{2}{\pi}\displaystyle \int_0^{\pi} \,f(x)\cos{nx}\,\mathrm{d}x,n=0,1,2,\cdots$，则 \(S\left(-\dfrac{5}{2}\pi\right)=\underline{\hspace{5em}}\).
+  \end{enumerate}
+
+  \section{基本计算题(每小题 7 分，共 42 分)}
+  \begin{enumerate}
+    \setcounter{enumi}{10}
+    \item 设 \( \Sigma \) 是 \( xOy \) 面上的曲线$C:y^2=x^2-1$绕$y$轴旋转一周所形成的曲面，求曲线$L:\dfrac{x}{0}=\dfrac{y-1}{-1}=\dfrac{z}{1}$与曲面$\Sigma$的交点$P$，并求曲面$\Sigma$在$P$点处的法线方程.
+      \vspace{6em}
+
+    \item 设函数 \( \,f(u,v) \)具有二阶连续偏导数，且 \( \,\mathrm{d}f\big|_{(1,1)}=3\,\mathrm{d}u+4\,\mathrm{d}v \)，\( y=f(\cos x,1+x^2) \)，求$\dfrac{\,\mathrm{d}^2 y}{\,\mathrm{d}x^2}\bigg|_{x=0}$.
+      \vspace{9em}
+
+    \item 设 \( \,f(x,y) \)连续，\( D:x^2+y^2 \leq y \)，若$f(x,y)=\sqrt{1-x^2-y^2}-\dfrac{4}{\pi}\displaystyle \iint\limits_D \,f(x,y)\,\mathrm{d}x\,\mathrm{d}y$，求 \( \,f(x,y) \).
+      \vspace{9em}
+
+    \item 求圆柱面 \( x^2+y^2=ay(a>0) \) 介于平面 \( z = 0 \) 与圆锥面 \( z=\dfrac{1}{a}\sqrt{x^2+y^2} \) 之间的柱面面积 \( S \).
+      \vspace{9em}
+
+    \item 下半球面 \( S:z=-\sqrt{1-x^2-y^2} \) 取上侧，求积分 \( I = \displaystyle \iint \limits_S \dfrac{x\,\mathrm{d}y\,\mathrm{d}z+(z+1)^2\,\mathrm{d}x\,\mathrm{d}y}{\sqrt{x^2+y^2+z^2}} \).
+      \vspace{10em}
+
+    \item 求级数 \( \displaystyle \sum \limits_{n=0}^{\infty}\dfrac{(-1)^n(n^2-n+1)}{2^n} \)的和.
+      \vspace{10em}
+  \end{enumerate}
+
+  \section{综合题(每小题 7 分，共 14 分)}
+  \begin{enumerate}
+    \setcounter{enumi}{16}
+    \item 已知$f(u,v)=\displaystyle \oint_L (ux^2+vy^2)\,\mathrm{d}s$，其中曲线$L:x^2+y^2=u^2$，求$f_{uv}(1,1)$.
+      \vspace{10em}
+
+    \item 试求抛物面 \( z=1+x^2+y^2 \) 的一张切平面，使得它与该抛物面及圆柱面 \( x^2+y^2=2x \)所围成的立体体积最小.
+      \vspace{10em}
+  \end{enumerate}
+
+  \section{证明题(每小题 5 分，共 10 分)}
+  \begin{enumerate}
+    \setcounter{enumi}{18}
+    \item 设 \(f(x) \)为正值连续函数，曲线 \( L:(x-a)^2+(y-a)^2=a^2(a>0) \)，方向取逆时针方向.证明：
+    
+    \[\displaystyle \oint_L xf(y)\,\mathrm{d}y-\dfrac{y}{f(x)}\,\mathrm{d}x \geq 2\pi a^2.\]
+      \vspace{10em}
+
+    \item 证明级数 \( \displaystyle \sum \limits_{n=1}^{\infty} \sin\left({\pi \sqrt{n^2+1}}\right) \) 是条件收敛的.
+      \vspace{10em}
+  \end{enumerate}
+\chapter{2024-2025学年微积分（B）（下）期末考试参考答案}
+  \section{单项选择题(每小题 3 分，共 18 分)}
+  \begin{enumerate}
+    \item \textbf{Solution}. B.
+
+      函数的等值面为
+      \[
+        x^2+y^2-z^2=C.
+      \]
+      当 \(C=0\) 时为圆锥面；当 \(C>0\) 时为单叶双曲面；当 \(C<0\) 时为双叶双曲面. 它不可能是椭圆抛物面.
+
+    \item \textbf{Solution}. D.
+
+      由$\lim\limits_{\substack{x \to 0 \\ y \to 0}}\dfrac{f(x,y)-1}{x^2+y^2}=2$可知，当$(x,y)\to(0,0)$时，
+      \[
+        \,f(x,y)-1=2(x^2+y^2)+o(x^2+y^2)
+      \]
+
+      易知$f(0,0)=1$，所以
+      \[
+        \,f(x,y)-f(0,0)=o\left(\sqrt{x^2+y^2}\right).
+      \]
+      因而 \(f\) 在 \((0,0)\) 处可微，且线性主部为零，所以
+      \[
+        f_x(0,0)=f_y(0,0)=0.
+      \]
+
+    \item \textbf{Solution}. A.
+
+      该区域在柱坐标下为
+      \[
+        0\le \theta\le 2\pi,\quad 0\le \rho\le 1,\quad \rho\le z\le 1,
+      \]
+      也可写成
+      \[
+        0\le z\le 1,\quad 0\le \rho\le z,\quad 0\le \theta\le 2\pi.
+      \]
+      因此正确的是（2）和（4）.
+
+    \item \textbf{Solution}. A.
+
+      原级数在 \(x=3\) 处条件收敛，即$\sum_{n=0}^{\infty}a_n2^n$条件收敛，
+      
+      特别地 \(a_n2^n\to0\)，故 \(\{a_n2^n\}\) 有界. 于是存在常数 \(M\)，使得
+      \[
+        |a_n|\le \frac{M}{2^n}.
+      \]
+
+      级数$\sum_{n=1}^{\infty}\frac{a_n}{2^n}(x+1)^n$在 \(x=-3\) 处为
+      \[
+        \sum_{n=1}^{\infty}\frac{a_n}{2^n}(-2)^n=\sum_{n=1}^{\infty}(-1)^n a_n,
+      \]
+      且
+      \[
+        \sum |a_n|\le M\sum\frac1{2^n}<\infty.
+      \]
+      因此绝对收敛.
+
+    \item \textbf{Solution}. C.
+
+      在单连通区域 \(y>0\) 内，任意闭曲线积分为零等价于
+      \[
+        P_y=Q_x.
+      \]
+      已知
+      \[
+        Q=\frac{x}{y^2},\qquad Q_x=\frac{1}{y^2}.
+      \]
+      
+      C、D均满足 \(P_y=\dfrac1{y^2}\)，但$P=\frac{1}{x}-\frac{1}{y}$在$x=0$处无定义，故选C.
+
+    \item \textbf{Solution}. D.
+    
+    对于A选项，考虑$u_n=\frac{1}{n}$，则$\sum u_n$发散，但$u_n>\frac{1}{n}$不成立；
+    
+    对于B选项，考虑$u_n=\frac{(-1)^{n}}{n^{\frac{2}{3}}}$，则$\sum u_n^2=\sum \frac{1}{n^{\frac{4}{3}}}$收敛，但$\sum (-1)^n u_n=\sum \frac{1}{n^{\frac{2}{3}}}$发散；
+
+    对于C选项，考虑$u_n=\frac{1}{n}$，则$\sum (-1)^{n-1}u_n$条件收敛，
+    
+    但$\sum u_{2k}=\sum \frac{1}{2k}$与$\sum u_{2k-1}=\sum \frac{1}{2k-1}$均发散；
+
+    对于D选项，若$\sum a_n^2$收敛，则
+      \[
+        \sum_{n=1}^{\infty}\left|\frac{a_n}{n}\right|
+        \le \frac{1}{2}\sum_{n=1}^{\infty}\left(a_n^2+\frac{1}{n^2}\right) < \infty,
+      \]
+      因而 \(\sum \frac{a_n}{n}\) 绝对收敛.
+  \end{enumerate}
+
+  \section{填空题(每小题 4 分，共 16 分)}
+  \begin{enumerate}
+    \setcounter{enumi}{6}
+    \item \textbf{Solution}. $\dfrac{4\pi a^4}{3}$.
+
+    由对称性可知
+    \[
+    \begin{aligned}
+      \iint\limits_{S} (x+z)^2\,\mathrm{d}S&=\iint\limits_{S} (x^2+2xz+z^2)\,\mathrm{d}S\\
+      &=\iint\limits_{S} (x^2+z^2)\,\mathrm{d}S = \frac{2}{3}\iint\limits_{S} (x^2+y^2+z^2)\,\mathrm{d}S\\
+      &=\frac{2a^2}{3}\iint\limits_{S} \,\mathrm{d}S\\
+      &=\frac{4\pi a^4}{3}.
+    \end{aligned}
+    \]
+
+    \item \textbf{Solution}. $\dfrac{25}{27}$.
+
+      \[
+        \nabla u=\frac{(x,y,z)}{\sqrt{x^2+y^2+z^2}},
+      \]
+      因而
+      \[
+        \nabla \,u(P_0)=\frac13(1,2,-2).
+      \]
+      曲线切向量为
+      \[
+        \boldsymbol{\tau}=(1,4t,-8t^3)\big|_{t=1}=(1,4,-8),\qquad |\boldsymbol{\tau}|=9.
+      \]
+      所以方向导数为
+      \[
+        \nabla \,u(P_0)\cdot\frac{\boldsymbol{\tau}}{|\boldsymbol{\tau}|}
+        =\frac{25}{27}.
+      \]
+
+    \item \textbf{Solution}. $0$.
+
+      注意到当 \(|x|<1\) 时，
+      \[
+        \arctan\frac{1-x}{1+x}=\frac{\pi}{4}-\arctan x.
+      \]
+      
+      而$\arctan x = \int_{0}^{x}\frac{1}{1+t^2}\,\mathrm{d}t=\sum_{n=0}^{\infty}\int_{0}^{x}(-1)^n t^{2n}\,\mathrm{d}t=\sum_{n=0}^{\infty}(-1)^n \frac{x^{2n+1}}{2n+1}$，
+      
+      由Taylor定理对照可知
+      \[
+        f^{(2024)}(0)=0.
+      \]
+
+    \item \textbf{Solution}. $\frac{\pi}{2}-1$.
+
+      余弦级数对应 \([0,\pi]\) 上函数的偶延拓，并作 \(2\pi\) 周期延拓. 因为
+      \[
+        -\frac{5\pi}{2}\equiv -\frac{\pi}{2}\pmod{2\pi},
+      \]
+      所以
+      \[
+        S\left(-\frac{5\pi}{2}\right)=f\left(-\frac{\pi}{2}\right)=f\left(\frac{\pi}{2}\right)=\frac{\pi}{2}-1.
+      \]
+  \end{enumerate}
+
+  \section{基本计算题(每小题 7 分，共 42 分)}
+  \begin{enumerate}
+    \setcounter{enumi}{10}
+    \item \textbf{Solution}. 曲线 \(C:y^2=x^2-1\) 绕 \(y\) 轴旋转所得曲面为
+      \[
+        x^2+z^2-y^2=1.
+      \]
+      直线 \(L\) 可写成
+      \[
+        x=0,\qquad y=1-t,\qquad z=t.
+      \]
+      代入曲面方程得
+      \[
+        t^2-(1-t)^2=1,
+      \]
+      解得 \(t=1\). 因此交点为
+      \[
+        P=(0,0,1).
+      \]
+      设
+      \[
+        F(x,y,z)=x^2+z^2-y^2-1,
+      \]
+      则
+      \[
+        \nabla F(P)=(0,0,2).
+      \]
+      故法线方程为
+      \[
+        \frac{x}{0}=\frac{y}{0}=\frac{z-1}{2}.
+      \]
+
+    \item \textbf{Solution}. 由$\left.\,\mathrm{d}f\right|_{(1,1)}=3\,\mathrm{d}u+4\,\mathrm{d}v$可知
+      \[
+        f_u(1,1)=3,\qquad f_v(1,1)=4.
+      \]
+    
+     计算$\frac{\,\mathrm{d}y}{\,\mathrm{d}x}=f_u \cdot (-\sin x)+f_v \cdot 2x$，
+
+     $\frac{\,\mathrm{d}^2 y}{\,\mathrm{d}x^2}=-\frac{\,\mathrm{d}f_u}{\,\mathrm{d}x}\sin x-f_u\cos x + 2x\frac{\,\mathrm{d}f_v}{\,\mathrm{d}x} + 2f_v$.
+
+     将$x=0$代入上式得
+     \[
+     \left.\frac{\,\mathrm{d}^2 y}{\,\mathrm{d}x^2}\right|_{x=0}=-f_u(1,1)+2f_v(1,1)=-3+8=5.
+     \]
+
+    \item \textbf{Solution}. 记
+      \[
+        C=\frac{4}{\pi}\iint\limits_{D} \,f(x,y)\,\mathrm{d}x\,\mathrm{d}y.
+      \]
+      则
+      \[
+        \,f(x,y)=\sqrt{1-x^2-y^2}-C.
+      \]
+      两边在 \(D\) 上积分并乘以 \(\dfrac4\pi\)，得
+      \[
+        C=\frac{4}{\pi}\iint\limits_D\sqrt{1-x^2-y^2}\,\mathrm{d}x\,\mathrm{d}y-C.
+      \]
+      区域 \(D\) 在极坐标下为
+      \[
+        0\le \theta\le \pi,\quad 0\le r\le \sin\theta.
+      \]
+      因而
+      \[
+      \begin{aligned}
+        \iint\limits_D\sqrt{1-x^2-y^2}\,\mathrm{d}x\,\mathrm{d}y
+        =&\int_0^\pi\,\mathrm{d}\theta\int_0^{\sin\theta}\sqrt{1-r^2}\,r\,\mathrm{d}r\\
+        =&-\frac{1}{3}\int_{0}^{\pi}\left(1-r^2\right)^{\frac{3}{2}}\bigg|_{0}^{\sin\theta}\,\mathrm{d}\theta\\
+        =&-\frac{1}{3}\int_0^\pi\left(|\cos\theta|^3-1\right)\,\mathrm{d}\theta=\frac{\pi}{3}-\frac{4}{9}.
+      \end{aligned}
+      \]
+      所以
+      \[
+        C=\frac{2}{3}-\frac{8}{9\pi}.
+      \]
+      最终
+      \[
+        \,f(x,y)=\sqrt{1-x^2-y^2}-\frac23+\frac{8}{9\pi}.
+      \]
+
+    \item \textbf{Solution}. 圆柱面 \(x^2+y^2=ay\) 在极坐标下为
+      \[
+        r=a\sin\theta,\qquad 0\le \theta\le \pi.
+      \]
+      其底面圆周弧长元为
+      \[
+        \,\mathrm{d}s=\sqrt{r^2+(r')^2}\,\mathrm{d}\theta=a\,\mathrm{d}\theta.
+      \]
+      圆锥面给出的高度为
+      \[
+        z=\frac{r}{a}=\sin\theta.
+      \]
+      因而柱面面积为
+      \[
+        S=\int_0^\pi z\,\mathrm{d}s
+        =a\int_0^\pi\sin\theta\,\mathrm{d}\theta
+        =2a.
+      \]
+
+    \item \textbf{Solution}. 下半球面$z=-\sqrt{1-x^2-y^2}$上满足$\sqrt{x^2+y^2+z^2}=1$，因此
+      \[
+        I=\iint\limits_S x\,\mathrm{d}y\,\mathrm{d}z+(z+1)^2\,\mathrm{d}x\,\mathrm{d}y.
+      \]
+      
+      记$S'$为$x^2+y^2\leq 1,z=0$取下侧，$\Sigma = S\cup S'$，则
+      \[
+      \begin{aligned}
+        I=&\oiint\limits_{\Sigma}x\,\mathrm{d}y\,\mathrm{d}z+(z+1)^2\,\mathrm{d}x\,\mathrm{d}y-\iint\limits_{S'}x\,\mathrm{d}y\,\mathrm{d}z+(z+1)^2\,\mathrm{d}x\,\mathrm{d}y\\
+         =&-\iiint\limits_{\substack{x^2+y^2+z^2\leq 1\\z\leq0}}(1+2z+2) \,\mathrm{d}x\,\mathrm{d}y\,\mathrm{d}z-\iint\limits_{S'}\,\mathrm{d}x\,\mathrm{d}y\\
+         =&-3\iiint\limits_{\substack{x^2+y^2+z^2\leq 1\\z\leq0}} \,\mathrm{d}x\,\mathrm{d}y\,\mathrm{d}z-2\iiint\limits_{\substack{x^2+y^2+z^2\leq 1\\z\leq0}} z\,\mathrm{d}x\,\mathrm{d}y\,\mathrm{d}z+\iint\limits_{x^2+y^2\leq 1}\,\mathrm{d}x\,\mathrm{d}y\\
+         =&-2\pi-2\int_{-1}^{0} z\cdot \pi(1-z^2)\,\mathrm{d}z+\pi\\
+         =&-2\pi+\frac{\pi}{2}+\pi=-\frac{\pi}{2}.
+      \end{aligned}
+      \]
+
+    \item \textbf{Solution}. 当 \(|x|<1\) 时，
+      \[
+      \begin{gathered}
+        \sum_{n=0}^{\infty}x^n=\frac{1}{1-x},\\
+        \sum_{n=0}^{\infty}nx^n=1+\sum_{n=1}^{\infty}nx^n=x\left(\sum_{n=1}^{\infty}x^{n}\right)'=x\left(\frac{1}{1-x}-1\right)'=\frac{x}{(1-x)^2},\\
+        \sum_{n=0}^{\infty}n^2x^n=\sum_{n=1}^{\infty}n^2 x^n=x\left(\sum_{n=1}^{\infty}n x^{n}\right)'=x\left[\frac{x}{(1-x)^2}\right]'=x\cdot\frac{(1-x)^2+2x(1-x)}{(1-x)^4}=\frac{x(1-x^2)}{(1-x)^4}.
+      \end{gathered}
+      \]
+      得
+      \[
+        \sum_{n=0}^{\infty}\frac{(-1)^n(n^2-n+1)}{2^n}
+        =\left.\sum_{n=0}^{\infty}(n^2-n+1)x^n\right|_{x=-\frac{1}{2}}
+        =-\frac{2}{27}+\frac{2}{9}+\frac{2}{3}
+        =\frac{22}{27}.
+      \]
+  \end{enumerate}
+
+  \section{综合题(每小题 7 分，共 14 分)}
+  \begin{enumerate}
+    \setcounter{enumi}{16}
+    \item \textbf{Solution}. 将圆 \(L:x^2+y^2=u^2\) 参数化为
+      \[
+        x=u\cos\theta,\qquad y=u\sin\theta,\qquad 0\le\theta\le2\pi,
+      \]
+      则 \(\,\mathrm{d}s=u\,\mathrm{d}\theta\). 因而
+      \[
+        \,f(u,v)=\int_0^{2\pi}\left(u\cdot u^2\cos^2\theta+v\cdot u^2\sin^2\theta\right)u\,\mathrm{d}\theta
+        =\pi u^4+\pi vu^3.
+      \]
+      所以
+      \[
+        f_{uv}(u,v)=3\pi u^2,
+      \]
+      从而
+      \[
+        f_{uv}(1,1)=3\pi.
+      \]
+
+    \item \textbf{Solution}. 抛物面在点 \((a,b,1+a^2+b^2)\) 处的切平面为$2a(x-a)+2b(y-b)-(z-1-a^2-b^2)=0$，即
+      \[
+        z=1-a^2-b^2+2ax+2by.
+      \]
+
+      圆柱面$x^2+y^2=2x$在$xOy$平面上的投影区域为圆域
+      \[
+        D:x^2+y^2\le2x,z=0.
+      \]
+      因抛物面是凸曲面，故所围立体的体积为切平面上方、抛物面下方、圆柱面内侧部分的体积
+      \[
+        V(a,b)=\iint\limits_{D}\,\mathrm{d}x\,\mathrm{d}y\int_{1-a^2-b^2+2ax+2by}^{1+x^2+y^2}\,\mathrm{d}z,
+      \]
+
+      即
+      \[
+        V(a,b)=\iint\limits_{D}\left(x^2+y^2\right)\,\mathrm{d}x\,\mathrm{d}y-2a\iint\limits_{D}x\,\mathrm{d}x\,\mathrm{d}y-2b\iint\limits_{D}y\,\mathrm{d}x\,\mathrm{d}y+\pi(a^2+b^2).
+      \]
+      
+      因为$D$的形心为$(1,0)$，所以$\iint\limits_{D}x\,\mathrm{d}x\,\mathrm{d}y=\pi$，$\iint\limits_{D}y\,\mathrm{d}x\,\mathrm{d}y=0$，
+
+      故
+      \[
+      \begin{aligned}
+        V(a,b)=&\iint\limits_{D}\left(x^2+y^2\right)\,\mathrm{d}x\,\mathrm{d}y-2a\pi+\pi(a^2+b^2)\\
+        =&\int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}\,\mathrm{d}\theta\int_0^{2\cos\theta} r^3\,\mathrm{d}r-2a\pi+\pi(a^2+b^2)\\
+        =&8\int_{0}^{\frac{\pi}{2}}\cos^4\theta\,\mathrm{d}\theta-2a\pi+\pi(a^2+b^2)\\
+        =&\frac{3\pi}{2}-2a\pi+\pi(a^2+b^2)=\pi\left[(a-1)^2+b^2+\frac{1}{2}\right].
+      \end{aligned}
+      \]
+
+      显然当 \(a=1\) 且 \(b=0\) 时，\(V(a,b)\) 取得最小值 \(V_{\min}=\dfrac{\pi}{2}\).
+
+      此时切点为 \((1,0,2)\)，切平面方程为$z=2x+0\cdot y+1-1-0$，即
+      \[
+      z=2x.
+      \]
+  \end{enumerate}
+
+  \section{证明题(每小题 5 分，共 10 分)}
+  \begin{enumerate}
+    \setcounter{enumi}{18}
+    \item \textbf{Proof}. 记
+      \[
+        P(x,y)=-\frac{y}{f(x)},\qquad Q(x,y)=xf(y).
+      \]
+      由 Green 公式，
+      \[
+        \oint_L xf(y)\,\mathrm{d}y-\frac{y}{f(x)}\,\mathrm{d}x
+        =\iint\limits_D\left(Q_x-P_y\right)\,\mathrm{d}x\,\mathrm{d}y
+        =\iint\limits_D\left(f(y)+\frac1{f(x)}\right)\,\mathrm{d}x\,\mathrm{d}y,
+      \]
+      其中 \(D\) 是圆盘 \((x-a)^2+(y-a)^2\le a^2\).
+
+      由圆盘关于直线 \(y=x\) 对称，
+      \[
+        \iint\limits_D \,f(y)\,\mathrm{d}x\,\mathrm{d}y=\iint\limits_D \,f(x)\,\mathrm{d}x\,\mathrm{d}y.
+      \]
+      
+      所以
+      \[
+      \begin{aligned}
+        \oint_L xf(y)\,\mathrm{d}y-\frac{y}{f(x)}\,\mathrm{d}x
+        =&\iint\limits_D\left(f(y)+\frac1{f(x)}\right)\,\mathrm{d}x\,\mathrm{d}y\\
+        =&\iint\limits_D\left(f(x)+\frac1{f(x)}\right)\,\mathrm{d}x\,\mathrm{d}y\\
+        \ge& 2\iint\limits_D \,\mathrm{d}x\,\mathrm{d}y=2\pi a^2.
+      \end{aligned}
+      \]
+
+    \item \textbf{Proof}. 设
+      \[
+        \alpha_n=\sqrt{n^2+1}-n=\frac{1}{\sqrt{n^2+1}+n}.
+      \]
+      则
+      \[
+        \sin\left(\pi\sqrt{n^2+1}\right)
+        =\sin(n\pi+\pi\alpha_n)=(-1)^n\sin(\pi\alpha_n).
+      \]
+      因为
+      \[
+        \alpha_n\sim\frac{1}{2n},
+      \]
+      所以
+      \[
+        \sin(\pi\alpha_n)\sim \frac{\pi}{2n}.
+      \]
+      于是绝对值级数与调和级数同阶，故发散.
+
+      另一方面，\(\alpha_n\) 严格单调递减，且趋于零，
+      
+      而$\pi\alpha_n = \frac{\pi}{\sqrt{n^2+1}+n}<\frac{\pi}{2}$，因此 \(\sin(\pi\alpha_n)\) 也严格单调递减，且趋于零. 
+      
+      由 Leibniz 判别法，级数
+      \[
+        \sum_{n=1}^{\infty}(-1)^n\sin(\pi\alpha_n)
+      \]
+      收敛. 故原级数条件收敛.
+  \end{enumerate}
+\end{document}
+
+
+
+

@@ -23,16 +23,16 @@
     \item 求$u=x^{2}+2y^{2}+3z^{2}$在$(1,1,1)$处沿曲面$x^{2}+y^{2}+z^{2}=3$的外法线方向的方向导数.
       \vspace{13em}
 
-    \item 交换二次积分$I=\int_{0}^{1}\mathrm{d}y\int_{1-y}^{1+y^2}f(x,y)\mathrm{d}
+    \item 交换二次积分$I=\int_{0}^{1}\,\mathrm{d}y\int_{1-y}^{1+y^2}f(x,y)\,\mathrm{d}
       x$的积分次序.
       \vspace{13em}
 
-    \item 计算$I=\iiint\limits_{\Omega}(x+2y+3z)\mathrm{d}x\mathrm{d}y\mathrm{d}z$，其中$\Omega$是由平面$x
+    \item 计算$I=\iiint\limits_{\Omega}(x+2y+3z)\,\mathrm{d}x\,\mathrm{d}y\,\mathrm{d}z$，其中$\Omega$是由平面$x
       +y+z=1$与三个坐标面所围成的空间区域.
       \vspace{12em}
 
-    \item 计算$I=\iiint\limits_{\Omega}\sqrt{x^{2}+y^{2}+z^{2}}\mathrm{d}x\mathrm{d}
-      y\mathrm{d}z$，其中$\Omega$是由曲面$z=\sqrt{x^{2}+y^{2}}$与$z=1$所围成的区域.
+    \item 计算$I=\iiint\limits_{\Omega}\sqrt{x^{2}+y^{2}+z^{2}}\,\mathrm{d}x\,\mathrm{d}
+      y\,\mathrm{d}z$，其中$\Omega$是由曲面$z=\sqrt{x^{2}+y^{2}}$与$z=1$所围成的区域.
       \vspace{12em}
 
     \item 求锥面$z=\sqrt{x^{2}+y^{2}}$被柱面$z^{2}=2x$所割下部分的面积$S$.
@@ -43,7 +43,7 @@
   \begin{enumerate}
     \setcounter{enumi}{10}
     \item 设$f(x)$为连续函数，且满足积分方程$f(x)=\mathrm{e}^{x}-\int_{0}^{x}
-      (x-t)f(t)\mathrm{d}t$，试求$f(x)$.
+      (x-t)f(t)\,\mathrm{d}t$，试求$f(x)$.
       \vspace{12em}
 
     \item 设$S$是曲线$L:
@@ -61,7 +61,7 @@
       \vspace{12em}
 
     \item 计算$I=\iint\limits_{D}\left(y\mathrm{e}^{x}+\sqrt{x^{2}+y^{2}}\right
-      )\mathrm{d}x\mathrm{d}y$，其中$D$是由心形线$r=a\left(1+\cos\theta\right)(a>
+      )\,\mathrm{d}x\,\mathrm{d}y$，其中$D$是由心形线$r=a\left(1+\cos\theta\right)(a>
       0)$围成的区域.
       \vspace{12em}
 
@@ -77,22 +77,22 @@
       由一阶非齐次线性微分方程的通解公式得
       \[
         \begin{aligned}
-          y = & \mathrm{e}^{-\int\left(-\frac{1}{x}\right)\mathrm{d}x}\left(C+\int\left(x\cos x\right)\mathrm{e}^{\int\left(-\frac{1}{x}\right)\mathrm{d}x}\mathrm{d}x\right) \\
-          =   & x\left[C+\int\left(x\cos x\right)\cdot\frac{1}{x}\mathrm{d}x\right] = x\left(C+\int\cos x\mathrm{d}x\right) = x(C+\sin x)                                     \\
+          y = & \mathrm{e}^{-\int\left(-\frac{1}{x}\right)\,\mathrm{d}x}\left(C+\int\left(x\cos x\right)\mathrm{e}^{\int\left(-\frac{1}{x}\right)\,\mathrm{d}x}\,\mathrm{d}x\right) \\
+          =   & x\left[C+\int\left(x\cos x\right)\cdot\frac{1}{x}\,\mathrm{d}x\right] = x\left(C+\int\cos x\,\mathrm{d}x\right) = x(C+\sin x)                                     \\
           =   & Cx+x\sin x.
         \end{aligned}
       \]
 
     \item \textbf{Solution}. 令$y'=p$，则方程变形为$p'-xp^{2}=0$，分离变量，得$\frac{\mathrm{d}p}{p^{2}}
-      =x\mathrm{d}x$.
+      =x\,\mathrm{d}x$.
 
-      两边积分，得$\int\frac{\mathrm{d}p}{p^{2}}=-\frac{1}{p}=\int x\mathrm{d}x=\frac{x^{2}}{2}
+      两边积分，得$\int\frac{\mathrm{d}p}{p^{2}}=-\frac{1}{p}=\int x\,\mathrm{d}x=\frac{x^{2}}{2}
       +C_{1}$.
 
       将$y'(0)=p(0)=-2$代入上式，得$\frac{1}{2}=C_{1}$，所以$p=-\frac{1}{\frac{x^{2}}{2}+\frac{1}{2}}
       =-\frac{2}{x^{2}+1}$.
 
-      因此$\int p \mathrm{d}x =y = \int -\frac{2}{x^{2}+1}\mathrm{d}x = -2\arctan
+      因此$\int p \mathrm{d}x =y = \int -\frac{2}{x^{2}+1}\,\mathrm{d}x = -2\arctan
       x + C_{2}$.
 
       将$y(0)=1$代入上式，得$C_{2}=1$，所以特解为$y=-2\arctan x + 1$.
@@ -166,9 +166,9 @@
         积分区域如图所示. 所以
         \[
           \begin{aligned}
-            I = & \int_{0}^{1}\mathrm{d}y\int_{1-y}^{1+y^2}f(x,y)\mathrm{d}x                                                              \\
-            =   & \iint\limits_{D_1}f(x,y)\mathrm{d}x\mathrm{d}y + \iint\limits_{D_2}f(x,y)\mathrm{d}x\mathrm{d}y                         \\
-            =   & \int_{0}^{1}\mathrm{d}x\int_{1-x}^{1}f(x,y)\mathrm{d}y + \int_{1}^{2}\mathrm{d}x\int_{\sqrt{x-1}}^{1}f(x,y)\mathrm{d}y.
+            I = & \int_{0}^{1}\,\mathrm{d}y\int_{1-y}^{1+y^2}f(x,y)\,\mathrm{d}x                                                              \\
+            =   & \iint\limits_{D_1}f(x,y)\,\mathrm{d}x\,\mathrm{d}y + \iint\limits_{D_2}f(x,y)\,\mathrm{d}x\,\mathrm{d}y                         \\
+            =   & \int_{0}^{1}\,\mathrm{d}x\int_{1-x}^{1}f(x,y)\,\mathrm{d}y + \int_{1}^{2}\,\mathrm{d}x\int_{\sqrt{x-1}}^{1}f(x,y)\,\mathrm{d}y.
           \end{aligned}
         \]
       \end{minipage}
@@ -182,9 +182,9 @@
       \textbf{法一}. $\Omega$是由平面$x+y+z=1$与三个坐标面所围成的四面体，其体积$V
       = \frac{1}{6}$，形心坐标为$\left(\frac{1}{4},\frac{1}{4},\frac{1}{4}\right)$.
 
-      故$I = \iiint\limits_{\Omega}(x+2y+3z)\mathrm{d}v = \iiint\limits_{\Omega}x
-      \mathrm{d}v + 2\iiint\limits_{\Omega}y\mathrm{d}v + 3\iiint\limits_{\Omega}
-      z\mathrm{d}v = (1+2+3)\cdot \frac{1}{4}V = \frac{1}{4}$.
+      故$I = \iiint\limits_{\Omega}(x+2y+3z)\,\mathrm{d}v = \iiint\limits_{\Omega}x
+      \mathrm{d}v + 2\iiint\limits_{\Omega}y\,\mathrm{d}v + 3\iiint\limits_{\Omega}
+      z\,\mathrm{d}v = (1+2+3)\cdot \frac{1}{4}V = \frac{1}{4}$.
 
       \textbf{法二}. 令$\begin{cases}
         u = x+y+z,             \\
@@ -205,15 +205,15 @@
       \leq w \leq 1$，所以
       \[
         \begin{aligned}
-          I = & \iiint\limits_{\Omega}(x+2y+3z)\mathrm{d}x\mathrm{d}y\mathrm{d}z = \int_{0}^{1}\mathrm{d}u\int_{0}^{1}\mathrm{d}v\int_{0}^{1}\left[u(1-v)+2uv(1-w)+3uvw\right]u^{2} v\mathrm{d}w \\
-          =   & \int_{0}^{1}u^{3}\mathrm{d}u\int_{0}^{1}v\mathrm{d}v\int_{0}^{1}\left(1+v+vw\right)\mathrm{d}w = \frac{1}{4}\int_{0}^{1}v\left(1+v+\frac{v}{2}\right)\mathrm{d}v = \frac{1}{4}.
+          I = & \iiint\limits_{\Omega}(x+2y+3z)\,\mathrm{d}x\,\mathrm{d}y\,\mathrm{d}z = \int_{0}^{1}\,\mathrm{d}u\int_{0}^{1}\,\mathrm{d}v\int_{0}^{1}\left[u(1-v)+2uv(1-w)+3uvw\right]u^{2} v\,\mathrm{d}w \\
+          =   & \int_{0}^{1}u^{3}\,\mathrm{d}u\int_{0}^{1}v\,\mathrm{d}v\int_{0}^{1}\left(1+v+vw\right)\,\mathrm{d}w = \frac{1}{4}\int_{0}^{1}v\left(1+v+\frac{v}{2}\right)\,\mathrm{d}v = \frac{1}{4}.
         \end{aligned}
       \]
 
       此代换考虑比例关系，先确定总量$u=x+y+z$，再确定后两项$y+z$占总量的比例$v$，最后确定$z$占后两项的总和$y
       +z$的比例$w$，从而把积分限转化为常数.
 
-      再考虑一例：计算$I=\iint\limits_{D}x^{2} y\mathrm{d}x\mathrm{d}y$，其中$D$是以$(
+      再考虑一例：计算$I=\iint\limits_{D}x^{2} y\,\mathrm{d}x\,\mathrm{d}y$，其中$D$是以$(
       0,0)$，$(3,0)$，$(0,4)$为顶点的三角形及其内部.
 
       \textbf{Solution}. 斜边的方程为$4x+3y = 12$，即$\frac{1}{3}x+\frac{1}{4}y=1$，令$\begin{cases}
@@ -231,8 +231,8 @@
       \end{vmatrix}\right| = 12u$. 故
       \[
         \begin{aligned}
-          I = & \iint\limits_{D}x^{2} y\mathrm{d}x\mathrm{d}y = \int_{0}^{1}\mathrm{d}u\int_{0}^{1}\left[3u(1-v)\right]^{2} \cdot 4uv \cdot 12u\mathrm{d}v \\
-          =   & 432\int_{0}^{1}u^{4}\mathrm{d}u\int_{0}^{1}v(1-v)^{2}\mathrm{d}v = 432\cdot\frac{1}{5}\cdot\frac{2!}{4!}= \frac{36}{5}.
+          I = & \iint\limits_{D}x^{2} y\,\mathrm{d}x\,\mathrm{d}y = \int_{0}^{1}\,\mathrm{d}u\int_{0}^{1}\left[3u(1-v)\right]^{2} \cdot 4uv \cdot 12u\,\mathrm{d}v \\
+          =   & 432\int_{0}^{1}u^{4}\,\mathrm{d}u\int_{0}^{1}v(1-v)^{2}\,\mathrm{d}v = 432\cdot\frac{1}{5}\cdot\frac{2!}{4!}= \frac{36}{5}.
         \end{aligned}
       \]
 
@@ -240,9 +240,9 @@
       = \frac{\pi}{4}(z\geq 0)$，所以
       \[
         \begin{aligned}
-          I = & \iiint\limits_{\Omega}\sqrt{x^2+y^2+z^2}\mathrm{d}x\mathrm{d}y\mathrm{d}z = \int_{0}^{2\pi}\mathrm{d}\theta\int_{0}^{\frac{\pi}{4}}\mathrm{d}\varphi\int_{0}^{\frac{1}{\cos \varphi}}\rho^{3}\sin \varphi\mathrm{d}\rho \\
-          =   & 2\pi\int_{0}^{\frac{\pi}{4}}\sin \varphi\mathrm{d}\varphi\int_{0}^{\frac{1}{\cos \varphi}}\rho^{3}\mathrm{d}\rho = \frac{\pi}{2}\int_{0}^{\frac{\pi}{4}}\frac{\sin \varphi}{\cos^{4} \varphi}\mathrm{d}\varphi          \\
-          =   & -\frac{\pi}{2}\int_{0}^{\frac{\pi}{4}}\frac{1}{\cos^4 \varphi}\mathrm{d}(\cos \varphi) = \left.\frac{\pi}{2}\cdot \frac{1}{3\cos^{3} \varphi}\right|_{0}^{\frac{\pi}{4}}= \frac{\pi}{6}\left(2\sqrt{2}-1\right).
+          I = & \iiint\limits_{\Omega}\sqrt{x^2+y^2+z^2}\,\mathrm{d}x\,\mathrm{d}y\,\mathrm{d}z = \int_{0}^{2\pi}\,\mathrm{d}\theta\int_{0}^{\frac{\pi}{4}}\,\mathrm{d}\varphi\int_{0}^{\frac{1}{\cos \varphi}}\rho^{3}\sin \varphi\,\mathrm{d}\rho \\
+          =   & 2\pi\int_{0}^{\frac{\pi}{4}}\sin \varphi\,\mathrm{d}\varphi\int_{0}^{\frac{1}{\cos \varphi}}\rho^{3}\,\mathrm{d}\rho = \frac{\pi}{2}\int_{0}^{\frac{\pi}{4}}\frac{\sin \varphi}{\cos^{4} \varphi}\,\mathrm{d}\varphi          \\
+          =   & -\frac{\pi}{2}\int_{0}^{\frac{\pi}{4}}\frac{1}{\cos^4 \varphi}\,\mathrm{d}(\cos \varphi) = \left.\frac{\pi}{2}\cdot \frac{1}{3\cos^{3} \varphi}\right|_{0}^{\frac{\pi}{4}}= \frac{\pi}{6}\left(2\sqrt{2}-1\right).
         \end{aligned}
       \]
 
@@ -256,8 +256,8 @@
       锥面上被柱面所割下的部分对应于$D$内的点. 所以
       \[
         \begin{aligned}
-          S = & \iint\limits_{S}\mathrm{d}S = \iint\limits_{D}\sqrt{1+\left(\frac{\partial z}{\partial x}\right)^2+\left(\frac{\partial z}{\partial y}\right)^2}\mathrm{d}x\mathrm{d}y \\
-          =   & \iint\limits_{D}\sqrt{1+\frac{x^2}{x^2+y^2}+\frac{y^2}{x^2+y^2}}\mathrm{d}x\mathrm{d}y = \sqrt{2}\iint\limits_{D}\mathrm{d}x\mathrm{d}y                                \\
+          S = & \iint\limits_{S}\,\mathrm{d}S = \iint\limits_{D}\sqrt{1+\left(\frac{\partial z}{\partial x}\right)^2+\left(\frac{\partial z}{\partial y}\right)^2}\,\mathrm{d}x\,\mathrm{d}y \\
+          =   & \iint\limits_{D}\sqrt{1+\frac{x^2}{x^2+y^2}+\frac{y^2}{x^2+y^2}}\,\mathrm{d}x\,\mathrm{d}y = \sqrt{2}\iint\limits_{D}\,\mathrm{d}x\,\mathrm{d}y                                \\
           =   & \sqrt{2}\pi.
         \end{aligned}
       \]
@@ -267,9 +267,9 @@
   \begin{enumerate}
     \setcounter{enumi}{10}
     \item \textbf{Solution}. 因为$f(x)$是连续函数，所以$\mathrm{e}^{x}-\int_{0}
-      ^{x}(x-t)f(t)\mathrm{d}t$是可导的，从而$f(x)$也是可导的.
+      ^{x}(x-t)f(t)\,\mathrm{d}t$是可导的，从而$f(x)$也是可导的.
 
-      对方程两边求导，得$f'(x) = \mathrm{e}^{x} - \int_{0}^{x}f(t)\mathrm{d}t$.同理可知$f
+      对方程两边求导，得$f'(x) = \mathrm{e}^{x} - \int_{0}^{x}f(t)\,\mathrm{d}t$.同理可知$f
       '(x)$也是可导的，
 
       所以对方程两边再次求导，得$f''(x) = \mathrm{e}^{x} - f(x)$，即$f''(x)+f(x) =
@@ -287,10 +287,10 @@
       因此非齐次方程的通解为$f(x) = C_{1}\cos x + C_{2}\sin x + \frac{1}{2}\mathrm{e}
       ^{x}$.
 
-      在方程$f(x)=\mathrm{e}^{x}-\int_{0}^{x}(x-t)f(t)\mathrm{d}t$中令$x=0$，得$f
+      在方程$f(x)=\mathrm{e}^{x}-\int_{0}^{x}(x-t)f(t)\,\mathrm{d}t$中令$x=0$，得$f
       (0)=1$；
 
-      在方程$f'(x) = \mathrm{e}^{x} - \int_{0}^{x}f(t)\mathrm{d}t$中令$x=0$，得$f
+      在方程$f'(x) = \mathrm{e}^{x} - \int_{0}^{x}f(t)\,\mathrm{d}t$中令$x=0$，得$f
       '(0)=1$.
 
       将$f(0)=1$，$f'(0)=1$代入非齐次方程的通解，得$\begin{cases}
@@ -354,15 +354,15 @@
 
       \noindent
       \begin{minipage}[c]{0.6\textwidth}
-        积分区域如图所示. 由对称性可知$\iint\limits_{D}y\mathrm{e}^{x}\mathrm{d}x
+        积分区域如图所示. 由对称性可知$\iint\limits_{D}y\mathrm{e}^{x}\,\mathrm{d}x
         \mathrm{d}y=0$，所以
         \[
           \begin{aligned}
-            I = & \iint\limits_{D}\left(y\mathrm{e}^{x}+\sqrt{x^2+y^2}\right)\mathrm{d}x\mathrm{d}y                                                                                                     \\
-            =   & 2 \iint\limits_{D_1}\sqrt{x^2+y^2}\mathrm{d}x\mathrm{d}y                                                                                                                              \\
-            =   & 2\int_{0}^{\pi}\mathrm{d}\theta\int_{0}^{a\left(1+\cos \theta\right)}r^{2}\mathrm{d}r = \frac{2a^3}{3}\int_{0}^{\pi}\left(1+\cos \theta\right)^{3}\mathrm{d}\theta                    \\
-            =   & \frac{2a^3}{3}\int_{0}^{\pi}\left(1+3\cos \theta + 3\cos^{2} \theta + \cos^{3} \theta\right)\mathrm{d}\theta                                                                          \\
-            =   & \frac{2a^3}{3}\int_{0}^{\pi}\left(1+3\cos^{2} \theta\right)\mathrm{d}\theta = \frac{2\pi a^3}{3}+ 4a^{3}\int_{0}^{\frac{\pi}{2}}\cos^{2} \theta\mathrm{d}\theta = \frac{5\pi a^3}{3}.
+            I = & \iint\limits_{D}\left(y\mathrm{e}^{x}+\sqrt{x^2+y^2}\right)\,\mathrm{d}x\,\mathrm{d}y                                                                                                     \\
+            =   & 2 \iint\limits_{D_1}\sqrt{x^2+y^2}\,\mathrm{d}x\,\mathrm{d}y                                                                                                                              \\
+            =   & 2\int_{0}^{\pi}\,\mathrm{d}\theta\int_{0}^{a\left(1+\cos \theta\right)}r^{2}\,\mathrm{d}r = \frac{2a^3}{3}\int_{0}^{\pi}\left(1+\cos \theta\right)^{3}\,\mathrm{d}\theta                    \\
+            =   & \frac{2a^3}{3}\int_{0}^{\pi}\left(1+3\cos \theta + 3\cos^{2} \theta + \cos^{3} \theta\right)\,\mathrm{d}\theta                                                                          \\
+            =   & \frac{2a^3}{3}\int_{0}^{\pi}\left(1+3\cos^{2} \theta\right)\,\mathrm{d}\theta = \frac{2\pi a^3}{3}+ 4a^{3}\int_{0}^{\frac{\pi}{2}}\cos^{2} \theta\,\mathrm{d}\theta = \frac{5\pi a^3}{3}.
           \end{aligned}
         \]
       \end{minipage}
@@ -392,3 +392,8 @@
       因此函数$f(x,y)$在原点处不可微.
   \end{enumerate}
 \end{document}
+
+
+
+
+

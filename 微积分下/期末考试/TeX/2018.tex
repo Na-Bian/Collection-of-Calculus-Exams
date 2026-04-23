@@ -1,0 +1,167 @@
+\documentclass[../Main.tex]{subfiles}
+\begin{document}
+  \chapter{2017-2018学年微积分（一）（下）期末考试}
+
+  \section{单项选择题(每小题 3 分，共 18 分)}
+  \begin{enumerate}
+    \item 函数$f(x,y)=|x|\cos y$在原点$(0,0)$处（\qquad）.
+
+      \begin{tasks}[label=\textbf{\Alph*.}, label-width=1.5em, column-sep=1em](2)
+        \task $f_{x}'(0,0)$存在，$f_{y}'(0,0)$存在
+        \task $f_{x}'(0,0)$不存在，$f_{y}'(0,0)$不存在
+        \task $f_{x}'(0,0)$存在，$f_{y}'(0,0)$不存在
+        \task $f_{x}'(0,0)$不存在，$f_{y}'(0,0)$存在
+      \end{tasks}
+      \vspace{1em}
+
+    \item 设$\Omega:\sqrt{x^{2}+y^{2}}\leq z\leq1$，将
+      \[
+        I=\iiint\limits_{\Omega}f\left(\sqrt{x^{2}+y^{2}+z^{2}}\right)\,\mathrm{d}v
+      \]
+      化为球坐标系下的逐次积分，下列结果正确的是（\qquad）.
+
+      \begin{tasks}[label=\textbf{\Alph*.}, label-width=1.5em, column-sep=1em](1)
+        \task $I=2\pi\displaystyle\int_0^{\pi/4}\sin\varphi\,\mathrm{d}\varphi\int_0^1 f(\rho)\rho^2\,\mathrm{d}\rho$
+        \task $I=2\pi\displaystyle\int_0^{\pi/4}\sin\varphi\,\mathrm{d}\varphi\int_0^{1/\cos\varphi} f(\rho)\,\mathrm{d}\rho$
+        \task $I=2\pi\displaystyle\int_0^{\pi/4}\sin\varphi\,\mathrm{d}\varphi\int_0^{1/\cos\varphi} f(\rho)\rho^2\,\mathrm{d}\rho$
+        \task $I=2\pi\displaystyle\int_0^{\pi/4}\sin\varphi\,\mathrm{d}\varphi\int_0^1 f(\rho)\,\mathrm{d}\rho$
+      \end{tasks}
+      \vspace{1em}
+
+    \item 设$\Omega:0\leq z\leq\sqrt{1-x^{2}-y^{2}}$，$\Omega_{1}$为$\Omega$在第一卦限的部分区域，则下面式子正确的是（\qquad）.
+
+      \begin{tasks}[label=\textbf{\Alph*.}, label-width=1.5em, column-sep=1em](1)
+        \task $\displaystyle\iiint\limits_{\Omega_1}x\,\mathrm{d}v=\iiint\limits_{\Omega_1}z\,\mathrm{d}v$
+        \task $\displaystyle\iiint\limits_{\Omega_1}xy\,\mathrm{d}v=\iiint\limits_{\Omega_1}x^2\,\mathrm{d}v$
+        \task $\displaystyle\iiint\limits_{\Omega}z\,\mathrm{d}v=0$
+        \task $\displaystyle\iiint\limits_{\Omega}xy\,\mathrm{d}v=4\iiint\limits_{\Omega_1}xy\,\mathrm{d}v$
+      \end{tasks}
+      \vspace{1em}
+
+    \item 关于数项级数的敛散性，下面说法正确的是（\qquad）.
+
+      \begin{tasks}[label=\textbf{\Alph*.}, label-width=1.5em, column-sep=1em](1)
+        \task 若正项级数$\displaystyle\sum a_n$收敛，则$\displaystyle\lim_{n\to\infty}\sqrt[n]{a_n}=l<1$
+        \task 若$\displaystyle\sum a_n$收敛，则$\displaystyle\sum a_n^2$收敛
+        \task 若$\displaystyle\sum (-1)^n a_n$收敛，则$\displaystyle\sum(a_{2n-1}-a_{2n})$收敛
+        \task 若$\displaystyle\lim_{n\to\infty}\dfrac{a_{n+1}}{a_n}=l<1$，则$\displaystyle\sum a_n$收敛
+      \end{tasks}
+      \vspace{1em}
+
+    \item 若级数$\displaystyle\sum_{n=1}^{\infty}a_n$条件收敛，对于幂级数$\displaystyle\sum_{n=1}^{\infty}a_n(x-1)^n$以下结论正确的是（\qquad）.
+
+      \begin{tasks}[label=\textbf{\Alph*.}, label-width=1.5em, column-sep=1em](2)
+        \task 在$x=1$处条件收敛
+        \task 在$x=3$处发散
+        \task 在$x=2$处绝对收敛
+        \task 在$x=0$处条件收敛
+      \end{tasks}
+      \vspace{1em}
+
+    \item 在$xOy$面上，若积分
+      \[
+        \int_L(2xe^{x^2}y^3+ax\cos y)\,\mathrm{d}x+(be^{x^2}y^2-x^2\sin y)\,\mathrm{d}y
+      \]
+      与路径无关，则（\qquad）.
+
+      \begin{tasks}[label=\textbf{\Alph*.}, label-width=1.5em, column-sep=1em](2)
+        \task $a=2,\ b=-3$
+        \task $a=-2,\ b=3$
+        \task $a=-2,\ b=-3$
+        \task $a=2,\ b=3$
+      \end{tasks}
+      \vspace{1em}
+  \end{enumerate}
+
+  \section{填空题(每小题 4 分，共 16 分)}
+  \begin{enumerate}
+    \setcounter{enumi}{6}
+    \item 微分方程$y''+2y'+y=x+2$的通解为\underline{\hspace{5cm}}.
+
+    \item 设$z=f(x^{2}+y^{2},xy)$，其中$f$有连续偏导数，则$\dfrac{\partial z}{\partial x}=$\underline{\hspace{4cm}}.
+
+    \item 设$f(x,y,z)=x^{3}+y^{5}+z^{4}$，则$\operatorname{div}\operatorname{grad}f=$\underline{\hspace{4cm}}.
+
+    \item $\displaystyle\sum_{n=1}^{\infty}\frac{2^{n}}{n3^{n}}=$\underline{\hspace{4cm}}.
+  \end{enumerate}
+
+  \section{基本计算题(每小题 7 分，共 42 分)}
+  \begin{enumerate}
+    \setcounter{enumi}{10}
+    \item 求点$A(1,2,3)$到直线$L:\dfrac{x-6}{-1}=\dfrac{y-1}{1}=\dfrac{z-6}{-2}$的距离.
+      \vspace{11em}
+
+    \item 设方程组
+      \[
+        \begin{cases}
+          x^{2}-2x+y^{2}+\ln z+z^{3}=1,\\
+          x+y+z=1
+        \end{cases}
+      \]
+      在包含点$(0,0,1)$的一个邻域上确定隐函数$y=y(x),z=z(x)$，求
+      \[
+        \left.\frac{\mathrm{d}y}{\mathrm{d}x}\right|_{x=0},\qquad \left.\frac{\mathrm{d}z}{\mathrm{d}x}\right|_{x=0}.
+      \]
+      \vspace{12em}
+
+    \item 求函数$f(x,y)=4x+2xy-x^{2}-3y^{2}$的极值.
+      \vspace{11em}
+
+    \item 设
+      \[
+        I=\iiint\limits_{\Omega}(x+y+z)\,\mathrm{d}x\,\mathrm{d}y\,\mathrm{d}z,
+      \]
+      其中$\Omega$是三坐标面与平面$x+y+z=1$所围成的四面体.
+      \vspace{11em}
+
+    \item 求曲线积分
+      \[
+        I=\int_{L}(2xy-y^{2}\cos x)\,\mathrm{d}x+(x^{2}-2y\sin x)\,\mathrm{d}y,
+      \]
+      其中曲线$L$沿抛物线$y=\pi x-x^{2}+1$从$A(0,1)$到$B(\pi,1)$.
+      \vspace{12em}
+
+    \item 判断级数$\displaystyle\sum_{n=1}^{\infty}\dfrac{2+(-3)^{n}}{(2n-1)!!}$的敛散性，若收敛指出是绝对收敛还是条件收敛，并说明理由.
+      \vspace{12em}
+  \end{enumerate}
+
+  \section{应用题(每小题 7 分，共 14 分)}
+  \begin{enumerate}
+    \setcounter{enumi}{16}
+    \item 求曲面$z=x^{2}+y^{2},0\leq z\leq2$的面积.
+      \vspace{11em}
+
+    \item 计算曲面积分
+      \[
+        I=\iint\limits_{S}3xz\,\mathrm{d}y\,\mathrm{d}z+yz\,\mathrm{d}z\,\mathrm{d}x-z^{2}\,\mathrm{d}x\,\mathrm{d}y,
+      \]
+      其中$S$是曲面$z=x^{2}+y^{2}$与$z=2-x^{2}-y^{2}$所围立体的表面外侧.
+      \vspace{12em}
+  \end{enumerate}
+
+  \section{综合题(每小题 5 分，共 10 分)}
+  \begin{enumerate}
+    \setcounter{enumi}{18}
+    \item 设$L$是圆周曲线$(x-1)^{2}+(y-1)^{2}=1$（取正向），$f(x)$为正值连续函数。证明：
+      \[
+        \oint\limits_{L}xf(y)\,\mathrm{d}y-f(x)\,\mathrm{d}x\geq2\pi.
+      \]
+      \vspace{15em}
+
+    \item 证明：当$-\pi<x<\pi$时，
+      \[
+        \sum_{n=1}^{\infty}\frac{(-1)^{n-1}\sin nx}{n}=\frac{x}{2}.
+      \]
+      \vspace{15em}
+  \end{enumerate}
+
+  \chapter{2017-2018学年微积分（一）（下）期末考试参考答案}
+  \section{说明}
+
+  本次仅录入了试题原卷；当前工作区未提供对应的《2017-2期末试题解答》PDF，因此参考答案暂缺，后续可在此文件中直接补入。
+\end{document}
+
+
+
+
+

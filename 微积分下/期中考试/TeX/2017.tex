@@ -31,20 +31,20 @@
       z}{\partial x\partial y}$.
       \vspace{12em}
 
-    \item 计算$I=\int_{0}^{1}\mathrm{d}y\int_{y}^{\sqrt[3]{y}}\mathrm{e}^{x^{2}}\mathrm{d}x$.
+    \item 计算$I=\int_{0}^{1}\,\mathrm{d}y\int_{y}^{\sqrt[3]{y}}\mathrm{e}^{x^{2}}\,\mathrm{d}x$.
       \vspace{12em}
 
     \item 计算二重积分
       \[
-        I=\iint\limits_{D}\left(x^3\sin y+(x+y)^{2}\right)\mathrm{d}x\mathrm{d}y,
+        I=\iint\limits_{D}\left(x^3\sin y+(x+y)^{2}\right)\,\mathrm{d}x\,\mathrm{d}y,
       \]
       其中$D:x^{2}+y^{2}\leq2y$.
       \vspace{11em}
 
-    \item 计算三重积分$I=\iiint\limits_{V}xy^{2}z^{3}\mathrm{d}x\mathrm{d}y\mathrm{d}z$，其中$V$位于第一卦限，由曲面$z=0,z=xy,y=x,y=1$围成.
+    \item 计算三重积分$I=\iiint\limits_{V}xy^{2}z^{3}\,\mathrm{d}x\,\mathrm{d}y\,\mathrm{d}z$，其中$V$位于第一卦限，由曲面$z=0,z=xy,y=x,y=1$围成.
       \vspace{11em}
 
-    \item 计算三重积分$I=\iiint\limits_{V}(x+z)\mathrm{d}v$，其中$V:\sqrt{x^{2}+y^{2}}
+    \item 计算三重积分$I=\iiint\limits_{V}(x+z)\,\mathrm{d}v$，其中$V:\sqrt{x^{2}+y^{2}}
       \leq z\leq\sqrt{2-x^{2}-y^{2}}$.
       \vspace{11em}
   \end{enumerate}
@@ -62,10 +62,10 @@
       -z$在该点处沿方向$\boldsymbol{n}=(1,-2,3)$的方向导数最大.
       \vspace{10em}
 
-    \item 设函数$f(x)$满足$f'(x)+3f(x)+2x\int_{0}^{1}f(xt)\mathrm{d}t=\mathrm{e}^{-x}$，且$f(0)=1$，求$f(x)$.
+    \item 设函数$f(x)$满足$f'(x)+3f(x)+2x\int_{0}^{1}f(xt)\,\mathrm{d}t=\mathrm{e}^{-x}$，且$f(0)=1$，求$f(x)$.
       \vspace{10em}
 
-    \item 计算$I=\iint\limits_{D}|x+y-1|\mathrm{d}x\mathrm{d}y$，其中$D$是圆域$D:x^{2}+y^{2}\leq1$.
+    \item 计算$I=\iint\limits_{D}|x+y-1|\mathrm{d}x\,\mathrm{d}y$，其中$D$是圆域$D:x^{2}+y^{2}\leq1$.
       \vspace{10em}
 
     \item 设$f(x,y)=\sqrt[3]{x}\sqrt[3]{y^{2}}$，讨论$f(x,y)$在原点$(0,0)$处的：
@@ -177,27 +177,27 @@
 
     \item \textbf{Solution}. 交换积分次序，得
       \[
-        I=\int_{0}^{1}\mathrm{e}^{x^{2}}\mathrm{d}x\int_{x^{3}}^{x}\mathrm{d}y
-        =\int_{0}^{1}\mathrm{e}^{x^{2}}(x-x^{3})\mathrm{d}x.
+        I=\int_{0}^{1}\mathrm{e}^{x^{2}}\,\mathrm{d}x\int_{x^{3}}^{x}\,\mathrm{d}y
+        =\int_{0}^{1}\mathrm{e}^{x^{2}}(x-x^{3})\,\mathrm{d}x.
       \]
 
       令$t=x^{2}$，则
       \[
-        I=\frac{1}{2}\int_{0}^{1}\mathrm{e}^{t}(1-t)\mathrm{d}t=\frac{\mathrm{e}-2}{2}.
+        I=\frac{1}{2}\int_{0}^{1}\mathrm{e}^{t}(1-t)\,\mathrm{d}t=\frac{\mathrm{e}-2}{2}.
       \]
 
     \item \textbf{Solution}.
 
       \noindent
       \begin{minipage}[c]{0.60\textwidth}
-        由于$D$关于$y$轴对称，$\iint\limits_D x^3\sin y\,\mathrm{d}x\mathrm{d}y=0$，
-        $\iint\limits_D2xy\,\mathrm{d}x\mathrm{d}y=0$. 因此利用极坐标代换得
+        由于$D$关于$y$轴对称，$\iint\limits_D x^3\sin y\,\mathrm{d}x\,\mathrm{d}y=0$，
+        $\iint\limits_D2xy\,\mathrm{d}x\,\mathrm{d}y=0$. 因此利用极坐标代换得
         \[
           \begin{aligned}
-            I&=\iint\limits_{D}(x^{2}+y^{2})\mathrm{d}x\mathrm{d}y\\
-             &=\int_{0}^{\pi}\mathrm{d}\theta\int_{0}^{2\sin\theta}r^{2}\cdot r\mathrm{d}r\\
-             &=4\int_{0}^{\pi}\sin^{4}\theta\mathrm{d}\theta
-              =8\int_{0}^{\frac{\pi}{2}}\sin^{4}\theta\mathrm{d}\theta
+            I&=\iint\limits_{D}(x^{2}+y^{2})\,\mathrm{d}x\,\mathrm{d}y\\
+             &=\int_{0}^{\pi}\,\mathrm{d}\theta\int_{0}^{2\sin\theta}r^{2}\cdot r\,\mathrm{d}r\\
+             &=4\int_{0}^{\pi}\sin^{4}\theta\,\mathrm{d}\theta
+              =8\int_{0}^{\frac{\pi}{2}}\sin^{4}\theta\,\mathrm{d}\theta
               =\frac{3\pi}{2}.
           \end{aligned}
         \]
@@ -211,10 +211,10 @@
       因此
       \[
         \begin{aligned}
-          I&=\iint\limits_{D}\mathrm{d}x\mathrm{d}y\int_{0}^{xy}xy^{2}z^{3}\mathrm{d}z\\
-           &=\frac{1}{4}\iint\limits_{D}x^{5}y^{6}\mathrm{d}x\mathrm{d}y\\
-           &=\frac{1}{4}\int_{0}^{1}\mathrm{d}x\int_{x}^{1}x^{5}y^{6}\mathrm{d}y\\
-           &=\frac{1}{28}\int_{0}^{1}(x^{5}-x^{12})\mathrm{d}x
+          I&=\iint\limits_{D}\,\mathrm{d}x\,\mathrm{d}y\int_{0}^{xy}xy^{2}z^{3}\,\mathrm{d}z\\
+           &=\frac{1}{4}\iint\limits_{D}x^{5}y^{6}\,\mathrm{d}x\,\mathrm{d}y\\
+           &=\frac{1}{4}\int_{0}^{1}\,\mathrm{d}x\int_{x}^{1}x^{5}y^{6}\,\mathrm{d}y\\
+           &=\frac{1}{28}\int_{0}^{1}(x^{5}-x^{12})\,\mathrm{d}x
             =\frac{1}{28}\left(\frac{1}{6}-\frac{1}{13}\right) = \frac{1}{312}.
         \end{aligned}
       \]
@@ -223,15 +223,15 @@
 
       \noindent
       \begin{minipage}[c]{0.60\textwidth}
-        由对称性可得$\iiint\limits_{V}x\mathrm{d}v=0$.
+        由对称性可得$\iiint\limits_{V}x\,\mathrm{d}v=0$.
 
         用柱坐标代换，得
         \[
           \begin{aligned}
-            I&=\iiint\limits_{V}z\mathrm{d}v\\
-             &=\int_{0}^{2\pi}\mathrm{d}\theta\int_{0}^{1}r\mathrm{d}r
-              \int_{r}^{\sqrt{2-r^{2}}}z\mathrm{d}z\\
-             &=\pi\int_{0}^{1}(2-2r^{2})r\mathrm{d}r=\frac{\pi}{2}.
+            I&=\iiint\limits_{V}z\,\mathrm{d}v\\
+             &=\int_{0}^{2\pi}\,\mathrm{d}\theta\int_{0}^{1}r\,\mathrm{d}r
+              \int_{r}^{\sqrt{2-r^{2}}}z\,\mathrm{d}z\\
+             &=\pi\int_{0}^{1}(2-2r^{2})r\,\mathrm{d}r=\frac{\pi}{2}.
           \end{aligned}
         \]
       \end{minipage}
@@ -295,12 +295,12 @@
 
     \item \textbf{Solution}. 令$u=tx$，则
       \[
-        x\int_{0}^{1}f(tx)\mathrm{d}t=\int_{0}^{x}f(u)\mathrm{d}u.
+        x\int_{0}^{1}f(tx)\,\mathrm{d}t=\int_{0}^{x}f(u)\,\mathrm{d}u.
       \]
 
       从而原方程变为
       \[
-        f'(x)+3f(x)+2\int_{0}^{x}f(u)\mathrm{d}u=\mathrm{e}^{-x}.
+        f'(x)+3f(x)+2\int_{0}^{x}f(u)\,\mathrm{d}u=\mathrm{e}^{-x}.
       \]
 
       由上式可知$f''(x)$存在，两边求导得
@@ -335,20 +335,20 @@
         记$g=x+y-1$，则
         \[
           \begin{aligned}
-            I&=\iint\limits_{D_{1}}g\mathrm{d}\sigma-\iint\limits_{D_{2}}g\mathrm{d}\sigma\\
-             &=2\iint\limits_{D_{1}}g\mathrm{d}\sigma-\iint\limits_{D}g\mathrm{d}\sigma.
+            I&=\iint\limits_{D_{1}}g\,\mathrm{d}\sigma-\iint\limits_{D_{2}}g\,\mathrm{d}\sigma\\
+             &=2\iint\limits_{D_{1}}g\,\mathrm{d}\sigma-\iint\limits_{D}g\,\mathrm{d}\sigma.
           \end{aligned}
         \]
 
         因为
         \[
-          \iint\limits_{D}g\mathrm{d}\sigma=\iint\limits_{D}(-1)\mathrm{d}x\mathrm{d}y=-\pi,
+          \iint\limits_{D}g\,\mathrm{d}\sigma=\iint\limits_{D}(-1)\,\mathrm{d}x\,\mathrm{d}y=-\pi,
         \]
         且
         \[
           \begin{aligned}
-            \iint\limits_{D_{1}}g\mathrm{d}\sigma
-            &=\int_{0}^{1}\mathrm{d}x\int_{1-x}^{\sqrt{1-x^{2}}}(x+y-1)\mathrm{d}y\\
+            \iint\limits_{D_{1}}g\,\mathrm{d}\sigma
+            &=\int_{0}^{1}\,\mathrm{d}x\int_{1-x}^{\sqrt{1-x^{2}}}(x+y-1)\,\mathrm{d}y\\
             &=\frac{5}{6}-\frac{\pi}{4}.
           \end{aligned}
         \]
@@ -385,3 +385,9 @@
       \]
   \end{enumerate}
 \end{document}
+
+
+
+
+
+

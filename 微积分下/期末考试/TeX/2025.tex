@@ -23,7 +23,7 @@
       \end{tasks}
 
     \item \begin{minipage}[t]{0.93\linewidth}
-      计算$I=\displaystyle \iiint \limits_\Omega z \,\mathrm{d}v$，其中$\Omega$为锥面$z=\sqrt{x^2+y^2}$与平面$z=1$所围成的立体，化为累次积分为：
+      计算$I=\displaystyle \iiint \limits_\Omega z \mathrm{d}v$，其中$\Omega$为锥面$z=\sqrt{x^2+y^2}$与平面$z=1$所围成的立体，化为累次积分为：
       \[
         \begin{aligned}
           &(1)\ I=\int_0^{2\pi}\,\mathrm{d}\theta\int_0^1\rho\,\mathrm{d}\rho\int_0^1z\,\mathrm{d}z,\quad
@@ -77,13 +77,13 @@
   \section{填空题(每小题 4 分，共 16 分)}
   \begin{enumerate}
     \setcounter{enumi}{6}
-    \item 设 \( S \) 为上半球面 \( z=\sqrt{a^2-x^2-y^2}(a>0) \) ，则 \( \displaystyle \iint \limits_S \left( x+z \right)^2 \,\mathrm{d}S = \underline{\hspace{5em}} \).
+    \item 设 \( S \) 为上半球面 \( z=\sqrt{a^2-x^2-y^2}(a>0) \) ，则 \( \displaystyle \iint \limits_S \left( x+z \right)^2 \mathrm{d}S = \underline{\hspace{5em}} \).
 
     \item 设 \( u = \sqrt{x^2 + y^2 + z^2} \)，点\( P_0(1, 2, -2) \) 为空间曲线 \( L: x = t, y = 2t^2, z = -2t^4 \)上的点，则 \( u \) 在点 \( P_0(1,2,-2) \) 处沿曲线 \( L \) 的切线方向\( \boldsymbol{l} \) （$t$增大方向）的方向导数为  \(\underline{\hspace{5em}}\).
 
-    \item 设 \( \,f(x)=\arctan{\dfrac{1-x}{1+x}} \)， 则 \( f^{(2024)}(0)= \underline{\hspace{5em}} \).
+    \item 设 \( f(x)=\arctan{\dfrac{1-x}{1+x}} \)， 则 \( f^{(2024)}(0)= \underline{\hspace{5em}} \).
     
-    \item 设$f(x)=x-1(0 \leq x \leq \pi)$展开成傅里叶级数为 \(S(x)=\dfrac{a_0}{2}+ \displaystyle \sum \limits_{n=1}^{\infty} a_n \cos{nx},-\infty<x<+\infty \) ，其中$a_n=\dfrac{2}{\pi}\displaystyle \int_0^{\pi} \,f(x)\cos{nx}\,\mathrm{d}x,n=0,1,2,\cdots$，则 \(S\left(-\dfrac{5}{2}\pi\right)=\underline{\hspace{5em}}\).
+    \item 设$f(x)=x-1(0 \leq x \leq \pi)$展开成傅里叶级数为 \(S(x)=\dfrac{a_0}{2}+ \displaystyle \sum \limits_{n=1}^{\infty} a_n \cos{nx},-\infty<x<+\infty \) ，其中$a_n=\dfrac{2}{\pi}\displaystyle \int_0^{\pi} f(x)\cos{nx}\,\mathrm{d}x,n=0,1,2,\cdots$，则 \(S\left(-\dfrac{5}{2}\pi\right)=\underline{\hspace{5em}}\).
   \end{enumerate}
 
   \section{基本计算题(每小题 7 分，共 42 分)}
@@ -92,10 +92,10 @@
     \item 设 \( \Sigma \) 是 \( xOy \) 面上的曲线$C:y^2=x^2-1$绕$y$轴旋转一周所形成的曲面，求曲线$L:\dfrac{x}{0}=\dfrac{y-1}{-1}=\dfrac{z}{1}$与曲面$\Sigma$的交点$P$，并求曲面$\Sigma$在$P$点处的法线方程.
       \vspace{6em}
 
-    \item 设函数 \( \,f(u,v) \)具有二阶连续偏导数，且 \( \,\mathrm{d}f\big|_{(1,1)}=3\,\mathrm{d}u+4\,\mathrm{d}v \)，\( y=f(\cos x,1+x^2) \)，求$\dfrac{\,\mathrm{d}^2 y}{\,\mathrm{d}x^2}\bigg|_{x=0}$.
+    \item 设函数 \( f(u,v) \)具有二阶连续偏导数，且 \( \mathrm{d}f\big|_{(1,1)}=3\,\mathrm{d}u+4\,\mathrm{d}v \)，\( y=f(\cos x,1+x^2) \)，求$\dfrac{\mathrm{d}^2 y}{\mathrm{d}x^2}\bigg|_{x=0}$.
       \vspace{9em}
 
-    \item 设 \( \,f(x,y) \)连续，\( D:x^2+y^2 \leq y \)，若$f(x,y)=\sqrt{1-x^2-y^2}-\dfrac{4}{\pi}\displaystyle \iint\limits_D \,f(x,y)\,\mathrm{d}x\,\mathrm{d}y$，求 \( \,f(x,y) \).
+    \item 设 \( f(x,y) \)连续，\( D:x^2+y^2 \leq y \)，若$f(x,y)=\sqrt{1-x^2-y^2}-\dfrac{4}{\pi}\displaystyle \iint\limits_D f(x,y)\,\mathrm{d}x\,\mathrm{d}y$，求 \( f(x,y) \).
       \vspace{9em}
 
     \item 求圆柱面 \( x^2+y^2=ay(a>0) \) 介于平面 \( z = 0 \) 与圆锥面 \( z=\dfrac{1}{a}\sqrt{x^2+y^2} \) 之间的柱面面积 \( S \).
@@ -144,12 +144,12 @@
 
       由$\lim\limits_{\substack{x \to 0 \\ y \to 0}}\dfrac{f(x,y)-1}{x^2+y^2}=2$可知，当$(x,y)\to(0,0)$时，
       \[
-        \,f(x,y)-1=2(x^2+y^2)+o(x^2+y^2)
+        f(x,y)-1=2(x^2+y^2)+o(x^2+y^2)
       \]
 
       易知$f(0,0)=1$，所以
       \[
-        \,f(x,y)-f(0,0)=o\left(\sqrt{x^2+y^2}\right).
+        f(x,y)-f(0,0)=o\left(\sqrt{x^2+y^2}\right).
       \]
       因而 \(f\) 在 \((0,0)\) 处可微，且线性主部为零，所以
       \[
@@ -228,7 +228,7 @@
     \begin{aligned}
       \iint\limits_{S} (x+z)^2\,\mathrm{d}S&=\iint\limits_{S} (x^2+2xz+z^2)\,\mathrm{d}S\\
       &=\iint\limits_{S} (x^2+z^2)\,\mathrm{d}S = \frac{2}{3}\iint\limits_{S} (x^2+y^2+z^2)\,\mathrm{d}S\\
-      &=\frac{2a^2}{3}\iint\limits_{S} \,\mathrm{d}S\\
+      &=\frac{2a^2}{3}\iint\limits_{S} \mathrm{d}S\\
       &=\frac{4\pi a^4}{3}.
     \end{aligned}
     \]
@@ -240,7 +240,7 @@
       \]
       因而
       \[
-        \nabla \,u(P_0)=\frac13(1,2,-2).
+        \nabla u(P_0)=\frac13(1,2,-2).
       \]
       曲线切向量为
       \[
@@ -248,7 +248,7 @@
       \]
       所以方向导数为
       \[
-        \nabla \,u(P_0)\cdot\frac{\boldsymbol{\tau}}{|\boldsymbol{\tau}|}
+        \nabla u(P_0)\cdot\frac{\boldsymbol{\tau}}{|\boldsymbol{\tau}|}
         =\frac{25}{27}.
       \]
 
@@ -310,27 +310,27 @@
         \frac{x}{0}=\frac{y}{0}=\frac{z-1}{2}.
       \]
 
-    \item \textbf{Solution}. 由$\left.\,\mathrm{d}f\right|_{(1,1)}=3\,\mathrm{d}u+4\,\mathrm{d}v$可知
+    \item \textbf{Solution}. 由$\left.\mathrm{d}f\right|_{(1,1)}=3\,\mathrm{d}u+4\,\mathrm{d}v$可知
       \[
         f_u(1,1)=3,\qquad f_v(1,1)=4.
       \]
     
-     计算$\frac{\,\mathrm{d}y}{\,\mathrm{d}x}=f_u \cdot (-\sin x)+f_v \cdot 2x$，
+     计算$\frac{\mathrm{d}y}{\mathrm{d}x}=f_u \cdot (-\sin x)+f_v \cdot 2x$，
 
-     $\frac{\,\mathrm{d}^2 y}{\,\mathrm{d}x^2}=-\frac{\,\mathrm{d}f_u}{\,\mathrm{d}x}\sin x-f_u\cos x + 2x\frac{\,\mathrm{d}f_v}{\,\mathrm{d}x} + 2f_v$.
+     $\frac{\mathrm{d}^2 y}{\mathrm{d}x^2}=-\frac{\mathrm{d}f_u}{\mathrm{d}x}\sin x-f_u\cos x + 2x\frac{\mathrm{d}f_v}{\mathrm{d}x} + 2f_v$.
 
      将$x=0$代入上式得
      \[
-     \left.\frac{\,\mathrm{d}^2 y}{\,\mathrm{d}x^2}\right|_{x=0}=-f_u(1,1)+2f_v(1,1)=-3+8=5.
+     \left.\frac{\mathrm{d}^2 y}{\mathrm{d}x^2}\right|_{x=0}=-f_u(1,1)+2f_v(1,1)=-3+8=5.
      \]
 
     \item \textbf{Solution}. 记
       \[
-        C=\frac{4}{\pi}\iint\limits_{D} \,f(x,y)\,\mathrm{d}x\,\mathrm{d}y.
+        C=\frac{4}{\pi}\iint\limits_{D} f(x,y)\,\mathrm{d}x\,\mathrm{d}y.
       \]
       则
       \[
-        \,f(x,y)=\sqrt{1-x^2-y^2}-C.
+        f(x,y)=\sqrt{1-x^2-y^2}-C.
       \]
       两边在 \(D\) 上积分并乘以 \(\dfrac4\pi\)，得
       \[
@@ -355,7 +355,7 @@
       \]
       最终
       \[
-        \,f(x,y)=\sqrt{1-x^2-y^2}-\frac23+\frac{8}{9\pi}.
+        f(x,y)=\sqrt{1-x^2-y^2}-\frac23+\frac{8}{9\pi}.
       \]
 
     \item \textbf{Solution}. 圆柱面 \(x^2+y^2=ay\) 在极坐标下为
@@ -364,7 +364,7 @@
       \]
       其底面圆周弧长元为
       \[
-        \,\mathrm{d}s=\sqrt{r^2+(r')^2}\,\mathrm{d}\theta=a\,\mathrm{d}\theta.
+        \mathrm{d}s=\sqrt{r^2+(r')^2}\,\mathrm{d}\theta=a\,\mathrm{d}\theta.
       \]
       圆锥面给出的高度为
       \[
@@ -386,8 +386,8 @@
       \[
       \begin{aligned}
         I=&\oiint\limits_{\Sigma}x\,\mathrm{d}y\,\mathrm{d}z+(z+1)^2\,\mathrm{d}x\,\mathrm{d}y-\iint\limits_{S'}x\,\mathrm{d}y\,\mathrm{d}z+(z+1)^2\,\mathrm{d}x\,\mathrm{d}y\\
-         =&-\iiint\limits_{\substack{x^2+y^2+z^2\leq 1\\z\leq0}}(1+2z+2) \,\mathrm{d}x\,\mathrm{d}y\,\mathrm{d}z-\iint\limits_{S'}\,\mathrm{d}x\,\mathrm{d}y\\
-         =&-3\iiint\limits_{\substack{x^2+y^2+z^2\leq 1\\z\leq0}} \,\mathrm{d}x\,\mathrm{d}y\,\mathrm{d}z-2\iiint\limits_{\substack{x^2+y^2+z^2\leq 1\\z\leq0}} z\,\mathrm{d}x\,\mathrm{d}y\,\mathrm{d}z+\iint\limits_{x^2+y^2\leq 1}\,\mathrm{d}x\,\mathrm{d}y\\
+         =&-\iiint\limits_{\substack{x^2+y^2+z^2\leq 1\\z\leq0}}(1+2z+2) \mathrm{d}x\,\mathrm{d}y\,\mathrm{d}z-\iint\limits_{S'}\,\mathrm{d}x\,\mathrm{d}y\\
+         =&-3\iiint\limits_{\substack{x^2+y^2+z^2\leq 1\\z\leq0}} \mathrm{d}x\,\mathrm{d}y\,\mathrm{d}z-2\iiint\limits_{\substack{x^2+y^2+z^2\leq 1\\z\leq0}} z\,\mathrm{d}x\,\mathrm{d}y\,\mathrm{d}z+\iint\limits_{x^2+y^2\leq 1}\,\mathrm{d}x\,\mathrm{d}y\\
          =&-2\pi-2\int_{-1}^{0} z\cdot \pi(1-z^2)\,\mathrm{d}z+\pi\\
          =&-2\pi+\frac{\pi}{2}+\pi=-\frac{\pi}{2}.
       \end{aligned}
@@ -417,9 +417,9 @@
       \[
         x=u\cos\theta,\qquad y=u\sin\theta,\qquad 0\le\theta\le2\pi,
       \]
-      则 \(\,\mathrm{d}s=u\,\mathrm{d}\theta\). 因而
+      则 \(\mathrm{d}s=u\,\mathrm{d}\theta\). 因而
       \[
-        \,f(u,v)=\int_0^{2\pi}\left(u\cdot u^2\cos^2\theta+v\cdot u^2\sin^2\theta\right)u\,\mathrm{d}\theta
+        f(u,v)=\int_0^{2\pi}\left(u\cdot u^2\cos^2\theta+v\cdot u^2\sin^2\theta\right)u\,\mathrm{d}\theta
         =\pi u^4+\pi vu^3.
       \]
       所以
@@ -487,7 +487,7 @@
 
       由圆盘关于直线 \(y=x\) 对称，
       \[
-        \iint\limits_D \,f(y)\,\mathrm{d}x\,\mathrm{d}y=\iint\limits_D \,f(x)\,\mathrm{d}x\,\mathrm{d}y.
+        \iint\limits_D f(y)\,\mathrm{d}x\,\mathrm{d}y=\iint\limits_D f(x)\,\mathrm{d}x\,\mathrm{d}y.
       \]
       
       所以
@@ -496,7 +496,7 @@
         \oint_L xf(y)\,\mathrm{d}y-\frac{y}{f(x)}\,\mathrm{d}x
         =&\iint\limits_D\left(f(y)+\frac1{f(x)}\right)\,\mathrm{d}x\,\mathrm{d}y\\
         =&\iint\limits_D\left(f(x)+\frac1{f(x)}\right)\,\mathrm{d}x\,\mathrm{d}y\\
-        \ge& 2\iint\limits_D \,\mathrm{d}x\,\mathrm{d}y=2\pi a^2.
+        \ge& 2\iint\limits_D \mathrm{d}x\,\mathrm{d}y=2\pi a^2.
       \end{aligned}
       \]
 
@@ -530,6 +530,8 @@
       收敛. 故原级数条件收敛.
   \end{enumerate}
 \end{document}
+
+
 
 
 

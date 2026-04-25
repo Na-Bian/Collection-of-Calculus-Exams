@@ -1,439 +1,515 @@
 \documentclass[../Main.tex]{subfiles}
 \begin{document}
-  \chapter{2022-2023学年微积分（一）（下）期末考试}
+\chapter{2022-2023学年微积分（一）（下）期末考试}
 
-  \section{单项选择题(每小题 3 分，共 18 分)}
-  \begin{enumerate}
-    \item 在空间直角坐标系中，方程 \( z = \sqrt{x^2 + y^2 - 1} \) 表示（\qquad）.
+\section{单项选择题(每小题 3 分，共 18 分)}
+\begin{enumerate}
+  \item 在空间直角坐标系中，方程 \( z = \sqrt{x^2 + y^2 - 1} \) 表示（\qquad）.
 
-      \begin{tasks}[label=\textbf{\Alph*.}, label-width=1.5em, column-sep=1em](2)
-        \task 半球面
-        \task 柱面
-        \task 锥面
-        \task 单叶双曲面
-      \end{tasks}
+        \begin{tasks}[label=\textbf{\Alph*.}, label-width=1.5em, column-sep=1em](2)
+          \task 半球面
+          \task 柱面
+          \task 锥面
+          \task 单叶双曲面
+        \end{tasks}
 
-    \item 设 \( z = f(x, y) \) 在点 \( (1,1) \) 处有 \( f_x(1,1) = f_y(1,1) = 1 \)，则必有（\qquad）.
+  \item 设 \( z = f(x, y) \) 在点 \( (1,1) \) 处有 \( f_x(1,1) = f_y(1,1) = 1 \)，则必有（\qquad）.
 
-      \begin{tasks}[label=\textbf{\Alph*.}, label-width=1.5em, column-sep=1em](1)
-        \task \( \lim\limits_{\substack{x \to 1 \\ y \to 1}} f(x, y) \) 存在
-        \task \( \mathrm{d}z|_{(1,1)} = \mathrm{d}x + \mathrm{d}y \)
-        \task \( \lim\limits_{x \to 1} f(x, 1) \) 及 \( \lim\limits_{y \to 1} f(1, y) \) 都存在
-        \task \( f(x, y) \) 在点 \( (1,1) \) 沿方向 \( \boldsymbol{n} = \{\cos\theta, \sin\theta\} \) 的方向导数存在
-      \end{tasks}
+        \begin{tasks}[label=\textbf{\Alph*.}, label-width=1.5em, column-sep=1em](1)
+          \task \( \lim\limits_{\substack{x \to 1 \\ y \to 1}} f(x, y) \) 存在
+          \task \( \mathrm{d}z|_{(1,1)} = \mathrm{d}x + \mathrm{d}y \)
+          \task \( \lim\limits_{x \to 1} f(x, 1) \) 及 \( \lim\limits_{y \to 1} f(1, y) \) 都存在
+          \task \( f(x, y) \) 在点 \( (1,1) \) 沿方向 \( \boldsymbol{n} = \{\cos\theta, \sin\theta\} \) 的方向导数存在
+        \end{tasks}
 
-    \item 设函数 \( z = f(x, y) \) 的全微分为 \( \mathrm{d}z = 2x \mathrm{d}x + 3y \mathrm{d}y \)，则点 \( (0,0) \)（\qquad）.
+  \item 设函数 \( z = f(x, y) \) 的全微分为 \( \mathrm{d}z = 2x \mathrm{d}x + 3y \mathrm{d}y \)，则点 \( (0,0) \)（\qquad）.
 
-      \begin{tasks}[label=\textbf{\Alph*.}, label-width=1.5em, column-sep=1em](2)
-        \task 不是 \( f(x, y) \) 的连续点
-        \task 不是 \( f(x, y) \) 的驻点
-        \task 是 \( f(x, y) \) 的极大值点
-        \task 是 \( f(x, y) \) 的极小值点
-      \end{tasks}
+        \begin{tasks}[label=\textbf{\Alph*.}, label-width=1.5em, column-sep=1em](2)
+          \task 不是 \( f(x, y) \) 的连续点
+          \task 不是 \( f(x, y) \) 的驻点
+          \task 是 \( f(x, y) \) 的极大值点
+          \task 是 \( f(x, y) \) 的极小值点
+        \end{tasks}
 
-    \item 设 \( \Omega \) 是由锥面 \( z = \sqrt{x^2 + y^2} \) 和平行 \( z = 1 \) 所围成的空间区域，将 \( I = \displaystyle \iiint \limits_{\Omega} f(\sqrt{x^2 + y^2 + z}) \mathrm{d}x\,\mathrm{d}y\,\mathrm{d}z \) 化为柱坐标系下的累次积分，下列结果正确的是（\qquad）.
+  \item 设 \( \Omega \) 是由锥面 \( z = \sqrt{x^2 + y^2} \) 和平行 \( z = 1 \) 所围成的空间区域，将 \( I = \displaystyle \iiint \limits_{\Omega} f(\sqrt{x^2 + y^2 + z}) \mathrm{d}x\,\mathrm{d}y\,\mathrm{d}z \) 化为柱坐标系下的累次积分，下列结果正确的是（\qquad）.
 
-      \begin{tasks}[label=\textbf{\Alph*.}, label-width=1.5em, column-sep=1em](1)
-        \task \( I = 2\pi \displaystyle\int_0^1 r \mathrm{d}r \displaystyle\int_0^1 f(\sqrt{r^2 + z}) \mathrm{d}z \)
-        \task \( I = 2\pi \displaystyle\int_0^1 r \mathrm{d}r \displaystyle \int_r^1 f(\sqrt{r^2 + z}) \mathrm{d}z \)
-        \task \( I = 2\pi \displaystyle\int_0^1 \mathrm{d}r \displaystyle\int_r^1 f(\sqrt{r^2 + z}) \mathrm{d}z \)
-        \task \( I = 2\pi \displaystyle\int_0^1 \mathrm{d}z \displaystyle \int_0^z f(\sqrt{r^2 + z}) \mathrm{d}r \)
-      \end{tasks}
+        \begin{tasks}[label=\textbf{\Alph*.}, label-width=1.5em, column-sep=1em](1)
+          \task \( I = 2\pi \displaystyle\int_0^1 r \mathrm{d}r \displaystyle\int_0^1 f(\sqrt{r^2 + z}) \mathrm{d}z \)
+          \task \( I = 2\pi \displaystyle\int_0^1 r \mathrm{d}r \displaystyle \int_r^1 f(\sqrt{r^2 + z}) \mathrm{d}z \)
+          \task \( I = 2\pi \displaystyle\int_0^1 \mathrm{d}r \displaystyle\int_r^1 f(\sqrt{r^2 + z}) \mathrm{d}z \)
+          \task \( I = 2\pi \displaystyle\int_0^1 \mathrm{d}z \displaystyle \int_0^z f(\sqrt{r^2 + z}) \mathrm{d}r \)
+        \end{tasks}
 
-    \item 设 \( S \) 是上半球面 \( x^2 + y^2 + z^2 = R^2 \) (\( z \geq 0, R > 0 \))，\( abc \neq 0 \)，则 \( \displaystyle\iint \limits_S (ax + by + cz) \mathrm{d}S = \)（\qquad）.
+  \item 设 \( S \) 是上半球面 \( x^2 + y^2 + z^2 = R^2 \) (\( z \geq 0, R > 0 \))，\( abc \neq 0 \)，则 \( \displaystyle\iint \limits_S (ax + by + cz) \mathrm{d}S = \)（\qquad）.
 
-      \begin{tasks}[label=\textbf{\Alph*.}, label-width=1.5em, column-sep=1em](2)
-        \task \( c\pi R^2 \)
-        \task \( \dfrac{1}{4}c\pi R^3 \)
-        \task \( c\pi R^3 \)
-        \task \( (a + b + c)\pi R^2 \)
-      \end{tasks}
-    \item 下列命题中，正确的是（\qquad）.
+        \begin{tasks}[label=\textbf{\Alph*.}, label-width=1.5em, column-sep=1em](2)
+          \task \( c\pi R^2 \)
+          \task \( \dfrac{1}{4}c\pi R^3 \)
+          \task \( c\pi R^3 \)
+          \task \( (a + b + c)\pi R^2 \)
+        \end{tasks}
+  \item 下列命题中，正确的是（\qquad）.
 
-      \begin{tasks}[label=\textbf{\Alph*.}, label-width=1.5em, column-sep=1em](1)
-        \task 若 \( a_n \leq b_n \leq c_n \) 且 \( \sum \limits_{n=1}^{\infty} a_n \) 与 \( \sum \limits_{n=1}^{\infty} c_n \) 收敛，则 \( \sum \limits_{n=1}^{\infty} b_n \) 收敛
-        \task 若正项级数 \( \sum \limits_{n=1}^{\infty} a_n \) 满足 \( \dfrac{a_{n+1}}{a_n} < 1 \)，则 \( \sum \limits_{n=1}^{\infty} a_n \) 收敛
-        \task 若 \( \lim \limits_{n \to \infty} \dfrac{u_n}{v_n} = 1 \)，则 \( \sum \limits_{n=1}^{\infty} u_n \) 与 \( \sum \limits_{n=1}^{\infty} v_n \) 同敛散
-        \task 若 \( \sum \limits_{n=1}^{\infty} a_n \) 收敛，则 \( \sum \limits_{n=1}^{\infty} \dfrac{(-1)^n a_n}{\sqrt{n}} \) 收敛
-      \end{tasks}
-      
-  \end{enumerate}
+        \begin{tasks}[label=\textbf{\Alph*.}, label-width=1.5em, column-sep=1em](1)
+          \task 若 \( a_n \leq b_n \leq c_n \) 且 \( \sum \limits_{n=1}^{\infty} a_n \) 与 \( \sum \limits_{n=1}^{\infty} c_n \) 收敛，则 \( \sum \limits_{n=1}^{\infty} b_n \) 收敛
+          \task 若正项级数 \( \sum \limits_{n=1}^{\infty} a_n \) 满足 \( \dfrac{a_{n+1}}{a_n} < 1 \)，则 \( \sum \limits_{n=1}^{\infty} a_n \) 收敛
+          \task 若 \( \lim \limits_{n \to \infty} \dfrac{u_n}{v_n} = 1 \)，则 \( \sum \limits_{n=1}^{\infty} u_n \) 与 \( \sum \limits_{n=1}^{\infty} v_n \) 同敛散
+          \task 若 \( \sum \limits_{n=1}^{\infty} a_n \) 收敛，则 \( \sum \limits_{n=1}^{\infty} \dfrac{(-1)^n a_n}{\sqrt{n}} \) 收敛
+        \end{tasks}
 
-  \section{填空题(每小题 4 分，共 16 分)}
-  \begin{enumerate}
-    \setcounter{enumi}{6}
-    \item 设曲线 \( \Gamma: \begin{cases} x^2 + y^2 + z^2 = 1 \\ x + y + z = 0 \end{cases} \)，则 \( \displaystyle \oint_{\Gamma} (x^2 + 2y^2 + 3z) \mathrm{d}s = \underline{\hspace{5em}} \).
-  
-    \item \( z = x + 3y + \ln(1 + x^2 + y^2) \) 在点 \( (0,0,0) \) 的切平面方程为 \(\underline{\hspace{5em}}\).
-    
-    \item 设 \( u = \ln \sqrt{x^2 + y^2 + z^2} \)，则 \( \text{div}(\textbf{grad}u) \Big|_{(1,-1,2)} = \underline{\hspace{5em}} \).
-    
-    \item 设 \( f(x) = \begin{cases} x, & -\pi \leq x < 0, \\ 1, & x = 0, \\ 2x, & 0 < x < \pi \end{cases} \)，将 \( f(x) \) 展开成以 \( 2\pi \) 为周期的傅里叶级数，则 \( f(x) \) 的傅里叶级数的和函数在 \( x = -3\pi \) 处的值为 \(\underline{\hspace{5em}}\).
-    
-  \end{enumerate}
+\end{enumerate}
 
-  \section{基本计算题(每小题 7 分，共 42 分)}
-  \begin{enumerate}
-    \setcounter{enumi}{10}
-    \item 求过点 \( P(2,1,3) \) 且与 \( L_1: \dfrac{x-1}{2} = \dfrac{y-2}{1} = \dfrac{z-2}{-1} \) 垂直的平面方程，并求该平面与 \( L_1 \) 的交点.
-      \vspace{9em}
+\section{填空题(每小题 4 分，共 16 分)}
+\begin{enumerate}
+  \setcounter{enumi}{6}
+  \item 设曲线 \( \Gamma: \begin{cases} x^2 + y^2 + z^2 = 1 \\ x + y + z = 0 \end{cases} \)，则 \( \displaystyle \oint_{\Gamma} (x^2 + 2y^2 + 3z) \mathrm{d}s = \underline{\hspace{5em}} \).
 
-    \item 设 \( z = e^{-x} \sin \dfrac{y}{x} \)，求 \( \left. \dfrac{\partial z}{\partial y} \right|_{(2,\pi)} \)，\( \left. \dfrac{\partial^2 z}{\partial y \partial x} \right|_{(2,\pi)} \).
-      \vspace{9em}
+  \item \( z = x + 3y + \ln(1 + x^2 + y^2) \) 在点 \( (0,0,0) \) 的切平面方程为 \(\underline{\hspace{5em}}\).
 
-    \item 求曲面 \( z = xy \) 包含在圆柱面 \( x^2 + y^2 = 1 \) 内那部分面积 \( S \).
-      \vspace{9em}
-    \item 求 \( I = \displaystyle \iiint \limits_{\Omega} z^2 \mathrm{d}x\,\mathrm{d}y\,\mathrm{d}z \)，其中 \( \Omega \) 由 \( \begin{cases} y^2 + \dfrac{z^2}{2} = 1 \\ x = 0 \end{cases} \) 绕 \( z \) 轴旋转一周所形成的曲面所围成的立体.
-      \vspace{9em}
+  \item 设 \( u = \ln \sqrt{x^2 + y^2 + z^2} \)，则 \( \text{div}(\textbf{grad}u) \Big|_{(1,-1,2)} = \underline{\hspace{5em}} \).
 
-    \item 设 \( S \) 是上半球面 \( z = \sqrt{R^2 - x^2 - y^2} \) (\( R > 0 \))，取上侧，求 \( I = \displaystyle \iint \limits_S \dfrac{(x^2 + y) \mathrm{d}y\,\mathrm{d}z + z \mathrm{d}x\,\mathrm{d}y}{\sqrt{x^2 + y^2 + z^2}} \).
-      \vspace{9em}
+  \item 设 \( f(x) = \begin{cases} x, & -\pi \leq x < 0, \\ 1, & x = 0, \\ 2x, & 0 < x < \pi \end{cases} \)，将 \( f(x) \) 展开成以 \( 2\pi \) 为周期的傅里叶级数，则 \( f(x) \) 的傅里叶级数的和函数在 \( x = -3\pi \) 处的值为 \(\underline{\hspace{5em}}\).
 
-    \item 求幂级数 \( \sum \limits_{n=1}^{\infty} \dfrac{2n + 1}{n!} x^{2n} \) 的收敛域与和函数 \( S(x) \).
-      \vspace{9em}
-  \end{enumerate}
+\end{enumerate}
 
-  \section{综合题(每小题 7 分，共 14 分)}
+\section{基本计算题(每小题 7 分，共 42 分)}
+\begin{enumerate}
+  \setcounter{enumi}{10}
+  \item 求过点 \( P(2,1,3) \) 且与 \( L_1: \dfrac{x-1}{2} = \dfrac{y-2}{1} = \dfrac{z-2}{-1} \) 垂直的平面方程，并求该平面与 \( L_1 \) 的交点.
+        \vspace{9em}
 
-  \begin{enumerate}
-    \setcounter{enumi}{16}
-    \item 设 \( L \) 是 \( xOy \) 面上任意的光滑曲线，\( f(x) \) 具有二阶连续的导数，且 \( f(0) = 4 \)，\( f'(0) = 3 \)，若曲线积分 \( \displaystyle\int_L (-xe^{-x} + f''(x))y \mathrm{d}x + f'(x) \mathrm{d}y \) 与路径无关，求 \( f(x) \).
-      \vspace{11em}
+  \item 设 \( z = \mathrm{e}^{-x} \sin \dfrac{y}{x} \)，求 \( \left. \dfrac{\partial z}{\partial y} \right|_{(2,\pi)} \)，\( \left. \dfrac{\partial^2 z}{\partial y \partial x} \right|_{(2,\pi)} \).
+        \vspace{9em}
 
-    \item 求 \( f(x, y) = x^2 - y^2 + 2 \) 在椭圆域 \( D = \{(x, y) \mid 4x^2 + y^2 \leq 4\} \) 上的最大值和最小值.
-      \vspace{11em}
-  \end{enumerate}
+  \item 求曲面 \( z = xy \) 包含在圆柱面 \( x^2 + y^2 = 1 \) 内那部分面积 \( S \).
+        \vspace{9em}
+  \item 求 \( I = \displaystyle \iiint \limits_{\Omega} z^2 \mathrm{d}x\,\mathrm{d}y\,\mathrm{d}z \)，其中 \( \Omega \) 由 \( \begin{cases} y^2 + \dfrac{z^2}{2} = 1 \\ x = 0 \end{cases} \) 绕 \( z \) 轴旋转一周所形成的曲面所围成的立体.
+        \vspace{9em}
 
-  \section{证明题(每小题 5 分，共 10 分)}
+  \item 设 \( S \) 是上半球面 \( z = \sqrt{R^2 - x^2 - y^2} \) (\( R > 0 \))，取上侧，求 \( I = \displaystyle \iint \limits_S \dfrac{(x^2 + y) \mathrm{d}y\,\mathrm{d}z + z \mathrm{d}x\,\mathrm{d}y}{\sqrt{x^2 + y^2 + z^2}} \).
+        \vspace{9em}
 
-  \begin{enumerate}
-    \setcounter{enumi}{18}
-    \item 设 \( f(x) \) 在 \([0,1]\) 上连续，且 \( \displaystyle \int_0^1 f(x) dx = A \)，证明：\( \displaystyle \int_0^1 \mathrm{d}x \displaystyle \int_x^1 f(x)f(y) \mathrm{d}y = \dfrac{1}{2}A^2 \).
-      \vspace{11em}
+  \item 求幂级数 \( \sum \limits_{n=1}^{\infty} \dfrac{2n + 1}{n!} x^{2n} \) 的收敛域与和函数 \( S(x) \).
+        \vspace{9em}
+\end{enumerate}
 
-    \item 设数列 \( \{a_n\} \) 满足 \( a_1 = 1 \)，\( 2a_{n+1} = a_n + \sqrt{a_n^2 + u_n} \)，其中 \( u_n > 0 \)，\( \{a_n\} \) 有上界，证明 \( \sum \limits_{n=1}^{\infty} u_n \) 收敛.
-      \vspace{11em}
-  \end{enumerate}
+\section{综合题(每小题 7 分，共 14 分)}
+
+\begin{enumerate}
+  \setcounter{enumi}{16}
+  \item 设 \( L \) 是 \( xOy \) 面上任意的光滑曲线，\( f(x) \) 具有二阶连续的导数，且 \( f(0) = 4 \)，\( f'(0) = 3 \)，若曲线积分 \( \displaystyle\int_L (-xe^{x} + f''(x))y \mathrm{d}x + f(x) \mathrm{d}y \) 与路径无关，求 \( f(x) \).
+        \vspace{11em}
+
+  \item 求 \( f(x, y) = x^2 - y^2 + 2 \) 在椭圆域 \( D = \{(x, y) \mid 4x^2 + y^2 \leq 4\} \) 上的最大值和最小值.
+        \vspace{11em}
+\end{enumerate}
+
+\section{证明题(每小题 5 分，共 10 分)}
+
+\begin{enumerate}
+  \setcounter{enumi}{18}
+  \item 设 \( f(x) \) 在 \([0,1]\) 上连续，且 \( \displaystyle \int_0^1 f(x) \mathrm{d}x = A \)，证明：\( \displaystyle \int_0^1 \mathrm{d}x \displaystyle \int_x^1 f(x)f(y) \mathrm{d}y = \dfrac{1}{2}A^2 \).
+        \vspace{11em}
+
+  \item 设数列 \( \{a_n\} \) 满足 \( a_1 = 1 \)，\( 2a_{n+1} = a_n + \sqrt{a_n^2 + u_n} \)，其中 \( u_n > 0 \)，\( \{a_n\} \) 有上界，证明 \( \sum \limits_{n=1}^{\infty} u_n \) 收敛.
+        \vspace{11em}
+\end{enumerate}
 \chapter{2022-2023学年微积分（一）（下）期末考试参考答案}
-  \section{单项选择题(每小题 3 分，共 18 分)}
-  \begin{enumerate}
-    \item \textbf{Solution}. D.
+\section{单项选择题(每小题 3 分，共 18 分)}
+\begin{enumerate}
+  \item \textbf{Solution}. D.
 
-      方程
-      \[
-        z=\sqrt{x^2+y^2-1}
-      \]
-      等价于
-      \[
-        x^2+y^2-z^2=1,
-      \]
-      表示单叶双曲面的上半部分.
+        方程$z=\sqrt{x^2+y^2-1}$等价于
+        \[
+          x^2+y^2-z^2=1,z\geq0,
+        \]
+        表示单叶双曲面的上半部分.
 
-    \item \textbf{Solution}. C.
+  \item \textbf{Solution}. C.
 
-      在点 \(P(0,1,1)\) 处，
-      \[
-        F_x= y+ze^{xz}=2,\quad F_y=x-\frac{z}{y}=-1,\quad F_z=-\ln y+xe^{xz}=0.
-      \]
-      因 \(F_y\neq 0\)，可把 \(y\) 看作 \(x,z\) 的隐函数，且
-      \[
-        \frac{\partial y}{\partial x}=-\frac{F_x}{F_y}=2.
-      \]
-      因此 C 中的 \(-2\) 错误.
+        多元函数偏导存在无法保证函数连续，全微分$\mathrm{d}z=f_x\mathrm{d}x+f_y\mathrm{d}y$仅在函数可微时成立，
 
-    \item \textbf{Solution}. D.
+        偏导数存在不能保证沿任意方向的方向导数存在.
 
-      区域 \(D\) 关于原点中心对称，而 \(xy+\cos x\sin y\) 关于 \((x,y)\mapsto(-x,-y)\) 为奇函数，所以
-      \[
-        \iint_D(xy+\cos x\sin y)\,\mathrm{d}\sigma=0.
-      \]
+        对于C选项，$f(x,1)$是$x$的一元函数，由$f_x(1,1)$存在知该一元函数在$x=1$处可导，必然连续，
 
-    \item \textbf{Solution}. B.
+        即$\lim\limits_{x\to1}f(x,1)=f(1,1)$存在；同理$\lim\limits_{y\to1}f(1,y)$也存在.
 
-      正弦级数表示的是 \([0,\pi]\) 上函数的奇延拓. 因而
-      \[
-        S\left(-\frac{\pi}{2}\right)=-f\left(\frac{\pi}{2}\right)
-        =-\left(1-\frac{\pi}{2}\right)
-        =-\frac{\pi}{2}+1.
-      \]
+  \item \textbf{Solution}. D.
 
-    \item \textbf{Solution}. C.
+        由题可知$\mathrm{d}z=\mathrm{d}\left(x^2+\frac{3}{2}y^2\right)$，所以$z=x^2+\frac{3}{2}y^2+C$，因此$f(x,y)$显然在$(0,0)$处可微，且
+        \[
+          f_{x}(0,0)=2x\big|_{(0,0)}=0,\quad f_{y}(0,0)=3y\big|_{(0,0)}=0,
+        \]
+        所以点$(0,0)$是驻点. 又$f_{xx}(0,0)=2$，$f_{yy}(0,0)=3$，$f_{xy}(0,0)=0$，所以
+        \[
+          f_{xx}(0,0)f_{yy}(0,0)-f_{xy}^2(0,0)=6>0,
+        \]
+        因此点$(0,0)$是极小值点.
 
-      由对称性
-      \[
-        \oint_\Gamma y\,\mathrm{d}s=\oint_\Gamma z\,\mathrm{d}s=0,
-      \]
-      故
-      \[
-        \oint_\Gamma(y+2z)\,\mathrm{d}s=0.
-      \]
+  \item \textbf{Solution}. B.
 
-    \item \textbf{Solution}. A.
+        由柱坐标代换
+        \[
+          x=r\cos\theta,\quad y=r\sin\theta,\quad z=z,
+        \]
+        可得
+        \[
+          I=\int_0^{2\pi}\mathrm{d}\theta\int_0^1 r\,\mathrm{d}r\int_r^1 f(\sqrt{r^2+z})\,\mathrm{d}z.
+        \]
 
-      若 \(\sum u_n\) 收敛，则必有 \(u_n\to 0\)，从而充分大时 \(|u_n|\le 1\)，于是
-      \[
-        u_n^2\le |u_n|.
-      \]
-      由比较判别法，\(\sum u_n^2\) 收敛.
-  \end{enumerate}
+  \item \textbf{Solution}. C.
 
-  \section{填空题(每小题 4 分，共 16 分)}
-  \begin{enumerate}
-    \setcounter{enumi}{6}
-    \item \textbf{Solution}. $2\pi$.
+        由对称性可知
+        \[
+          \iint\limits_{S} x\,\mathrm{d}S=\iint\limits_{S} y\,\mathrm{d}S=0,
+        \]
 
-      因为曲线 \(\Gamma\) 位于平面 \(x+y+z=0\) 上，且关于三个坐标完全对称，所以
-      \[
-        \oint_\Gamma x^2\,\mathrm{d}s=\oint_\Gamma y^2\,\mathrm{d}s=\oint_\Gamma z^2\,\mathrm{d}s.
-      \]
-      又
-      \[
-        \oint_\Gamma(x^2+y^2+z^2)\,\mathrm{d}s=\oint_\Gamma 1\,\mathrm{d}s=2\pi.
-      \]
-      从而
-      \[
-        \oint_\Gamma(x^2+2y^2+3z)\,\mathrm{d}s=2\pi.
-      \]
+        故$\iint\limits_{S} (ax + by + cz) \mathrm{d}S = c \iint\limits_{S} z\,\mathrm{d}S$.
 
-    \item \textbf{Solution}. $x+3y-z=0$.
+        用球坐标代换，$\mathrm{d}S=R^2\sin\varphi\,\mathrm{d}\varphi\,\mathrm{d}\theta$，因此
+        \[
+          \begin{aligned}
+            c \iint\limits_{S} z\,\mathrm{d}S= & c \int_0^{2\pi}\mathrm{d}\theta\int_0^{\frac{\pi}{2}} R\cos\varphi R^2\sin\varphi\,\mathrm{d}\varphi \\
+            =                                  & c\pi R^3\int_0^{\frac{\pi}{2}} \sin 2\varphi\,\mathrm{d}\varphi                                      \\
+            =                                  & c\pi R^3\left[-\frac{\cos 2\varphi}{2}\right]_0^{\frac{\pi}{2}}                                      \\
+            =                                  & c\pi R^3.
+          \end{aligned}
+        \]
 
-      由
-      \[
-        z=x+3y+\ln(1+x^2+y^2)
-      \]
-      知
-      \[
-        z_x(0,0)=1,\qquad z_y(0,0)=3.
-      \]
-      在点 \((0,0,0)\) 处的切平面方程为
-      \[
-        z=x+3y.
-      \]
+  \item \textbf{Solution}. A.
 
-    \item \textbf{Solution}. $\dfrac19$.
+        对于A选项，根据已知条件 $a_n \leq b_n \leq c_n$，可知$0 \leq b_n - a_n \leq c_n - a_n$.
 
-      \[
-        u=\ln\sqrt{x^2+y^2+z^2}=\frac12\ln(x^2+y^2+z^2).
-      \]
-      在三维空间中
-      \[
-        \Delta u=\operatorname{div}(\operatorname{grad}u)=\frac{1}{x^2+y^2+z^2}.
-      \]
-      代入 \((1,-1,2)\) 得
-      \[
-        \Delta u=\frac{1}{1+1+4}=\frac19.
-      \]
+        令$u_n = b_n - a_n$，$v_n = c_n - a_n$，则 $v_n \geq u_n \geq 0$ 均为正项级数的通项.
 
-    \item \textbf{Solution}. $\dfrac{\pi}{2}$.
+        因为 $\sum a_n$ 和 $\sum c_n$ 都收敛，它们的差级数 $\sum v_n = \sum (c_n - a_n)$ 也必然收敛，
 
-      傅里叶级数的和函数是原函数的 \(2\pi\) 周期延拓在间断点取左右极限平均. 因为
-      \[
-        -3\pi\equiv -\pi\equiv \pi \pmod{2\pi},
-      \]
-      故
-      \[
-        S(-3\pi)=\frac{f(\pi^-)+f(-\pi^+)}{2}
-        =\frac{2\pi+(-\pi)}{2}
-        =\frac{\pi}{2}.
-      \]
-  \end{enumerate}
+        根据正项级数的比较判别法，由于 $\sum v_n$ 收敛，所以 $\sum u_n$ 也收敛.
 
-  \section{基本计算题(每小题 7 分，共 42 分)}
-  \begin{enumerate}
-    \setcounter{enumi}{10}
-    \item \textbf{Solution}. 与直线
-      \[
-        L_1:\ \frac{x-1}{2}=\frac{y-2}{1}=\frac{z-2}{-1}
-      \]
-      垂直的平面法向量可取 \((2,1,-1)\). 过点 \(P(2,1,3)\) 的平面方程为
-      \[
-        2(x-2)+(y-1)-(z-3)=0,
-      \]
-      即
-      \[
-        2x+y-z-2=0.
-      \]
-      将
-      \[
-        x=2t+1,\quad y=t+2,\quad z=-t+2
-      \]
-      代入该平面方程，可得 \(t=0\)，故交点为
-      \[
-        (1,2,2).
-      \]
+        因 $b_n = u_n + a_n$，而 $\sum u_n$ 和 $\sum a_n$ 都是收敛级数，所以它们的和级数 $\sum b_n$ 必然收敛.
 
-    \item \textbf{Solution}. 先求
-      \[
-        z_y=e^{-x}\cos\frac{y}{x}\cdot \frac{1}{x}=\frac{e^{-x}}{x}\cos\frac{y}{x}.
-      \]
-      所以
-      \[
-        z_y(2,\pi)=\frac{e^{-2}}{2}\cos\frac{\pi}{2}=0.
-      \]
-      再对 \(x\) 求偏导，可得
-      \[
-        z_{yx}=e^{-x}\left(\frac{y}{x^2}\sin\frac{y}{x}-\frac{x+1}{x^2}\cos\frac{y}{x}\right)\frac{1}{x}.
-      \]
-      在 \((2,\pi)\) 处，\(\sin\dfrac{\pi}{2}=1,\ \cos\dfrac{\pi}{2}=0\)，故
-      \[
-        z_{yx}(2,\pi)=\frac{\pi}{8e^2}.
-      \]
+        对于B选项，令$a_n=\frac{1}{n}$，显然$\dfrac{a_{n+1}}{a_n}=\dfrac{n}{n+1}<1$，但$\sum\limits_{n=1}^{\infty} a_n$发散.
 
-    \item \textbf{Solution}. 曲面面积为
-      \[
-        S=\iint_{x^2+y^2\le 1}\sqrt{1+z_x^2+z_y^2}\,\mathrm{d}x\,\mathrm{d}y.
-      \]
-      由于 \(z=xy\)，故
-      \[
-        z_x=y,\qquad z_y=x.
-      \]
-      所以
-      \[
-        S=\iint_{x^2+y^2\le 1}\sqrt{1+x^2+y^2}\,\mathrm{d}x\,\mathrm{d}y.
-      \]
-      用极坐标计算：
-      \[
-        S=2\pi\int_0^1 r\sqrt{1+r^2}\,\mathrm{d}r
-        =\frac{2\pi}{3}(2\sqrt2-1).
-      \]
+        对于C选项，令$u_n = \dfrac{(-1)^n}{\sqrt{n}}$，$v_n = \dfrac{(-1)^n}{\sqrt{n}} + \dfrac{1}{n}$，则$\lim \limits_{n \to \infty} \dfrac{v_n}{u_n} = \lim \limits_{n \to \infty} \left( 1 + \dfrac{1}{(-1)^n \sqrt{n}} \right) = 1$，
 
-    \item \textbf{Solution}. 绕 \(z\) 轴旋转后得到椭球体
-      \[
-        x^2+y^2+\frac{z^2}{2}\le 1.
-      \]
-      对固定 \(z\)，截面是圆
-      \[
-        x^2+y^2\le 1-\frac{z^2}{2},
-      \]
-      面积为
-      \[
-        \pi\left(1-\frac{z^2}{2}\right).
-      \]
-      因而
-      \[
-        I=\int_{-\sqrt2}^{\sqrt2} z^2\pi\left(1-\frac{z^2}{2}\right)\,\mathrm{d}z
-        =\frac{8\sqrt2\pi}{15}.
-      \]
+        但$\sum\limits_{n=1}^{\infty} u_n$收敛，而$\sum\limits_{n=1}^{\infty} v_n$发散.
 
-    \item \textbf{Solution}. 将上半球与底圆盘补成闭曲面，应用高斯公式. 由对称性，含 \(y\) 的奇函数部分积分为零，最后只需处理对称项，计算得
-      \[
-        I=\frac{2\pi R^2}{3}.
-      \]
+        对于D选项，令$a_n = \frac{(-1)^n}{\sqrt{n}}$，则$\sum\limits_{n=1}^{\infty} a_n$收敛，但$\sum\limits_{n=1}^{\infty} \dfrac{(-1)^n a_n}{\sqrt{n}} = \sum\limits_{n=1}^{\infty} \dfrac{1}{n}$发散.
 
-    \item \textbf{Solution}. 用比值法可知收敛半径为 \(\infty\). 又
-      \[
-        S(x)=\sum_{n=1}^{\infty}\frac{2n+1}{n!}x^{2n}
-        =2\sum_{n=1}^{\infty}\frac{n}{n!}x^{2n}+\sum_{n=1}^{\infty}\frac{x^{2n}}{n!}.
-      \]
-      其中
-      \[
-        \sum_{n=1}^{\infty}\frac{n}{n!}x^{2n}=x^2e^{x^2},\qquad
-        \sum_{n=1}^{\infty}\frac{x^{2n}}{n!}=e^{x^2}-1.
-      \]
-      所以
-      \[
-        S(x)=(2x^2+1)e^{x^2}-1.
-      \]
-  \end{enumerate}
+\end{enumerate}
 
-  \section{综合题(每小题 7 分，共 14 分)}
-  \begin{enumerate}
-    \setcounter{enumi}{16}
-    \item \textbf{Solution}. 记
-      \[
-        P(x,y)=(-xe^{-x}+f''(x))y,\qquad Q(x,y)=f'(x).
-      \]
-      由路径无关得
-      \[
-        P_y=Q_x,
-      \]
-      即
-      \[
-        -xe^{-x}+f''(x)=f'(x).
-      \]
-      于是
-      \[
-        f''(x)-f'(x)=xe^{-x}.
-      \]
-      解该微分方程并利用
-      \[
-        f(0)=4,\qquad f'(0)=3
-      \]
-      可得
-      \[
-        f(x)=4e^x+\frac12(x^2-x)e^x.
-      \]
+\section{填空题(每小题 4 分，共 16 分)}
+\begin{enumerate}
+  \setcounter{enumi}{6}
+  \item \textbf{Solution}. $2\pi$.
 
-    \item \textbf{Solution}. 在区域内部，
-      \[
-        f_x=2x,\qquad f_y=-2y,
-      \]
-      唯一驻点是 \((0,0)\)，其函数值为 \(2\).
+        显然曲线$\Gamma$具有轮换对称性，因此
+        \[
+          \begin{gathered}
+            \oint_\Gamma x^2\,\mathrm{d}s=\oint_\Gamma y^2\,\mathrm{d}s=\oint_\Gamma z^2\,\mathrm{d}s,\\
+            \oint_\Gamma x\,\mathrm{d}s=\oint_\Gamma y\,\mathrm{d}s=\oint_\Gamma z\,\mathrm{d}s=0.
+          \end{gathered}
+        \]
 
-      在边界
-      \[
-        4x^2+y^2=4
-      \]
-      上有 \(y^2=4-4x^2\). 代入原函数得
-      \[
-        f=x^2-(4-4x^2)+2=5x^2-2,\qquad -1\le x\le 1.
-      \]
-      所以边界上最大值为 \(3\)，最小值为 \(-2\). 与内部值比较知
-      \[
-        \max f=3,\qquad \min f=-2.
-      \]
-  \end{enumerate}
+        从而
+        \[
+          \oint_\Gamma(x^2+2y^2+3z)\,\mathrm{d}s=\oint_\Gamma(x^2+y^2+z^2)\,\mathrm{d}s+\oint_\Gamma(x+y+z)\,\mathrm{d}s=2\pi.
+        \]
 
-  \section{证明题(每小题 5 分，共 10 分)}
-  \begin{enumerate}
-    \setcounter{enumi}{18}
-    \item \textbf{Proof}. 交换积分次序，有
-      \[
-        \int_0^1\,\mathrm{d}x\int_x^1 f(x)f(y)\,\mathrm{d}y
-        =\int_0^1\,\mathrm{d}y\int_0^y f(x)f(y)\,\mathrm{d}x.
-      \]
-      将两式相加：
-      \[
-        2\int_0^1\,\mathrm{d}x\int_x^1 f(x)f(y)\,\mathrm{d}y
-        =\int_0^1\int_0^1 f(x)f(y)\,\mathrm{d}x\,\mathrm{d}y.
-      \]
-      右边可分离为
-      \[
-        \left(\int_0^1 f(x)\,\mathrm{d}x\right)\left(\int_0^1 f(y)\,\mathrm{d}y\right)=A^2.
-      \]
-      因而
-      \[
-        \int_0^1\,\mathrm{d}x\int_x^1 f(x)f(y)\,\mathrm{d}y=\frac{A^2}{2}.
-      \]
+  \item \textbf{Solution}. $x+3y-z=0$.
 
-    \item \textbf{Proof}. 由递推式
-      \[
-        2a_{n+1}=a_n+\sqrt{a_n^2+u_n}
-      \]
-      可知 \(\sqrt{a_n^2+u_n}>a_n\)，因此
-      \[
-        a_{n+1}>a_n,
-      \]
-      即 \(\{a_n\}\) 单调递增. 题设又给出它有上界，所以 \(\{a_n\}\) 收敛.
+        由$z=x+3y+\ln(1+x^2+y^2)$可得
+        \[
+          z_x=1+\frac{2x}{1+x^2+y^2},\qquad z_y=3+\frac{2y}{1+x^2+y^2}.
+        \]
 
-      再由递推式整理得
-      \[
-        u_n=4a_{n+1}(a_{n+1}-a_n).
-      \]
-      因为 \(a_n>0\) 且单调递增，所以
-      \[
-        0<u_n\le 4(a_{n+1}^2-a_n^2).
-      \]
-      而
-      \[
-        \sum_{n=1}^{\infty}(a_{n+1}^2-a_n^2)
-      \]
-      为望远镜级数，并且由于 \(\{a_n\}\) 收敛而有有限和. 由比较判别法，
-      \[
-        \sum_{n=1}^{\infty}u_n
-      \]
-      收敛.
-  \end{enumerate}
+        因此
+        \[
+          z_x(0,0)=1,\qquad z_y(0,0)=3.
+        \]
+
+        曲面在点 \((0,0,0)\) 处切平面的法向量可取作$(z_x(0,0),z_y(0,0),-1)=(1,3,-1)$，因此切平面方程为
+        \[
+          x+3y-z=0.
+        \]
+
+  \item \textbf{Solution}. $\frac{1}{6}$.
+
+        \[
+          u=\ln\sqrt{x^2+y^2+z^2}=\frac12\ln(x^2+y^2+z^2).
+        \]
+
+        因此$\mathbf{grad}u=\left(\frac{x}{x^2+y^2+z^2},\frac{y}{x^2+y^2+z^2},\frac{z}{x^2+y^2+z^2}\right)$，所以
+        \[
+          \text{div}(\mathbf{grad}u)=\frac{y^2+z^2-x^2}{(x^2+y^2+z^2)^2}+\frac{x^2+z^2-y^2}{(x^2+y^2+z^2)^2}+\frac{x^2+y^2-z^2}{(x^2+y^2+z^2)^2}=\frac{1}{x^2+y^2+z^2}.
+        \]
+
+        代入 \((1,-1,2)\) 得
+        \[
+          \Delta u=\frac{1}{1+1+4}=\frac{1}{6}.
+        \]
+
+  \item \textbf{Solution}. $\dfrac{\pi}{2}$.
+
+        因为
+        \[
+          -3\pi\equiv -\pi\equiv \pi \pmod{2\pi},
+        \]
+
+        根据Dirichlet收敛定理可知
+        \[
+          S(-3\pi)=\frac{f(\pi^-)+f(-\pi^+)}{2}
+          =\frac{2\pi+(-\pi)}{2}
+          =\frac{\pi}{2}.
+        \]
+\end{enumerate}
+
+\section{基本计算题(每小题 7 分，共 42 分)}
+\begin{enumerate}
+  \setcounter{enumi}{10}
+  \item \textbf{Solution}. 与直线
+        \[
+          L_1:\ \frac{x-1}{2}=\frac{y-2}{1}=\frac{z-2}{-1}
+        \]
+        垂直的平面法向量可取 \((2,1,-1)\). 过点 \(P(2,1,3)\) 的平面方程为
+        \[
+          2(x-2)+(y-1)-(z-3)=0,
+        \]
+        即
+        \[
+          2x+y-z-2=0.
+        \]
+        将
+        \[
+          x=2t+1,\quad y=t+2,\quad z=-t+2
+        \]
+        代入该平面方程，可得 \(t=0\)，故交点为$(1,2,2)$.
+
+  \item \textbf{Solution}. 先求
+        \[
+          z_y=\mathrm{e}^{-x}\cos\frac{y}{x}\cdot \frac{1}{x}=\frac{\mathrm{e}^{-x}}{x}\cos\frac{y}{x}.
+        \]
+        所以
+        \[
+          z_y(2,\pi)=\frac{\mathrm{e}^{-2}}{2}\cos\frac{\pi}{2}=0.
+        \]
+        再对 \(x\) 求偏导，可得
+        \[
+          z_{yx}=\mathrm{e}^{-x}\left(\frac{y}{x^2}\sin\frac{y}{x}-\frac{x+1}{x^2}\cos\frac{y}{x}\right)\frac{1}{x}.
+        \]
+        在 \((2,\pi)\) 处，\(\sin\dfrac{\pi}{2}=1,\ \cos\dfrac{\pi}{2}=0\)，故
+        \[
+          z_{yx}(2,\pi)=\frac{\pi}{8\mathrm{e}^2}.
+        \]
+
+  \item \textbf{Solution}. 曲面面积为
+        \[
+          S=\iint\limits_{x^2+y^2\le 1}\sqrt{1+z_x^2+z_y^2}\,\mathrm{d}x\,\mathrm{d}y.
+        \]
+        由于 \(z=xy\)，故
+        \[
+          z_x=y,\qquad z_y=x.
+        \]
+        所以
+        \[
+          S=\iint\limits_{x^2+y^2\le 1}\sqrt{1+x^2+y^2}\,\mathrm{d}x\,\mathrm{d}y.
+        \]
+        用极坐标代换，
+        \[
+          S=2\pi\int_0^1 r\sqrt{1+r^2}\,\mathrm{d}r
+          =\frac{2\pi}{3}(2\sqrt2-1).
+        \]
+
+  \item \textbf{Solution}. 绕 \(z\) 轴旋转后得到椭球体
+        \[
+          x^2+y^2+\frac{z^2}{2}\le 1.
+        \]
+        对固定 \(z\)，截面是圆
+        \[
+          x^2+y^2\le 1-\frac{z^2}{2},
+        \]
+
+        因而
+        \[
+          \begin{aligned}
+            I= & \iiint\limits_{\Omega} z^2\,\mathrm{d}x\,\mathrm{d}y\,\mathrm{d}z                                             \\
+            =  & \int_{-\sqrt{2}}^{\sqrt{2}} z^2\mathrm{d}z \iint\limits_{x^2+y^2\le 1-\frac{z^2}{2}} \mathrm{d}x\,\mathrm{d}y \\
+            =  & \pi\int_{-\sqrt{2}}^{\sqrt{2}} z^2\left(1-\frac{z^2}{2}\right)\mathrm{d}z=\frac{8\sqrt{2}\pi}{15}.
+          \end{aligned}
+        \]
+
+  \item \textbf{Solution}. 上半球面$z=\sqrt{R^2-x^2-y^2}$上满足$\sqrt{x^2+y^2+z^2}=R$，因此
+        \[
+          I=\frac{1}{R}\iint\limits_S \left(x^2+y\right)\,\mathrm{d}y\,\mathrm{d}z+z\,\mathrm{d}x\,\mathrm{d}y.
+        \]
+
+        记$S'$为$x^2+y^2\leq R^2,z=0$取下侧，$\Sigma = S\cup S'$，则
+        \[
+          \begin{aligned}
+            I= & \frac{1}{R}\left(\oiint\limits_{\Sigma}\left(x^2+y\right)\,\mathrm{d}y\,\mathrm{d}z+z\,\mathrm{d}x\,\mathrm{d}y-\iint\limits_{S'}\left(x^2+y\right)\,\mathrm{d}y\,\mathrm{d}z+z\,\mathrm{d}x\,\mathrm{d}y\right) \\
+            =  & \frac{1}{R}\iiint\limits_{\substack{x^2+y^2+z^2\leq R^2\\z\geq0}}(2x+1) \mathrm{d}x\,\mathrm{d}y\,\mathrm{d}z                                                                                                    \\
+            =  & \frac{1}{R}\iiint\limits_{\substack{x^2+y^2+z^2\leq R^2\\z\geq0}}\mathrm{d}x\,\mathrm{d}y\,\mathrm{d}z = \frac{2\pi R^2}{3}.
+          \end{aligned}
+        \]
+
+  \item \textbf{Solution}. 令$y=x^2$，则级数化为$\sum_{n=1}^{\infty}\frac{2n+1}{n!}y^n$.
+
+        用比值判别法，
+        \[
+          \begin{aligned}
+            \lim_{n\to\infty}\left|\frac{a_{n+1}}{a_n}\right|= & \lim_{n\to\infty}\frac{2n+3}{(n+1)!}\cdot\frac{n!}{2n+1} \\
+            =                                                  & \lim_{n\to\infty}\frac{2n+3}{(n+1)(2n+1)}=0,
+          \end{aligned}
+        \]
+
+        故级数关于$y$的收敛半径为$R_{y}=+\infty$，关于$x$的收敛半径也为$R_x=+\infty$，即收敛域为$(-\infty,+\infty)$.
+
+        下面求和函数 $S(x)$.
+        \[
+          S(x)=\sum_{n=1}^{\infty}\frac{2n+1}{n!}x^{2n}
+          =2\sum_{n=1}^{\infty}\frac{n}{n!}x^{2n}+\sum_{n=1}^{\infty}\frac{x^{2n}}{n!}.
+        \]
+        其中
+        \[
+          \begin{gathered}
+            \sum_{n=1}^{\infty}\frac{n}{n!}x^{2n}=\sum_{n=1}^{\infty}\frac{x^{2n}}{(n-1)!}=x^2\sum_{k=0}^{\infty}\frac{\left(x^{2}\right)^{k}}{k!}=x^2\mathrm{e}^{x^2},\\
+            \sum_{n=1}^{\infty}\frac{x^{2n}}{n!}=\sum_{n=0}^{\infty}\frac{\left(x^{2}\right)^{n}}{n!}-1=\mathrm{e}^{x^2}-1.
+          \end{gathered}
+        \]
+
+        所以
+        \[
+          S(x)=(2x^2+1)e^{x^2}-1.
+        \]
+\end{enumerate}
+
+\section{综合题(每小题 7 分，共 14 分)}
+\begin{enumerate}
+  \setcounter{enumi}{16}
+  \item \textbf{Solution}. 记
+        \[
+          P(x,y)=(-x\mathrm{e}^{x}+f''(x))y,\qquad Q(x,y)=f(x).
+        \]
+
+        由曲线积分与路径无关得$P_y=Q_x$，即
+        \[
+          -x\mathrm{e}^{x}+f''(x)=f'(x).
+        \]
+        于是
+        \[
+          f''(x)-f'(x)=x\mathrm{e}^{x}.
+        \]
+
+        上述方程对应的齐次微分方程的特征方程为$r^2-r=0$，其根为\(r=0\)和\(r=1\)，
+
+        因此齐次方程的通解为$y=C_1+C_2\mathrm{e}^x$.
+
+        $r=1$是该特征方程的单根，故可设非齐次方程的特解为$f^*(x)=x(ax+b)\mathrm{e}^{x}$，
+
+        代入得$(2ax+2a+b)\mathrm{e}^x=x\mathrm{e}^{x}$，比较系数可得$a=\frac{1}{2}$，$b=-1$，因此非齐次方程的通解为
+        \[
+          f(x)=C_1+C_2\mathrm{e}^x+\left(\frac{1}{2}x-1\right)x\mathrm{e}^x.
+        \]
+
+        将$f(0)=4$，$f'(0)=3$代入可得$\begin{cases}
+            C_1+C_2=4, \\
+            C_2-1=3
+          \end{cases}$，解得$C_1=0$，$C_2=4$，因此
+        \[
+          f(x)=4\mathrm{e}^x+\left(\frac{1}{2}x-1\right)x\mathrm{e}^x.
+        \]
+
+  \item \textbf{Solution}. 在区域内部令$\begin{cases}
+            f_x=2x=0, \\
+            f_y=-2y=0
+          \end{cases}$，解得唯一驻点 \((0,0)\)，且$f(0,0)=2$.
+
+        在边界$4x^2+y^2=4$上有 \(y^2=4-4x^2\)，代入原函数得
+        \[
+          f=x^2-(4-4x^2)+2=5x^2-2,\qquad -1\le x\le 1.
+        \]
+        所以边界上最大值为 \(3\)，最小值为 \(-2\). 比较可知$f(x,y)$在区域$D$上的最大值为 \(3\)，最小值为 \(-2\).
+\end{enumerate}
+
+\section{证明题(每小题 5 分，共 10 分)}
+\begin{enumerate}
+  \setcounter{enumi}{18}
+  \item \textbf{Proof}. \textbf{法一}. 记 \(f(x)\) 的一个原函数为
+        \[
+          F(x)=\int_0^x f(t)\,\mathrm{d}t,
+        \]
+        则 \(F(0)=0,\ F(1)=A\). 因此
+        \[
+          \begin{aligned}
+            \int_0^1\mathrm{d}x\int_x^1 f(x)f(y)\,\mathrm{d}y
+             & =\int_0^1 f(x)\left(F(1)-F(x)\right)\,\mathrm{d}x          \\
+             & =A\int_0^1 f(x)\,\mathrm{d}x-\int_0^1 F(x)\,\mathrm{d}F(x) \\
+             & =A^2-\frac{1}{2}F^2(x)\bigg|_0^1
+            =\frac{1}{2}A^2.
+          \end{aligned}
+        \]
+
+        \textbf{法二}. 交换积分次序，有
+        \[
+          \int_0^1\mathrm{d}x\int_x^1 f(x)f(y)\,\mathrm{d}y
+          =\int_0^1\mathrm{d}y\int_0^y f(x)f(y)\,\mathrm{d}x.
+        \]
+        将右端的积分变量 \(x,y\) 对换，得
+        \[
+          \int_0^1\mathrm{d}y\int_0^y f(x)f(y)\,\mathrm{d}x
+          =\int_0^1\mathrm{d}x\int_0^x f(x)f(y)\,\mathrm{d}y.
+        \]
+        所以
+        \[
+          \begin{aligned}
+            \int_0^1\mathrm{d}x\int_x^1 f(x)f(y)\,\mathrm{d}y
+             & =\frac{1}{2}\left(\int_0^1\mathrm{d}x\int_x^1 f(x)f(y)\,\mathrm{d}y
+            +\int_0^1\mathrm{d}x\int_0^x f(x)f(y)\,\mathrm{d}y\right)                                     \\
+             & =\frac{1}{2}\int_0^1\mathrm{d}x\int_0^1 f(x)f(y)\,\mathrm{d}y                              \\
+             & =\frac{1}{2}\left(\int_0^1 f(x)\,\mathrm{d}x\right)\left(\int_0^1 f(y)\,\mathrm{d}y\right)
+            =\frac{1}{2}A^2.
+          \end{aligned}
+        \]
+
+        \textbf{法三}. 记
+        \[
+          I = \int_0^1 \mathrm{d}x \int_x^1 f(x)f(y)\,\mathrm{d}y.
+        \]
+        由于被积函数 $f(x)f(y)$ 关于 $x,y$ 对称，
+
+        积分区域 $\{(x,y)\mid 0\le x\le y\le 1\}$ 与 $\{(x,y)\mid 0\le y\le x\le 1\}$ 面积相同且无公共内点，因此
+        \[
+          I = \int_0^1 \mathrm{d}y \int_y^1 f(y)f(x)\,\mathrm{d}x = \int_0^1 \mathrm{d}y \int_y^1 f(x)f(y)\,\mathrm{d}x.
+        \]
+        将两个积分相加，并合并积分区域为正方形 $[0,1]\times[0,1]$，得
+        \[
+          2I = \iint\limits_{[0,1]^2} f(x)f(y)\,\mathrm{d}x\mathrm{d}y
+          = \left(\int_0^1 f(x)\,\mathrm{d}x\right)\left(\int_0^1 f(y)\,\mathrm{d}y\right)
+          = A \cdot A = A^2.
+        \]
+        因此
+        \[
+          I = \frac{1}{2}A^2.
+        \]
+
+  \item \textbf{Proof}. 由递推关系$2a_{n+1} = a_n + \sqrt{a_n^2 + u_n}$可得
+        \[
+          u_n=4a_{n+1}\left(a_{n+1}-a_n\right).
+        \]
+
+        由$a_{n+1}=\frac{1}{2}\left(a_n+\sqrt{a_n^2+u_n}\right)$可得$a_{n+1}\geq a_n$，又$a_n$有上界，所以$\{a_n\}$收敛.
+
+        注意到
+        \[
+          0<\frac{u_n}{4}=a_{n+1}^2-a_na_{n+1}\leq a_{n+1}^2-a_n^2,
+        \]
+
+        因为$\{a_n\}$收敛，所以$\sum\limits_{n=1}^{\infty} (a_{n+1}^2 - a_n^2)=\lim\limits_{n\to\infty} a_{n+1}^2 - a_1^2$收敛，
+
+        由正项级数的比较判别法，$\sum\limits_{n=1}^{\infty} u_n$也收敛.
+
+\end{enumerate}
 \end{document}
 
 

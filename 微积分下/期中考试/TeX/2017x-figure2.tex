@@ -5,10 +5,10 @@
 \begin{tikzpicture}[scale=1.7, >=stealth]
     % Cross-section in the rz-plane: r <= z <= sqrt(2-r^2).
     \fill[cyan!20]
-      (0,0)
-      -- plot[domain=0:1, samples=80] (\x,{\x})
-      -- plot[domain=1:0, samples=100] (\x,{sqrt(2-\x*\x)})
-      -- cycle;
+    (0,0)
+    -- plot[domain=0:1, samples=80] (\x,{\x})
+    -- plot[domain=1:0, samples=100] (\x,{sqrt(2-\x*\x)})
+    -- cycle;
 
     \draw[->] (-0.2,0) -- (1.45,0) node[right] {$r$};
     \draw[->] (0,-0.2) -- (0,2.35) node[above] {$z$};

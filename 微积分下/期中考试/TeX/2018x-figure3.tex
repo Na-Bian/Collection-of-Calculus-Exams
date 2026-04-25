@@ -6,9 +6,9 @@
     % Draw with a=1: circle x^2+y^2=2x and parabola y^2=x.
     \clip (-0.35,-1.35) rectangle (2.35,1.35);
     \fill[cyan!20]
-      plot[variable=\t, domain=-1:1, samples=100] ({\t*\t},{\t})
-      -- plot[variable=\t, domain=1:-1, samples=120] ({1+sqrt(1-\t*\t)},{\t})
-      -- cycle;
+    plot[variable=\t, domain=-1:1, samples=100] ({\t*\t},{\t})
+    -- plot[variable=\t, domain=1:-1, samples=120] ({1+sqrt(1-\t*\t)},{\t})
+    -- cycle;
 
     \draw[->] (-0.25,0) -- (2.25,0) node[right] {$x$};
     \draw[->] (0,-1.25) -- (0,1.25) node[above] {$y$};

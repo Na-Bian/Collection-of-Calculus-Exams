@@ -1,0 +1,363 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+\chapter{2016-2017学年微积分（一）（下）期末考试}
+
+\section{单项选择题(每小题 3 分，共 18 分)}
+\begin{enumerate}
+    \item 考虑二元函数$f(x,y)$在点$(x_{0},y_{0})$处的下面四条性质：
+
+          （1）连续；（2）两个偏导存在；（3）可微；（4）沿方向$\{1,0\}$的方向导数存在。
+
+          若用“$P\Rightarrow Q$”表示可由性质$P$推出性质$Q$，则成立（\qquad）.
+
+          \begin{tasks}[label=\textbf{\Alph*.}, label-width=1.5em, column-sep=1em](2)
+              \task $(2)\Rightarrow(3)\Rightarrow(1)$
+              \task $(3)\Rightarrow(2)\Rightarrow(1)$
+              \task $(3)\Rightarrow(4)\Rightarrow(1)$
+              \task $(3)\Rightarrow(2)\Rightarrow(4)$
+          \end{tasks}
+          \vspace{1em}
+
+    \item 将逐次积分
+          \[
+              I=\int_{0}^{1}\,\mathrm{d}y\int_{-y}^{y}f(x,y)\,\mathrm{d}x
+          \]
+          化为先对$y$后对$x$的逐次积分，正确结果是（\qquad）.
+
+          \begin{tasks}[label=\textbf{\Alph*.}, label-width=1.5em, column-sep=1em](1)
+              \task $\displaystyle I=\int_{-1}^{0}\,\mathrm{d}x\int_{x}^{1}f(x,y)\,\mathrm{d}y+\int_{0}^{1}\,\mathrm{d}x\int_{-x}^{1}f(x,y)\,\mathrm{d}y$
+              \task $\displaystyle I=\int_{-y}^{y}\,\mathrm{d}x\int_{0}^{1}f(x,y)\,\mathrm{d}y$
+              \task $\displaystyle I=\int_{-1}^{0}\,\mathrm{d}x\int_{-x}^{1}f(x,y)\,\mathrm{d}y+\int_{0}^{1}\,\mathrm{d}x\int_{x}^{1}f(x,y)\,\mathrm{d}y$
+              \task $\displaystyle I=\int_{0}^{1}\,\mathrm{d}x\int_{-x}^{x}f(x,y)\,\mathrm{d}y$
+          \end{tasks}
+          \vspace{1em}
+
+    \item 设$L$表示圆$x^{2}+y^{2}=R^{2}(R>0)$，取顺时针方向，则积分
+          \[
+              \oint\limits_{L}(-xy^{2})\,\mathrm{d}x+xy\,\mathrm{d}y=（\qquad）.
+          \]
+
+          \begin{tasks}[label=\textbf{\Alph*.}, label-width=1.5em, column-sep=1em](2)
+              \task $\dfrac{\pi R^{4}}{4}$
+              \task $-\dfrac{\pi R^{4}}{2}$
+              \task $-\pi R^{4}$
+              \task $\dfrac{\pi R^{4}}{2}$
+          \end{tasks}
+          \vspace{1em}
+
+    \item 设$a_{n}>0(n=1,2,\cdots)$，下列说法中正确的是（\qquad）.
+
+          \begin{tasks}[label=\textbf{\Alph*.}, label-width=1.5em, column-sep=1em](1)
+              \task 若级数$\sum\limits_{n=1}^{\infty}(-1)^{n}a_{n}$条件收敛，则级数$\sum\limits_{n=1}^{\infty}a_{2n}$发散
+              \task 若级数$\sum\limits_{n=1}^{\infty}(-1)^{n}a_{n}$绝对收敛，则级数$\sum\limits_{n=1}^{\infty}a_{2n}$发散
+              \task 若级数$\sum\limits_{n=1}^{\infty}a_{n}$收敛，则级数$\sum\limits_{n=1}^{\infty}(-1)^{n}a_{n}$条件收敛
+              \task 若级数$\sum\limits_{n=1}^{\infty}a_{n}$发散，则当$n$充分大时，$a_{n}\geq \dfrac1n$
+          \end{tasks}
+          \vspace{1em}
+
+    \item 二阶常系数线性微分方程
+          \[
+              y''-3y'-4y=x+e^{-x}
+          \]
+          的特解的待定形式为（\qquad）.
+
+          \begin{tasks}[label=\textbf{\Alph*.}, label-width=1.5em, column-sep=1em](2)
+              \task $y^{*}=ax+b+ce^{-x}$
+              \task $y^{*}=x(ax+b)+(cx+d)e^{-x}$
+              \task $y^{*}=ax+b+cxe^{-x}$
+              \task $y^{*}=x(ax+b)+cxe^{-x}$
+          \end{tasks}
+          \vspace{1em}
+
+    \item 设$\sum\limits_{n=1}^{\infty}b_{n}\sin nx$是将函数$f(x)=x+1(0\leq x\leq\pi)$做奇延拓后展开成的傅立叶级数，其和函数为$S(x)(-\infty<x<+\infty)$，则
+          \[
+              S\left(-\frac{5\pi}{2}\right)=（\qquad）.
+          \]
+
+          \begin{tasks}[label=\textbf{\Alph*.}, label-width=1.5em, column-sep=1em](2)
+              \task $-\dfrac{\pi}{2}+1$
+              \task $\dfrac{\pi}{2}+1$
+              \task $-\dfrac{\pi}{2}-1$
+              \task $\dfrac{\pi}{2}-1$
+          \end{tasks}
+          \vspace{1em}
+\end{enumerate}
+
+\section{填空题(每小题 4 分，共 16 分)}
+\begin{enumerate}
+    \setcounter{enumi}{6}
+    \item 设函数$z=xe^{y}$，则$\mathrm{d}z|_{x=0,y=1}=$\underline{\hspace{3cm}}.
+
+    \item 设$D:x^{2}+y^{2}\leq1,\ y\geq0$，则
+          \[
+              \iint\limits_{D}\bigl[(x+1)^{2}+y^{2}\bigr]\mathrm{d}x\,\mathrm{d}y=
+          \]
+          \underline{\hspace{3cm}}.
+
+    \item 设$L$是圆周$x^{2}+y^{2}=1$，则
+          \[
+              \oint\limits_{L}(x+xy)\,\mathrm{d}s=
+          \]
+          \underline{\hspace{3cm}}.
+
+    \item 设曲面$S=\{(x,y,z):z=1,x\leq1,y\leq1\}$，则
+          \[
+              \iint\limits_{S}(x+y+z)\,\mathrm{d}S=
+          \]
+          \underline{\hspace{3cm}}.
+\end{enumerate}
+
+\section{基本计算题(每小题 7 分，共 42 分)}
+\begin{enumerate}
+    \setcounter{enumi}{10}
+    \item 求经过直线
+          \[
+              L:\begin{cases}
+                  2x+3y-z-8=0, \\
+                  y-3z+4=0
+              \end{cases}
+          \]
+          且与平面$\pi:x+y+z-4=0$平行的平面方程$\pi_{1}$.
+          \vspace{11em}
+
+    \item 设$z=f(e^{2x},xy)$，其中$f$具有二阶连续导数，且$f_{2}'(1,0)=2$，求
+          \[
+              \left.\frac{\partial^{2}z}{\partial x\partial y}\right|_{x=0,y=3}.
+          \]
+          \vspace{11em}
+
+    \item 设变量$x,y,t$满足方程$x=F(t,y)$和$f(x+y+t)=3y$，其中$f$具有一阶连续导数，$F$具有一阶连续偏导数，记
+          \[
+              F_{1}=\frac{\partial F(t,y)}{\partial t},\qquad F_{2}=\frac{\partial F(t,y)}{\partial y},
+          \]
+          且$1+F_{1}\neq0,\ f'\neq0$，求$\dfrac{\mathrm{d}x}{\mathrm{d}y}$.
+          \vspace{12em}
+
+    \item 设$L$是依逆时针方向的下半圆周$x^{2}+y^{2}=x\ (y\leq0)$，求曲线积分
+          \[
+              I=\int_{L}(1-y-e^{x}\sin y)\,\mathrm{d}x+(1-e^{x}\cos y)\,\mathrm{d}y.
+          \]
+          \vspace{12em}
+
+    \item 设$S$为曲面$z=\sqrt{1-x^{2}-y^{2}}$的上侧，求曲面积分
+          \[
+              I=\iint\limits_{S}xyz\,\mathrm{d}y\,\mathrm{d}z+x^{2}y\,\mathrm{d}z\,\mathrm{d}x+\left(\frac{z^{3}}{3}+1\right)\,\mathrm{d}x\,\mathrm{d}y.
+          \]
+          \vspace{12em}
+
+    \item 将$f(x)=\arctan\dfrac{1+x}{1-x}$展成$x$的幂级数.
+          \vspace{13em}
+\end{enumerate}
+
+\section{应用题(每小题 7 分，共 14 分)}
+\begin{enumerate}
+    \setcounter{enumi}{16}
+    \item 求函数$f(x,y,z)=xy+z^{2}$在平面$x=y$与球面$x^{2}+y^{2}+z^{2}=4$相交的圆周上的最大值和最小值.
+          \vspace{12em}
+
+    \item 设函数$\varphi(x)$具有连续的一阶导数，且满足$\varphi(0)=0$，
+          \[
+              \varphi'(x)+\int_{0}^{x}\varphi(t)\,\mathrm{d}t=e^{x},
+          \]
+          求$\varphi(x)$.
+          \vspace{12em}
+\end{enumerate}
+
+\section{分析证明题(每小题 5 分，共 10 分)}
+\begin{enumerate}
+    \setcounter{enumi}{18}
+    \item 讨论级数
+          \[
+              \sum_{n=1}^{\infty}\left[1-\sin\left(\frac{(-1)^{n}}{n^{p}}\right)-\cos\left(\frac{(-1)^{n}}{n^{p}}\right)\right]\qquad (p>0)
+          \]
+          的敛散性，收敛时指明是条件收敛还是绝对收敛.
+          \vspace{15em}
+
+    \item 设$f(x)$在区间$[a,b](a>0)$上连续，且$f(x)>0$，证明
+          \[
+              \left(\int_{a}^{b}xf(x)\,\mathrm{d}x\right)\left(\int_{a}^{b}\frac{x}{f(x)}\,\mathrm{d}x\right)\geq\frac{(b+a)^{2}(b-a)^{2}}{4}.
+          \]
+          \vspace{15em}
+\end{enumerate}
+
+\chapter{2016-2017学年微积分（一）（下）期末考试参考答案}
+\section{单项选择题(每小题 3 分，共 18 分)}
+\begin{enumerate}
+    \item \textbf{Solution}. D.
+    \item \textbf{Solution}. C.
+    \item \textbf{Solution}. B.
+    \item \textbf{Solution}. A.
+    \item \textbf{Solution}. C.
+    \item \textbf{Solution}. C.
+\end{enumerate}
+
+\section{填空题(每小题 4 分，共 16 分)}
+\begin{enumerate}
+    \setcounter{enumi}{6}
+    \item \textbf{Solution}. $e\,\mathrm{d}x$.
+    \item \textbf{Solution}. $\dfrac{3\pi}{4}$.
+    \item \textbf{Solution}. $\pi$.
+    \item \textbf{Solution}. $4$.
+\end{enumerate}
+
+\section{基本计算题(每小题 7 分，共 42 分)}
+\begin{enumerate}
+    \setcounter{enumi}{10}
+    \item \textbf{Solution}. 设所求平面为$\pi_{1}:x+y+z+D=0$.
+          取直线$L$上一点$P(10,-4,0)$，代入得$D=-6$，故
+          \[
+              \pi_{1}:x+y+z-6=0.
+          \]
+
+    \item \textbf{Solution}. 先求
+          \[
+              z_{x}=2e^{2x}f_{1}(e^{2x},xy)+yf_{2}(e^{2x},xy).
+          \]
+          令
+          \[
+              G(x,y)=2e^{2x}f_{1}(e^{2x},xy)+yf_{2}(e^{2x},xy),
+          \]
+          则
+          \[
+              G(0,y)=2f_{1}(1,0)+yf_{2}(1,0),
+          \]
+          因而
+          \[
+              \left.\frac{\partial^{2}z}{\partial x\partial y}\right|_{x=0,y=3}=G_{y}(0,3)=f_{2}(1,0)=2.
+          \]
+
+    \item \textbf{Solution}. 由
+          \[
+              \begin{cases}
+                  x=F(t,y), \\
+                  f(x+y+t)=3y
+              \end{cases}
+          \]
+          确定$t=t(y),x=x(y)$.
+          两边对$y$求导得
+          \[
+              \begin{cases}
+                  x'=F_{1}t'+F_{2}, \\
+                  (x'+t'+1)f'=3.
+              \end{cases}
+          \]
+          解得
+          \[
+              \frac{\mathrm{d}x}{\mathrm{d}y}=\frac{f'F_{2}+(3-f')F_{1}}{(1+F_{1})f'}.
+          \]
+
+    \item \textbf{Solution}. 补线段$L_{1}:y=0,\ x:1\to0$，则$L+L_{1}$封闭并取正向.
+          故
+          \[
+              I=\oint_{L+L_{1}}(1-y-e^{x}\sin y)\,\mathrm{d}x+(1-e^{x}\cos y)\,\mathrm{d}y-\int_{L_{1}}\,\mathrm{d}x.
+          \]
+          由格林公式，
+          \[
+              \oint_{L+L_{1}}\cdots=\iint\limits_{D}1\,\mathrm{d}x\,\mathrm{d}y=\frac{\pi}{8},
+          \]
+          且
+          \[
+              \int_{L_{1}}(1-y-e^{x}\sin y)\,\mathrm{d}x+(1-e^{x}\cos y)\,\mathrm{d}y=\int_{1}^{0}\,\mathrm{d}x=-1.
+          \]
+          因此
+          \[
+              I=\frac{\pi}{8}+1.
+          \]
+
+    \item \textbf{Solution}. 记底面$S_{1}:z=0,\ x^{2}+y^{2}\leq1$，取下侧，则$S+S_{1}$封闭并指向内侧.
+          因而
+          \[
+              I=-\iiint\limits_{V}(yz+x^{2}+z^{2})\,\mathrm{d}v-\iint\limits_{S_{1}}\,\mathrm{d}x\,\mathrm{d}y.
+          \]
+          由对称性，$\iiint\limits_{V}yz\,\mathrm{d}v=0$.
+          再用球坐标计算
+          \[
+              \iiint\limits_{V}x^{2}\,\mathrm{d}v=\frac{\pi}{15},\qquad \iiint\limits_{V}z^{2}\,\mathrm{d}v=\frac{\pi}{5},
+          \]
+          且
+          \[
+              \iint\limits_{S_{1}}\,\mathrm{d}x\,\mathrm{d}y=\pi.
+          \]
+          所以
+          \[
+              I=-\left(\frac{\pi}{15}+\frac{\pi}{5}\right)+\pi=\frac{11\pi}{15}.
+          \]
+
+    \item \textbf{Solution}. 因
+          \[
+              f'(x)=\frac{1}{1+x^{2}}=\sum_{n=0}^{\infty}(-1)^{n}x^{2n},\qquad |x|<1,
+          \]
+          故对$[0,x]$积分并利用$f(0)=\frac{\pi}{4}$，得
+          \[
+              f(x)=\frac{\pi}{4}+\sum_{n=0}^{\infty}\frac{(-1)^{n}x^{2n+1}}{2n+1},\qquad x\in[-1,1).
+          \]
+\end{enumerate}
+
+\section{应用题(每小题 7 分，共 14 分)}
+\begin{enumerate}
+    \setcounter{enumi}{16}
+    \item \textbf{Solution}. 在约束$x=y$与$x^{2}+y^{2}+z^{2}=4$下，
+          \[
+              f(x,y,z)=xy+z^{2}=x^{2}+z^{2}=4-x^{2}.
+          \]
+          由$2x^{2}+z^{2}=4$知$- \sqrt2\le x\le \sqrt2$.
+          因而最大值为$4$，在$(0,0,\pm2)$处取得；最小值为$2$，在$(\pm1,\pm1,0)$处取得.
+
+    \item \textbf{Solution}. 对原方程两边求导，得
+          \[
+              \varphi''(x)+\varphi(x)=e^{x}.
+          \]
+          又由原方程在$x=0$处可得$\varphi'(0)=1$，再结合$\varphi(0)=0$，
+          得到定解问题
+          \[
+              \begin{cases}
+                  \varphi''+\varphi=e^{x}, \\
+                  \varphi(0)=0,\ \varphi'(0)=1.
+              \end{cases}
+          \]
+          解得
+          \[
+              \varphi(x)=\frac12\bigl(-\cos x+\sin x+e^{x}\bigr).
+          \]
+\end{enumerate}
+
+\section{分析证明题(每小题 5 分，共 10 分)}
+\begin{enumerate}
+    \setcounter{enumi}{18}
+    \item \textbf{Solution}. 设
+          \[
+              u_{n}=1-\cos\frac{(-1)^{n}}{n^{p}},\qquad v_{n}=\sin\frac{(-1)^{n}}{n^{p}}.
+          \]
+          则原级数可视作$\sum u_{n}-\sum v_{n}$.
+          由
+          \[
+              1-\cos t\sim \frac{t^{2}}{2}\quad(t\to0)
+          \]
+          知$\sum u_{n}$当且仅当$p>\frac12$时收敛.
+          又
+          \[
+              v_{n}=(-1)^{n}\sin\frac{1}{n^{p}}
+          \]
+          是交错级数，且$\sin\dfrac1{n^{p}}\sim \dfrac1{n^{p}}$，故当$p>0$时由莱布尼兹判别法收敛；
+          当$p>1$时绝对收敛，当$0<p\le1$时仅条件收敛.
+          综上，原级数当$p>1$时绝对收敛，当$\frac12<p\le1$时条件收敛，当$0<p\le\frac12$时发散.
+
+    \item \textbf{Proof}. 设
+          \[
+              I=\left(\int_{a}^{b}xf(x)\,\mathrm{d}x\right)\left(\int_{a}^{b}\frac{x}{f(x)}\,\mathrm{d}x\right).
+          \]
+          由 Cauchy-Schwarz 不等式，
+          \[
+              I\ge\left(\int_{a}^{b}x\,\mathrm{d}x\right)^{2}
+              =\left(\frac{b^{2}-a^{2}}{2}\right)^{2}
+              =\frac{(a+b)^{2}(b-a)^{2}}{4}.
+          \]
+          证毕.
+\end{enumerate}
+\end{document}
+
+
+
+
+
+

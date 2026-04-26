@@ -1,0 +1,436 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+\chapter{2025-2026学年微积分（B）（上）期末考试}
+
+\section{单项选择题(每小题 3 分，共 18 分)}
+\begin{enumerate}
+    \item 函数$f(x)=
+              \begin{cases}
+                  \mathrm{e}^{-\frac{1}{x-1}}, & x\neq1, \\
+                  0,                           & x=1
+              \end{cases}$在点$x=1$处（\qquad）.
+
+          \begin{tasks}[label=\textbf{\Alph*.}, label-width=1.5em, column-sep=1em](2)
+              \task 连续
+              \task 右连续
+              \task 左连续
+              \task 左右都不连续
+          \end{tasks}
+          \vspace{1em}
+
+    \item 设函数$f(x)$在$x=0$处二阶可导，$f(0)=0$，$\lim_{x\to0}\frac{f(x)+f'(x)}{x}
+              =1$，则（\qquad）.
+
+          \begin{tasks}[label=\textbf{\Alph*.}, label-width=1.5em, column-sep=1em](2)
+              \task $f(0)$是$f(x)$的极小值
+              \task $f(0)$是$f(x)$的极大值
+              \task $f(0)$不是$f(x)$的极值
+              \task $(0,f(0))$是曲线$y=f(x)$的拐点
+          \end{tasks}
+          \vspace{1em}
+
+    \item 微分方程$y''-2y'+2y=\mathrm{e}^{x}\sin x+\mathrm{e}^{-x}$的特解形式应设为$y
+                  ^{*}=$（\qquad）.
+
+          \begin{tasks}[label=\textbf{\Alph*.}, label-width=1.5em, column-sep=1em](2)
+              \task $x\mathrm{e}^{x}(a\cos x+b\sin x)+c\mathrm{e}^{-x}$
+              \task $\mathrm{e}^{x}(a\cos x+b\sin x)+c\mathrm{e}^{-x}$
+              \task $\mathrm{e}^{x}(ax+b)\cos x+c\mathrm{e}^{-x}$
+              \task $\mathrm{e}^{x}(a\cos x+b\sin x)+cx\mathrm{e}^{-x}$
+          \end{tasks}
+          \vspace{1em}
+
+    \item 设函数$y=f(x)$在$(a,b)$内有二阶导数，点$(c,f(c))(a<c<b)$是曲线$y=f(x)$的拐点的一个充分条件为（\qquad）.
+
+          \begin{tasks}[label=\textbf{\Alph*.}, label-width=1.5em, column-sep=1em](2)
+              \task $f''(x)$在$(a,b)$内严格单调递增
+              \task $f''(c)=0$
+              \task $f''(x)$在$(a,b)$内严格单调递减
+              \task $f''(c)=0$且$f''(x)$在$(a,b)$内严格单调递减
+          \end{tasks}
+          \vspace{1em}
+
+    \item 若函数$f(x)$满足$\mathrm{d}f(x)=-\mathrm{e}^{\cos x}\sin x\,\mathrm{d}x$，且$f
+              (0)=0$，则$f(x)=$（\qquad）.
+
+          \begin{tasks}[label=\textbf{\Alph*.}, label-width=1.5em, column-sep=1em](2)
+              \task $\mathrm{e}^{\cos x}-1$
+              \task $\mathrm{e}^{\sin x}$
+              \task $\mathrm{e}^{\sin x}-\mathrm{e}$
+              \task $\mathrm{e}^{\cos x}-\mathrm{e}$
+          \end{tasks}
+          \vspace{1em}
+
+    \item 下列反常积分发散的是（\qquad）.
+
+          \begin{tasks}[label=\textbf{\Alph*.}, label-width=1.5em, column-sep=1em](1)
+              \task $\int_{0}^{+\infty}\mathrm{e}^{-x}\,\mathrm{d}x$
+              \task $\int_{-1}^{1}\frac{1}{\sqrt{1-x^{2}}}\,\mathrm{d}x$
+              \task $\int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}\frac{1}{\tan x}\,\mathrm{d}x$
+              \task $\int_{2}^{+\infty}\frac{1}{x\ln^{2} x}\,\mathrm{d}x$
+          \end{tasks}
+          \vspace{1em}
+\end{enumerate}
+
+\section{填空题(每小题 4 分，共 16 分)}
+\begin{enumerate}
+    \setcounter{enumi}{6}
+    \item $\int_{-1}^{1}\left(x\ln\left(x^{2026}+1\right)+\sqrt{1-x^{2}}\right
+              )\,\mathrm{d}x=\underline{\hspace{3cm}}$.
+          \vspace{1em}
+
+    \item 曲线$y=\frac{1}{x}+\ln\left(1+\mathrm{e}^{x}\right)(x>0)$的斜渐近线为$\underline
+              {\hspace{3cm}}$.
+          \vspace{1em}
+
+    \item 连续曲线段$y=\int_{0}^{x}\sqrt{\sin t}\,\mathrm{d}t(0\leq x\leq \pi)$的弧长$s
+              =\underline{\hspace{3cm}}$.
+          \vspace{1em}
+
+    \item 设函数$f(x)=\int_{0}^{1}|t-x|\mathrm{d}t(0<x<1)$，则$y=f(x),x=0,x=
+              1$以及$x$轴所围成的区域绕$y$轴旋转一周所得旋转体的体积为$\underline{\hspace{3cm}
+              }$.
+\end{enumerate}
+
+\section{计算题(每小题 7 分，共 42 分)}
+\begin{enumerate}
+    \setcounter{enumi}{10}
+    \item 求极限$l=\lim_{x\to0}\frac{x^{2}(\cos x-1)}{\cos x-\mathrm{e}^{-\frac{x^2}{2}}}$.
+          \vspace{10em}
+
+    \item 设$y=y(x)$由参数方程$\begin{cases}
+                  x=1+2t^{2}, \\
+                  y=\int_{1}^{1+2\ln t}\frac{\mathrm{e}^u}{u}\,\mathrm{d}u
+              \end{cases}(t>1)$确定，求$\left.\frac{\mathrm{d}y}{\mathrm{d}x}\right|_{x=9}$，$\left
+              .\frac{\mathrm{d}^{2}y}{\mathrm{d}x^{2}}\right|_{x=9}$.
+          \vspace{10em}
+
+    \item 若$f(x)=ax^{3}+bx^{2}+x$在$x=1$处取得极值$2$，求$f(x)$在区间$[-1,2
+              ]$上的最大值和最小值.
+          \vspace{10em}
+
+    \item 设$f(x)$在$x=0$处可导，且$\lim_{x\to0}\frac{f(x)}{x}=1$，求极限$l=
+              \lim_{x\to0}\frac{1}{x^{4}}\int_{0}^{x}tf(x^{2}-t^{2})\,\mathrm{d}t$.
+          \vspace{10em}
+
+    \item 求微分方程$(y^{2}-6x)\frac{\mathrm{d}y}{\mathrm{d}x}=-2y$的通解.
+          \vspace{11em}
+
+    \item 在$xOy$平面内，把连接点$O(0,0)$与点$P(1,0)$的线段$OP$剖分为$n$等分，各分点依次记为$P
+                  _{1},P_{2},\cdots,P_{n-1}$.从点$P_{k},k=1,2,\cdots,n-1$引抛物线$y=x^{2}$的切线，切点记为$Q
+                  _{k}(x_{k},x_{k}^{2})$，设三角形$\triangle Q_{k}P_{k}P$的面积为$S_{k}$，求极限$l
+              =\lim_{n\to\infty}\frac{1}{n}\sum_{k=1}^{n-1}S_{k}$.
+          \vspace{12em}
+\end{enumerate}
+
+\section{综合题(每小题 7 分，共 14 分)}
+\begin{enumerate}
+    \setcounter{enumi}{16}
+    \item 设$f(x)$可微，且满足$x=\int_{0}^{x}f(t)\,\mathrm{d}t+\int_{0}^{x}tf(
+              t-x)\,\mathrm{d}t$，求$f(x)$.
+          \vspace{12em}
+
+    \item 已知曲线$L$的方程为$y=f(x)$，点$(3,2)$是它的一个拐点，直线$l_{1},l
+                  _{2}$分别是曲线$L$在$(0,0)$和$(3,2)$处的切线，其交点为$(2,4)$，设$f(x)$具有三阶连续导数，求$\int
+              _{0}^{3}(x^{2}+x)f'''(x)\,\mathrm{d}x$.
+          \vspace{13em}
+\end{enumerate}
+
+\section{证明题(每小题 5 分，共 10 分)}
+\begin{enumerate}
+    \setcounter{enumi}{18}
+    \item 设$f(x),g(x)$在$[0,1]$上具有连续导数，且$f(0)=0$，$f'(x)\geq 0$，$g
+              '(x)\geq 0$，证明：对于任意的$a\in[0,1]$，都有$\int_{0}^{a}g(x)f'(x)\,\mathrm{d}
+              x+\int_{0}^{1}f(x)g'(x)\,\mathrm{d}x\geq f(a)g(1)$.
+          \vspace{15em}
+
+    \item 设函数$f(x)$在$[-1,1]$上具有二阶连续导数，且$f(0)=0$，证明：在$[-1
+                  ,1]$上至少存在一点$\xi$，使得$f''(\xi)=3\int_{-1}^{1}f(x)\,\mathrm{d}x$.
+          \vspace{15em}
+\end{enumerate}
+
+\chapter{2025-2026学年微积分（B）（上）期末考试参考答案}
+\section{单项选择题 (每小题 3 分，共 18 分)}
+\begin{enumerate}
+    \item \textbf{Solution}. B.
+
+          因为$f(1^{+})=\lim_{x\to1^+}\mathrm{e}^{-\frac{1}{x-1}}=0$，$f(1^{-})=\lim_{x\to1^-}
+              \mathrm{e}^{-\frac{1}{x-1}}=+\infty$，
+
+          所以函数$f(x)$在点$x=1$处右连续，左不连续.
+
+    \item \textbf{Solution}. A.
+
+          因为$f(x)$在$x=0$处二阶可导，故$f(x),f'(x)$在$x=0$处连续.
+
+          由题可得$\lim_{x\to0}(f(x)+f'(x))=0$，所以$f(0)+f'(0)=0$，即$f'(0)=0$.
+
+          又$\lim_{x\to0}\frac{f(x)+f'(x)}{x}=\lim_{x\to0}\frac{f(x)-f(0)}{x}+\lim_{x\to0}
+              \frac{f'(x)-f'(0)}{x}=f'(0)+f''(0)=1$，所以$f''(0)=1>0$.
+
+          故$f(0)$是$f(x)$的极小值.
+
+    \item \textbf{Solution}. A.
+
+          齐次方程$y''-2y'+2y=0$的特征方程为$r^{2}-2r+2=0$，解得$r=1\pm i$.
+
+          对于$f_{1}(x)=\mathrm{e}^{x}\sin x$，$\lambda+i\omega = 1+i$是特征方程的单根，故可设特解为$y
+                  _{1}^{*}=x\mathrm{e}^{x}(a\cos x+b\sin x)$；
+
+          对于$f_{2}(x)=\mathrm{e}^{-x}$，$\lambda = -1$不是特征方程的根，故可设特解为$y
+                  _{2}^{*}=c\mathrm{e}^{-x}$.
+
+          由叠加原理，原方程的特解形式应设为$y^{*}=y_{1}^{*}+y_{2}^{*}=x\mathrm{e}^{x}
+              (a\cos x+b\sin x)+c\mathrm{e}^{-x}$.
+
+    \item \textbf{Solution}. D.
+
+          若点$(c,f(c))$是曲线$y=f(x)$的拐点，必须$f''(c)=0$. D选项给出$f''(x)$在$(a,
+              b)$内严格单调递减，
+
+          则当$a<x<c$时，$f''(x)>0$；$c<x<b$时，$f''(x)<0$，所以点$(c,f(c))$是曲线$y=
+              f(x)$的拐点.
+
+    \item \textbf{Solution}. D.
+
+          方程$\mathrm{d}f(x)=-\mathrm{e}^{\cos x}\sin x\,\mathrm{d}x$两边从$0$积分到$t$，得
+          \[
+              \begin{aligned}
+                  \int_{0}^{t}\,\mathrm{d}f(x) = & -\int_{0}^{t}\mathrm{e}^{\cos x}\sin x\,\mathrm{d}x               \\
+                  f(t)-f(0) =                    & \int_{0}^{t}\mathrm{e}^{\cos x}\,\mathrm{d}(\cos x)               \\
+                  f(t)=                          & \mathrm{e}^{\cos x}\bigg|_{0}^{t}=\mathrm{e}^{\cos t}-\mathrm{e}.
+              \end{aligned}
+          \]
+
+          故$f(x)=\mathrm{e}^{\cos x}-\mathrm{e}$.
+
+    \item \textbf{Solution}. C.
+
+          $\int_{0}^{+\infty}\mathrm{e}^{-x}\,\mathrm{d}x=-\mathrm{e}^{-x}\bigg|_{0}^{+\infty}
+              =0-(-1)=1$，
+
+          $\int_{-1}^{1}\frac{1}{\sqrt{1-x^{2}}}\,\mathrm{d}x=\arcsin x\bigg|_{-1}^{1}=
+              \frac{\pi}{2}-\left(-\frac{\pi}{2}\right)=\pi$，
+
+          $\int_{2}^{+\infty}\frac{1}{x\ln^{2} x}\,\mathrm{d}x=\int_{2}^{+\infty}\frac{\mathrm{d}(\ln
+                  x)}{\ln^{2} x}=\left.-\frac{1}{\ln x}\right|_{2}^{+\infty}=\frac{1}{\ln 2}$，
+
+          由于$\int_{0}^{\frac{\pi}{2}}\frac{1}{\tan x}\,\mathrm{d}x=\ln|\sin x|\bigg|_{0^+}
+              ^{\frac{\pi}{2}}=+\infty$，所以积分$\int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}\frac{1}{\tan
+                  x}\,\mathrm{d}x$发散.
+\end{enumerate}
+
+\section{填空题(每小题 4 分，共 16 分)}
+\begin{enumerate}
+    \setcounter{enumi}{6}
+    \item \textbf{Solution}. $\frac{\pi}{2}$.
+
+          函数$y=x\ln\left(x^{2026}+1\right)$是奇函数，故$\int_{-1}^{1}x\ln\left(x^{2026}
+              +1\right)\,\mathrm{d}x=0$.
+
+          由定积分的几何意义可得$\int_{-1}^{1}\sqrt{1-x^{2}}\,\mathrm{d}x=\frac{\pi}{2}$，所以$\int
+              _{-1}^{1}\left(x\ln\left(x^{2026}+1\right)+\sqrt{1-x^{2}}\right)\,\mathrm{d}x
+              =\frac{\pi}{2}$.
+
+    \item \textbf{Solution}. $y=x$.
+
+          $\lim_{x\to+\infty}\frac{y}{x}=\lim_{x\to+\infty}\frac{\frac{1}{x}+\ln\left(1+\mathrm{e}^{x}\right)}{x}=\lim_{x\to+\infty}\frac{\ln\left(1+\mathrm{e}^{x}\right)}{x}=1$，
+
+          $\lim_{x\to+\infty}(y-x)=\lim_{x\to+\infty}\left[\frac{1}{x}+\ln\left(1+\mathrm{e}^{x}\right)-x\right]=\lim_{x\to+\infty}\ln\left(\frac{1+\mathrm{e}^{x}}{\mathrm{e}^{x}}\right)=\lim_{x\to+\infty}\ln\left(1+\mathrm{e}^{-x}\right)=0$，
+
+          所以斜渐近线方程为$y=x$.
+
+    \item \textbf{Solution}. $4$.
+
+          $y'=\sqrt{\sin x}$，所以$\mathrm{d}s=\sqrt{1+y'^{2}}\,\mathrm{d}x=\sqrt{1+\sin
+                  x}\,\mathrm{d}x=\left|\sin\frac{x}{2}+\cos\frac{x}{2}\right|\mathrm{d}x$，
+
+          故$s=\int_{0}^{\pi}\left|\sin\frac{x}{2}+\cos\frac{x}{2}\right|\mathrm{d}x=
+              \int_{0}^{\pi}\left(\sin\frac{x}{2}+\cos\frac{x}{2}\right)\,\mathrm{d}x=4$.
+
+    \item \textbf{Solution}. $\frac{\pi}{3}$.
+
+          $f(x)=\int_{0}^{x}(t-x)\,\mathrm{d}t+\int_{x}^{1}(x-t)\,\mathrm{d}t=x^{2}-x+\frac{1}{2}$.
+
+          旋转体的体积$V=\int_{0}^{1}2\pi xf(x)\,\mathrm{d}x=2\pi\int_{0}^{1}x\left(x^{2}
+              -x+\frac{1}{2}\right)\,\mathrm{d}x=\frac{\pi}{3}$.
+\end{enumerate}
+
+\section{计算题(每小题 7 分，共 42 分)}
+\begin{enumerate}
+    \setcounter{enumi}{10}
+    \item \textbf{Solution}. 利用Taylor公式，
+          \[
+              \begin{aligned}
+                  l= & \lim_{x\to0}\frac{x^2\left(\frac{1}{2}x^2+o(x^2)\right)}{1-\frac{1}{2}x^2+\frac{1}{24}x^4+o(x^4)-\left[1-\frac{1}{2}x^2+\frac{1}{2}\left(-\frac{x^2}{2}\right)^2+o(x^4)\right]} \\
+                  =  & \lim_{x\to0}\frac{-\frac{1}{2}x^4+o(x^4)}{-\frac{1}{12}x^4+o(x^4)}=6.
+              \end{aligned}
+          \]
+
+    \item \textbf{Solution}. 当$x=9$时，$1+2t^{2}=9$，因为$t>1$，故$t=2$.
+
+          $\frac{\mathrm{d}y}{\mathrm{d}x}=\frac{\frac{\mathrm{d}y}{\mathrm{d}t}}{\frac{\mathrm{d}x}{\mathrm{d}t}}
+              =\frac{\frac{\mathrm{e}^{1+2\ln t}}{1+2\ln t}\cdot\frac{2}{t}}{4t}=\frac{\mathrm{e}}{2(1+2\ln
+                  t)}$，所以$\left.\frac{\mathrm{d}y}{\mathrm{d}x}\right|_{x=9}=\left.\frac{\mathrm{d}y}{\mathrm{d}x}
+              \right|_{t=2}=\frac{\mathrm{e}}{2(1+2\ln 2)}$.
+
+          $\frac{\mathrm{d}^{2}y}{\mathrm{d}x^{2}}=\frac{\mathrm{d}}{\mathrm{d}t}\left
+              (\frac{\mathrm{d}y}{\mathrm{d}x}\right)\cdot\frac{\mathrm{d}t}{\mathrm{d}x}
+              =\left(\frac{\mathrm{e}}{2(1+2\ln t)}\right)'\cdot\frac{1}{4t}=-\frac{\mathrm{e}}{4t^{2}(1+2\ln
+                      t)^{2}}$，
+
+          所以$\left.\frac{\mathrm{d}^{2}y}{\mathrm{d}x^{2}}\right|_{x=9}=\left.\frac{\mathrm{d}^{2}y}{\mathrm{d}x^{2}}
+              \right|_{t=2}=-\frac{\mathrm{e}}{16(1+2\ln 2)^{2}}$.
+
+    \item \textbf{Solution}. 由题可知$f(1)=2$，$f'(1)=0$，且$f'(x)=3ax^{2}+2
+              bx+1$，
+
+          所以$\begin{cases}
+                  a+b+1=2, \\
+                  3a+2b+1=0
+              \end{cases}$，解得$a=-3$，$b=4$，$f(x)=-3x^{3}+4x^{2}+x$.
+
+          令$f'(x)=-9x^{2}+8x+1=0$，解得$x=-\frac{1}{9}$或$x=1$.
+
+          计算$f(-1)=6$，$f\left(-\frac{1}{9}\right)=-\frac{14}{243}$，$f(1)=2$，$f(2
+              )=-6$，
+
+          所以$f(x)$在区间$[-1,2]$上的最大值为$6$，最小值为$-6$.
+
+    \item \textbf{Solution}. 由$\lim_{x\to0}\frac{f(x)}{x}=1$可得$f(0)=0$，$f
+              '(0)=1$.
+
+          令$u=x^{2}-t^{2}$，则$\mathrm{d}u=-2t\,\mathrm{d}t$，$\int_{0}^{x}tf(x^{2}-t^{2}
+              )\,\mathrm{d}t=-\frac{1}{2}\int_{x^2}^{0}f(u)\,\mathrm{d}u=\frac{1}{2}\int_{0}^{x^2}
+              f(u)\,\mathrm{d}u$.
+
+          所以
+          \[
+              \begin{aligned}
+                  l = & \lim_{x\to0}\frac{\dfrac{1}{2}\displaystyle\int_{0}^{x^2}f(u)\,\mathrm{d}u}{x^4}  \\
+                  =   & \lim_{x\to0}\frac{xf(x^2)}{4x^3}= \frac{1}{4}\lim_{x\to0}\frac{f(x^2)}{x^2}       \\
+                  =   & \frac{1}{4}\lim_{x\to0}\frac{f(x^2)-f(0)}{x^2-0}= \frac{1}{4}f'(0) = \frac{1}{4}.
+              \end{aligned}
+          \]
+
+    \item \textbf{Solution}. 方程变形为$\frac{\mathrm{d}x}{\mathrm{d}y}-\frac{3x}{y}=-\frac{y}{2}$.
+
+          由一阶非齐次线性微分方程的通解公式得
+          \[
+              \begin{aligned}
+                  x = & \mathrm{e}^{-\int\left(-\frac{3}{y}\right)\,\mathrm{d}y}\left(C+\int\left(-\frac{y}{2}\right)\mathrm{e}^{\int\left(-\frac{3}{y}\right)\,\mathrm{d}y}\,\mathrm{d}y\right) \\
+                  =   & y^{3}\left(C-\frac{1}{2}\int\frac{1}{y^2}\,\mathrm{d}y\right) = y^{3}\left(C+\frac{1}{2y}\right) = Cy^{3}+\frac{y^2}{2}.
+              \end{aligned}
+          \]
+
+          其中C为任意常数.
+
+    \item \textbf{Solution}. 点$P_{k}$的坐标为$\left(\frac{k}{n},0\right)$，过$Q
+                  _{k}(x_{k},x_{k}^{2})$的切线斜率为$2x_{k}$，所以有
+          \[
+              \frac{x_{k}^{2}-0}{x_{k}-\frac{k}{n}}=2x_{k},
+          \]
+
+          解得$x_{k}=\frac{2k}{n}$，故$S_{k}=\frac{1}{2}\cdot\left(1-\frac{k}{n}\right
+              )\cdot\frac{4k^{2}}{n^{2}}$.
+
+          由定积分的定义，得
+          \[
+              \begin{aligned}
+                  l = & \lim_{n\to\infty}\frac{1}{n}\sum_{k=1}^{n-1}S_{k} = \lim_{n\to\infty}\frac{1}{n}\sum_{k=1}^{n-1}\left(1-\frac{k}{n}\right)\cdot 2\left(\frac{k}{n}\right)^{2} \\
+                  =   & \int_{0}^{1}2x^{2}(1-x)\,\mathrm{d}x = \int_{0}^{1}(2x^{2}-2x^{3})\,\mathrm{d}x = \frac{1}{6}.
+              \end{aligned}
+          \]
+\end{enumerate}
+
+\section{综合题(每小题 7 分，共 14 分)}
+\begin{enumerate}
+    \setcounter{enumi}{16}
+    \item \textbf{Solution}. 令$u=t-x$，则
+          \[
+              \int_{0}^{x}tf(t-x)\,\mathrm{d}t = \int_{-x}^{0}(u+x)f(u)\,\mathrm{d}u=\int_{-x}
+              ^{0}uf(u)\,\mathrm{d}u+x\int_{-x}^{0}f(u)\,\mathrm{d}u.
+          \]
+
+          原方程变形为
+          \[
+              x=\int_{0}^{x}f(t)\,\mathrm{d}t+\int_{-x}^{0}uf(u)\,\mathrm{d}u+x\int_{-x}^{0}
+              f(u)\,\mathrm{d}u.
+          \]
+
+          方程两边关于$x$求导得$1=f(x)+xf(-x)-xf(-x)+\int_{-x}^{0}f(u)\,\mathrm{d}u$，即
+          \[
+              f(x)+\int_{-x}^{0}f(u)\,\mathrm{d}u=1.
+          \]
+
+          令$x=0$得$f(0)=1$.上式两边再次关于$x$求导得$f'(x)+f(-x)=0$，即$f'(x)=-f(-x)$.
+
+          令$x=0$得$f'(0)=-1$.由于$f(x)$可微，由上式可知$f''(x)$存在，
+
+          且$f''(x)=(f'(x))'=(-f(-x))'=f'(-x)=-f(x)$，即
+          \[
+              f''(x)+f(x)=0.
+          \]
+
+          此微分方程的特征方程为$r^{2}+1=0$，解得$r=\pm i$，所以可设$f(x)=A\cos x+B\sin
+              x$.
+
+          将$f(0)=1$，$f'(0)=-1$代入上式得$A=1$，$B=-1$，所以$f(x)=\cos x-\sin x$.
+
+    \item \textbf{Solution}. 由题可知$f''(3)=0$，$f(3)=2$，$f(0)=0$，$l_{1}:
+              y=f'(0)x$，$l_{2}:y-2=f'(3)(x-3)$.
+
+          将交点坐标$(2,4)$分别代入$l_{1}$和$l_{2}$的方程得$f'(0)=2$，$f'(3)=-2$.
+          所以
+          \[
+              \begin{aligned}
+                  \int_{0}^{3}(x^{2}+x)f'''(x)\,\mathrm{d}x = & \int_{0}^{3}(x^{2}+x)\,\mathrm{d}f''(x)                             \\
+                  =                                           & (x^{2}+x)f''(x)\bigg|_{0}^{3}-\int_{0}^{3}(2x+1)f''(x)\,\mathrm{d}x \\
+                  =                                           & -\int_{0}^{3}(2x+1)f''(x)\,\mathrm{d}x                              \\
+                  =                                           & -(2x+1)f'(x)\bigg|_{0}^{3}+\int_{0}^{3}2f'(x)\,\mathrm{d}x          \\
+                  =                                           & -7f'(3)+f'(0)+2(f(3)-f(0)) = 20.
+              \end{aligned}
+          \]
+\end{enumerate}
+
+\section{证明题(每小题 5 分，共 10 分)}
+\begin{enumerate}
+    \setcounter{enumi}{18}
+    \item \textbf{Proof}. 令$F(t)=\int_{0}^{t}g(x)f'(x)\,\mathrm{d}x+\int_{0}^{1}
+              f(x)g'(x)\,\mathrm{d}x-f(t)g(1)$，
+
+          则$F(1)=\int_{0}^{1}\left(g(x)f'(x)+f(x)g'(x)\right)\,\mathrm{d}x-f(1)g(1)=0$，且$F
+              '(t)=g(t)f'(t)-f'(t)g(1)=f'(t)\left[g(t)-g(1)\right]$.
+
+          因为$f'(x)\geq 0$，$g'(x)\geq 0$，所以$g(t)\leq g(1)$，故$F'(t)\leq 0$，$F(
+              t)$在$[0,1]$上单调递减.
+
+          所以$F(a)\geq F(1)=0$，即$\int_{0}^{a}g(x)f'(x)\,\mathrm{d}x+\int_{0}^{1}f(x)
+              g'(x)\,\mathrm{d}x\geq f(a)g(1)$.
+
+    \item \textbf{Proof}. 利用Taylor公式，$\forall\,x\in[-1,1]$，存在$\eta$介于$0$和$x$之间，使得
+          \[
+              f(x)=f(0)+f'(0)x+\frac{f''(\eta)}{2}x^{2}=f'(0)x+\frac{f''(\eta)}{2}x^{2}
+              .
+          \]
+
+          所以$3\int_{-1}^{1}f(x)\,\mathrm{d}x=3\int_{-1}^{1}\left(f'(0)x+\frac{f''(\eta)}{2}
+              x^{2}\right)\,\mathrm{d}x=\frac{3}{2}\int_{-1}^{1}f''(\eta)x^{2}\,\mathrm{d}x$.
+
+          由于$f''(x)$在闭区间$[-1,1]$上连续，所以$f''(x)$在$[-1,1]$上具有最大值$M$和最小值$m$，故
+          \[
+              \begin{aligned}
+                  \frac{3}{2}m\int_{-1}^{1}x^{2}\,\mathrm{d}x\leq & \frac{3}{2}\int_{-1}^{1}f''(\eta)x^{2}\,\mathrm{d}x\leq \frac{3}{2}M\int_{-1}^{1}x^{2}\,\mathrm{d}x, \\
+                  m\leq                                           & \frac{3}{2}\int_{-1}^{1}f''(\eta)x^{2}\,\mathrm{d}x\leq M.
+              \end{aligned}
+          \]
+
+          由介值定理，至少存在一点$\xi\in[-1,1]$，使得$f''(\xi)=\frac{3}{2}\int_{-1}^{1}
+              f''(\eta)x^{2}\,\mathrm{d}x=3\int_{-1}^{1}f(x)\,\mathrm{d}x$.
+\end{enumerate}
+\end{document}
+
+
+
+
+

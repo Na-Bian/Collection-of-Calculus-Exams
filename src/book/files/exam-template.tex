@@ -1,0 +1,208 @@
+\documentclass[../main.tex]{subfiles}
+
+\begin{document}
+
+% 使用方法：
+% 1. 复制本文件并重命名为 files/2026.tex、files/2026f.tex 或 files/2026x.tex
+% 2. 修改下面的元信息
+% 3. 保持“题面章节 + 参考答案章节”的双章节结构
+% 4. 在 main.tex 对应 part 中加入 \subfile{files/你的文件名}
+%
+% 约定总结：
+% - 所有试卷文件都使用 subfiles，且以 \chapter 开始
+% - 题号在不同 section 之间连续编号，依靠 \setcounter{enumi}{...} 控制
+% - 普通题答案统一写成 \textbf{Solution}.，证明题统一写成 \textbf{Proof}.
+% - 题面中的留白主要使用 \vspace{...}
+% - 若某题含图，通常将图片文件放在 files/ 下，并命名为 <文件名>-figure*.pdf
+
+% ====================
+% 元信息：只改这里
+% ====================
+\newcommand{\ExamYearRange}{2025-2026}
+\newcommand{\ExamCourse}{微积分（B）}
+\newcommand{\ExamTerm}{（上）}
+\newcommand{\ExamType}{期中考试}
+\newcommand{\ExamTitle}{\ExamYearRange 学年\ExamCourse\ExamTerm\ExamType}
+
+% ====================
+% 常用写法
+% ====================
+\newcommand{\qblank}[1]{\vspace{#1}}
+\newcommand{\sol}{\textbf{Solution}. }
+\newcommand{\prf}{\textbf{Proof}. }
+
+% ====================
+% 模板 A：上学期 / 下学期期中
+% 适用文件：2025.tex、2024.tex、2025x.tex 等
+% ====================
+\chapter{\ExamTitle}
+
+\section{基本计算题(每小题 6 分，共 60 分)}
+\begin{enumerate}
+  \item 题目内容.
+    \qblank{10em}
+
+  \item 题目内容.
+    \qblank{10em}
+\end{enumerate}
+
+\section{综合题(每小题 6 分，共 30 分)}
+\begin{enumerate}
+  \setcounter{enumi}{10}
+  \item 题目内容.
+    \qblank{12em}
+
+  \item 题目内容.
+    \qblank{12em}
+\end{enumerate}
+
+% 如果该卷含证明题，则保留本节；如果没有证明题，可整节删除。
+\section{证明题(每小题 5 分，共 10 分)}
+\begin{enumerate}
+  \setcounter{enumi}{15}
+  \item 题目内容.
+    \qblank{10em}
+
+  \item 题目内容.
+    \qblank{10em}
+\end{enumerate}
+
+\chapter{\ExamTitle 参考答案}
+
+\section{基本计算题(每小题 6 分，共 60 分)}
+\begin{enumerate}
+  \item \sol 参考答案内容.
+
+  \item \sol 参考答案内容.
+\end{enumerate}
+
+\section{综合题(每小题 6 分，共 30 分)}
+\begin{enumerate}
+  \setcounter{enumi}{10}
+  \item \sol 参考答案内容.
+
+  \item \sol 参考答案内容.
+\end{enumerate}
+
+\section{证明题(每小题 5 分，共 10 分)}
+\begin{enumerate}
+  \setcounter{enumi}{15}
+  \item \prf 证明内容.
+
+  \item \prf 证明内容.
+\end{enumerate}
+
+% ====================
+% 模板 B：上学期期末
+% 使用时把上面的“模板 A”整体替换为下面结构即可
+% ====================
+%
+% \chapter{\ExamTitle}
+%
+% \section{单项选择题(每小题 3 分，共 18 分)}
+% \begin{enumerate}
+%   \item 题目内容（\qquad）.
+%
+%   \begin{tasks}[label=\textbf{\Alph*.}, label-width=1.5em, column-sep=1em](2)
+%     \task 选项A
+%     \task 选项B
+%     \task 选项C
+%     \task 选项D
+%   \end{tasks}
+%   \qblank{1em}
+% \end{enumerate}
+%
+% \section{填空题(每小题 4 分，共 16 分)}
+% \begin{enumerate}
+%   \setcounter{enumi}{6}
+%   \item 题目内容$\underline{\hspace{3cm}}$.
+%     \qblank{1em}
+% \end{enumerate}
+%
+% \section{计算题(每小题 7 分，共 42 分)}
+% \begin{enumerate}
+%   \setcounter{enumi}{10}
+%   \item 题目内容.
+%     \qblank{10em}
+% \end{enumerate}
+%
+% \section{综合题(每小题 7 分，共 14 分)}
+% \begin{enumerate}
+%   \setcounter{enumi}{16}
+%   \item 题目内容.
+%     \qblank{12em}
+% \end{enumerate}
+%
+% \section{证明题(每小题 5 分，共 10 分)}
+% \begin{enumerate}
+%   \setcounter{enumi}{18}
+%   \item 题目内容.
+%     \qblank{15em}
+% \end{enumerate}
+%
+% \chapter{\ExamTitle 参考答案}
+%
+% \section{单项选择题(每小题 3 分，共 18 分)}
+% \begin{enumerate}
+%   \item \sol A.
+% \end{enumerate}
+%
+% \section{填空题(每小题 4 分，共 16 分)}
+% \begin{enumerate}
+%   \setcounter{enumi}{6}
+%   \item \sol 答案内容.
+% \end{enumerate}
+%
+% \section{计算题(每小题 7 分，共 42 分)}
+% \begin{enumerate}
+%   \setcounter{enumi}{10}
+%   \item \sol 参考答案内容.
+% \end{enumerate}
+%
+% \section{综合题(每小题 7 分，共 14 分)}
+% \begin{enumerate}
+%   \setcounter{enumi}{16}
+%   \item \sol 参考答案内容.
+% \end{enumerate}
+%
+% \section{证明题(每小题 5 分，共 10 分)}
+% \begin{enumerate}
+%   \setcounter{enumi}{18}
+%   \item \prf 证明内容.
+% \end{enumerate}
+
+% ====================
+% 模板 C：下学期期中（无证明题）
+% 这一类通常是“基本计算题 + 综合题”
+% 综合题常见为每小题 8 分，共 40 分
+% ====================
+%
+% \chapter{\ExamTitle}
+%
+% \section{基本计算题(每小题 6 分，共 60 分)}
+% \begin{enumerate}
+%   \item 题目内容.
+%     \qblank{10em}
+% \end{enumerate}
+%
+% \section{综合题(每小题 8 分，共 40 分)}
+% \begin{enumerate}
+%   \setcounter{enumi}{10}
+%   \item 题目内容.
+%     \qblank{10em}
+% \end{enumerate}
+%
+% \chapter{\ExamTitle 参考答案}
+%
+% \section{基本计算题(每小题 6 分，共 60 分)}
+% \begin{enumerate}
+%   \item \sol 参考答案内容.
+% \end{enumerate}
+%
+% \section{综合题(每小题 8 分，共 40 分)}
+% \begin{enumerate}
+%   \setcounter{enumi}{10}
+%   \item \sol 参考答案内容.
+% \end{enumerate}
+
+\end{document}

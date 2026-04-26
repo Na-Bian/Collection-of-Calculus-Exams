@@ -1,0 +1,33 @@
+# Local app/runtime state
+.appdata/
+.localappdata/
+.temp/
+/files/
+/Images/
+
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fls
+*.fdb_latexmk
+*.lof
+*.log
+*.lot
+*.out
+*.run.xml
+*.synctex*
+*.toc
+*.xdv
+*.nav
+*.snm
+*.vrb
+*.synctex(busy)
+
+# Editor/system noise
+*.bak
+*.tmp
+*~
+.DS_Store
+Thumbs.db

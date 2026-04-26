@@ -1,0 +1,91 @@
+\documentclass[main]{subfiles}
+\begin{document}
+\chapter{函数，极限，连续}
+\section{预备}
+\subsection{几个重要不等式}
+\subsection{函数的基本概念}
+\section{序列极限}
+\subsection{序列极限的定义}
+\defn{序列极限}{
+    称序列$\{a_n\}$收敛于$a$，若对任意小的$\varepsilon>0$，都能找到$N$，使得$n>N$时有$|a_n-a|<\varepsilon$成立.}
+
+
+我们做几点说明：
+\begin{enumerate}
+    \item 序列实际上是定义域为$\mathbb{N}$的函数，序列的极限就是自变量$n$趋于无穷时因变量的变化趋势. 后面我们学函数极限时，会研究自变量的更多变化方式，比如趋近于$-\infty$或趋近于某一有限实数$x_0$. 但在序列这里，只有$n\to+\infty$是有意义的——没有人会蠢到问$n\to1$时序列的变化趋势是什么.
+    \item 极限定义中的$N$是根据给出的$\varepsilon$选取的，与$\varepsilon$有关，因此可以记作$N(\varepsilon)$，但切莫把$N$当成$\varepsilon$的函数.
+    \item 从概念上而言, 极限的定义在哲学意义上有一个先天的缺陷: 判断数列收敛与否, 应该由数列本身所决定而不需要依赖于外在的信息, 比如说事先知道极限是什么. 换句话说, 我们想要内蕴地来考虑极限问题. 这种看法和思考方式对数学的学习是大有裨益的；
+    \item 不收敛有两种情况，一种就是$n$趋于无穷时$a_n$无限制地增大（减小），这也是下面无穷大量的概念；另一种则是$a_n$在不停地震荡，且其振幅无减小趋势.
+\end{enumerate}
+
+\defn{无穷小量，无穷大量}{
+    称收敛于$0$的序列为无穷小量. 
+
+    称$\{a_n\}$为无穷大量，若对任意大的$G>0$，都能找到$N$，使得$n>N$时有$|a_n|>G$. 特别地，若是$a_n>G$，则称$\{a_n\}$为正无穷大，若是$-a_n>G$，则称$\{a_n\}$为负无穷大.
+}
+
+请读者自行思考以下的问题，以增进对极限概念的理解：
+\begin{enumerate}
+    \item 正无穷大是否一定是单调增加的？或者说，至少在很多项之后是单调增加的？
+    \item 无界序列一定是无穷大量吗？
+    \item 每一项都是正数的序列，其极限一定是正数，对吗？
+\end{enumerate}
+
+我们看一道利用极限定义算序列极限的例题
+\exm{
+证明$\lim_{n\to\infty}\frac{1}{n}=0$.\\
+对一个给定的$\varepsilon>0$，我们只要找到$N$使得$n>N$时$\left|\frac{1}{n}-0\right|=\frac{1}{n}<\varepsilon$就行了. 这个不等式可以写成$n>\frac{1}{\varepsilon}$，于是，我们只要取$N=\lfloor \frac{1}{\varepsilon}\rfloor$，那$n>N$时不等式自然成立. 命题得证.
+}
+
+如上，用“ε−N” 语言证明时, 必须按照“任意—存在—任意—给定精度精确化” 四个步骤的顺序进行. 这个我们不再赘述. 读者看了上面的过程，或许会认为，对给定的$\{a_n\}$和$a$，我们只要想办法把$|a_n-a|<\varepsilon$改述成
+\begin{equation*}
+    n>\varphi(\varepsilon)
+\end{equation*}
+然后套用同样的逻辑，问题就解决了. 不幸的是，这样的$\varphi(\varepsilon)$未必就存在，就算存在也不大好算出来. 既然如此，我们只得另寻出路. 我们发现，我们没必要求出来满足 “$n>N$时$|a_n-a|<\varepsilon$”的最小$N$是谁，我们只要求出来满足这个条件的某个$N$就行了. 所以，我们可以对$|a_n-a|$做适当的放大，即先找一个函数使得$|a_n-a|\leq f(n)$成立，然后对任意的$\varepsilon>0$，证明存在$N$使得$n>N$时$f(n)<\varepsilon$就行了. 注意，这里的$f(n)$应当是无穷小量，如果不是，则是放大过了头. 下面我们看一道例题.
+
+\exm{证明$\lim_{n\to\infty}\frac{n^3}{2^n}=0$\\
+记$a_n=\frac{n^3}{2^n}$，则$\frac{a_n}{a_{n-1}}=\left(\frac{n}{n-1}\right)^3\frac{1}{2}$，我们希望把$\left(\frac{n}{n-1}\right)^3$放大为某个常数$q$，这样$a_n=a_1\frac{a_2}{a_1}\frac{a_2}{a_1}\cdots\frac{a_n}{a_{n-1}}$就可以放大为$f(n)=a_1\left(\frac{q}{2}\right)^{n-1}$，而$a_1\left(\frac{q}{2}\right)^{n-1}<\varepsilon$很容易写成$$n>\frac{\ln2\varepsilon}{\ln\frac{q}{2}}+1$$这里我们应使$\frac{q}{2}<1$，否则$f(n)$便不是无穷小量. 所以，我们的问题只是找到这样的$q<2$，使得除有限项外的$n$都满足$\left(\frac{n}{n-1}\right)^3<q$，我们注意到$\left(\frac{n}{n-1}\right)^3$是单调减少的，且$n=5$时，$\left(\frac{5}{4}\right)^3=(1.25)^3<2$，那我们自然可以取$q=(1.25)^3$，则$n>5$时，$\left(\frac{n}{n-1}\right)^3<q$，问题解决. 请读者自己补上完整的步骤.
+}
+
+上面这道题的结论是普遍成立的，即对任意的$a>0$和$q>1$有$\lim_{n\to\infty}\frac{n^a}{q^n}$.
+
+再看一道题：
+\exm{证明$\lim_{n\to\infty} \sqrt[n]{n}=1$\\
+我们令$x_n=\sqrt[n]{n}-1$，则$(x_n+1)^n=n$，即：$$1+nx_n+\frac{n(n-1)}{2}x_n^2+\cdots=n$$我们可以反方向考虑，把不等式左边缩小为$y_n$的单值函数，再反解出$y_n$. 如果我们扔掉二次项，则$y_n\leq \frac{n-1}{n}$，不等式右边不是无穷小量，因此放大过了头. 我们扔掉一次项，则$y_n\leq\sqrt{\frac{2}{n}}$，这是合适的放缩. 请读者自行完成剩下的步骤.
+}
+
+\subsection{收敛序列的基本性质}
+收敛序列会有以下性质
+\thm{收敛序列的若干性质}{
+\begin{enumerate}
+    \item 收敛序列的极限唯一;
+    \item 收敛序列是有界的；
+    \item 若$a_n\geq b_n$对足够大的$n$成立，则$\lim_{n\to\infty} a_n\geq\lim_{n\to\infty} b_n$；
+    \item 若$\lim_{n\to\infty}a_n=a,\lim_{n\to\infty}b_n=b$，则
+    \begin{enumerate}
+        \item $\lim_{n\to\infty}a_n\pm b_n=a\pm b$;
+        \item $\lim_{n\to\infty}a_n\cdot b_n=a\cdot b$;
+        \item $\lim_{n\to\infty}\frac{a_n}{b_n}=\frac{a}{b}$，其中$\{b_n\}$及$b$满足不为零的条件.
+    \end{enumerate}
+\end{enumerate}
+}
+
+第一条性质是平庸的. 第二条性质一般用于断言某个数列不收敛，例如：
+\exm{证明$a_n=1+\frac{1}{2}+\cdots+\frac{1}{n}$发散.\\考虑$n=2^k$，那么，我们有\begin{eqnarray*}
+    a_{n-1}&=&1+\left(\frac{1}{2}+\frac{1}{3}\right)+\cdots+\left(\frac{1}{2^{k-1}}+\frac{1}{2^{k-1}+1}+\cdots\frac{1}{2^k-1}\right)\\&>&1\times\frac{1}{2}+2\times\frac{1}{4}+\cdots+2^{k-1}\times\frac{1}{2^k}\\&=&\frac{k}{2}
+\end{eqnarray*}即$a_n$是无界的，于是$a_n$发散.}
+
+剩下的几条性质则一般用于极限的计算，这里我们不多赘述。
+\thm{夹逼定理}{
+}
+
+\subsection{单调有界定理}
+
+\subsection{Cauchy 定理与 Stolz 定理}
+\section{函数极限}
+\subsection{函数极限的定义}
+\subsection{函数极限的基本性质}
+\subsection{Henie 归结定理}
+\subsection{无穷小量的估阶}
+
+\end{document}

@@ -1,0 +1,131 @@
+\documentclass[A4,10pt,twoside]{book}
+\usepackage{amd}
+\usepackage{ctex}
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{amssymb}
+\usepackage{esint}
+\usepackage{fontspec}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{tasks}
+\renewcommand{\theHchapter}{\thepart.\thechapter}
+\setmainfont{Times New Roman}
+\setsansfont{Arial}
+\setmonofont{Courier New}
+\setcounter{tocdepth}{0}  % 只显示chapter级别的内容
+% 设置所有行内公式为行间公式的样式
+\everymath{\displaystyle}
+% %--------------------------------------------------------------------------
+% %         General Setting
+% %--------------------------------------------------------------------------
+
+\graphicspath{{images/}{../images/}} %Path of figures
+\setkeys{Gin}{width=0.85\textwidth} %Size of figures
+\setlength{\cftbeforechapskip}{3pt} %space between items in toc
+\setlength{\parindent}{0.5cm} % Idk
+\input{theorems.tex} % Theorems styles and colors
+\usepackage[english]{babel} %Language
+
+\setlist[itemize]{itemsep=5pt} % Adjust the length as needed
+\setlist[enumerate]{itemsep=5pt} % Adjust the length as needed
+
+
+
+% \usepackage{lmodern} %  Latin Modern font
+% \usepackage{newtxtext,newtxmath}
+
+
+
+
+% %--------------------------------------------------------------------------
+% %         General Informations
+% %--------------------------------------------------------------------------
+\newcommand{\BigTitle}{
+    \begin{center}
+    华中科技大学微积分（B）考试合集
+    \end{center}
+    }
+
+\newcommand{\LittleTitle}{
+    那，边。
+    }
+\begin{document}
+
+% %--------------------------------------------------------------------------
+% %         First pages 
+% %--------------------------------------------------------------------------
+\newgeometry{top=8cm,bottom=.5in,left=2cm,right=2cm}
+\subfile{files/0.0.0.titlepage}
+\restoregeometry
+\subfile{files/0.zommaire}
+\subfile{files/0.1.changelogs}
+
+% %--------------------------------------------------------------------------
+% %         Core of the document 
+% %--------------------------------------------------------------------------
+% \subfile{files/mainpoints}
+\part{微积分（B）（上）期中考试}
+\subfile{files/2025}
+\subfile{files/2024}
+\subfile{files/2023}
+\subfile{files/2022}
+\subfile{files/2021}
+\subfile{files/2020}
+\subfile{files/2019}
+\subfile{files/2018}
+\subfile{files/2017}
+\subfile{files/2016}
+\subfile{files/2015}
+\subfile{files/2014}
+\subfile{files/2013}
+\subfile{files/2012}
+\subfile{files/2011}
+\part{微积分（B）（上）期末考试}
+\subfile{files/2025f}
+\subfile{files/2024f}
+\subfile{files/2023f}
+\subfile{files/2022f}
+\subfile{files/2021f}
+\subfile{files/2019f}
+\subfile{files/2018f}
+\subfile{files/2016f}
+\part{微积分（B）（下）期中考试}
+\subfile{files/2025x}
+\subfile{files/2024x}
+\subfile{files/2023x}
+\subfile{files/2022x}
+\subfile{files/2021x}
+\subfile{files/2019x}
+\subfile{files/2018x}
+\subfile{files/2017x}
+\part{微积分（B）（下）期末考试}
+\subfile{files/2025xf}
+\subfile{files/2024xf}
+\subfile{files/2023xf}
+\subfile{files/2022xf}
+\subfile{files/2021xf}
+\subfile{files/2019xf}
+\subfile{files/2018xf}
+\subfile{files/2017xf}
+\subfile{files/2016xf}
+
+% \part{Second part}
+% \subfile{files/0.0.testchap}
+% \subfile{files/0.0.testchap}
+% \subfile{files/0.0.testchap}
+
+% \part{Third part}
+% \subfile{files/0.0.testchap}
+% \subfile{files/0.0.testchap}
+% \subfile{files/0.0.testchap}
+
+
+
+% %--------------------------------------------------------------------------
+% %         Bibliographie 
+% %--------------------------------------------------------------------------
+\nocite{*} % to cite evey things, else cite each on using : \cite{ifrs17}. 
+% \printbibliography %to print bibliographie
+
+\end{document}

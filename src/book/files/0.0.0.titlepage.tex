@@ -1,0 +1,36 @@
+\documentclass[../main.tex]{subfiles}
+
+
+
+    
+\begin{document}
+% Title page content
+\begin{titlepage}
+\begin{flushleft}
+
+% Title in a custom font style and size
+\textbf{\fontfamily{hwzs}\selectfont\Huge \BigTitle}
+
+% Draw a line 4pt high
+\par\noindent\rule{\textwidth}{4pt}\\
+
+% Subtitle with shaded box
+\begin{tikzpicture}
+\shade[bottom color=lightgray,top color=white]
+    (0,0) rectangle (\textwidth, 1.5)
+    node[midway] {\textbf{\large \textit{\LittleTitle}}}; % Replace with actual subtitle
+\end{tikzpicture}
+
+% Edition Number
+\begin{flushright}
+\Large Last Updated: \today
+\end{flushright}
+
+\vspace{\fill}
+
+\end{flushleft}
+\end{titlepage}
+
+\restoregeometry
+
+\end{document}

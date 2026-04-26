@@ -1,0 +1,233 @@
+%--------------------------------------------------------------------------
+% 		GEOMETRY 
+%--------------------------------------------------------------------------
+\ProvidesPackage{mystyle}[2024/07/08 Custom LaTeX Style]
+
+\RequirePackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+
+%--------------------------------------------------------------------------
+% 		GRAPHICS  
+%--------------------------------------------------------------------------
+
+%-------		PACKAGES		-------	
+
+\RequirePackage{graphicx}
+\RequirePackage{tikz}
+\RequirePackage{tkz-tab}
+\usetikzlibrary{positioning}
+\usetikzlibrary{shapes.geometric, arrows}
+\RequirePackage{varwidth}
+\RequirePackage[most]{tcolorbox}
+\tcbuselibrary{listings}
+\usetikzlibrary{shadows,shadows.blur,shapes.misc, positioning}
+
+
+%--------------------------------------------------------------------------
+% 		WRITING PACKAGES & COMMANDS 
+%--------------------------------------------------------------------------
+
+%-------		PACKAGES		-------	
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\RequirePackage{lipsum}
+\RequirePackage{csquotes}
+\RequirePackage{enumerate}
+\RequirePackage[shortlabels,inline]{enumitem}
+\RequirePackage{subfiles}
+
+%--------------------------------------------------------------------------
+% 		MATH PACKAGES & COMMANDS 
+%--------------------------------------------------------------------------
+
+
+%-------		PACKAGES		-------	
+\RequirePackage{amsmath, amsthm, amssymb, amsfonts}
+\RequirePackage{thmtools}
+\tcbuselibrary{theorems,skins,breakable}
+
+\RequirePackage{mathtools}
+\RequirePackage{dsfont}
+\newcommand{\1}{\mathds 1}
+\newcommand{\A}{\mathcal A}
+\renewcommand{\AA}{\mathbb A}
+\newcommand{\B}{\mathcal B}
+\newcommand{\BB}{\mathbb B}
+\newcommand{\C}{\mathcal C}
+\newcommand{\CC}{\mathbb C}
+\newcommand{\D}{\mathcal D}
+\newcommand{\DD}{\mathbb D}
+\newcommand{\EE}{\mathbb E}
+\newcommand{\FF}{\mathbb F}
+\newcommand{\G}{\mathcal G}
+\newcommand{\GG}{\mathbb G}
+\renewcommand{\H}{\mathcal H}
+\newcommand{\HH}{\mathbb H}
+\newcommand{\I}{\mathcal I}
+\newcommand{\II}{\mathbb I}
+\newcommand{\J}{\mathcal J}
+\newcommand{\JJ}{\mathbb J}
+\newcommand{\K}{\mathcal K}
+\newcommand{\KK}{\mathbb K}
+\renewcommand{\L}{\mathcal L}
+\newcommand{\LL}{\mathbb L}
+\newcommand{\M}{\mathcal M}
+\newcommand{\MM}{\mathbb M}
+\newcommand{\N}{\mathcal N}
+\newcommand{\NN}{\mathbb N}
+\renewcommand{\O}{\mathcal O}
+\newcommand{\OO}{\mathbb O}
+\renewcommand{\P}{\mathcal P}
+\newcommand{\PP}{\mathbb P}
+\newcommand{\QQ}{\mathbb Q}
+\newcommand{\R}{\mathcal R}
+\newcommand{\RR}{\mathbb R}
+\renewcommand{\S}{\mathcal S}
+\renewcommand{\SS}{\mathbb S}
+\newcommand{\T}{\mathcal T}
+\newcommand{\TT}{\mathbb T}
+\newcommand{\U}{\mathcal U}
+\newcommand{\UU}{\mathbb U}
+\newcommand{\VV}{\mathbb V}
+\newcommand{\W}{\mathcal W}
+\newcommand{\WW}{\mathbb W}
+\newcommand{\X}{\mathcal X}
+\newcommand{\XX}{\mathbb X}
+\newcommand{\Y}{\mathcal Y}
+\newcommand{\YY}{\mathbb Y}
+\newcommand{\Z}{\mathcal Z}
+\newcommand{\ZZ}{\mathbb Z}
+
+% Functions 
+\newcommand{\expo}[1]{\exp{\left\{#1\right\}}}
+\newcommand{\lno}[1]{\ln{\left\{#1\right\}}}
+
+%--------------------------------------------------------------------------
+% 		COLORS & LINKS
+%--------------------------------------------------------------------------
+\RequirePackage{xcolor}
+\definecolor{mycolor}{RGB}{38,168,148}
+
+\definecolor{linkscolor}{RGB}{4,36,58}
+\RequirePackage{hyperref}
+\hypersetup{
+  colorlinks,
+  linkcolor=linkscolor,
+  linktoc=all
+}
+
+%--------------------------------------------------------------------------
+% 		HEADER & FOOTER 
+%--------------------------------------------------------------------------
+% ----- Header and footer -----
+\RequirePackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[RO,LE]{%
+  \tikz[baseline=(char.base)]{
+    \node[shape=rectangle,fill=black,text=white,inner sep=2pt] (char) {\thepage};
+  }
+} % Page number in a small black box
+
+\fancyhead[RE,LO]{\nouppercase{\leftmark}} % chapter name and number on the right for even pages and left for odd pages in the header
+\renewcommand{\headrulewidth}{4pt} % sets thickness of header line
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\fancyfoot{} % removes page number on bottom of page
+
+% ----- Header of the frontpage ----- 
+\fancypagestyle{frontpage}{
+	\fancyhf{}
+	\renewcommand{\headrulewidth}{0pt}
+	\renewcommand{\footrulewidth}{0pt}
+	\vspace*{1\baselineskip}
+	
+	\fancyhead[R]{École Nationale de Commerce et de Gestion
+	\linebreak       Casablanca, 2020\vspace*{.5\baselineskip}}
+ % change to nhhlogo1.png for golden NHH logo
+}
+
+% %--------------------------------------------------------------------------
+% % 		Chapters and sections 
+% %--------------------------------------------------------------------------
+\renewcommand\thesubsubsection{\arabic{subsection}.\roman{subsubsection}}
+\renewcommand\thesubsection{\thesection.\arabic{subsection}}
+\renewcommand\thesection{\arabic{section}}
+
+\makeatletter
+\@addtoreset{chapter}{part} % for numberring
+\makeatother  
+
+\RequirePackage[titles]{tocloft}
+
+\RequirePackage{titletoc}
+% Define a new command to create per-chapter mini-TOCs
+\newcommand{\chaptertoc}{%
+    \startcontents[chapters]
+    \printcontents[chapters]{}{1}{\setcounter{tocdepth}{1}}
+    \vspace{0.5cm}
+}
+
+\newcommand{\intro}[1]{
+\noindent
+\begin{minipage}[t]{0.48\textwidth}
+    \chaptertoc
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+    #1
+\end{minipage}
+\newpage
+}
+
+
+\RequirePackage[explicit]{titlesec}
+\RequirePackage{titlesec}
+
+\titleformat{\chapter}[display]
+{\centering\normalfont\huge}
+{\titlerule[5pt]\vspace{3pt}\titlerule[2pt]\vspace{3pt}\textbf{\MakeUppercase{\chaptername} \thechapter}}
+{0pt}
+{\titlerule[2pt]\vspace{1pc}\huge\MakeUppercase{#1}}
+
+\titleformat{name=\chapter,numberless}[display]
+{  \centering\normalfont\Huge}
+{\titlerule[2pt]\vspace{-20pt}}
+{0pt}
+{\Huge\MakeUppercase{#1} \addcontentsline{toc}{chapter}{#1} }
+
+
+
+
+
+% %--------------------------------------------------------------------------
+% %         Tables et figures 
+% %--------------------------------------------------------------------------
+\RequirePackage{subcaption} 
+\RequirePackage{chngcntr} % needed for correct table numbering
+\renewcommand{\thefigure}{\thepart.\thechapter.\thesection.\arabic{figure}}
+\counterwithin{table}{chapter} % numbering of tables 
+\counterwithin{figure}{chapter} % numbering of figures
+\numberwithin{equation}{chapter} % numbering of equations
+
+\RequirePackage{array}
+\RequirePackage[rightcaption]{sidecap}
+\RequirePackage{wrapfig}
+\RequirePackage{float}
+\RequirePackage[labelfont=bf]{caption} % bold text for captions
+% \RequirePackage[para]{threeparttable} % fancy  tables, check these before you use them
+\RequirePackage{makecell}
+\RequirePackage{hhline}
+
+
+
+% %--------------------------------------------------------------------------
+% %         Bibliographie 
+% %--------------------------------------------------------------------------
+\RequirePackage[
+backend=biber,
+style = reading,
+sorting=ynt,
+citestyle=authortitle
+]{biblatex}
+\addbibresource{References.bib}
+
+
+

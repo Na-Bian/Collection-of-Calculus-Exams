@@ -1,0 +1,216 @@
+\documentclass[../main.tex]{subfiles}
+
+\begin{document}
+\chapter{Black-Scholes Model for Pricing Call and Put Options}
+
+\intro{
+The Black-Scholes model is a mathematical model for pricing an options contract. The model was developed by Fischer Black, Myron Scholes, and Robert Merton in the early 1970s and is a cornerstone of modern financial theory. The Black-Scholes model provides a closed-form solution for the price of European call and put options.
+}
+
+\section{Assumptions of the Black-Scholes Model}
+
+The Black-Scholes model is based on several assumptions:
+\asum{The assumptions of  Black-Scholes model}{
+\begin{enumerate}
+    \item The stock price follows a geometric Brownian motion with constant drift and volatility.
+    \item There are no arbitrage opportunities.
+    \item The markets are frictionless, with no transaction costs or taxes.
+    \item The risk-free interest rate is constant and known.
+    \item The options can only be exercised at expiration (European options).
+\end{enumerate}
+}
+
+\section{Derivation of the Black-Scholes Equation}
+
+The derivation of the Black-Scholes equation involves the use of Ito's Lemma and the concept of a risk-neutral portfolio. Consider a stock whose price \( S(t) \) follows the stochastic differential equation:
+
+\begin{equation}
+    dS = \mu S dt + \sigma S dW
+\end{equation}
+
+where:
+\begin{itemize}
+    \item \( \mu \) is the drift rate of the stock.
+    \item \( \sigma \) is the volatility of the stock.
+    \item \( W \) is a Wiener process or Brownian motion.
+\end{itemize}
+
+\defn{Call and Put Options}{
+    \begin{itemize}
+        \item \textbf{Call Option:} Gives the holder the right (but not the obligation) to buy an asset at a predefined date and price (strike price).
+        \item \textbf{Put Option:} Gives the holder the right (but not the obligation) to sell an asset at a predefined date and price (strike price).
+    \end{itemize}
+}
+
+Under the black and scholes assumptions we the PDE of the price of an European Call :
+
+\thmp{Black and Scholes PDE }{
+\begin{equation}
+    \frac{\partial C}{\partial t} + r S \frac{\partial C}{\partial S} + \frac{1}{2} \sigma^2 S^2 \frac{\partial^2 C}{\partial S^2} = r C
+\end{equation}
+}{
+Using Ito's Lemma we get : 
+\begin{equation}
+    dC = \frac{\partial C}{\partial t} dt + \frac{\partial C}{\partial S} dS + \frac{1}{2} \frac{\partial^2 C}{\partial S^2} \sigma^2 S^2 dt
+\end{equation}
+
+Substituting \( dS \) into the equation, we get:
+
+\begin{equation}
+    dC = \left( \frac{\partial C}{\partial t} + \frac{\partial C}{\partial S} \mu S + \frac{1}{2} \frac{\partial^2 C}{\partial S^2} \sigma^2 S^2 \right) dt + \frac{\partial C}{\partial S} \sigma S dW
+\end{equation}
+
+This can be rearranged to:
+
+\begin{equation}
+    dC = \left( \frac{\partial C}{\partial t} + \frac{\partial C}{\partial S} \mu S + \frac{1}{2} \frac{\partial^2 C}{\partial S^2} \sigma^2 S^2 \right) dt + \frac{\partial C}{\partial S} \sigma S dW
+\end{equation}
+
+We form a risk-free portfolio by holding a position in the stock and an option. The change in the value of the portfolio is:
+
+\begin{equation}
+    \Pi = -C + \Delta S
+\end{equation}
+
+The change in the portfolio value is:
+
+\begin{equation}
+    d\Pi = -dC + \Delta dS
+\end{equation}
+
+Substituting \( dC \) and \( dS \), and choosing \( \Delta = \frac{\partial C}{\partial S} \), we get:
+
+\begin{equation}
+    d\Pi = -\left( \frac{\partial C}{\partial t} + \frac{1}{2} \frac{\partial^2 C}{\partial S^2} \sigma^2 S^2 \right) dt
+\end{equation}
+
+For the portfolio to be risk-free, \( d\Pi \) must earn the risk-free rate \( r \):
+
+\begin{equation}
+    -\left( \frac{\partial C}{\partial t} + \frac{1}{2} \frac{\partial^2 C}{\partial S^2} \sigma^2 S^2 \right) = r \left( -C + \frac{\partial C}{\partial S} S \right)
+\end{equation}
+
+Simplifying, we get the Black-Scholes partial differential equation:
+\begin{equation*}
+    \frac{\partial C}{\partial t} + r S \frac{\partial C}{\partial S} + \frac{1}{2} \sigma^2 S^2 \frac{\partial^2 C}{\partial S^2} = r C
+\end{equation*}
+
+}
+
+
+
+\section{Solution to the Black-Scholes Equation for Call Options}
+
+To solve the Black-Scholes equation, we apply the boundary condition for a European call option:
+
+\begin{equation}
+    C(S, T) = \max(S_T - K, 0)
+\end{equation}
+
+where \( K \) is the strike price and \( T \) is the time to expiration.
+
+Using the method of transforming variables, we obtain the solution for a call option:
+
+\thmp{Black and Scholes formulas}{
+The price of a call under black and scholes model is : 
+
+\begin{equation}
+    C(S, t) = S \Phi(d_1) - K e^{-r(T-t)} \Phi(d_2)
+\end{equation}
+
+where:
+\begin{align}
+    d_1 &= \frac{\ln\left(\frac{S}{K}\right) + \left(r + \frac{\sigma^2}{2}\right)(T-t)}{\sigma \sqrt{T-t}} \\
+    d_2 &= d_1 - \sigma \sqrt{T-t}
+\end{align}
+
+and \( \Phi \) is the cumulative distribution function of the standard normal distribution.
+
+}{
+Left exercise for reader. 
+}
+
+
+\section{Solution to the Black-Scholes Equation for Put Options}
+
+Similarly, for a European put option, the boundary condition is:
+
+\begin{equation}
+    P(S, T) = \max(K - S_T, 0)
+\end{equation}
+
+The solution for a put option is given by:
+
+\begin{equation}
+    P(S, t) = K e^{-r(T-t)} \Phi(-d_2) - S \Phi(-d_1)
+\end{equation}
+
+\section{Greeks in the Black-Scholes Model}
+
+The Greeks are sensitivities of the option price to various factors:
+
+\subsection{Delta}
+
+Delta measures the sensitivity of the option price to changes in the underlying asset price:
+
+\begin{equation}
+    \Delta_C = \frac{\partial C}{\partial S} = \Phi(d_1)
+\end{equation}
+
+\begin{equation}
+    \Delta_P = \frac{\partial P}{\partial S} = \Phi(d_1) - 1
+\end{equation}
+
+\subsection{Gamma}
+
+Gamma measures the sensitivity of delta to changes in the underlying asset price:
+
+\begin{equation}
+    \Gamma = \frac{\partial^2 C}{\partial S^2} = \frac{\Phi'(d_1)}{S \sigma \sqrt{T - t}}
+\end{equation}
+
+\subsection{Theta}
+
+Theta measures the sensitivity of the option price to the passage of time:
+
+\begin{equation}
+    \Theta_C = -\frac{S \Phi'(d_1) \sigma}{2 \sqrt{T - t}} - r K e^{-r(T - t)} \Phi(d_2)
+\end{equation}
+
+\begin{equation}
+    \Theta_P = -\frac{S \Phi'(d_1) \sigma}{2 \sqrt{T - t}} + r K e^{-r(T - t)} \Phi(-d_2)
+\end{equation}
+
+\subsection{Vega}
+
+Vega measures the sensitivity of the option price to changes in volatility:
+
+\begin{equation}
+    \nu = \frac{\partial C}{\partial \sigma} = \frac{\partial P}{\partial \sigma} = S \sqrt{T - t} \Phi'(d_1)
+\end{equation}
+
+\subsection{Rho}
+
+Rho measures the sensitivity of the option price to changes in the risk-free interest rate:
+
+\begin{equation}
+    \rho_C = K (T - t) e^{-r(T - t)} \Phi(d_2)
+\end{equation}
+
+\begin{equation}
+    \rho_P = -K (T - t) e^{-r(T - t)} \Phi(-d_2)
+\end{equation}
+
+
+\section{Numerical Examples}
+
+\exm{Call Option Pricing}{
+    Consider a European call option with \( S = 100 \), \( K = 100 \), \( r = 0.05 \), \( \sigma = 0.2 \), and \( T = 1 \) year. Using the Black-Scholes formula, we calculate the call option price.
+}
+
+
+\section{Conclusion}
+
+The Black-Scholes model is a fundamental tool in financial markets for pricing options. It provides insights into the behavior of option prices and the factors that affect them. Understanding the model and its derivations is crucial for anyone involved in finance.
+
+\end{document}

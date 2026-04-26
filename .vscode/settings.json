@@ -1,0 +1,33 @@
+{
+  "files.exclude": {
+    ".appdata": true,
+    ".localappdata": true,
+    ".temp": true,
+    "**/.build": true,
+    "files": true,
+    "Images": true,
+    "**/*.aux": true,
+    "**/*.bcf": true,
+    "**/*.log": true,
+    "**/*.out": true,
+    "**/*.run.xml": true,
+    "**/*.synctex*": true,
+    "**/*.toc": true
+  },
+  "search.exclude": {
+    ".appdata": true,
+    ".localappdata": true,
+    ".temp": true,
+    "**/.build": true,
+    "files": true,
+    "Images": true,
+    "**/*.aux": true,
+    "**/*.bcf": true,
+    "**/*.log": true,
+    "**/*.out": true,
+    "**/*.run.xml": true,
+    "**/*.synctex*": true,
+    "**/*.toc": true
+  },
+  "latex-workshop.latex.outDir": "%DIR%/.build"
+}

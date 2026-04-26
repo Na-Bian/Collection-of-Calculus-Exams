@@ -2,6 +2,7 @@
 .appdata/
 .localappdata/
 .temp/
+.build/
 /files/
 /Images/
 

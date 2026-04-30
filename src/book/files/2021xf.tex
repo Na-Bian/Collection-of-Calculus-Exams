@@ -13,11 +13,11 @@
               \task \( y^* = Ax + B + Cxe^x \)
           \end{tasks}
 
-    \item 设曲线 \( \begin{cases} x^2 + y^2 + z^2 = 2 \\ x + y + z = 0 \end{cases} \)，点 \( M(1, -1, 0) \)，则在点 \( M \) 处下列说法\(\textbf{不正确}\)的是（\qquad）.
+    \item 设曲线 \( \begin{cases} x^2 + y^2 + z^2 = 2 \\ x + y + z = 0 \end{cases} \)，点 \( M(1, -1, 0) \)，则在点 \( M \) 处下列说法\textbf{不正确}的是（\qquad）.
 
           \begin{tasks}[label=\textbf{\Alph*.}, label-width=1.5em, column-sep=1em](2)
-              \task 切矢量为 \(\{-2, -2, 4\}\)
-              \task 切矢量为 \(\{-2, 2, 4\}\)
+              \task 切向量为 \((-2, -2, 4)\)
+              \task 切向量为 \((-2, 2, 4)\)
               \task 切线方程为 \( x - 1 = y + 1 = -\dfrac{z}{2} \)
               \task 法平面方程为 \( x + y - 2z = 0 \)
           \end{tasks}
@@ -68,7 +68,7 @@
     \item 设 \( P_0(1,1,-1) \)，\( P_1(2,-1,0) \)，则 \( u = x + y^2 + z^3 \) 在 \( P_0 \) 处沿 \( \overrightarrow{P_0P_1} \) 方向的方向导数为 \(\underline{\hspace{5em}}\).
           \vspace{1em}
 
-    \item 若 \( z = z(x,y) \) 由方程 \( e^{x+2y+3z} + xyz = 1 \) 确定，则 \( z_x(0,0) = \underline{\hspace{5em}}\).
+    \item 若 \( z = z(x,y) \) 由方程 \( \mathrm{e}^{x+2y+3z} + xyz = 1 \) 确定，则 \( z_x(0,0) = \underline{\hspace{5em}}\).
           \vspace{1em}
 
     \item 级数 \( \sum \limits_{n=0}^{\infty} \dfrac{(-1)^n x^{2n}}{(2n)!} \) (\( -\infty < x < \infty \)) 的和函数为 \(\underline{\quad\quad}\).
@@ -105,7 +105,7 @@
     \item 求 \( f(x, y) = x^4 + y^4 - x^2 - 2xy - y^2 \) 的极值.
           \vspace{10em}
 
-    \item 已知曲线积分 \( \displaystyle \int_L y f(x) \mathrm{d}x + [f(x) - x^2] \mathrm{d}y \) 与路径无关，其中 \( f(x) \) 有一阶连续导数，且 \( f(0) = 1 \)，求 \( f(x) \) 和 \( I = \displaystyle \int_{(0,0)}^{(1,1)} y f(x) dx + [f(x) - x^2] dy \) 的值.
+    \item 已知曲线积分 \( \displaystyle \int_L y f(x) \,\mathrm{d}x + \left[f(x) - x^2\right] \,\mathrm{d}y \) 与路径无关，其中 \( f(x) \) 有一阶连续导数，且 \( f(0) = 1 \)，求 \( f(x) \) 和 \( I = \displaystyle \int_{(0,0)}^{(1,1)} y f(x) \,\mathrm{d}x + [f(x) - x^2] \,\mathrm{d}y \) 的值.
           \vspace{10em}
 \end{enumerate}
 
@@ -124,13 +124,19 @@
 \begin{enumerate}
     \item \textbf{Solution}. D.
 
-          右端 \(2x-2e^x\) 可分成一次多项式项与指数项两部分. 齐次方程特征方程为
+          方程对应的齐次方程$y''-3y'+2y=0$的特征方程为
           \[
               r^2-3r+2=(r-1)(r-2)=0,
           \]
-          故 \(e^x\) 已在齐次解中出现，因此对应特解应乘以 \(x\). 所以可设
+          有两个不同的实根 \(r_1=1\)，\(r_2=2\).
+
+          对于非齐次项 \(2x\)，因为$\lambda=0$不是特征方程的根，所以可以设特解为 \(y_1^* = Ax + B\).
+
+          对于非齐次项 \(-2e^x\)，因为 \(\lambda=1\) 是特征方程的根，所以可以设特解为 \(y_2^* = Cxe^x\).
+
+          由解的叠加原理，非齐次方程的特解可以设为
           \[
-              y^*=Ax+B+Cxe^x.
+              y^* = y_1^* + y_2^* = Ax + B + Cxe^x.
           \]
 
     \item \textbf{Solution}. B.
@@ -141,23 +147,23 @@
           \]
           在 \(M(1,-1,0)\) 处取值得
           \[
-              (2,-2,0),\quad (1,1,1).
+              \boldsymbol{n}_1=(2,-2,0),\quad \boldsymbol{n}_2=(1,1,1).
           \]
-          叉积可取为
+          因而曲线的切向量可取作
           \[
-              (2,-2,0)\times(1,1,1)=(-2,-2,4),
+              \boldsymbol{\tau} = \boldsymbol{n}_1\times\boldsymbol{n}_2 = (2,-2,0)\times(1,1,1)=(-2,-2,4),
           \]
           所以 A、C、D 都正确，而 B 不是切向方向.
 
     \item \textbf{Solution}. C.
 
-          函数
+          因为
           \[
-              f(x,y)=\sqrt{x^2+y^2}
+              \lim_{\substack{r\to0,\\\theta\in[0,2\pi]}}r\equiv0,
           \]
-          在 \((0,0)\) 连续，但沿 \(x\) 轴有
+          所以函数 \(f(x,y)=\sqrt{x^2+y^2}\) 在 \((0,0)\) 处连续. 又因为
           \[
-              \frac{f(h,0)-f(0,0)}{h}=\frac{|h|}{h},
+              \lim_{x\to0}\frac{f(x,0)-f(0,0)}{x}=\lim_{x\to0}\frac{|x|}{x}
           \]
           极限不存在，所以偏导数不存在，更不可微.
 
@@ -181,11 +187,10 @@
 
           由对称性可知
           \[
-              \oint_\Gamma x\,\mathrm{d}s=\oint_\Gamma y\,\mathrm{d}s=0.
-          \]
-          但 \(z^2\ge 0\) 且不恒为零，因此
-          \[
-              \oint_\Gamma z^2\,\mathrm{d}s>0.
+              \begin{gathered}
+                  \oint_\Gamma x\,\mathrm{d}s=\oint_\Gamma y\,\mathrm{d}s=\oint_\Gamma z\,\mathrm{d}s=\frac{1}{3}\oint_\Gamma (x+y+z)\,\mathrm{d}s=0,\\
+                  \oint_\Gamma z^2\,\mathrm{d}s=\oint_\Gamma y^2\,\mathrm{d}s=\oint_\Gamma x^2\,\mathrm{d}s = \frac{1}{3}\oint_\Gamma (x^2+y^2+z^2)\,\mathrm{d}s=\frac{1}{3}\oint_\Gamma \,\mathrm{d}s\neq0.
+              \end{gathered}
           \]
           所以恰有两个积分为零.
 
@@ -228,22 +233,22 @@
 
     \item \textbf{Solution}. $-\dfrac13$.
 
-          对
+          对方程
           \[
-              e^{x+2y+3z}+xyz=1
+              \mathrm{e}^{x+2y+3z}+xyz=1
           \]
-          关于 \(x\) 求偏导，得
+          两边关于 \(x\) 求偏导，得
           \[
-              e^{x+2y+3z}(1+3z_x)+yz+xz\,z_x=0.
+              \mathrm{e}^{x+2y+3z}(1+3z_x)+yz+xy\,z_x=0.
           \]
-          在 \((0,0)\) 处有 \(z=0\)，从而
+          在 \((0,0)\) 处有 \(z=0\)，从而有
           \[
               1+3z_x(0,0)=0,\qquad z_x(0,0)=-\frac13.
           \]
 
     \item \textbf{Solution}. $\cos x$.
 
-          这是余弦函数的 Maclaurin 级数：
+          注意到$\sin x = \sum_{n=0}^{\infty} \frac{(-1)^n x^{2n+1}}{(2n+1)!}$，两端求导得
           \[
               \cos x=\sum_{n=0}^{\infty}\frac{(-1)^n x^{2n}}{(2n)!}.
           \]
@@ -270,9 +275,14 @@
           \]
           分离变量并积分得
           \[
-              \frac{\mathrm{d}u}{u(\ln u-1)}=\frac{\mathrm{d}x}{x}
-              \Longrightarrow
-              \ln\frac{y}{x}=Cx+1.
+              \int \frac{\mathrm{d}u}{u(\ln u-1)}=\int \frac{\mathrm{d}x}{x},
+          \]
+          \[
+              \ln\left|\ln u -1\right|=\ln|x| + C,
+          \]
+          即
+          \[
+              \ln \frac{y}{x} = Cx + 1.
           \]
 
     \item \textbf{Solution}. 记
@@ -285,7 +295,7 @@
           \]
           再对 \(y\) 求偏导，得
           \[
-              z_{xy}=f_1'+g'(x)f_2'+xyf_{11}''+[g(x)+xyg'(x)]f_{12}''+yg'(x)g(x)f_{22}''.
+              z_{xy}=f_1'+g'(x)f_2'+y\left[xf_{11}''+(g(x)+xg'(x))f_{12}''+g'(x)g(x)f_{22}''\right].
           \]
 
     \item \textbf{Solution}. 原积分区域为
@@ -307,44 +317,34 @@
               =\frac12(1-\cos4).
           \]
 
-    \item \textbf{Solution}. 由球域关于原点的对称性，
+    \item \textbf{Solution}. 由对称性知
           \[
-              \iiint_V x^3\,\mathrm{d}v=0,\qquad \iiint_V z\,\mathrm{d}v=0,
+              \iiint\limits_V x^3\,\mathrm{d}v=\iiint\limits_V z\,\mathrm{d}v=0,
           \]
           所以
           \[
-              I=\iiint_V y^2\,\mathrm{d}v.
+              I=\iiint\limits_V y^2\,\mathrm{d}v=\frac{1}{3}\iiint\limits_V (x^2+y^2+z^2)\,\mathrm{d}v.
           \]
-          由轮换对称性，
+          用球坐标代换，
           \[
-              3I=\iiint_V(x^2+y^2+z^2)\,\mathrm{d}v.
-          \]
-          用球坐标计算得
-          \[
-              3I=\int_0^{2\pi}\int_0^\pi\int_0^a \rho^4\sin\varphi\,\mathrm{d}\rho\,\mathrm{d}\varphi\,\mathrm{d}\theta
-              =\frac{4\pi a^5}{5},
-          \]
-          所以
-          \[
-              I=\frac{4\pi a^5}{15}.
+              I=\frac{1}{3}\int_0^{2\pi}\,\mathrm{d}\theta\int_0^\pi\sin\varphi\,\mathrm{d}\varphi\int_0^a \rho^4\,\mathrm{d}\rho
+              =\frac{4\pi a^5}{15}.
           \]
 
-    \item \textbf{Solution}. 记
+    \item \textbf{Solution}. 将 \(S\) 与上盖面
           \[
-              P=z^2+x,\qquad Q=0,\qquad R=-z.
+              S_1:\ z=2,\quad x^2+y^2\le 4
           \]
-          将侧面与上盖平面 \(z=2\) 补成闭曲面，所围区域记为 \(\Omega\). 由高斯公式
+          补成闭曲面，其所围区域记为 \(V\). 因 \(S\) 取下侧，为闭曲面的外侧方向，因而 \(S_1\) 取上侧.
+
+          由 Gauss 公式可得
           \[
-              \iint_{\partial\Omega}P\,\mathrm{d}y\,\mathrm{d}z+Q\,\mathrm{d}z\,\mathrm{d}x+R\,\mathrm{d}x\,\mathrm{d}y
-              =\iiint_\Omega(P_x+Q_y+R_z)\,\mathrm{d}v.
-          \]
-          这里
-          \[
-              P_x+Q_y+R_z=1-1=0,
-          \]
-          所以侧面与上盖面的通量之和为零. 再计算上盖面的贡献，可得原积分
-          \[
-              I=8\pi.
+              \begin{aligned}
+                  I = & \iint\limits_{S+S_1} \left(z^2+x\right)\,\mathrm{d}y\,\mathrm{d}z - z\,\mathrm{d}x\,\mathrm{d}y
+                  - \iint\limits_{S_1} \left(z^2+x\right)\,\mathrm{d}y\,\mathrm{d}z - z\,\mathrm{d}x\,\mathrm{d}y            \\
+                  =   & \iiint\limits_V \left(1-1\right)\,\mathrm{d}v + 2\iint\limits_{x^2+y^2\le 4}\mathrm{d}x\,\mathrm{d}y \\
+                  =   & 8\pi.
+              \end{aligned}
           \]
 
     \item \textbf{Solution}. 由
@@ -364,23 +364,29 @@
 \section{应用题(每小题 7 分，共 14 分)}
 \begin{enumerate}
     \setcounter{enumi}{16}
-    \item \textbf{Solution}. 由
+    \item \textbf{Solution}. 令$\begin{cases}
+                  f_x=4x^3-2x-2y=0, \\
+                  f_y=4y^3-2x-2y=0
+              \end{cases}$ 可得驻点
           \[
-              f_x=4x^3-2x-2y,\qquad f_y=4y^3-2x-2y
-          \]
-          解驻点方程可得
-          \[
-              (x,y)=(0,0),(1,1),(-1,-1).
+              (0,0),(1,1),(-1,-1).
           \]
           再由
           \[
               f_{xx}=12x^2-2,\quad f_{yy}=12y^2-2,\quad f_{xy}=-2
           \]
-          判别知 \((1,1)\) 与 \((-1,-1)\) 是极小值点，且
+          可知在$(1,1)$和$(-1,-1)$处$f_{xx}f_{yy}-f_{xy}^2>0$，所以$(1,1)$和$(-1,-1)$是$f$的极小值点，极小值为
           \[
               f(1,1)=f(-1,-1)=-2.
           \]
-          点 \((0,0)\) 不是极值点.
+
+          对于驻点$(0,0)$，令$y=x$，则$f(x,y)=2x^4-4x^2=2x^2(x^2-2)$，当 \(|x|>0\) 充分小时有$f(x,y)<0$；
+
+          再令$y=-x$，则$f(x,y)=2x^4$，当 \(|x|>0\) 充分小时有$f(x,y)>0$，
+
+          这意味着在 $(0,0)$ 的任意邻域内，$f(x,y)$既能取到正值也能取到负值，
+
+          因此 $f(0,0)=0$ 既不是极小值也不是极大值.
 
     \item \textbf{Solution}. 记
           \[
@@ -396,33 +402,29 @@
           \]
           解得
           \[
-              f(x)=Ce^x-2x-2.
+              f(x)=C\mathrm{e}^x-2x-2.
           \]
           再由 \(f(0)=1\) 得 \(C=3\)，故
           \[
-              f(x)=3e^x-2x-2.
+              f(x)=3\mathrm{e}^x-2x-2.
           \]
-          取折线路径 \((0,0)\to(1,0)\to(1,1)\)，第一段积分为 \(0\)，第二段积分为
+          取折线路径 \((0,0)\to(1,0)\to(1,1)\)，则
           \[
-              \int_0^1[f(1)-1]\mathrm{d}y=f(1)-1=3e-5.
-          \]
-          所以
-          \[
-              I=3e-5.
+              \begin{aligned}
+                  I = & \int_{(0,0)}^{(1,0)} yf(x)\,\mathrm{d}x + \int_{(1,0)}^{(1,1)} \left(3\mathrm{e}^x-2x-2-x^2\right)\,\mathrm{d}y \\
+                  =   & (3\mathrm{e}-5)\int_0^1 \,\mathrm{d}y                                                                           \\
+                  =   & 3\mathrm{e}-5.
+              \end{aligned}
           \]
 \end{enumerate}
 
 \section{综合题(每小题 5 分，共 10 分)}
 \begin{enumerate}
     \setcounter{enumi}{18}
-    \item \textbf{Proof}. 令
+    \item \textbf{Proof}. 用极坐标代换，
           \[
-              x=r\cos\theta,\qquad y=r\sin\theta,
-          \]
-          则
-          \[
-              \iint_D \sin \sqrt{(x^2+y^2)^3}\,\mathrm{d}x\,\mathrm{d}y
-              =\int_0^{2\pi}\int_0^1 \sin(r^3)\,r\,\mathrm{d}r\,\mathrm{d}\theta
+              \iint\limits_D \sin \sqrt{(x^2+y^2)^3}\,\mathrm{d}x\,\mathrm{d}y
+              =\int_0^{2\pi}\,\mathrm{d}\theta\int_0^1 \sin(r^3)\,r\,\mathrm{d}r
               =2\pi\int_0^1 r\sin(r^3)\,\mathrm{d}r.
           \]
           由 \(\sin t\le t\)（\(t\ge 0\)）得
@@ -438,25 +440,21 @@
           \[
               |f''(x)|\le M\qquad (|x|<1).
           \]
-          对 \(x_n=\dfrac{1}{n^\alpha}\)，由 Taylor 公式
+          当 \(n\) 充分大时，\(x_n=\dfrac{1}{n^\alpha}\in(-1,1)\). 由 Taylor 公式可得
           \[
               f(x_n)=f(0)+f'(0)x_n+\frac{f''(\theta_n x_n)}{2}x_n^2,
           \]
           其中 \(0<\theta_n<1\). 利用 \(f(0)=1,\ f'(0)=0\) 得
           \[
               f\left(\frac{1}{n^\alpha}\right)-1
-              =\frac{f''(\theta_n/n^\alpha)}{2n^{2\alpha}}.
+              =\frac{f''\left(\frac{\theta_n}{n^\alpha}\right)}{2n^{2\alpha}}.
           \]
           所以
           \[
               \left|f\left(\frac{1}{n^\alpha}\right)-1\right|
               \le \frac{M}{2n^{2\alpha}}.
           \]
-          当 \(\alpha>\dfrac12\) 时，级数
-          \[
-              \sum_{n=1}^{\infty}\frac{1}{n^{2\alpha}}
-          \]
-          收敛，于是由比较判别法知
+          当 \(\alpha>\dfrac12\) 时，级数$\sum_{n=1}^{\infty}\frac{1}{n^{2\alpha}}$收敛，于是由比较判别法知
           \[
               \sum_{n=1}^{\infty}\left|f\left(\frac{1}{n^\alpha}\right)-1\right|
           \]

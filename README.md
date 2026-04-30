@@ -1,12 +1,6 @@
 # Collection of Calculus Exams
 华中科技大学《微积分（B）》试卷合集
 
-## Structure
-
-- `src/book/`：整本考试合集的 LaTeX 源码，主文件为 `src/book/main.tex`。
-- `微积分上/`、`微积分下/`：按课程、期中/期末、TeX/PDF 分类的单卷资料。
-- `dist/calculus-exams.pdf`：整本合集导出的 PDF。
-
 ## Progress
 
 ### 2026.4.30

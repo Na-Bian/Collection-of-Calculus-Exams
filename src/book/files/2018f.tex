@@ -215,8 +215,8 @@
           由Taylor公式，
           \[
               \begin{aligned}
-                  u = x+a\ln(1-x)+bx\sin(3x) = & x-a\left(x+\frac{x^2}{2}+\frac{x^3}{3}+o(x^{3})\right)+bx\left(3x+o(x^{2})\right) \\
-                  =                            & (1-a)x+\left(-\frac{a}{2}+3b\right)x^{2}-\frac{a}{3}x^{3}+o(x^{3}).
+                  u = x+a\ln(1-x)+bx\sin(3x) = {} & x-a\left(x+\frac{x^2}{2}+\frac{x^3}{3}+o(x^{3})\right)+bx\left(3x+o(x^{2})\right) \\
+                  = {} & (1-a)x+\left(-\frac{a}{2}+3b\right)x^{2}-\frac{a}{3}x^{3}+o(x^{3}).
               \end{aligned}
           \]
 
@@ -232,9 +232,9 @@
     \item \textbf{Solution}. $\frac{1}{8}$.
           \[
               \begin{aligned}
-                  \lim_{x\to0}\frac{\displaystyle\int_{0}^{1-\cos x}\tan t\,\mathrm{d}t}{\sin x^4}= & \lim_{x\to0}\frac{\tan(1-\cos x)\cdot \sin x}{4x^3} \\
-                  =                                                                                 & \lim_{x\to0}\frac{1-\cos x}{4x^2}                   \\
-                  =                                                                                 & \lim_{x\to0}\frac{\sin x}{8x}= \frac{1}{8}.
+                  \lim_{x\to0}\frac{\displaystyle\int_{0}^{1-\cos x}\tan t\,\mathrm{d}t}{\sin x^4}= {} & \lim_{x\to0}\frac{\tan(1-\cos x)\cdot \sin x}{4x^3} \\
+                  = {} & \lim_{x\to0}\frac{1-\cos x}{4x^2}                   \\
+                  = {} & \lim_{x\to0}\frac{\sin x}{8x}= \frac{1}{8}.
               \end{aligned}
           \]
 
@@ -256,9 +256,9 @@
               =\lim_{x\to+\infty}\sqrt{4+\frac{2}{x}+\frac{5}{x^{2}}}=2$，
 
           $\begin{aligned}
-                  \lim_{x\to+\infty}(y-2x)= & \lim_{x\to+\infty}\left(\sqrt{4x^2+2x+5}-2x\right)                                        \\
-                  =                         & \lim_{x\to+\infty}\frac{2x+5}{\sqrt{4x^2+2x+5}+2x}                                        \\
-                  =                         & \lim_{x\to+\infty}\frac{2+\frac{5}{x}}{\sqrt{4+\frac{2}{x}+\frac{5}{x^2}}+2}=\frac{1}{2}.
+                  \lim_{x\to+\infty}(y-2x)= {} & \lim_{x\to+\infty}\left(\sqrt{4x^2+2x+5}-2x\right)                                        \\
+                  = {} & \lim_{x\to+\infty}\frac{2x+5}{\sqrt{4x^2+2x+5}+2x}                                        \\
+                  = {} & \lim_{x\to+\infty}\frac{2+\frac{5}{x}}{\sqrt{4+\frac{2}{x}+\frac{5}{x^2}}+2}=\frac{1}{2}.
               \end{aligned}$
 
           所以曲线的斜渐近线为$y=2x+\frac{1}{2}$.
@@ -274,29 +274,29 @@
               u\,\mathrm{d}u$，
           \[
               \begin{aligned}
-                  I = & \int \frac{\sqrt{x-3}}{2x}\,\mathrm{d}x = \int \frac{u}{2(u^2+3)}\cdot 2u\,\mathrm{d}u                     \\
-                  =   & \int \left(1-\frac{3}{u^2+3}\right)\,\mathrm{d}u                                                           \\
-                  =   & u-3\cdot\frac{1}{\sqrt{3}}\arctan\frac{u}{\sqrt{3}}+ C = \sqrt{x-3}-\sqrt{3}\arctan\sqrt{\frac{x-3}{3}}+C.
+                  I = {} & \int \frac{\sqrt{x-3}}{2x}\,\mathrm{d}x = \int \frac{u}{2(u^2+3)}\cdot 2u\,\mathrm{d}u                     \\
+                  = {} & \int \left(1-\frac{3}{u^2+3}\right)\,\mathrm{d}u                                                           \\
+                  = {} & u-3\cdot\frac{1}{\sqrt{3}}\arctan\frac{u}{\sqrt{3}}+ C = \sqrt{x-3}-\sqrt{3}\arctan\sqrt{\frac{x-3}{3}}+C.
               \end{aligned}
           \]
 
     \item \textbf{Solution}.
           \[
               \begin{aligned}
-                  I = \frac{1}{2}\int_{0}^{\frac{1}{2}}\arcsin x\,\mathrm{d}x^{2} = & \frac{1}{2}x^{2}\arcsin x\bigg|_{0}^{\frac{1}{2}}-\frac{1}{2}\int_{0}^{\frac{1}{2}}\frac{x^2}{\sqrt{1-x^2}}\,\mathrm{d}x \\
-                  =                                                                 & \frac{1}{8}\cdot\frac{\pi}{6}-\frac{1}{2}\int_{0}^{\frac{\pi}{6}}\frac{\sin^2 t}{\cos t}\cdot \cos t\,\mathrm{d}t        \\
-                  =                                                                 & \frac{\pi}{48}-\frac{1}{4}\int_{0}^{\frac{\pi}{6}}(1-\cos 2t)\,\mathrm{d}t                                               \\
-                  =                                                                 & \frac{\pi}{48}-\frac{1}{4}\left(\frac{\pi}{6}-\frac{1}{2}\sin\frac{\pi}{3}\right) = \frac{\sqrt{3}}{16}-\frac{\pi}{48}.
+                  I = \frac{1}{2}\int_{0}^{\frac{1}{2}}\arcsin x\,\mathrm{d}x^{2} = {} & \frac{1}{2}x^{2}\arcsin x\bigg|_{0}^{\frac{1}{2}}-\frac{1}{2}\int_{0}^{\frac{1}{2}}\frac{x^2}{\sqrt{1-x^2}}\,\mathrm{d}x \\
+                  = {} & \frac{1}{8}\cdot\frac{\pi}{6}-\frac{1}{2}\int_{0}^{\frac{\pi}{6}}\frac{\sin^2 t}{\cos t}\cdot \cos t\,\mathrm{d}t        \\
+                  = {} & \frac{\pi}{48}-\frac{1}{4}\int_{0}^{\frac{\pi}{6}}(1-\cos 2t)\,\mathrm{d}t                                               \\
+                  = {} & \frac{\pi}{48}-\frac{1}{4}\left(\frac{\pi}{6}-\frac{1}{2}\sin\frac{\pi}{3}\right) = \frac{\sqrt{3}}{16}-\frac{\pi}{48}.
               \end{aligned}
           \]
 
     \item \textbf{Solution}. 记$J = \int \mathrm{e}^{-2x}\sin x\,\mathrm{d}x$，则
           \[
               \begin{aligned}
-                  J = -\int \mathrm{e}^{-2x}\,\mathrm{d}\cos x = & -\mathrm{e}^{-2x}\cos x - 2\int \mathrm{e}^{-2x}\cos x\,\mathrm{d}x                           \\
-                  =                                              & -\mathrm{e}^{-2x}\cos x - 2\int \mathrm{e}^{-2x}\,\mathrm{d}\sin x                            \\
-                  =                                              & -\mathrm{e}^{-2x}\cos x - 2\mathrm{e}^{-2x}\sin x - 4\int \mathrm{e}^{-2x}\sin x\,\mathrm{d}x \\
-                  =                                              & -\mathrm{e}^{-2x}\cos x - 2\mathrm{e}^{-2x}\sin x - 4J.
+                  J = -\int \mathrm{e}^{-2x}\,\mathrm{d}\cos x = {} & -\mathrm{e}^{-2x}\cos x - 2\int \mathrm{e}^{-2x}\cos x\,\mathrm{d}x                           \\
+                  = {} & -\mathrm{e}^{-2x}\cos x - 2\int \mathrm{e}^{-2x}\,\mathrm{d}\sin x                            \\
+                  = {} & -\mathrm{e}^{-2x}\cos x - 2\mathrm{e}^{-2x}\sin x - 4\int \mathrm{e}^{-2x}\sin x\,\mathrm{d}x \\
+                  = {} & -\mathrm{e}^{-2x}\cos x - 2\mathrm{e}^{-2x}\sin x - 4J.
               \end{aligned}
           \]
 
@@ -315,8 +315,8 @@
           由一阶非齐次线性微分方程的通解公式得
           \[
               \begin{aligned}
-                  u = & \mathrm{e}^{-\int\left(-\frac{1}{x}\right)\,\mathrm{d}x}\left(C+\int\left(-\ln x\right)\mathrm{e}^{\int\left(-\frac{1}{x}\right)\,\mathrm{d}x}\,\mathrm{d}x\right) \\
-                  =   & x\left[C-\int\ln x\cdot\,\mathrm{d}\left(\ln x\right)\right] = x\left(C-\frac{1}{2}\ln^{2} x\right).
+                  u = {} & \mathrm{e}^{-\int\left(-\frac{1}{x}\right)\,\mathrm{d}x}\left(C+\int\left(-\ln x\right)\mathrm{e}^{\int\left(-\frac{1}{x}\right)\,\mathrm{d}x}\,\mathrm{d}x\right) \\
+                  = {} & x\left[C-\int\ln x\cdot\,\mathrm{d}\left(\ln x\right)\right] = x\left(C-\frac{1}{2}\ln^{2} x\right).
               \end{aligned}
           \]
 
@@ -334,18 +334,18 @@
           当$x=0$时，
           \[
               \begin{aligned}
-                  f'(0)=\lim_{x\to0}\frac{f(x)-f(0)}{x}= & \lim_{x\to0}\frac{(1+x)^{\frac{1}{x}}-\mathrm{e}}{x}                                                                           \\
-                  =                                      & \,\mathrm{e}\cdot\lim_{x\to0}\frac{\mathrm{e}^{\frac{\ln(1+x)}{x}-1}-1}{x}= \mathrm{e}\cdot \lim_{x\to0}\frac{\ln(1+x)-x}{x^2} \\
-                  =                                      & \mathrm{e}\cdot \lim_{x\to0}\frac{x-\frac{1}{2}x^2+o(x^2)-x}{x^2}=-\frac{\mathrm{e}}{2}.
+                  f'(0)=\lim_{x\to0}\frac{f(x)-f(0)}{x}= {} & \lim_{x\to0}\frac{(1+x)^{\frac{1}{x}}-\mathrm{e}}{x}                                                                           \\
+                  = {} & \,\mathrm{e}\cdot\lim_{x\to0}\frac{\mathrm{e}^{\frac{\ln(1+x)}{x}-1}-1}{x}= \mathrm{e}\cdot \lim_{x\to0}\frac{\ln(1+x)-x}{x^2} \\
+                  = {} & \mathrm{e}\cdot \lim_{x\to0}\frac{x-\frac{1}{2}x^2+o(x^2)-x}{x^2}=-\frac{\mathrm{e}}{2}.
               \end{aligned}
           \]
 
           又
           \[
               \begin{aligned}
-                  \lim_{x\to0}f'(x) = & \lim_{x\to0}(1+x)^{\frac{1}{x}}\cdot\frac{x-(1+x)\ln(1+x)}{x^{2}(1+x)}            \\
-                  =                   & \,\mathrm{e}\cdot\lim_{x\to0}\frac{x-(1+x)\ln(1+x)}{x^{2}}                        \\
-                  =                   & \,\mathrm{e}\cdot\lim_{x\to0}\frac{1-\ln(1+x)-1}{2x}=-\frac{\mathrm{e}}{2}=f'(0),
+                  \lim_{x\to0}f'(x) = {} & \lim_{x\to0}(1+x)^{\frac{1}{x}}\cdot\frac{x-(1+x)\ln(1+x)}{x^{2}(1+x)}            \\
+                  = {} & \,\mathrm{e}\cdot\lim_{x\to0}\frac{x-(1+x)\ln(1+x)}{x^{2}}                        \\
+                  = {} & \,\mathrm{e}\cdot\lim_{x\to0}\frac{1-\ln(1+x)-1}{2x}=-\frac{\mathrm{e}}{2}=f'(0),
               \end{aligned}
           \]
 
@@ -356,9 +356,9 @@
     \item \textbf{Solution}.旋转体的体积$V=$
           \[
               \begin{aligned}
-                  \int_{0}^{\frac{\pi}{2}}2\pi x f(x)\,\mathrm{d}x = & 2\pi\int_{0}^{\frac{\pi}{2}}x\cos x\,\mathrm{d}x                                                                                                 \\
-                  =                                                  & 2\pi\int_{0}^{\frac{\pi}{2}}x\,\mathrm{d}\sin x = 2\pi\left(x\sin x\bigg|_{0}^{\frac{\pi}{2}}-\int_{0}^{\frac{\pi}{2}}\sin x\,\mathrm{d}x\right) \\
-                  =                                                  & 2\pi\left(\frac{\pi}{2}-1\right)=\pi^{2}-2\pi.
+                  \int_{0}^{\frac{\pi}{2}}2\pi x f(x)\,\mathrm{d}x = {} & 2\pi\int_{0}^{\frac{\pi}{2}}x\cos x\,\mathrm{d}x                                                                                                 \\
+                  = {} & 2\pi\int_{0}^{\frac{\pi}{2}}x\,\mathrm{d}\sin x = 2\pi\left(x\sin x\bigg|_{0}^{\frac{\pi}{2}}-\int_{0}^{\frac{\pi}{2}}\sin x\,\mathrm{d}x\right) \\
+                  = {} & 2\pi\left(\frac{\pi}{2}-1\right)=\pi^{2}-2\pi.
               \end{aligned}
           \]
 \end{enumerate}
@@ -377,17 +377,17 @@
           其中$\xi_{1},\xi_{2}$介于$a$与$b$之间. 上述两式相减得
           \[
               \begin{aligned}
-                  f(b)-f(a) = 0 = & f(a)-f(b) + (b-a)(f'(a)+f'(b)) + \frac{1}{2}(b-a)^{2}(f''(\xi_{1})-f''(\xi_{2})) \\
-                  =               & (b-a)(f'(a)+f'(b)) + \frac{1}{2}(b-a)^{2}(f''(\xi_{1})-f''(\xi_{2})).
+                  f(b)-f(a) = 0 = {} & f(a)-f(b) + (b-a)(f'(a)+f'(b)) + \frac{1}{2}(b-a)^{2}(f''(\xi_{1})-f''(\xi_{2})) \\
+                  = {} & (b-a)(f'(a)+f'(b)) + \frac{1}{2}(b-a)^{2}(f''(\xi_{1})-f''(\xi_{2})).
               \end{aligned}
           \]
 
           所以
           \[
               \begin{aligned}
-                  |f'(a)+f'(b)| = & \frac{1}{2}(b-a)|f''(\xi_{1})-f''(\xi_{2})|     \\
+                  |f'(a)+f'(b)| = {} & \frac{1}{2}(b-a)|f''(\xi_{1})-f''(\xi_{2})|     \\
                   \leq            & \frac{1}{2}(b-a)(|f''(\xi_{1})|+|f''(\xi_{2})|) \\
-                  =               & M(b-a).
+                  = {} & M(b-a).
               \end{aligned}
           \]
 

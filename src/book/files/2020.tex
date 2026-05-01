@@ -146,10 +146,10 @@
     \item \textbf{Solution}. C.
           \[
               \begin{aligned}
-                  \lim_{x\to\infty}\left[\frac{x^2}{(x-a)(x+b)}\right]^{x}= & \lim_{x\to\infty}\left[1+\frac{(a-b)x+ab}{(x-a)(x+b)}\right]^{x}                                                                    \\
-                  =                                                         & \lim_{x\to\infty}\left[1+\frac{(a-b)x+ab}{(x-a)(x+b)}\right]^{\frac{(x-a)(x+b)}{(a-b)x+ab}\cdot\frac{(a-b)x+ab}{(x-a)(x+b)}\cdot x} \\
-                  =                                                         & \mathrm{e}^{\frac{(a-b)x^2+abx}{x^2+(b-a)x-ab}}                                                                                     \\
-                  =                                                         & \mathrm{e}^{a-b}.
+                  \lim_{x\to\infty}\left[\frac{x^2}{(x-a)(x+b)}\right]^{x}= {} & \lim_{x\to\infty}\left[1+\frac{(a-b)x+ab}{(x-a)(x+b)}\right]^{x}                                                                    \\
+                  = {} & \lim_{x\to\infty}\left[1+\frac{(a-b)x+ab}{(x-a)(x+b)}\right]^{\frac{(x-a)(x+b)}{(a-b)x+ab}\cdot\frac{(a-b)x+ab}{(x-a)(x+b)}\cdot x} \\
+                  = {} & \mathrm{e}^{\frac{(a-b)x^2+abx}{x^2+(b-a)x-ab}}                                                                                     \\
+                  = {} & \mathrm{e}^{a-b}.
               \end{aligned}
           \]
 
@@ -167,8 +167,8 @@
 
           \[
               \begin{aligned}
-                  \lim_{x\to0}\frac{x^2f(x)-2f(x^3)}{x^3}= & \lim_{x\to0}\left[\frac{f(x)-f(0)}{x}-2\frac{f(x^3)-f(0)}{x^3}\right] \\
-                  =                                        & f'(0)-2f'(0)=-f'(0).
+                  \lim_{x\to0}\frac{x^2f(x)-2f(x^3)}{x^3}= {} & \lim_{x\to0}\left[\frac{f(x)-f(0)}{x}-2\frac{f(x^3)-f(0)}{x^3}\right] \\
+                  = {} & f'(0)-2f'(0)=-f'(0).
               \end{aligned}
           \]
 
@@ -177,9 +177,9 @@
           若$f(0)=0$，$F(0)=0$，则
           \[
               \begin{aligned}
-                  \lim_{x\to0}\frac{F(x)-F(0)}{x-0}= & \lim_{x\to0}\frac{f(x)(1+|\sin x|)}{x}                    \\
-                  =                                  & \lim_{x\to0}f'(0)\cdot\lim_{x\to0}\left(1+|\sin x|\right) \\
-                  =                                  & f'(0),
+                  \lim_{x\to0}\frac{F(x)-F(0)}{x-0}= {} & \lim_{x\to0}\frac{f(x)(1+|\sin x|)}{x}                    \\
+                  = {} & \lim_{x\to0}f'(0)\cdot\lim_{x\to0}\left(1+|\sin x|\right) \\
+                  = {} & f'(0),
               \end{aligned}
           \]
 
@@ -188,9 +188,9 @@
           若$F(x)$在$x=0$处可导，$\lim_{x\to0}\frac{F(x)-F(0)}{x}$存在.又
           \[
               \begin{aligned}
-                  \lim_{x\to0}\frac{F(x)-F(0)}{x}= & \lim_{x\to0}\frac{f(x)(1+|\sin x|)-f(0)}{x}                                         \\
-                  =                                & \lim_{x\to0}\frac{f(x)-f(0)}{x}+\lim_{x\to0}f(x)\cdot\lim_{x\to0}\frac{|\sin x|}{x} \\
-                  =                                & f'(0)+f(0)\cdot\lim_{x\to0}\frac{|\sin x|}{x}.
+                  \lim_{x\to0}\frac{F(x)-F(0)}{x}= {} & \lim_{x\to0}\frac{f(x)(1+|\sin x|)-f(0)}{x}                                         \\
+                  = {} & \lim_{x\to0}\frac{f(x)-f(0)}{x}+\lim_{x\to0}f(x)\cdot\lim_{x\to0}\frac{|\sin x|}{x} \\
+                  = {} & f'(0)+f(0)\cdot\lim_{x\to0}\frac{|\sin x|}{x}.
               \end{aligned}
           \]
 
@@ -227,19 +227,19 @@
           由链式法则知
           \[
               \begin{aligned}
-                  \frac{\mathrm{d}y}{\mathrm{d}(\cos x)} = & \frac{\frac{\mathrm{d}y}{\mathrm{d}x}}{\frac{\mathrm{d}(\cos x)}{\mathrm{d}x}} \\
-                  =                                        & \frac{\frac{-x^{2}\sin x - 2x\cos x}{(x^{2})^{2}}}{-\sin x}                    \\
-                  =                                        & \frac{x\sin x+2\cos x}{x^{3}\sin x}.
+                  \frac{\mathrm{d}y}{\mathrm{d}(\cos x)} = {} & \frac{\frac{\mathrm{d}y}{\mathrm{d}x}}{\frac{\mathrm{d}(\cos x)}{\mathrm{d}x}} \\
+                  = {} & \frac{\frac{-x^{2}\sin x - 2x\cos x}{(x^{2})^{2}}}{-\sin x}                    \\
+                  = {} & \frac{x\sin x+2\cos x}{x^{3}\sin x}.
               \end{aligned}
           \]
 
     \item \textbf{Solution}. $-1$.
           \[
               \begin{aligned}
-                  \lim_{x\to0}\left(\frac{1}{\mathrm{e}^x-1}-\frac{1}{\ln(1+x)}\right) = & \lim_{x\to0}\frac{\ln(1+x)-(\mathrm{e}^x-1)}{(\mathrm{e}^x-1)\ln(1+x)}                          \\
-                  =                                                                      & \lim_{x\to0}\frac{\left(x-\frac{x^2}{2}+o(x^2)\right)-\left(x+\frac{x^2}{2}+o(x^2)\right)}{x^2} \\
-                  =                                                                      & \lim_{x\to0}\frac{-x^2+o(x^2)}{x^2}                                                             \\
-                  =                                                                      & -1.
+                  \lim_{x\to0}\left(\frac{1}{\mathrm{e}^x-1}-\frac{1}{\ln(1+x)}\right) = {} & \lim_{x\to0}\frac{\ln(1+x)-(\mathrm{e}^x-1)}{(\mathrm{e}^x-1)\ln(1+x)}                          \\
+                  = {} & \lim_{x\to0}\frac{\left(x-\frac{x^2}{2}+o(x^2)\right)-\left(x+\frac{x^2}{2}+o(x^2)\right)}{x^2} \\
+                  = {} & \lim_{x\to0}\frac{-x^2+o(x^2)}{x^2}                                                             \\
+                  = {} & -1.
               \end{aligned}
           \]
 
@@ -260,8 +260,8 @@
     \item \textbf{Solution}. 利用Taylor公式，
           \[
               \begin{aligned}
-                  f(x)= & x+a\left(x-\frac{x^2}{2}+\frac{x^3}{3}+o(x^{3})\right)+bx\left(x-\frac{x^3}{6}+o(x^{3})\right) \\
-                  =     & (1+a)x+\left(b-\frac{a}{2}\right)x^{2}+\frac{a}{3}x^{3}+o(x^{3}).
+                  f(x)= {} & x+a\left(x-\frac{x^2}{2}+\frac{x^3}{3}+o(x^{3})\right)+bx\left(x-\frac{x^3}{6}+o(x^{3})\right) \\
+                  = {} & (1+a)x+\left(b-\frac{a}{2}\right)x^{2}+\frac{a}{3}x^{3}+o(x^{3}).
               \end{aligned}
           \]
 

@@ -196,9 +196,9 @@
           方程$\mathrm{d}f(x)=-\mathrm{e}^{\cos x}\sin x\,\mathrm{d}x$两边从$0$积分到$t$，得
           \[
               \begin{aligned}
-                  \int_{0}^{t}\,\mathrm{d}f(x) = & -\int_{0}^{t}\mathrm{e}^{\cos x}\sin x\,\mathrm{d}x               \\
-                  f(t)-f(0) =                    & \int_{0}^{t}\mathrm{e}^{\cos x}\,\mathrm{d}(\cos x)               \\
-                  f(t)=                          & \mathrm{e}^{\cos x}\bigg|_{0}^{t}=\mathrm{e}^{\cos t}-\mathrm{e}.
+                  \int_{0}^{t}\,\mathrm{d}f(x) = {} & -\int_{0}^{t}\mathrm{e}^{\cos x}\sin x\,\mathrm{d}x               \\
+                  f(t)-f(0) = {} & \int_{0}^{t}\mathrm{e}^{\cos x}\,\mathrm{d}(\cos x)               \\
+                  f(t)= {} & \mathrm{e}^{\cos x}\bigg|_{0}^{t}=\mathrm{e}^{\cos t}-\mathrm{e}.
               \end{aligned}
           \]
 
@@ -262,8 +262,8 @@
     \item \textbf{Solution}. 利用Taylor公式，
           \[
               \begin{aligned}
-                  l= & \lim_{x\to0}\frac{x^2\left(\frac{1}{2}x^2+o(x^2)\right)}{1-\frac{1}{2}x^2+\frac{1}{24}x^4+o(x^4)-\left[1-\frac{1}{2}x^2+\frac{1}{2}\left(-\frac{x^2}{2}\right)^2+o(x^4)\right]} \\
-                  =  & \lim_{x\to0}\frac{-\frac{1}{2}x^4+o(x^4)}{-\frac{1}{12}x^4+o(x^4)}=6.
+                  l= {} & \lim_{x\to0}\frac{x^2\left(\frac{1}{2}x^2+o(x^2)\right)}{1-\frac{1}{2}x^2+\frac{1}{24}x^4+o(x^4)-\left[1-\frac{1}{2}x^2+\frac{1}{2}\left(-\frac{x^2}{2}\right)^2+o(x^4)\right]} \\
+                  = {} & \lim_{x\to0}\frac{-\frac{1}{2}x^4+o(x^4)}{-\frac{1}{12}x^4+o(x^4)}=6.
               \end{aligned}
           \]
 
@@ -307,9 +307,9 @@
           所以
           \[
               \begin{aligned}
-                  l = & \lim_{x\to0}\frac{\dfrac{1}{2}\displaystyle\int_{0}^{x^2}f(u)\,\mathrm{d}u}{x^4}  \\
-                  =   & \lim_{x\to0}\frac{xf(x^2)}{4x^3}= \frac{1}{4}\lim_{x\to0}\frac{f(x^2)}{x^2}       \\
-                  =   & \frac{1}{4}\lim_{x\to0}\frac{f(x^2)-f(0)}{x^2-0}= \frac{1}{4}f'(0) = \frac{1}{4}.
+                  l = {} & \lim_{x\to0}\frac{\dfrac{1}{2}\displaystyle\int_{0}^{x^2}f(u)\,\mathrm{d}u}{x^4}  \\
+                  = {} & \lim_{x\to0}\frac{xf(x^2)}{4x^3}= \frac{1}{4}\lim_{x\to0}\frac{f(x^2)}{x^2}       \\
+                  = {} & \frac{1}{4}\lim_{x\to0}\frac{f(x^2)-f(0)}{x^2-0}= \frac{1}{4}f'(0) = \frac{1}{4}.
               \end{aligned}
           \]
 
@@ -318,8 +318,8 @@
           由一阶非齐次线性微分方程的通解公式得
           \[
               \begin{aligned}
-                  x = & \mathrm{e}^{-\int\left(-\frac{3}{y}\right)\,\mathrm{d}y}\left(C+\int\left(-\frac{y}{2}\right)\mathrm{e}^{\int\left(-\frac{3}{y}\right)\,\mathrm{d}y}\,\mathrm{d}y\right) \\
-                  =   & y^{3}\left(C-\frac{1}{2}\int\frac{1}{y^2}\,\mathrm{d}y\right) = y^{3}\left(C+\frac{1}{2y}\right) = Cy^{3}+\frac{y^2}{2}.
+                  x = {} & \mathrm{e}^{-\int\left(-\frac{3}{y}\right)\,\mathrm{d}y}\left(C+\int\left(-\frac{y}{2}\right)\mathrm{e}^{\int\left(-\frac{3}{y}\right)\,\mathrm{d}y}\,\mathrm{d}y\right) \\
+                  = {} & y^{3}\left(C-\frac{1}{2}\int\frac{1}{y^2}\,\mathrm{d}y\right) = y^{3}\left(C+\frac{1}{2y}\right) = Cy^{3}+\frac{y^2}{2}.
               \end{aligned}
           \]
 
@@ -337,8 +337,8 @@
           由定积分的定义，得
           \[
               \begin{aligned}
-                  l = & \lim_{n\to\infty}\frac{1}{n}\sum_{k=1}^{n-1}S_{k} = \lim_{n\to\infty}\frac{1}{n}\sum_{k=1}^{n-1}\left(1-\frac{k}{n}\right)\cdot 2\left(\frac{k}{n}\right)^{2} \\
-                  =   & \int_{0}^{1}2x^{2}(1-x)\,\mathrm{d}x = \int_{0}^{1}(2x^{2}-2x^{3})\,\mathrm{d}x = \frac{1}{6}.
+                  l = {} & \lim_{n\to\infty}\frac{1}{n}\sum_{k=1}^{n-1}S_{k} = \lim_{n\to\infty}\frac{1}{n}\sum_{k=1}^{n-1}\left(1-\frac{k}{n}\right)\cdot 2\left(\frac{k}{n}\right)^{2} \\
+                  = {} & \int_{0}^{1}2x^{2}(1-x)\,\mathrm{d}x = \int_{0}^{1}(2x^{2}-2x^{3})\,\mathrm{d}x = \frac{1}{6}.
               \end{aligned}
           \]
 \end{enumerate}
@@ -384,11 +384,11 @@
           所以
           \[
               \begin{aligned}
-                  \int_{0}^{3}(x^{2}+x)f'''(x)\,\mathrm{d}x = & \int_{0}^{3}(x^{2}+x)\,\mathrm{d}f''(x)                             \\
-                  =                                           & (x^{2}+x)f''(x)\bigg|_{0}^{3}-\int_{0}^{3}(2x+1)f''(x)\,\mathrm{d}x \\
-                  =                                           & -\int_{0}^{3}(2x+1)f''(x)\,\mathrm{d}x                              \\
-                  =                                           & -(2x+1)f'(x)\bigg|_{0}^{3}+\int_{0}^{3}2f'(x)\,\mathrm{d}x          \\
-                  =                                           & -7f'(3)+f'(0)+2(f(3)-f(0)) = 20.
+                  \int_{0}^{3}(x^{2}+x)f'''(x)\,\mathrm{d}x = {} & \int_{0}^{3}(x^{2}+x)\,\mathrm{d}f''(x)                             \\
+                  = {} & (x^{2}+x)f''(x)\bigg|_{0}^{3}-\int_{0}^{3}(2x+1)f''(x)\,\mathrm{d}x \\
+                  = {} & -\int_{0}^{3}(2x+1)f''(x)\,\mathrm{d}x                              \\
+                  = {} & -(2x+1)f'(x)\bigg|_{0}^{3}+\int_{0}^{3}2f'(x)\,\mathrm{d}x          \\
+                  = {} & -7f'(3)+f'(0)+2(f(3)-f(0)) = 20.
               \end{aligned}
           \]
 \end{enumerate}

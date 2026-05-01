@@ -147,9 +147,9 @@
     \item \textbf{Solution}. A.
           \[
               \begin{aligned}
-                  \lim_{h\to0}\frac{f^2(2+h)-9}{h}= & \lim_{h\to0}\frac{f^2(2+h)-f^2(2)}{h}=\lim_{h\to0}\frac{\left[f(2+h)-f(2)\right]\left[f(2+h)+f(2)\right]}{h} \\
-                  =                                 & \lim_{h\to0}\frac{f(2+h)-f(2)}{h}\cdot \lim_{h\to0}\left[f(2+h)+f(2)\right]                                  \\
-                  =                                 & 2f(2)f'(2)=30.
+                  \lim_{h\to0}\frac{f^2(2+h)-9}{h}= {} & \lim_{h\to0}\frac{f^2(2+h)-f^2(2)}{h}=\lim_{h\to0}\frac{\left[f(2+h)-f(2)\right]\left[f(2+h)+f(2)\right]}{h} \\
+                  = {} & \lim_{h\to0}\frac{f(2+h)-f(2)}{h}\cdot \lim_{h\to0}\left[f(2+h)+f(2)\right]                                  \\
+                  = {} & 2f(2)f'(2)=30.
               \end{aligned}
           \]
 
@@ -202,9 +202,9 @@
           由定积分的定义，
           \[
               \begin{aligned}
-                  \lim_{n\to\infty}\frac{1}{n^4}\left(1^{3}+2^{3}+\cdots+n^{3}\right) = & \lim_{n\to\infty}\frac{1}{n}\left(\frac{1^3}{n^3}+\frac{2^3}{n^3}+\cdots+\frac{n^3}{n^3}\right) \\
-                  =                                                                     & \lim_{n\to\infty}\frac{1}{n}\sum_{i=1}^{n}\left(\frac{i}{n}\right)^{3}                          \\
-                  =                                                                     & \int_{0}^{1}x^{3}\,\mathrm{d}x = \frac{1}{4}.
+                  \lim_{n\to\infty}\frac{1}{n^4}\left(1^{3}+2^{3}+\cdots+n^{3}\right) = {} & \lim_{n\to\infty}\frac{1}{n}\left(\frac{1^3}{n^3}+\frac{2^3}{n^3}+\cdots+\frac{n^3}{n^3}\right) \\
+                  = {} & \lim_{n\to\infty}\frac{1}{n}\sum_{i=1}^{n}\left(\frac{i}{n}\right)^{3}                          \\
+                  = {} & \int_{0}^{1}x^{3}\,\mathrm{d}x = \frac{1}{4}.
               \end{aligned}
           \]
 
@@ -215,8 +215,8 @@
     \item \textbf{Solution}. $\sqrt{3}$.
           \[
               \begin{aligned}
-                  \lim_{x\to0}\frac{\displaystyle\int_{0}^{\sin^2 x}\sqrt{3+t^2}\,\mathrm{d}t}{x^2}= & \lim_{x\to0}\frac{\sqrt{3+\sin ^4 x}\cdot 2\sin x\cos x}{2x} \\
-                  =                                                                                  & \sqrt{3}\lim_{x\to0}\cos x = \sqrt{3}.
+                  \lim_{x\to0}\frac{\displaystyle\int_{0}^{\sin^2 x}\sqrt{3+t^2}\,\mathrm{d}t}{x^2}= {} & \lim_{x\to0}\frac{\sqrt{3+\sin ^4 x}\cdot 2\sin x\cos x}{2x} \\
+                  = {} & \sqrt{3}\lim_{x\to0}\cos x = \sqrt{3}.
               \end{aligned}
           \]
 
@@ -230,9 +230,9 @@
     \item \textbf{Solution}. 由Taylor公式，
           \[
               \begin{aligned}
-                  u = & \mathrm{e}^{3x}-ax^{2}-(1+bx)\cos x                                                                                \\
-                  =   & \left(1+3x+\frac{9}{2}x^{2}+\frac{9}{2}x^{3}+o(x^{3})\right)-ax^{2}-(1+bx)\left(1-\frac{1}{2}x^{2}+o(x^{3})\right) \\
-                  =   & (3-b)x+(5-a)x^{2}+\frac{9+b}{2}x^{3}+o(x^{3}).
+                  u = {} & \mathrm{e}^{3x}-ax^{2}-(1+bx)\cos x                                                                                \\
+                  = {} & \left(1+3x+\frac{9}{2}x^{2}+\frac{9}{2}x^{3}+o(x^{3})\right)-ax^{2}-(1+bx)\left(1-\frac{1}{2}x^{2}+o(x^{3})\right) \\
+                  = {} & (3-b)x+(5-a)x^{2}+\frac{9+b}{2}x^{3}+o(x^{3}).
               \end{aligned}
           \]
 
@@ -248,18 +248,18 @@
               ^{x}\,\mathrm{d}x$，
           \[
               \begin{aligned}
-                  I = & \int \frac{\mathrm{e}^{4x}\cdot\mathrm{e}^x}{\left(\mathrm{e}^x\right)^2+1}\,\mathrm{d}x = \int \frac{u^4}{u^2+1}\,\mathrm{d}u \\
-                  =   & \int \left(u^{2}-1+\frac{1}{u^2+1}\right)\,\mathrm{d}u                                                                         \\
-                  =   & \frac{u^3}{3}-u+\arctan u + C = \frac{\mathrm{e}^{3x}}{3}-\mathrm{e}^{x}+\arctan\mathrm{e}^{x}+C.
+                  I = {} & \int \frac{\mathrm{e}^{4x}\cdot\mathrm{e}^x}{\left(\mathrm{e}^x\right)^2+1}\,\mathrm{d}x = \int \frac{u^4}{u^2+1}\,\mathrm{d}u \\
+                  = {} & \int \left(u^{2}-1+\frac{1}{u^2+1}\right)\,\mathrm{d}u                                                                         \\
+                  = {} & \frac{u^3}{3}-u+\arctan u + C = \frac{\mathrm{e}^{3x}}{3}-\mathrm{e}^{x}+\arctan\mathrm{e}^{x}+C.
               \end{aligned}
           \]
 
     \item \textbf{Solution}.
           \[
               \begin{aligned}
-                  I = \int_{0}^{\frac{\pi}{4}}x\,\mathrm{d}\tan x = & x\tan x\bigg|_{0}^{\frac{\pi}{4}}-\int_{0}^{\frac{\pi}{4}}\tan x\,\mathrm{d}x \\
-                  =                                                 & \frac{\pi}{4}+\ln|\cos x|\bigg|_{0}^{\frac{\pi}{4}}                           \\
-                  =                                                 & \frac{\pi}{4}-\frac{1}{2}\ln 2.
+                  I = \int_{0}^{\frac{\pi}{4}}x\,\mathrm{d}\tan x = {} & x\tan x\bigg|_{0}^{\frac{\pi}{4}}-\int_{0}^{\frac{\pi}{4}}\tan x\,\mathrm{d}x \\
+                  = {} & \frac{\pi}{4}+\ln|\cos x|\bigg|_{0}^{\frac{\pi}{4}}                           \\
+                  = {} & \frac{\pi}{4}-\frac{1}{2}\ln 2.
               \end{aligned}
           \]
 
@@ -267,9 +267,9 @@
               t$，
           \[
               \begin{aligned}
-                  \int_{0}^{1}\frac{1}{x\sqrt{x^2+1}}\,\mathrm{d}x = & \int_{0}^{\frac{\pi}{4}}\frac{\sec^2 t}{\tan t\sqrt{\tan^2 t+1}}\,\mathrm{d}t = \int_{0}^{\frac{\pi}{4}}\csc t\,\mathrm{d}t \\
-                  =                                                  & -\ln|\csc t+\cot t|\bigg|_{0^+}^{\frac{\pi}{4}}= -\ln(\sqrt{2}+1)+\lim_{t\to0^+}\ln\frac{1+\cos t}{\sin t}                  \\
-                  =                                                  & +\infty.
+                  \int_{0}^{1}\frac{1}{x\sqrt{x^2+1}}\,\mathrm{d}x = {} & \int_{0}^{\frac{\pi}{4}}\frac{\sec^2 t}{\tan t\sqrt{\tan^2 t+1}}\,\mathrm{d}t = \int_{0}^{\frac{\pi}{4}}\csc t\,\mathrm{d}t \\
+                  = {} & -\ln|\csc t+\cot t|\bigg|_{0^+}^{\frac{\pi}{4}}= -\ln(\sqrt{2}+1)+\lim_{t\to0^+}\ln\frac{1+\cos t}{\sin t}                  \\
+                  = {} & +\infty.
               \end{aligned}
           \]
 
@@ -334,7 +334,7 @@
           所以
           \[
               \begin{aligned}
-                  f(x) = & f(\xi)+f(x)-f(\xi) \leq |f(\xi)|+\left|\int_{\xi}^{x}f'(t)\,\mathrm{d}t\right|                          \\
+                  f(x) = {} & f(\xi)+f(x)-f(\xi) \leq |f(\xi)|+\left|\int_{\xi}^{x}f'(t)\,\mathrm{d}t\right|                          \\
                   \leq   & \frac{1}{b-a}\left|\int_{a}^{b}f(x)\,\mathrm{d}x\right| + \left|\int_{\xi}^{x}|f'(t)|\mathrm{d}t\right| \\
                   \leq   & \frac{1}{b-a}\left|\int_{a}^{b}f(x)\,\mathrm{d}x\right| + \int_{a}^{b}|f'(t)|\mathrm{d}t.
               \end{aligned}

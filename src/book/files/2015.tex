@@ -114,19 +114,19 @@
     \item \textbf{Solution}.
           \[
               \begin{aligned}
-                  l = & \exp\left[\lim_{x\to0}\frac{1}{x}\ln\left(\frac{\mathrm{e}^x+\mathrm{e}^{2x}+\cdots+\mathrm{e}^{nx}}{n}\right)\right]                                           \\
-                  =   & \exp\left[\lim_{x\to0}\frac{1}{x}\left(\frac{\mathrm{e}^x+\mathrm{e}^{2x}+\cdots+\mathrm{e}^{nx}}{n}-1\right)\right]                                            \\
-                  =   & \exp\left[\lim_{x\to0}\frac{1}{n}\left(\frac{\left(\mathrm{e}^x-1\right)+\left(\mathrm{e}^{2x}-1\right)+\cdots+\left(\mathrm{e}^{nx}-1\right)}{x}\right)\right] \\
-                  =   & \exp\left[\frac{1}{n}(1+2+\cdots+n)\right]=\mathrm{e}^{\frac{n+1}{2}}.
+                  l = {} & \exp\left[\lim_{x\to0}\frac{1}{x}\ln\left(\frac{\mathrm{e}^x+\mathrm{e}^{2x}+\cdots+\mathrm{e}^{nx}}{n}\right)\right]                                           \\
+                  = {} & \exp\left[\lim_{x\to0}\frac{1}{x}\left(\frac{\mathrm{e}^x+\mathrm{e}^{2x}+\cdots+\mathrm{e}^{nx}}{n}-1\right)\right]                                            \\
+                  = {} & \exp\left[\lim_{x\to0}\frac{1}{n}\left(\frac{\left(\mathrm{e}^x-1\right)+\left(\mathrm{e}^{2x}-1\right)+\cdots+\left(\mathrm{e}^{nx}-1\right)}{x}\right)\right] \\
+                  = {} & \exp\left[\frac{1}{n}(1+2+\cdots+n)\right]=\mathrm{e}^{\frac{n+1}{2}}.
               \end{aligned}
           \]
 
     \item \textbf{Solution}. 令$x=\frac{1}{t}$，则
           \[
               \begin{aligned}
-                  l= & \lim_{x\to+\infty}\frac{\ln\left(x\sin\frac{1}{x}\right)}{\frac{1}{x^2}}= \lim_{t\to0^+}\frac{\ln\left(\frac{\sin t}{t}\right)}{t^2} \\
-                  =  & \lim_{t\to0^+}\frac{\frac{\sin t}{t}-1}{t^2}=\lim_{t\to0^+}\frac{\sin t-t}{t^3}                                                      \\
-                  =  & \lim_{t\to0^+}\frac{\cos t-1}{3t^2}=-\frac{1}{6}.
+                  l= {} & \lim_{x\to+\infty}\frac{\ln\left(x\sin\frac{1}{x}\right)}{\frac{1}{x^2}}= \lim_{t\to0^+}\frac{\ln\left(\frac{\sin t}{t}\right)}{t^2} \\
+                  = {} & \lim_{t\to0^+}\frac{\frac{\sin t}{t}-1}{t^2}=\lim_{t\to0^+}\frac{\sin t-t}{t^3}                                                      \\
+                  = {} & \lim_{t\to0^+}\frac{\cos t-1}{3t^2}=-\frac{1}{6}.
               \end{aligned}
           \]
 
@@ -140,9 +140,9 @@
     \item \textbf{Solution}. 设$\lim_{x\to0}\frac{u(x)}{cx^{r}}=1$，则
           \[
               \begin{aligned}
-                  1= & \lim_{x\to0}\frac{\arcsin x- x}{cx^{r}}=\lim_{x\to0}\frac{\frac{1}{\sqrt{1-x^{2}}}-1}{crx^{r-1}} \\
-                  =  & \lim_{x\to0}\frac{1}{\sqrt{1-x^2}}\cdot\frac{1-\sqrt{1-x^2}}{crx^{r-1}}                          \\
-                  =  & \lim_{x\to0}\frac{\frac{1}{2}x^2}{crx^{r-1}},
+                  1= {} & \lim_{x\to0}\frac{\arcsin x- x}{cx^{r}}=\lim_{x\to0}\frac{\frac{1}{\sqrt{1-x^{2}}}-1}{crx^{r-1}} \\
+                  = {} & \lim_{x\to0}\frac{1}{\sqrt{1-x^2}}\cdot\frac{1-\sqrt{1-x^2}}{crx^{r-1}}                          \\
+                  = {} & \lim_{x\to0}\frac{\frac{1}{2}x^2}{crx^{r-1}},
               \end{aligned}
           \]
 
@@ -184,8 +184,8 @@
     \item \textbf{Solution}. $y=\frac{1}{x-1}-\frac{2}{2x-1}$，所以
           \[
               \begin{aligned}
-                  y^{(10)}(x) = & \frac{(-1)^{10}\,10!}{(x-1)^{11}}-\frac{2\cdot(-1)^{10}\,10!\cdot 2^{10}}{(2x-1)^{11}} \\
-                  =             & \frac{10!}{(x-1)^{11}}-\frac{2^{11}\cdot 10!}{(2x-1)^{11}}.
+                  y^{(10)}(x) = {} & \frac{(-1)^{10}\,10!}{(x-1)^{11}}-\frac{2\cdot(-1)^{10}\,10!\cdot 2^{10}}{(2x-1)^{11}} \\
+                  = {} & \frac{10!}{(x-1)^{11}}-\frac{2^{11}\cdot 10!}{(2x-1)^{11}}.
               \end{aligned}
           \]
 
@@ -293,10 +293,10 @@
           在等式$f(1+\sin x)-3f(1-\sin x)=8x+o(x)$两边令$x\to0$得$f(1)=0$，且
           \[
               \begin{aligned}
-                  \lim_{x\to0}\frac{f(1+\sin x)-3f(1-\sin x)}{x}= & \lim_{x\to0}\frac{8x+o(x)}{x}=8                                                                                                      \\
-                  =                                               & \lim_{x\to0}\frac{f(1+\sin x)-f(1)}{x}-3\lim_{x\to0}\frac{f(1-\sin x)-f(1)}{x}                                                       \\
-                  =                                               & \lim_{x\to0}\frac{f(1+\sin x)-f(1)}{\sin x}\cdot\frac{\sin x}{x}-3\lim_{x\to0}\frac{f(1-\sin x)-f(1)}{-\sin x}\cdot\frac{-\sin x}{x} \\
-                  =                                               & 4f'(1).
+                  \lim_{x\to0}\frac{f(1+\sin x)-3f(1-\sin x)}{x}= {} & \lim_{x\to0}\frac{8x+o(x)}{x}=8                                                                                                      \\
+                  = {} & \lim_{x\to0}\frac{f(1+\sin x)-f(1)}{x}-3\lim_{x\to0}\frac{f(1-\sin x)-f(1)}{x}                                                       \\
+                  = {} & \lim_{x\to0}\frac{f(1+\sin x)-f(1)}{\sin x}\cdot\frac{\sin x}{x}-3\lim_{x\to0}\frac{f(1-\sin x)-f(1)}{-\sin x}\cdot\frac{-\sin x}{x} \\
+                  = {} & 4f'(1).
               \end{aligned}
           \]
 
@@ -311,7 +311,7 @@
 
           \[
               \begin{aligned}
-                  0\leq|x_{n+1}-l|= & \left|\left(2+\frac{1}{x_n}\right)-1-\sqrt{2}\right|=\frac{\left|x_n-\left(\sqrt{2}+1\right)\right|}{\left(\sqrt{2}+1\right)x_n} \\
+                  0\leq|x_{n+1}-l|= {} & \left|\left(2+\frac{1}{x_n}\right)-1-\sqrt{2}\right|=\frac{\left|x_n-\left(\sqrt{2}+1\right)\right|}{\left(\sqrt{2}+1\right)x_n} \\
                   \leq              & \frac{1}{2}|x_{n}-l|                                                                                                             \\
                   \leq              & \cdots \leq \frac{1}{2^{n-1}}|x_{2}-l|.
               \end{aligned}
@@ -327,8 +327,8 @@
               x)>0$，则有
           \[
               \begin{aligned}
-                  f'_{+}(a) = & \lim_{x\to a^+}\frac{f(x)-f(a)}{x-a}=\lim_{x\to a^+}\frac{f(x)}{x-a}\geq0, \\
-                  f'_{-}(b) = & \lim_{x\to b^-}\frac{f(x)-f(b)}{x-b}=\lim_{x\to b^-}\frac{f(x)}{x-b}\leq0,
+                  f'_{+}(a) = {} & \lim_{x\to a^+}\frac{f(x)-f(a)}{x-a}=\lim_{x\to a^+}\frac{f(x)}{x-a}\geq0, \\
+                  f'_{-}(b) = {} & \lim_{x\to b^-}\frac{f(x)-f(b)}{x-b}=\lim_{x\to b^-}\frac{f(x)}{x-b}\leq0,
               \end{aligned}
           \]
 

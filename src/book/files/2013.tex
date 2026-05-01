@@ -88,10 +88,10 @@
     \item \textbf{Solution}.
           \[
               \begin{aligned}
-                  l = & \lim_{x\to 0}\frac{\mathrm{e}^{x^2\ln 2}-\mathrm{e}^{x^2\ln 3}}{\left(\mathrm{e}^{x\ln 2}-\mathrm{e}^{x\ln 3}\right)^2}                                                   \\
-                  =   & \lim_{x\to0}\frac{1+x^2\ln 2-1-x^2\ln 3+o(x^2)}{\left(1+x\ln 2-1-x\ln 3+o(x)\right)^2}=\lim_{x\to0}\frac{(\ln 2 - \ln 3)x^2+o(x^2)}{\left[(\ln 2 - \ln 3)x+o(x)\right]^2} \\
-                  =   & \lim_{x\to0}\frac{(\ln 2-\ln 3)x^2+o(x^2)}{(\ln 2-\ln 3)^2x^2+o(x^2)}                                                                                                     \\
-                  =   & \frac{1}{\ln 2-\ln 3}.                                                                                                                                                    \\
+                  l = {} & \lim_{x\to 0}\frac{\mathrm{e}^{x^2\ln 2}-\mathrm{e}^{x^2\ln 3}}{\left(\mathrm{e}^{x\ln 2}-\mathrm{e}^{x\ln 3}\right)^2}                                                   \\
+                  = {} & \lim_{x\to0}\frac{1+x^2\ln 2-1-x^2\ln 3+o(x^2)}{\left(1+x\ln 2-1-x\ln 3+o(x)\right)^2}=\lim_{x\to0}\frac{(\ln 2 - \ln 3)x^2+o(x^2)}{\left[(\ln 2 - \ln 3)x+o(x)\right]^2} \\
+                  = {} & \lim_{x\to0}\frac{(\ln 2-\ln 3)x^2+o(x^2)}{(\ln 2-\ln 3)^2x^2+o(x^2)}                                                                                                     \\
+                  = {} & \frac{1}{\ln 2-\ln 3}.                                                                                                                                                    \\
               \end{aligned}
           \]
 
@@ -101,9 +101,9 @@
           当$x\to0$时，$\tan x\to0$，$\sin x\to0$，故$\xi\to0$.所以
           \[
               \begin{aligned}
-                  l= & \lim_{x\to0}\mathrm{e}^{\xi}\cdot\frac{\tan x-\sin x}{x^3}                                                      \\
-                  =  & \lim_{x\to0}\frac{\sec^2 x-\cos x}{3x^2}=\lim_{x\to0}\frac{\sec^2 x- 1}{3x^2}+\lim_{x\to0}\frac{1-\cos x}{3x^2} \\
-                  =  & \frac{1}{3}+\frac{1}{6}=\frac{1}{2}.
+                  l= {} & \lim_{x\to0}\mathrm{e}^{\xi}\cdot\frac{\tan x-\sin x}{x^3}                                                      \\
+                  = {} & \lim_{x\to0}\frac{\sec^2 x-\cos x}{3x^2}=\lim_{x\to0}\frac{\sec^2 x- 1}{3x^2}+\lim_{x\to0}\frac{1-\cos x}{3x^2} \\
+                  = {} & \frac{1}{3}+\frac{1}{6}=\frac{1}{2}.
               \end{aligned}
           \]
 
@@ -129,10 +129,10 @@
     \item \textbf{Solution}. $\ln(1+x)=x-\frac{x^{2}}{2}+\frac{x^{3}}{3}+o(x^{3})$，所以
           \[
               \begin{aligned}
-                  f(x) = & \sin\ln(1+x)=\sin\left(x-\frac{x^2}{2}+\frac{x^3}{3}+o(x^{3})\right)                                                                                                                         \\
-                  =      & \left(x-\frac{x^2}{2}+\frac{x^3}{3}+o(x^{3})\right)-\frac{1}{6}\left(x-\frac{x^2}{2}+\frac{x^3}{3}+o(x^{3})\right)^{3}+o\left(\left(x-\frac{x^2}{2}+\frac{x^3}{3}+o(x^{3})\right)^{3}\right) \\
-                  =      & x-\frac{x^2}{2}+\frac{x^3}{3}+o(x^{3})-\frac{x^3}{6}+o(x^{3})                                                                                                                                \\
-                  =      & x-\frac{x^2}{2}+\frac{x^3}{6}+o(x^{3}).
+                  f(x) = {} & \sin\ln(1+x)=\sin\left(x-\frac{x^2}{2}+\frac{x^3}{3}+o(x^{3})\right)                                                                                                                         \\
+                  = {} & \left(x-\frac{x^2}{2}+\frac{x^3}{3}+o(x^{3})\right)-\frac{1}{6}\left(x-\frac{x^2}{2}+\frac{x^3}{3}+o(x^{3})\right)^{3}+o\left(\left(x-\frac{x^2}{2}+\frac{x^3}{3}+o(x^{3})\right)^{3}\right) \\
+                  = {} & x-\frac{x^2}{2}+\frac{x^3}{3}+o(x^{3})-\frac{x^3}{6}+o(x^{3})                                                                                                                                \\
+                  = {} & x-\frac{x^2}{2}+\frac{x^3}{6}+o(x^{3}).
               \end{aligned}
           \]
 
@@ -185,9 +185,9 @@
     \item \textbf{Solution}.
           \[
               \begin{aligned}
-                  \lim_{x\to\infty}\left[\frac{f\left(2+\frac{1}{x}\right)}{f(2)}\right]^{x} = & \mathrm{e}^{\lim\limits_{x\to\infty}x\left[\ln f\left(2+\frac{1}{x}\right)-\ln f(2)\right]} \\
-                  =                                                                            & \mathrm{e}^{\lim\limits_{t\to0}\frac{\ln f(2+t)-\ln f(2)}{t}}                               \\
-                  =                                                                            & \mathrm{e}^{\left.\left(\ln f(t)\right)'\right|_{t=2}}=\mathrm{e}^{\frac{f'(2)}{f(2)}}.
+                  \lim_{x\to\infty}\left[\frac{f\left(2+\frac{1}{x}\right)}{f(2)}\right]^{x} = {} & \mathrm{e}^{\lim\limits_{x\to\infty}x\left[\ln f\left(2+\frac{1}{x}\right)-\ln f(2)\right]} \\
+                  = {} & \mathrm{e}^{\lim\limits_{t\to0}\frac{\ln f(2+t)-\ln f(2)}{t}}                               \\
+                  = {} & \mathrm{e}^{\left.\left(\ln f(t)\right)'\right|_{t=2}}=\mathrm{e}^{\frac{f'(2)}{f(2)}}.
               \end{aligned}
           \]
 

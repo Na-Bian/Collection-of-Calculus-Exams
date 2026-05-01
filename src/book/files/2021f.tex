@@ -309,9 +309,9 @@
           方程$f(x)=x^{2}-x\cdot f(2)+2\int_{0}^{1}f(x)\,\mathrm{d}x$两边从$0$积分到$1$得
           \[
               \begin{aligned}
-                  C = & \int_{0}^{1}\left(x^{2}-x\cdot f(2)+2C\right)\,\mathrm{d}x                                       \\
-                  =   & \frac{1}{3}-\frac{1}{2}f(2)+2C = \frac{1}{3}-\frac{1}{2}\left(\frac{4}{3}+\frac{2}{3}C\right)+2C \\
-                  =   & \frac{5}{3}C-\frac{1}{3}.
+                  C = {} & \int_{0}^{1}\left(x^{2}-x\cdot f(2)+2C\right)\,\mathrm{d}x                                       \\
+                  = {} & \frac{1}{3}-\frac{1}{2}f(2)+2C = \frac{1}{3}-\frac{1}{2}\left(\frac{4}{3}+\frac{2}{3}C\right)+2C \\
+                  = {} & \frac{5}{3}C-\frac{1}{3}.
               \end{aligned}
           \]
 
@@ -321,8 +321,8 @@
     \item \textbf{Solution}. 由定积分的定义，
           \[
               \begin{aligned}
-                  l = & \lim_{n\to\infty}\sum_{i=0}^{n-1}\frac{1}{n+i}= \lim_{n\to\infty}\frac{1}{n}\sum_{i=0}^{n-1}\frac{1}{1+\frac{i}{n}} \\
-                  =   & \int_{0}^{1}\frac{1}{1+x}\,\mathrm{d}x = \ln 2.
+                  l = {} & \lim_{n\to\infty}\sum_{i=0}^{n-1}\frac{1}{n+i}= \lim_{n\to\infty}\frac{1}{n}\sum_{i=0}^{n-1}\frac{1}{1+\frac{i}{n}} \\
+                  = {} & \int_{0}^{1}\frac{1}{1+x}\,\mathrm{d}x = \ln 2.
               \end{aligned}
           \]
 
@@ -330,20 +330,20 @@
               \theta$，
           \[
               \begin{aligned}
-                  I = \int_{0}^{1}x^{3}\sqrt{1-x^2}\,\mathrm{d}x = & \int_{0}^{\frac{\pi}{2}}\sin^{3}\theta\sqrt{1-\sin^2\theta}\cos\theta\,\mathrm{d}\theta                                                             \\
-                  =                                                & \int_{0}^{\frac{\pi}{2}}\sin^{3}\theta\cos^{2}\theta\,\mathrm{d}\theta = \int_{0}^{\frac{\pi}{2}}\sin^{3}\theta(1-\sin^{2}\theta)\,\mathrm{d}\theta \\
-                  =                                                & \int_{0}^{\frac{\pi}{2}}\sin^{3}\theta\,\mathrm{d}\theta - \int_{0}^{\frac{\pi}{2}}\sin^{5}\theta\,\mathrm{d}\theta                                 \\
-                  =                                                & \frac{2}{3}-\frac{4}{5}\cdot\frac{2}{3}= \frac{2}{15}.
+                  I = \int_{0}^{1}x^{3}\sqrt{1-x^2}\,\mathrm{d}x = {} & \int_{0}^{\frac{\pi}{2}}\sin^{3}\theta\sqrt{1-\sin^2\theta}\cos\theta\,\mathrm{d}\theta                                                             \\
+                  = {} & \int_{0}^{\frac{\pi}{2}}\sin^{3}\theta\cos^{2}\theta\,\mathrm{d}\theta = \int_{0}^{\frac{\pi}{2}}\sin^{3}\theta(1-\sin^{2}\theta)\,\mathrm{d}\theta \\
+                  = {} & \int_{0}^{\frac{\pi}{2}}\sin^{3}\theta\,\mathrm{d}\theta - \int_{0}^{\frac{\pi}{2}}\sin^{5}\theta\,\mathrm{d}\theta                                 \\
+                  = {} & \frac{2}{3}-\frac{4}{5}\cdot\frac{2}{3}= \frac{2}{15}.
               \end{aligned}
           \]
 
     \item \textbf{Solution}.
           \[
               \begin{aligned}
-                  \int_{-\infty}^{+\infty}xf(x)\,\mathrm{d}x = & \int_{-\infty}^{0}xf(x)\,\mathrm{d}x+\int_{0}^{+\infty}xf(x)\,\mathrm{d}x                                                \\
-                  =                                            & \int_{0}^{+\infty}\lambda x \mathrm{e}^{-\lambda x}\,\mathrm{d}x =-\int_{0}^{+\infty}x \mathrm{d}\mathrm{e}^{-\lambda x} \\
-                  =                                            & -x\mathrm{e}^{-\lambda x}\bigg|_{0}^{+\infty}+\int_{0}^{+\infty}\mathrm{e}^{-\lambda x}\,\mathrm{d}x                     \\
-                  =                                            & \int_{0}^{+\infty}\mathrm{e}^{-\lambda x}\,\mathrm{d}x = \frac{1}{\lambda}.
+                  \int_{-\infty}^{+\infty}xf(x)\,\mathrm{d}x = {} & \int_{-\infty}^{0}xf(x)\,\mathrm{d}x+\int_{0}^{+\infty}xf(x)\,\mathrm{d}x                                                \\
+                  = {} & \int_{0}^{+\infty}\lambda x \mathrm{e}^{-\lambda x}\,\mathrm{d}x =-\int_{0}^{+\infty}x \mathrm{d}\mathrm{e}^{-\lambda x} \\
+                  = {} & -x\mathrm{e}^{-\lambda x}\bigg|_{0}^{+\infty}+\int_{0}^{+\infty}\mathrm{e}^{-\lambda x}\,\mathrm{d}x                     \\
+                  = {} & \int_{0}^{+\infty}\mathrm{e}^{-\lambda x}\,\mathrm{d}x = \frac{1}{\lambda}.
               \end{aligned}
           \]
 
@@ -352,8 +352,8 @@
           由一阶非齐次线性微分方程的通解公式得
           \[
               \begin{aligned}
-                  y = & \mathrm{e}^{-\int\frac{1}{x}\,\mathrm{d}x}\left(C+\int \frac{\mathrm{e}^x}{x}\mathrm{e}^{\int\frac{1}{x}\,\mathrm{d}x}\,\mathrm{d}x\right) \\
-                  =   & \frac{1}{x}\left(C+\int \mathrm{e}^{x}\,\mathrm{d}x\right) = \frac{1}{x}\left(C+\mathrm{e}^{x}\right).
+                  y = {} & \mathrm{e}^{-\int\frac{1}{x}\,\mathrm{d}x}\left(C+\int \frac{\mathrm{e}^x}{x}\mathrm{e}^{\int\frac{1}{x}\,\mathrm{d}x}\,\mathrm{d}x\right) \\
+                  = {} & \frac{1}{x}\left(C+\int \mathrm{e}^{x}\,\mathrm{d}x\right) = \frac{1}{x}\left(C+\mathrm{e}^{x}\right).
               \end{aligned}
           \]
 
@@ -373,11 +373,11 @@
           由一阶非齐次线性微分方程的通解公式得
           \[
               \begin{aligned}
-                  y = & \mathrm{e}^{-\int\left(-2\right)\,\mathrm{d}x}\left(C+\int 2(x+1)\mathrm{e}^{\int\left(-2\right)\,\mathrm{d}x}\,\mathrm{d}x\right)                                                \\
-                  =   & \mathrm{e}^{2x}\left(C+2\int (x+1)\mathrm{e}^{-2x}\,\mathrm{d}x\right) = \mathrm{e}^{2x}\left[C+2\int x\mathrm{e}^{-2x}\,\mathrm{d}x+2\int \mathrm{e}^{-2x}\,\mathrm{d}x\right]   \\
-                  =   & \mathrm{e}^{2x}\left[C+2\int x\mathrm{e}^{-2x}\,\mathrm{d}x-\mathrm{e}^{-2x}\right] = \mathrm{e}^{2x}\left[C-\int x\,\mathrm{d}\mathrm{e}^{-2x}-\mathrm{e}^{-2x}\right]           \\
-                  =   & \mathrm{e}^{2x}\left[C-x\mathrm{e}^{-2x}+\int \mathrm{e}^{-2x}\,\mathrm{d}x-\mathrm{e}^{-2x}\right] = \mathrm{e}^{2x}\left[C-x\mathrm{e}^{-2x}-\frac{3}{2}\mathrm{e}^{-2x}\right] \\
-                  =   & C\mathrm{e}^{2x}-x-\frac{3}{2}.
+                  y = {} & \mathrm{e}^{-\int\left(-2\right)\,\mathrm{d}x}\left(C+\int 2(x+1)\mathrm{e}^{\int\left(-2\right)\,\mathrm{d}x}\,\mathrm{d}x\right)                                                \\
+                  = {} & \mathrm{e}^{2x}\left(C+2\int (x+1)\mathrm{e}^{-2x}\,\mathrm{d}x\right) = \mathrm{e}^{2x}\left[C+2\int x\mathrm{e}^{-2x}\,\mathrm{d}x+2\int \mathrm{e}^{-2x}\,\mathrm{d}x\right]   \\
+                  = {} & \mathrm{e}^{2x}\left[C+2\int x\mathrm{e}^{-2x}\,\mathrm{d}x-\mathrm{e}^{-2x}\right] = \mathrm{e}^{2x}\left[C-\int x\,\mathrm{d}\mathrm{e}^{-2x}-\mathrm{e}^{-2x}\right]           \\
+                  = {} & \mathrm{e}^{2x}\left[C-x\mathrm{e}^{-2x}+\int \mathrm{e}^{-2x}\,\mathrm{d}x-\mathrm{e}^{-2x}\right] = \mathrm{e}^{2x}\left[C-x\mathrm{e}^{-2x}-\frac{3}{2}\mathrm{e}^{-2x}\right] \\
+                  = {} & C\mathrm{e}^{2x}-x-\frac{3}{2}.
               \end{aligned}
           \]
 
@@ -396,9 +396,9 @@
           即$b=\frac{2}{3}(1-a)$. 旋转体的体积$V=$
           \[
               \begin{aligned}
-                  \int_{0}^{1}\pi f^{2}(x)\,\mathrm{d}x = & \pi\int_{0}^{1}\left(ax^{2}+bx\right)^{2}\,\mathrm{d}x = \pi\int_{0}^{1}x^{2}(ax+b)^{2}\,\mathrm{d}x                                           \\
-                  =                                       & \pi\int_{0}^{1}(a^{2}x^{4}+2abx^{3}+b^{2}x^{2})\,\mathrm{d}x = \pi\left[\frac{a^2}{5}x^{5}+\frac{ab}{2}x^{4}+\frac{b^2}{3}x^{3}\right]_{0}^{1} \\
-                  =                                       & \pi\left(\frac{a^2}{5}+\frac{ab}{2}+\frac{b^2}{3}\right) = \pi\left[\frac{a^2}{5}+\frac{a(1-a)}{3}+\frac{4(1-a)^2}{27}\right].
+                  \int_{0}^{1}\pi f^{2}(x)\,\mathrm{d}x = {} & \pi\int_{0}^{1}\left(ax^{2}+bx\right)^{2}\,\mathrm{d}x = \pi\int_{0}^{1}x^{2}(ax+b)^{2}\,\mathrm{d}x                                           \\
+                  = {} & \pi\int_{0}^{1}(a^{2}x^{4}+2abx^{3}+b^{2}x^{2})\,\mathrm{d}x = \pi\left[\frac{a^2}{5}x^{5}+\frac{ab}{2}x^{4}+\frac{b^2}{3}x^{3}\right]_{0}^{1} \\
+                  = {} & \pi\left(\frac{a^2}{5}+\frac{ab}{2}+\frac{b^2}{3}\right) = \pi\left[\frac{a^2}{5}+\frac{a(1-a)}{3}+\frac{4(1-a)^2}{27}\right].
               \end{aligned}
           \]
 
@@ -433,7 +433,7 @@
           其中$\xi$介于$1$和$x$之间. 所以
           \[
               \begin{aligned}
-                  \left|\int_{0}^{2}f(x)\,\mathrm{d}x\right| = & \left|\int_{0}^{2}\left[f'(1)(x-1)+\frac{1}{2}f''(\xi)(x-1)^{2}\right]\mathrm{d}x\right| \\
+                  \left|\int_{0}^{2}f(x)\,\mathrm{d}x\right| = {} & \left|\int_{0}^{2}\left[f'(1)(x-1)+\frac{1}{2}f''(\xi)(x-1)^{2}\right]\mathrm{d}x\right| \\
                   \leq                                         & \frac{1}{2}\int_{0}^{2}|f''(\xi)|(x-1)^{2}\,\mathrm{d}x                                  \\
                   \leq                                         & \frac{M}{2}\int_{0}^{2}(x-1)^{2}\,\mathrm{d}x = \frac{M}{3}.
               \end{aligned}

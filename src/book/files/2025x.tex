@@ -113,8 +113,8 @@
     \item \textbf{Solution}.
           \[
               \begin{aligned}
-                  l = \lim_{\substack{x\to 0 \\ y\to 0}}\frac{\ln\left(1+2x^2+2y^2\right)}{\sqrt{x^2+y^2}\sin\sqrt{x^2+y^2}}= & \lim_{\substack{x\to 0 \\ y\to 0}}\frac{2x^2+2y^2}{\sqrt{x^2+y^2}\cdot\sqrt{x^2+y^2}} \\
-                  =                                                                                                           & \lim_{\substack{x\to 0 \\ y\to 0}}\frac{2(x^2+y^2)}{x^2+y^2}=2.
+                  l = \lim_{\substack{x\to 0 \\ y\to 0}}\frac{\ln\left(1+2x^2+2y^2\right)}{\sqrt{x^2+y^2}\sin\sqrt{x^2+y^2}}= {} & \lim_{\substack{x\to 0 \\ y\to 0}}\frac{2x^2+2y^2}{\sqrt{x^2+y^2}\cdot\sqrt{x^2+y^2}} \\
+                  = {} & \lim_{\substack{x\to 0 \\ y\to 0}}\frac{2(x^2+y^2)}{x^2+y^2}=2.
               \end{aligned}
           \]
 
@@ -141,8 +141,8 @@
     \item \textbf{Solution}. 方程$f(x,y) = x^{2}(y-3)+(x-1)\arctan\sqrt{\frac{x}{y}}$两边全微分，得
           \[
               \begin{aligned}
-                  \mathrm{d}f = & 2x\,\mathrm{d}x\cdot (y-3) +x^{2} \mathrm{d}y +\mathrm{d}x\cdot \arctan\sqrt{\frac{x}{y}}+(x-1)\cdot\frac{1}{1+\frac{x}{y}}\cdot \frac{1}{2\sqrt{\frac{x}{y}}}\cdot\left(\frac{y\,\mathrm{d}x-x\,\mathrm{d}y}{y^2}\right) \\
-                  =             & 2x(y-3)\,\mathrm{d}x +x^{2}\,\mathrm{d}y+\arctan\sqrt{\frac{x}{y}}\,\mathrm{d}x+(x-1)\cdot\frac{y\,\mathrm{d}x-x\,\mathrm{d}y}{2y^2\sqrt{\frac{x}{y}}\left(1+\frac{x}{y}\right)}.
+                  \mathrm{d}f = {} & 2x\,\mathrm{d}x\cdot (y-3) +x^{2} \mathrm{d}y +\mathrm{d}x\cdot \arctan\sqrt{\frac{x}{y}}+(x-1)\cdot\frac{1}{1+\frac{x}{y}}\cdot \frac{1}{2\sqrt{\frac{x}{y}}}\cdot\left(\frac{y\,\mathrm{d}x-x\,\mathrm{d}y}{y^2}\right) \\
+                  = {} & 2x(y-3)\,\mathrm{d}x +x^{2}\,\mathrm{d}y+\arctan\sqrt{\frac{x}{y}}\,\mathrm{d}x+(x-1)\cdot\frac{y\,\mathrm{d}x-x\,\mathrm{d}y}{2y^2\sqrt{\frac{x}{y}}\left(1+\frac{x}{y}\right)}.
               \end{aligned}
           \]
 
@@ -177,9 +177,9 @@
           \vspace{-13em}
 
           $\begin{aligned}
-                  I = & \int_{0}^{2}\,\mathrm{d}y\int_{0}^{y^2}\frac{1}{\sqrt{1+y^3}}\,\mathrm{d}x = \int_{0}^{2}\frac{y^2}{\sqrt{1+y^3}}\,\mathrm{d}y \\
-                  =   & \frac{1}{3}\int_{0}^{2}\frac{\mathrm{d}\left(1+y^3\right)}{\sqrt{1+y^3}}                                                       \\
-                  =   & \left.\frac{2}{3}\sqrt{1+y^3}\right|_{0}^{2}=\frac{2}{3}\left(\sqrt{9}-1\right)=\frac{4}{3}.
+                  I = {} & \int_{0}^{2}\,\mathrm{d}y\int_{0}^{y^2}\frac{1}{\sqrt{1+y^3}}\,\mathrm{d}x = \int_{0}^{2}\frac{y^2}{\sqrt{1+y^3}}\,\mathrm{d}y \\
+                  = {} & \frac{1}{3}\int_{0}^{2}\frac{\mathrm{d}\left(1+y^3\right)}{\sqrt{1+y^3}}                                                       \\
+                  = {} & \left.\frac{2}{3}\sqrt{1+y^3}\right|_{0}^{2}=\frac{2}{3}\left(\sqrt{9}-1\right)=\frac{4}{3}.
               \end{aligned}$
 
     \item \textbf{Solution}. $\frac{\partial z}{\partial x}= g'\left(\frac{y}{x}\right
@@ -211,8 +211,8 @@
               \leq \frac{\pi}{2}$，所以
           \[
               \begin{aligned}
-                  I = & \int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}\,\mathrm{d}\theta\int_{0}^{2\cos\theta}r\cos\theta\cdot r^{2}\,\mathrm{d}r = 4\int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}\cos^{5}\theta\,\mathrm{d}\theta \\
-                  =   & 8\int_{0}^{\frac{\pi}{2}}\cos^{5}\theta\,\mathrm{d}\theta = 8\cdot\frac{4\cdot2}{5\cdot3}=\frac{64}{15}.
+                  I = {} & \int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}\,\mathrm{d}\theta\int_{0}^{2\cos\theta}r\cos\theta\cdot r^{2}\,\mathrm{d}r = 4\int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}\cos^{5}\theta\,\mathrm{d}\theta \\
+                  = {} & 8\int_{0}^{\frac{\pi}{2}}\cos^{5}\theta\,\mathrm{d}\theta = 8\cdot\frac{4\cdot2}{5\cdot3}=\frac{64}{15}.
               \end{aligned}
           \]
 
@@ -229,9 +229,9 @@
           用柱坐标代换，锥面的方程为$z=r$，半球面的方程为$z=\sqrt{1-r^{2}}$，所以
           \[
               \begin{aligned}
-                  I = & 2\iint\limits_{D_{xy}}\,\mathrm{d}x\,\mathrm{d}y\int_{\sqrt{x^2+y^2}}^{\sqrt{1-x^2-y^2}}z\,\mathrm{d}z                          \\
-                  =   & 2\int_{0}^{2\pi}\,\mathrm{d}\theta \int_{0}^{\frac{\sqrt{2}}{2}}r\,\mathrm{d}r\int_{r}^{\sqrt{1-r^2}}z\,\mathrm{d}z             \\
-                  =   & 2\pi\int_{0}^{\frac{\sqrt{2}}{2}}r(1-r^{2}-r^{2})\,\mathrm{d}r = \pi(r^{2}-r^{4})\Bigg|_{0}^{\frac{\sqrt{2}}{2}}=\frac{\pi}{4}.
+                  I = {} & 2\iint\limits_{D_{xy}}\,\mathrm{d}x\,\mathrm{d}y\int_{\sqrt{x^2+y^2}}^{\sqrt{1-x^2-y^2}}z\,\mathrm{d}z                          \\
+                  = {} & 2\int_{0}^{2\pi}\,\mathrm{d}\theta \int_{0}^{\frac{\sqrt{2}}{2}}r\,\mathrm{d}r\int_{r}^{\sqrt{1-r^2}}z\,\mathrm{d}z             \\
+                  = {} & 2\pi\int_{0}^{\frac{\sqrt{2}}{2}}r(1-r^{2}-r^{2})\,\mathrm{d}r = \pi(r^{2}-r^{4})\Bigg|_{0}^{\frac{\sqrt{2}}{2}}=\frac{\pi}{4}.
               \end{aligned}
           \]
 \end{enumerate}

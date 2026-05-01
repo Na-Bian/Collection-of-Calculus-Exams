@@ -170,10 +170,10 @@
         用球坐标代换，$\mathrm{d}S=R^2\sin\varphi\,\mathrm{d}\varphi\,\mathrm{d}\theta$，因此
         \[
           \begin{aligned}
-            c \iint\limits_{S} z\,\mathrm{d}S= & c \int_0^{2\pi}\mathrm{d}\theta\int_0^{\frac{\pi}{2}} R\cos\varphi R^2\sin\varphi\,\mathrm{d}\varphi \\
-            =                                  & c\pi R^3\int_0^{\frac{\pi}{2}} \sin 2\varphi\,\mathrm{d}\varphi                                      \\
-            =                                  & c\pi R^3\left[-\frac{\cos 2\varphi}{2}\right]_0^{\frac{\pi}{2}}                                      \\
-            =                                  & c\pi R^3.
+            c \iint\limits_{S} z\,\mathrm{d}S= {} & c \int_0^{2\pi}\mathrm{d}\theta\int_0^{\frac{\pi}{2}} R\cos\varphi R^2\sin\varphi\,\mathrm{d}\varphi \\
+            = {} & c\pi R^3\int_0^{\frac{\pi}{2}} \sin 2\varphi\,\mathrm{d}\varphi                                      \\
+            = {} & c\pi R^3\left[-\frac{\cos 2\varphi}{2}\right]_0^{\frac{\pi}{2}}                                      \\
+            = {} & c\pi R^3.
           \end{aligned}
         \]
 
@@ -333,9 +333,9 @@
         因而
         \[
           \begin{aligned}
-            I= & \iiint\limits_{\Omega} z^2\,\mathrm{d}x\,\mathrm{d}y\,\mathrm{d}z                                             \\
-            =  & \int_{-\sqrt{2}}^{\sqrt{2}} z^2\mathrm{d}z \iint\limits_{x^2+y^2\le 1-\frac{z^2}{2}} \mathrm{d}x\,\mathrm{d}y \\
-            =  & \pi\int_{-\sqrt{2}}^{\sqrt{2}} z^2\left(1-\frac{z^2}{2}\right)\mathrm{d}z=\frac{8\sqrt{2}\pi}{15}.
+            I= {} & \iiint\limits_{\Omega} z^2\,\mathrm{d}x\,\mathrm{d}y\,\mathrm{d}z                                             \\
+            = {} & \int_{-\sqrt{2}}^{\sqrt{2}} z^2\mathrm{d}z \iint\limits_{x^2+y^2\le 1-\frac{z^2}{2}} \mathrm{d}x\,\mathrm{d}y \\
+            = {} & \pi\int_{-\sqrt{2}}^{\sqrt{2}} z^2\left(1-\frac{z^2}{2}\right)\mathrm{d}z=\frac{8\sqrt{2}\pi}{15}.
           \end{aligned}
         \]
 
@@ -347,9 +347,9 @@
         记$S'$为$x^2+y^2\leq R^2,z=0$取下侧，$\Sigma = S\cup S'$，则
         \[
           \begin{aligned}
-            I= & \frac{1}{R}\left(\oiint\limits_{\Sigma}\left(x^2+y\right)\,\mathrm{d}y\,\mathrm{d}z+z\,\mathrm{d}x\,\mathrm{d}y-\iint\limits_{S'}\left(x^2+y\right)\,\mathrm{d}y\,\mathrm{d}z+z\,\mathrm{d}x\,\mathrm{d}y\right) \\
-            =  & \frac{1}{R}\iiint\limits_{\substack{x^2+y^2+z^2\leq R^2\\z\geq0}}(2x+1) \mathrm{d}x\,\mathrm{d}y\,\mathrm{d}z                                                                                                    \\
-            =  & \frac{1}{R}\iiint\limits_{\substack{x^2+y^2+z^2\leq R^2\\z\geq0}}\mathrm{d}x\,\mathrm{d}y\,\mathrm{d}z = \frac{2\pi R^2}{3}.
+            I= {} & \frac{1}{R}\left(\oiint\limits_{\Sigma}\left(x^2+y\right)\,\mathrm{d}y\,\mathrm{d}z+z\,\mathrm{d}x\,\mathrm{d}y-\iint\limits_{S'}\left(x^2+y\right)\,\mathrm{d}y\,\mathrm{d}z+z\,\mathrm{d}x\,\mathrm{d}y\right) \\
+            = {} & \frac{1}{R}\iiint\limits_{\substack{x^2+y^2+z^2\leq R^2\\z\geq0}}(2x+1) \mathrm{d}x\,\mathrm{d}y\,\mathrm{d}z                                                                                                    \\
+            = {} & \frac{1}{R}\iiint\limits_{\substack{x^2+y^2+z^2\leq R^2\\z\geq0}}\mathrm{d}x\,\mathrm{d}y\,\mathrm{d}z = \frac{2\pi R^2}{3}.
           \end{aligned}
         \]
 
@@ -358,8 +358,8 @@
         用比值判别法，
         \[
           \begin{aligned}
-            \lim_{n\to\infty}\left|\frac{a_{n+1}}{a_n}\right|= & \lim_{n\to\infty}\frac{2n+3}{(n+1)!}\cdot\frac{n!}{2n+1} \\
-            =                                                  & \lim_{n\to\infty}\frac{2n+3}{(n+1)(2n+1)}=0,
+            \lim_{n\to\infty}\left|\frac{a_{n+1}}{a_n}\right|= {} & \lim_{n\to\infty}\frac{2n+3}{(n+1)!}\cdot\frac{n!}{2n+1} \\
+            = {} & \lim_{n\to\infty}\frac{2n+3}{(n+1)(2n+1)}=0,
           \end{aligned}
         \]
 

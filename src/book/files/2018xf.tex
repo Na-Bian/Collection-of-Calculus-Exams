@@ -21,10 +21,10 @@
           化为球坐标系下的逐次积分，下列结果正确的是（\qquad）.
 
           \begin{tasks}[label=\textbf{\Alph*.}, label-width=1.5em, column-sep=1em](1)
-              \task $I=2\pi\displaystyle\int_0^{\pi/4}\sin\varphi\,\mathrm{d}\varphi\int_0^1 f(\rho)\rho^2\,\mathrm{d}\rho$
-              \task $I=2\pi\displaystyle\int_0^{\pi/4}\sin\varphi\,\mathrm{d}\varphi\int_0^{1/\cos\varphi} f(\rho)\,\mathrm{d}\rho$
-              \task $I=2\pi\displaystyle\int_0^{\pi/4}\sin\varphi\,\mathrm{d}\varphi\int_0^{1/\cos\varphi} f(\rho)\rho^2\,\mathrm{d}\rho$
-              \task $I=2\pi\displaystyle\int_0^{\pi/4}\sin\varphi\,\mathrm{d}\varphi\int_0^1 f(\rho)\,\mathrm{d}\rho$
+              \task $\displaystyle I=2\pi\int_0^{\frac{\pi}{4}}\sin\varphi\,\mathrm{d}\varphi\int_0^1 f(\rho)\rho^2\,\mathrm{d}\rho$
+              \task $\displaystyle I=2\pi\int_0^{\frac{\pi}{4}}\sin\varphi\,\mathrm{d}\varphi\int_0^{1/\cos\varphi} f(\rho)\,\mathrm{d}\rho$
+              \task $\displaystyle I=2\pi\int_0^{\frac{\pi}{4}}\sin\varphi\,\mathrm{d}\varphi\int_0^{1/\cos\varphi} f(\rho)\rho^2\,\mathrm{d}\rho$
+              \task $\displaystyle I=2\pi\int_0^{\frac{\pi}{4}}\sin\varphi\,\mathrm{d}\varphi\int_0^1 f(\rho)\,\mathrm{d}\rho$
           \end{tasks}
           \vspace{1em}
 
@@ -76,92 +76,407 @@
 \section{填空题(每小题 4 分，共 16 分)}
 \begin{enumerate}
     \setcounter{enumi}{6}
-    \item 微分方程$y''+2y'+y=x+2$的通解为\underline{\hspace{5cm}}.
+    \item 函数$u=\ln(xy^2z^3)$在$(1,1,1)$点的全微分$\mathrm{d}u|_{(1,1,1)}=$\underline{\hspace{5cm}}.
 
-    \item 设$z=f(x^{2}+y^{2},xy)$，其中$f$有连续偏导数，则$\dfrac{\partial z}{\partial x}=$\underline{\hspace{4cm}}.
+    \item 设区域$D:|x|+|y|\leq1$，则$\displaystyle\iint\limits_D(1-x)^2\,\mathrm{d}x\,\mathrm{d}y=$\underline{\hspace{4cm}}.
 
-    \item 设$f(x,y,z)=x^{3}+y^{5}+z^{4}$，则$\operatorname{div}\operatorname{grad}f=$\underline{\hspace{4cm}}.
+    \item 设$f(x)=x+1,\ -\pi\leq x\leq\pi$，将$f(x)$展成以$2\pi$为周期的傅立叶级数
+          \[
+              f(x)\sim\frac{a_0}{2}+\sum_{n=0}^{\infty}(a_n\cos nx+b_n\sin nx),
+          \]
+          则$a_{2018}=$\underline{\hspace{4cm}}.
 
-    \item $\displaystyle\sum_{n=1}^{\infty}\frac{2^{n}}{n3^{n}}=$\underline{\hspace{4cm}}.
+    \item 设矢量函数$\boldsymbol{F}=\{x,y,z\}$，$\boldsymbol{G}=\{y,z,x\}$，则$\operatorname{div}(\boldsymbol{F}\times\boldsymbol{G})=$\underline{\hspace{4cm}}.
 \end{enumerate}
 
 \section{基本计算题(每小题 7 分，共 42 分)}
 \begin{enumerate}
     \setcounter{enumi}{10}
-    \item 求点$A(1,2,3)$到直线$L:\dfrac{x-6}{-1}=\dfrac{y-1}{1}=\dfrac{z-6}{-2}$的距离.
-          \vspace{11em}
-
-    \item 设方程组
+    \item 求曲线
           \[
               \begin{cases}
-                  x^{2}-2x+y^{2}+\ln z+z^{3}=1, \\
-                  x+y+z=1
+                  x^2+y^2+z^2=6,\\
+                  x^2+y^2-5z=0
               \end{cases}
           \]
-          在包含点$(0,0,1)$的一个邻域上确定隐函数$y=y(x),z=z(x)$，求
+          在点$P(1,2,1)$处的切线方程.
+          \vspace{11em}
+
+    \item 设$u=f(x+y^2,xy)$，其中$f$具有二阶连续偏导数，求$\dfrac{\partial^2u}{\partial x\partial y}$.
+          \vspace{12em}
+
+    \item 设$x=r^2\cos\theta,\ y=r\sin\theta\ (r\neq0)$确定的隐函数为$r=r(x,y),\ \theta=\theta(x,y)$，求
           \[
-              \left.\frac{\mathrm{d}y}{\mathrm{d}x}\right|_{x=0},\qquad \left.\frac{\mathrm{d}z}{\mathrm{d}x}\right|_{x=0}.
+              \frac{\partial r}{\partial x},\qquad \frac{\partial\theta}{\partial x}.
           \]
           \vspace{12em}
 
-    \item 求函数$f(x,y)=4x+2xy-x^{2}-3y^{2}$的极值.
-          \vspace{11em}
-
-    \item 设
-          \[
-              I=\iiint\limits_{\Omega}(x+y+z)\,\mathrm{d}x\,\mathrm{d}y\,\mathrm{d}z,
-          \]
-          其中$\Omega$是三坐标面与平面$x+y+z=1$所围成的四面体.
-          \vspace{11em}
-
-    \item 求曲线积分
-          \[
-              I=\int_{L}(2xy-y^{2}\cos x)\,\mathrm{d}x+(x^{2}-2y\sin x)\,\mathrm{d}y,
-          \]
-          其中曲线$L$沿抛物线$y=\pi x-x^{2}+1$从$A(0,1)$到$B(\pi,1)$.
+    \item 求$I=\displaystyle\int_L(x+y^2)\,\mathrm{d}s$，其中$L$是圆弧$y=\sqrt{1-x^2}\ (0\leq x\leq1)$与$x$轴和$y$轴所围平面图形的整个边界.
           \vspace{12em}
 
-    \item 判断级数$\displaystyle\sum_{n=1}^{\infty}\dfrac{2+(-3)^{n}}{(2n-1)!!}$的敛散性，若收敛指出是绝对收敛还是条件收敛，并说明理由.
+    \item 求
+          \[
+              I=\iint\limits_S xy^2\,\mathrm{d}y\,\mathrm{d}z+yz^2\,\mathrm{d}z\,\mathrm{d}x+zx^2\,\mathrm{d}x\,\mathrm{d}y,
+          \]
+          其中$S$为$z=\sqrt{x^2+y^2}\ (0\leq z\leq1)$，取上侧.
+          \vspace{12em}
+
+    \item 求幂级数$\displaystyle\sum_{n=0}^{\infty}(-1)^n\dfrac{x^{2n}}{2n+1}$的和函数，并求数项级数$\displaystyle\sum_{n=0}^{\infty}\dfrac{(-1)^n}{4^n(2n+1)}$的和.
           \vspace{12em}
 \end{enumerate}
 
 \section{应用题(每小题 7 分，共 14 分)}
 \begin{enumerate}
     \setcounter{enumi}{16}
-    \item 求曲面$z=x^{2}+y^{2},0\leq z\leq2$的面积.
-          \vspace{11em}
-
-    \item 计算曲面积分
+    \item 已知函数$u=\ln(xy^2z^3)$在椭球面$x^2+2y^2+3z^2=6R^2\ (R>0)$的第一卦限部分上存在最大值. 求出该最大值点，并由此证明：对任意正实数$a,b,c$，成立
           \[
-              I=\iint\limits_{S}3xz\,\mathrm{d}y\,\mathrm{d}z+yz\,\mathrm{d}z\,\mathrm{d}x-z^{2}\,\mathrm{d}x\,\mathrm{d}y,
+              ab^2c^3\leq\left(\frac{a+2b+3c}{6}\right)^6.
           \]
-          其中$S$是曲面$z=x^{2}+y^{2}$与$z=2-x^{2}-y^{2}$所围立体的表面外侧.
+          \vspace{12em}
+
+    \item 设$\Omega$是由锥面$z=\sqrt{x^2+y^2}$、柱面$x^2+y^2=2x$以及$xy$坐标面围成的空间区域. 求：
+          \[
+              \text{(1) }\Omega\text{ 的体积 }V;\qquad \text{(2) }\Omega\text{ 表面上锥面块的面积 }S.
+          \]
           \vspace{12em}
 \end{enumerate}
 
-\section{综合题(每小题 5 分，共 10 分)}
+\section{分析证明题(每小题 5 分，共 10 分)}
 \begin{enumerate}
     \setcounter{enumi}{18}
-    \item 设$L$是圆周曲线$(x-1)^{2}+(y-1)^{2}=1$（取正向），$f(x)$为正值连续函数。证明：
+    \item 计算曲线积分
           \[
-              \oint\limits_{L}xf(y)\,\mathrm{d}y-f(x)\,\mathrm{d}x\geq2\pi.
+              I=\oint_L\frac{x\,\mathrm{d}y-y\,\mathrm{d}x}{4x^2+y^2},
           \]
+          其中$L$是以$(1,0)$为圆心，以$R\ (R>0,\ R\neq1)$为半径的圆周，取逆时针方向.
           \vspace{15em}
 
-    \item 证明：当$-\pi<x<\pi$时，
+    \item 设$f(x)$是区间$[0,1]$上的连续函数，证明
           \[
-              \sum_{n=1}^{\infty}\frac{(-1)^{n-1}\sin nx}{n}=\frac{x}{2}.
+              \int_0^1e^{f(x)}\,\mathrm{d}x\int_0^1e^{-f(x)}\,\mathrm{d}x\geq1.
           \]
           \vspace{15em}
 \end{enumerate}
 
 \chapter{2017-2018学年微积分（一）（下）期末考试参考答案}
-\section{说明}
+\section{单项选择题(每小题 3 分，共 18 分)}
+\begin{enumerate}
+    \item \textbf{Solution}. D.
 
-本次仅录入了试题原卷；当前工作区未提供对应的《2017-2期末试题解答》PDF，因此参考答案暂缺，后续可在此文件中直接补入。
+          因为
+          \[
+              \frac{f(h,0)-f(0,0)}{h}=\frac{|h|}{h}
+          \]
+          极限不存在，故$f_x'(0,0)$不存在. 又$f(0,y)\equiv0$，所以
+          \[
+              f_y'(0,0)=\lim_{h\to0}\frac{f(0,h)-f(0,0)}{h}=0
+          \]
+          存在.
+
+    \item \textbf{Solution}. C.
+
+          在球坐标下，$\sqrt{x^2+y^2+z^2}=\rho$，且$\mathrm{d}v=\rho^2\sin\varphi\,\mathrm{d}\rho\,\mathrm{d}\varphi\,\mathrm{d}\theta$. 区域条件
+          \[
+              \sqrt{x^2+y^2}\le z\le1
+          \]
+          化为
+          \[
+              0\le\varphi\le\frac{\pi}{4},\qquad 0\le\rho\le\frac{1}{\cos\varphi},\qquad 0\le\theta\le2\pi.
+          \]
+          因此选 C.
+
+    \item \textbf{Solution}. A.
+
+          $\Omega_1$是第一卦限中的单位球部分，关于$x,y,z$轮换对称，故
+          \[
+              \iiint\limits_{\Omega_1}x\,\mathrm{d}v=\iiint\limits_{\Omega_1}z\,\mathrm{d}v.
+          \]
+          其余选项中，$\iiint_\Omega z\,\mathrm{d}v>0$，而$\iiint_\Omega xy\,\mathrm{d}v=0$，故不正确.
+
+    \item \textbf{Solution}. C.
+
+          若$\sum(-1)^na_n$收敛，则
+          \[
+              \sum_{n=1}^{\infty}(a_{2n-1}-a_{2n})
+          \]
+          正是该交错级数相差一个符号后的分组形式，因此收敛. A 可取$a_n=1/n^2$作反例；B 可取$a_n=(-1)^n/\sqrt n$作反例；D 中比值未取绝对值，一般不能推出收敛.
+
+    \item \textbf{Solution}. B.
+
+          由$\sum a_n$条件收敛知幂级数在$x=2$处收敛但不绝对收敛，因此收敛半径为$1$. 所以$x=3$时$|x-1|=2>1$，级数发散.
+
+    \item \textbf{Solution}. D.
+
+          记
+          \[
+              P=2xe^{x^2}y^3+ax\cos y,\qquad Q=be^{x^2}y^2-x^2\sin y.
+          \]
+          路径无关要求$P_y=Q_x$，即
+          \[
+              6xe^{x^2}y^2-ax\sin y=2bxe^{x^2}y^2-2x\sin y.
+          \]
+          比较系数得$b=3,\ a=2$.
+\end{enumerate}
+
+\section{填空题(每小题 4 分，共 16 分)}
+\begin{enumerate}
+    \setcounter{enumi}{6}
+    \item \textbf{Solution}. $\mathrm{d}x+2\,\mathrm{d}y+3\,\mathrm{d}z$.
+
+          因为
+          \[
+              u=\ln x+2\ln y+3\ln z,
+          \]
+          所以
+          \[
+              \mathrm{d}u\big|_{(1,1,1)}
+              =\frac{1}{x}\,\mathrm{d}x+\frac{2}{y}\,\mathrm{d}y+\frac{3}{z}\,\mathrm{d}z\bigg|_{(1,1,1)}
+              =\mathrm{d}x+2\,\mathrm{d}y+3\,\mathrm{d}z.
+          \]
+
+    \item \textbf{Solution}. $\dfrac{7}{3}$.
+
+          区域$D$关于$y$轴对称，故$\iint_D x\,\mathrm{d}x\,\mathrm{d}y=0$. 又$D$的面积为$2$，于是
+          \[
+              \iint_D(1-x)^2\,\mathrm{d}x\,\mathrm{d}y
+              =2+\iint_Dx^2\,\mathrm{d}x\,\mathrm{d}y.
+          \]
+          而
+          \[
+              \iint_Dx^2\,\mathrm{d}x\,\mathrm{d}y
+              =4\int_0^1x^2(1-x)\,\mathrm{d}x=\frac13.
+          \]
+
+    \item \textbf{Solution}. $0$.
+
+          当$n\ge1$时，
+          \[
+              a_n=\frac{1}{\pi}\int_{-\pi}^{\pi}(x+1)\cos nx\,\mathrm{d}x.
+          \]
+          其中$x\cos nx$为奇函数，积分为$0$；$\int_{-\pi}^{\pi}\cos nx\,\mathrm{d}x=0$，故$a_{2018}=0$.
+
+    \item \textbf{Solution}. $x+y+z$.
+
+          先算
+          \[
+              \boldsymbol{F}\times\boldsymbol{G}=(xy-z^2,\ yz-x^2,\ xz-y^2),
+          \]
+          因而
+          \[
+              \operatorname{div}(\boldsymbol{F}\times\boldsymbol{G})=y+z+x=x+y+z.
+          \]
+\end{enumerate}
+
+\section{基本计算题(每小题 7 分，共 42 分)}
+\begin{enumerate}
+    \setcounter{enumi}{10}
+    \item \textbf{Solution}. 两曲面的法向量分别为
+          \[
+              \boldsymbol{n}_1=(2x,2y,2z),\qquad \boldsymbol{n}_2=(2x,2y,-5).
+          \]
+          在$P(1,2,1)$处，
+          \[
+              \boldsymbol{n}_1=(2,4,2),\qquad \boldsymbol{n}_2=(2,4,-5).
+          \]
+          曲线切向量可取作
+          \[
+              \boldsymbol{\tau}=\boldsymbol{n}_1\times\boldsymbol{n}_2=(-28,14,0)\sim(-2,1,0).
+          \]
+          故切线方程为
+          \[
+              \frac{x-1}{-2}=y-2,\qquad z=1.
+          \]
+
+    \item \textbf{Solution}. 记
+          \[
+              s=x+y^2,\qquad t=xy,
+          \]
+          则$u=f(s,t)$. 先对$x$求偏导：
+          \[
+              u_x=f_1+yf_2.
+          \]
+          再对$y$求偏导，得
+          \[
+              u_{xy}=2yf_{11}+(x+2y^2)f_{12}+xyf_{22}+f_2.
+          \]
+          其中$f_1,f_2,f_{11},f_{12},f_{22}$均在$(x+y^2,xy)$处取值.
+
+    \item \textbf{Solution}. 对
+          \[
+              x=r^2\cos\theta,\qquad y=r\sin\theta
+          \]
+          两边关于$x$求偏导，得
+          \[
+              \begin{cases}
+                  1=2r\cos\theta\,r_x-r^2\sin\theta\,\theta_x,\\
+                  0=\sin\theta\,r_x+r\cos\theta\,\theta_x.
+              \end{cases}
+          \]
+          解得
+          \[
+              \frac{\partial r}{\partial x}=\frac{\cos\theta}{r(1+\cos^2\theta)},\qquad
+              \frac{\partial\theta}{\partial x}=-\frac{\sin\theta}{r^2(1+\cos^2\theta)}.
+          \]
+
+    \item \textbf{Solution}. $L$由$x$轴线段、$y$轴线段及第一象限单位圆弧组成. 在$x$轴上，
+          \[
+              I_1=\int_0^1x\,\mathrm{d}x=\frac12.
+          \]
+          在$y$轴上，
+          \[
+              I_2=\int_0^1y^2\,\mathrm{d}y=\frac13.
+          \]
+          在圆弧$x=\cos t,\ y=\sin t\ (0\le t\le\pi/2)$上，$\mathrm{d}s=\mathrm{d}t$，故
+          \[
+              I_3=\int_0^{\pi/2}(\cos t+\sin^2t)\,\mathrm{d}t=1+\frac{\pi}{4}.
+          \]
+          所以
+          \[
+              I=I_1+I_2+I_3=\frac{11}{6}+\frac{\pi}{4}.
+          \]
+
+    \item \textbf{Solution}. 设
+          \[
+              P=xy^2,\qquad Q=yz^2,\qquad R=zx^2.
+          \]
+          曲面为$z=\sqrt{x^2+y^2}$，取上侧，则
+          \[
+              \mathrm{d}y\,\mathrm{d}z=-z_x\,\mathrm{d}x\,\mathrm{d}y,\qquad
+              \mathrm{d}z\,\mathrm{d}x=-z_y\,\mathrm{d}x\,\mathrm{d}y.
+          \]
+          令$x=r\cos\theta,\ y=r\sin\theta,\ z=r$，投影区域为$0\le r\le1$，于是
+          \[
+              \begin{aligned}
+                  I
+                  &=\iint_D(-Pz_x-Qz_y+R)\,\mathrm{d}x\,\mathrm{d}y\\
+                  &=\int_0^{2\pi}\int_0^1r^4(\cos^2\theta-\sin^2\theta-\cos^2\theta\sin^2\theta)\,\mathrm{d}r\,\mathrm{d}\theta\\
+                  &=-\frac{\pi}{20}.
+              \end{aligned}
+          \]
+
+    \item \textbf{Solution}. 由
+          \[
+              \arctan x=\sum_{n=0}^{\infty}(-1)^n\frac{x^{2n+1}}{2n+1}\qquad(|x|\le1)
+          \]
+          可知
+          \[
+              \sum_{n=0}^{\infty}(-1)^n\frac{x^{2n}}{2n+1}
+              =
+              \begin{cases}
+                  \dfrac{\arctan x}{x}, & x\ne0,\\[0.6em]
+                  1,                    & x=0.
+              \end{cases}
+          \]
+          收敛域为$[-1,1]$. 取$x=\dfrac12$，得
+          \[
+              \sum_{n=0}^{\infty}\frac{(-1)^n}{4^n(2n+1)}
+              =2\arctan\frac12.
+          \]
+\end{enumerate}
+
+\section{应用题(每小题 7 分，共 14 分)}
+\begin{enumerate}
+    \setcounter{enumi}{16}
+    \item \textbf{Solution}. 在第一卦限内令
+          \[
+              \Phi(x,y,z)=\ln x+2\ln y+3\ln z.
+          \]
+          由 Lagrange 乘数法，
+          \[
+              \frac1x=2\lambda x,\qquad \frac2y=4\lambda y,\qquad \frac3z=6\lambda z,
+          \]
+          所以
+          \[
+              x^2=y^2=z^2.
+          \]
+          结合$x^2+2y^2+3z^2=6R^2$，且$x,y,z>0$，得最大值点为
+          \[
+              (R,R,R),
+          \]
+          最大值为
+          \[
+              \ln(R\cdot R^2\cdot R^3)=\ln R^6.
+          \]
+          对任意正实数$a,b,c$，取
+          \[
+              R^2=\frac{a+2b+3c}{6},\qquad x=\sqrt a,\quad y=\sqrt b,\quad z=\sqrt c.
+          \]
+          则点$(x,y,z)$在椭球面上，故
+          \[
+              \ln\sqrt{ab^2c^3}\le \ln R^6.
+          \]
+          因而
+          \[
+              ab^2c^3\le R^{12}=\left(\frac{a+2b+3c}{6}\right)^6.
+          \]
+
+    \item \textbf{Solution}. 用柱坐标. 柱面$x^2+y^2=2x$化为
+          \[
+              r=2\cos\theta,\qquad -\frac{\pi}{2}\le\theta\le\frac{\pi}{2}.
+          \]
+          区域为
+          \[
+              -\frac{\pi}{2}\le\theta\le\frac{\pi}{2},\qquad 0\le r\le2\cos\theta,\qquad 0\le z\le r.
+          \]
+          因而
+          \[
+              V=\int_{-\pi/2}^{\pi/2}\int_0^{2\cos\theta}\int_0^r r\,\mathrm{d}z\,\mathrm{d}r\,\mathrm{d}\theta
+              =\frac{32}{9}.
+          \]
+          锥面$z=\sqrt{x^2+y^2}$的面积元为
+          \[
+              \mathrm{d}S=\sqrt2\,\mathrm{d}x\,\mathrm{d}y.
+          \]
+          其投影为圆盘$x^2+y^2\le2x$，面积为$\pi$，故
+          \[
+              S=\sqrt2\,\pi.
+          \]
+\end{enumerate}
+
+\section{分析证明题(每小题 5 分，共 10 分)}
+\begin{enumerate}
+    \setcounter{enumi}{18}
+    \item \textbf{Solution}. 记
+          \[
+              P=-\frac{y}{4x^2+y^2},\qquad Q=\frac{x}{4x^2+y^2}.
+          \]
+          在不含原点的区域内，有
+          \[
+              Q_x-P_y=0.
+          \]
+          当$0<R<1$时，圆周$L$内部不含奇点$(0,0)$，由 Green 公式得
+          \[
+              I=0.
+          \]
+          当$R>1$时，$L$包围原点. 令$u=2x,\ v=y$，则
+          \[
+              \frac{x\,\mathrm{d}y-y\,\mathrm{d}x}{4x^2+y^2}
+              =\frac12\frac{u\,\mathrm{d}v-v\,\mathrm{d}u}{u^2+v^2}.
+          \]
+          因线性变换保持正向且曲线绕原点一周，
+          \[
+              I=\frac12\cdot2\pi=\pi.
+          \]
+          综上，
+          \[
+              I=
+              \begin{cases}
+                  0,  & 0<R<1,\\
+                  \pi,& R>1.
+              \end{cases}
+          \]
+
+    \item \textbf{Proof}. 由 Cauchy-Schwarz 不等式，
+          \[
+              \left(\int_0^1e^{f(x)}\,\mathrm{d}x\right)
+              \left(\int_0^1e^{-f(x)}\,\mathrm{d}x\right)
+              \ge
+              \left(\int_0^1e^{f(x)/2}e^{-f(x)/2}\,\mathrm{d}x\right)^2.
+          \]
+          右端为
+          \[
+              \left(\int_0^1 1\,\mathrm{d}x\right)^2=1,
+          \]
+          因而原不等式成立.
+\end{enumerate}
 \end{document}
-
-
-
-
-

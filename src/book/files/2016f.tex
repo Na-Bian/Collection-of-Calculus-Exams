@@ -185,8 +185,8 @@
           设$\lim_{x\to1}\frac{\ln x^{2}}{c(x-1)^{k}}=1$，则
           \[
               \begin{aligned}
-                  1 = \lim_{x\to1}\frac{\ln x^2}{c(x-1)^k}= & \lim_{x\to1}\frac{2\ln x}{c(x-1)^k}                                             \\
-                  =                                         & \lim_{x\to1}\frac{2}{c k (x-1)^{k-1} x}= \lim_{x\to1}\frac{2}{c k (x-1)^{k-1}}.
+                  1 = \lim_{x\to1}\frac{\ln x^2}{c(x-1)^k}= {} & \lim_{x\to1}\frac{2\ln x}{c(x-1)^k}                                             \\
+                  = {} & \lim_{x\to1}\frac{2}{c k (x-1)^{k-1} x}= \lim_{x\to1}\frac{2}{c k (x-1)^{k-1}}.
               \end{aligned}
           \]
 
@@ -199,8 +199,8 @@
           又$F(0)=0$，则
           \[
               \begin{aligned}
-                  \lim_{x\to0}\frac{F(x)-F(0)}{x-0}= & \lim_{x\to0}\frac{f(x)|\sin x|}{x}       \\
-                  =                                  & \lim_{x\to0}f(x)\cdot\frac{|\sin x|}{x}.
+                  \lim_{x\to0}\frac{F(x)-F(0)}{x-0}= {} & \lim_{x\to0}\frac{f(x)|\sin x|}{x}       \\
+                  = {} & \lim_{x\to0}f(x)\cdot\frac{|\sin x|}{x}.
               \end{aligned}
           \]
 
@@ -273,9 +273,9 @@
           故
           \[
               \begin{aligned}
-                  \int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}\left(\frac{x^3}{1+\sin^4 x}+\sin^{4} x\cos x\right)\,\mathrm{d}x = & \int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}\sin^{4} x\cos x\,\mathrm{d}x \\
-                  =                                                                                                        & 2\int_{0}^{\frac{\pi}{2}}\sin^{4} x\,\mathrm{d}\sin x              \\
-                  =                                                                                                        & \frac{2}{5}\sin^{5} x\bigg|_{0}^{\frac{\pi}{2}}= \frac{2}{5}.
+                  \int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}\left(\frac{x^3}{1+\sin^4 x}+\sin^{4} x\cos x\right)\,\mathrm{d}x = {} & \int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}\sin^{4} x\cos x\,\mathrm{d}x \\
+                  = {} & 2\int_{0}^{\frac{\pi}{2}}\sin^{4} x\,\mathrm{d}\sin x              \\
+                  = {} & \frac{2}{5}\sin^{5} x\bigg|_{0}^{\frac{\pi}{2}}= \frac{2}{5}.
               \end{aligned}
           \]
 \end{enumerate}
@@ -300,19 +300,19 @@
     \item \textbf{Solution}.
           \[
               \begin{aligned}
-                  I = & \int_{0}^{\pi}\sin^{5} x|\cos x|\mathrm{d}x = \int_{0}^{\frac{\pi}{2}}\sin^{5} x\cos x\,\mathrm{d}x + \int_{\frac{\pi}{2}}^{\pi}\sin^{5} x(-\cos x)\,\mathrm{d}x \\
-                  =   & \int_{0}^{\frac{\pi}{2}}\sin^{5} x\,\mathrm{d}\sin x - \int_{\frac{\pi}{2}}^{\pi}\sin^{5} x \mathrm{d}\sin x                                                     \\
-                  =   & \left.\frac{1}{6}\sin^{6} x\right|_{0}^{\frac{\pi}{2}}- \left.\frac{1}{6}\sin^{6} x\right|_{\frac{\pi}{2}}^{\pi}= \frac{1}{3}.
+                  I = {} & \int_{0}^{\pi}\sin^{5} x|\cos x|\mathrm{d}x = \int_{0}^{\frac{\pi}{2}}\sin^{5} x\cos x\,\mathrm{d}x + \int_{\frac{\pi}{2}}^{\pi}\sin^{5} x(-\cos x)\,\mathrm{d}x \\
+                  = {} & \int_{0}^{\frac{\pi}{2}}\sin^{5} x\,\mathrm{d}\sin x - \int_{\frac{\pi}{2}}^{\pi}\sin^{5} x \mathrm{d}\sin x                                                     \\
+                  = {} & \left.\frac{1}{6}\sin^{6} x\right|_{0}^{\frac{\pi}{2}}- \left.\frac{1}{6}\sin^{6} x\right|_{\frac{\pi}{2}}^{\pi}= \frac{1}{3}.
               \end{aligned}
           \]
 
     \item \textbf{Solution}.
           \[
               \begin{aligned}
-                  l = & \exp\left\{\lim_{n\to+\infty}\frac{1}{n}\left[\ln\left(1+\frac{1}{n}\right)+\ln\left(1+\frac{2}{n}\right)+\cdots+\ln\left(1+\frac{n}{n}\right)\right]\right\} \\
-                  =   & \exp\left\{\lim_{n\to+\infty}\frac{1}{n}\sum_{k=1}^{n}\ln\left(1+\frac{k}{n}\right)\right\}                                                                   \\
-                  =   & \exp\left[\int_{0}^{1}\ln(1+x)\,\mathrm{d}x\right] = \exp\Bigg[x\ln(1+x)\Bigg|_{0}^{1}-\int_{0}^{1}\left(1-\frac{1}{x+1}\right)\,\mathrm{d}x\Bigg]            \\
-                  =   & \exp\Bigg[\ln 2 - 1 +\ln(1+x)\Bigg|_{0}^{1}\Bigg] = \mathrm{e}^{2\ln 2-1}=\frac{4}{\mathrm{e}}.
+                  l = {} & \exp\left\{\lim_{n\to+\infty}\frac{1}{n}\left[\ln\left(1+\frac{1}{n}\right)+\ln\left(1+\frac{2}{n}\right)+\cdots+\ln\left(1+\frac{n}{n}\right)\right]\right\} \\
+                  = {} & \exp\left\{\lim_{n\to+\infty}\frac{1}{n}\sum_{k=1}^{n}\ln\left(1+\frac{k}{n}\right)\right\}                                                                   \\
+                  = {} & \exp\left[\int_{0}^{1}\ln(1+x)\,\mathrm{d}x\right] = \exp\Bigg[x\ln(1+x)\Bigg|_{0}^{1}-\int_{0}^{1}\left(1-\frac{1}{x+1}\right)\,\mathrm{d}x\Bigg]            \\
+                  = {} & \exp\Bigg[\ln 2 - 1 +\ln(1+x)\Bigg|_{0}^{1}\Bigg] = \mathrm{e}^{2\ln 2-1}=\frac{4}{\mathrm{e}}.
               \end{aligned}
           \]
 
@@ -331,8 +331,8 @@
           这是一个关于$\mathrm{e}^{y}$的一阶非齐次线性微分方程，由通解公式得
           \[
               \begin{aligned}
-                  \mathrm{e}^{y} = & \,\mathrm{e}^{-\int -\mathrm{d}x}\left(C+\int \mathrm{e}^{x}\mathrm{e}^{-\int \mathrm{d}x}\,\mathrm{d}x\right) \\
-                  =                & \,\mathrm{e}^{x}\left(C+\int \mathrm{d}x\right) = \mathrm{e}^{x}(x+C).
+                  \mathrm{e}^{y} = {} & \,\mathrm{e}^{-\int -\mathrm{d}x}\left(C+\int \mathrm{e}^{x}\mathrm{e}^{-\int \mathrm{d}x}\,\mathrm{d}x\right) \\
+                  = {} & \,\mathrm{e}^{x}\left(C+\int \mathrm{d}x\right) = \mathrm{e}^{x}(x+C).
               \end{aligned}
           \]
 
@@ -340,10 +340,10 @@
               =2(u-1)\,\mathrm{d}u$，
           \[
               \begin{aligned}
-                  I = & \int_{2}^{+\infty}\frac{\ln u}{(u-1)^4}\cdot 2(u-1)\,\mathrm{d}u = 2\int_{2}^{+\infty}\frac{\ln u}{(u-1)^3}\,\mathrm{d}u                                   \\
-                  =   & -\int_{2}^{+\infty}\ln u \mathrm{d}\frac{1}{(u-1)^2}= -\left.\frac{\ln u}{(u-1)^2}\right|_{2}^{+\infty}+ \int_{2}^{+\infty}\frac{1}{u(u-1)^2}\,\mathrm{d}u \\
-                  =   & \ln 2 + \int_{2}^{+\infty}\left[\frac{1}{u}-\frac{1}{u-1}+\frac{1}{(u-1)^2}\right]\mathrm{d}u                                                              \\
-                  =   & \ln 2 + \left[\ln \frac{u}{u-1}- \frac{1}{u-1}\right]_{2}^{+\infty}= \ln 2 - \ln 2 + 1 = 1.
+                  I = {} & \int_{2}^{+\infty}\frac{\ln u}{(u-1)^4}\cdot 2(u-1)\,\mathrm{d}u = 2\int_{2}^{+\infty}\frac{\ln u}{(u-1)^3}\,\mathrm{d}u                                   \\
+                  = {} & -\int_{2}^{+\infty}\ln u \mathrm{d}\frac{1}{(u-1)^2}= -\left.\frac{\ln u}{(u-1)^2}\right|_{2}^{+\infty}+ \int_{2}^{+\infty}\frac{1}{u(u-1)^2}\,\mathrm{d}u \\
+                  = {} & \ln 2 + \int_{2}^{+\infty}\left[\frac{1}{u}-\frac{1}{u-1}+\frac{1}{(u-1)^2}\right]\mathrm{d}u                                                              \\
+                  = {} & \ln 2 + \left[\ln \frac{u}{u-1}- \frac{1}{u-1}\right]_{2}^{+\infty}= \ln 2 - \ln 2 + 1 = 1.
               \end{aligned}
           \]
 \end{enumerate}
@@ -408,9 +408,9 @@
           则
           \[
               \begin{aligned}
-                  F'(t) = & (t-a)^{3} f(t) - \frac{3(t-a)^2}{4}\int_{a}^{t}f(x)\,\mathrm{d}x - \frac{(t-a)^3}{4}f(t) \\
-                  =       & \frac{3(t-a)^3}{4}f(t) - \frac{3(t-a)^2}{4}\int_{a}^{t}f(x)\,\mathrm{d}x                 \\
-                  =       & \frac{3(t-a)^2}{4}\left[(t-a)f(t) - \int_{a}^{t}f(x)\,\mathrm{d}x\right].
+                  F'(t) = {} & (t-a)^{3} f(t) - \frac{3(t-a)^2}{4}\int_{a}^{t}f(x)\,\mathrm{d}x - \frac{(t-a)^3}{4}f(t) \\
+                  = {} & \frac{3(t-a)^3}{4}f(t) - \frac{3(t-a)^2}{4}\int_{a}^{t}f(x)\,\mathrm{d}x                 \\
+                  = {} & \frac{3(t-a)^2}{4}\left[(t-a)f(t) - \int_{a}^{t}f(x)\,\mathrm{d}x\right].
               \end{aligned}
           \]
 

@@ -220,8 +220,8 @@
     \item \textbf{Solution}. B.
           \[
               \begin{aligned}
-                  \lim_{x\to0}\frac{\ln\left(f(x+1)+\mathrm{e}^{x^2}\right)}{x^2}= & \lim_{x\to0}\frac{f(x+1)+\mathrm{e}^{x^2}-1}{x^2}              \\
-                  =                                                                & \lim_{x\to0}\frac{f(x+1)}{x^2}+\lim_{x\to0}\frac{x^2}{x^2}= 2,
+                  \lim_{x\to0}\frac{\ln\left(f(x+1)+\mathrm{e}^{x^2}\right)}{x^2}= {} & \lim_{x\to0}\frac{f(x+1)+\mathrm{e}^{x^2}-1}{x^2}              \\
+                  = {} & \lim_{x\to0}\frac{f(x+1)}{x^2}+\lim_{x\to0}\frac{x^2}{x^2}= 2,
               \end{aligned}
           \]
 
@@ -276,9 +276,9 @@
           由题可知，$f(x)=\left(\mathrm{e}^{-x}\right)'=-\mathrm{e}^{-x}$，所以
           \[
               \begin{aligned}
-                  \int_{-\frac{1}{2}}^{0}xf(2x)\,\mathrm{d}x = & \int_{-\frac{1}{2}}^{0}x\cdot\left(-\mathrm{e}^{-2x}\right)\,\mathrm{d}x                                                                                                               \\
-                  =                                            & \frac{1}{2}\int_{-\frac{1}{2}}^{0}x\,\mathrm{d}\mathrm{e}^{-2x}= \frac{1}{2}x\mathrm{e}^{-2x}\bigg|_{-\frac{1}{2}}^{0}-\frac{1}{2}\int_{-\frac{1}{2}}^{0}\mathrm{e}^{-2x}\,\mathrm{d}x \\
-                  =                                            & \frac{1}{4}\mathrm{e}+\frac{1}{4}\mathrm{e}^{-2x}\bigg|_{-\frac{1}{2}}^{0}= \frac{1}{4}.
+                  \int_{-\frac{1}{2}}^{0}xf(2x)\,\mathrm{d}x = {} & \int_{-\frac{1}{2}}^{0}x\cdot\left(-\mathrm{e}^{-2x}\right)\,\mathrm{d}x                                                                                                               \\
+                  = {} & \frac{1}{2}\int_{-\frac{1}{2}}^{0}x\,\mathrm{d}\mathrm{e}^{-2x}= \frac{1}{2}x\mathrm{e}^{-2x}\bigg|_{-\frac{1}{2}}^{0}-\frac{1}{2}\int_{-\frac{1}{2}}^{0}\mathrm{e}^{-2x}\,\mathrm{d}x \\
+                  = {} & \frac{1}{4}\mathrm{e}+\frac{1}{4}\mathrm{e}^{-2x}\bigg|_{-\frac{1}{2}}^{0}= \frac{1}{4}.
               \end{aligned}
           \]
 
@@ -314,9 +314,9 @@
     \item \textbf{Solution}. 由Taylor公式可得
           \[
               \begin{aligned}
-                  f(x)=\mathrm{e}^{x}\ln(1+x)-x\left(1+\frac{1}{2}x\right) = & \left(1+x+\frac{1}{2}x^{2}+o(x^{2})\right)\left(x-\frac{1}{2}x^{2}+\frac{1}{3}x^{3}+o(x^{3})\right)-x-\frac{1}{2}x^{2} \\
-                  =                                                          & x-\frac{1}{2}x^{2}+\frac{1}{3}x^{3}+x^{2}-\frac{1}{2}x^{3}+\frac{1}{2}x^{3}+o(x^{3})-x-\frac{1}{2}x^{2}                \\
-                  =                                                          & \frac{1}{3}x^{3}+o(x^{3}).
+                  f(x)=\mathrm{e}^{x}\ln(1+x)-x\left(1+\frac{1}{2}x\right) = {} & \left(1+x+\frac{1}{2}x^{2}+o(x^{2})\right)\left(x-\frac{1}{2}x^{2}+\frac{1}{3}x^{3}+o(x^{3})\right)-x-\frac{1}{2}x^{2} \\
+                  = {} & x-\frac{1}{2}x^{2}+\frac{1}{3}x^{3}+x^{2}-\frac{1}{2}x^{3}+\frac{1}{2}x^{3}+o(x^{3})-x-\frac{1}{2}x^{2}                \\
+                  = {} & \frac{1}{3}x^{3}+o(x^{3}).
               \end{aligned}
           \]
 
@@ -328,28 +328,28 @@
           故
           \[
               \begin{aligned}
-                  l = \lim_{x\to0}\frac{\mathrm{e}^{\sin x}}{x\sin x^2}\int_{0}^{x}\sin(x-t)^{2} \mathrm{d}t = & \lim_{x\to0}\frac{\displaystyle\int_{0}^{x}\sin u^2\,\mathrm{d}u}{x^3} \\
-                  =                                                                                            & \lim_{x\to0}\frac{\sin x^2}{3x^2}= \frac{1}{3}.
+                  l = \lim_{x\to0}\frac{\mathrm{e}^{\sin x}}{x\sin x^2}\int_{0}^{x}\sin(x-t)^{2} \mathrm{d}t = {} & \lim_{x\to0}\frac{\displaystyle\int_{0}^{x}\sin u^2\,\mathrm{d}u}{x^3} \\
+                  = {} & \lim_{x\to0}\frac{\sin x^2}{3x^2}= \frac{1}{3}.
               \end{aligned}
           \]
 
     \item \textbf{Solution}. 由定积分的定义可得
           \[
               \begin{aligned}
-                  l= & \lim_{n\to\infty}\frac{1}{n}\sum_{k=1}^{n}\ln\left(1+\frac{k}{n}\right)                            \\
-                  =  & \int_{0}^{1}\ln(1+x)\,\mathrm{d}x = x\ln(1+x)\bigg|_{0}^{1}-\int_{0}^{1}\frac{x}{1+x}\,\mathrm{d}x \\
-                  =  & \ln 2 -\left(x-\ln(1+x)\right)\bigg|_{0}^{1}= \ln 2 - (1-\ln 2) = 2\ln 2 -1.
+                  l= {} & \lim_{n\to\infty}\frac{1}{n}\sum_{k=1}^{n}\ln\left(1+\frac{k}{n}\right)                            \\
+                  = {} & \int_{0}^{1}\ln(1+x)\,\mathrm{d}x = x\ln(1+x)\bigg|_{0}^{1}-\int_{0}^{1}\frac{x}{1+x}\,\mathrm{d}x \\
+                  = {} & \ln 2 -\left(x-\ln(1+x)\right)\bigg|_{0}^{1}= \ln 2 - (1-\ln 2) = 2\ln 2 -1.
               \end{aligned}
           \]
 
     \item \textbf{Solution}. 由题可知$f(0)=0$，$f'(x)=\frac{\sin x}{1-x}$，所以
           \[
               \begin{aligned}
-                  I = \int_{0}^{1}(x-1) f(x)\,\mathrm{d}x = & \frac{1}{2}\int_{0}^{1}f(x)\,\mathrm{d}(x-1)^{2}                                                  \\
-                  =                                         & \left.\frac{1}{2}f(x)(x-1)^{2}\right|_{0}^{1}-\frac{1}{2}\int_{0}^{1}(x-1)^{2}f'(x)\,\mathrm{d}x  \\
-                  =                                         & \frac{1}{2}\int_{0}^{1}(x-1)\sin x\,\mathrm{d}x = -\frac{1}{2}\int_{0}^{1}(x-1)\,\mathrm{d}\cos x \\
-                  =                                         & -\frac{1}{2}\left[(x-1)\cos x\bigg|_{0}^{1}-\int_{0}^{1}\cos x\,\mathrm{d}x\right]                \\
-                  =                                         & \frac{\sin 1-1}{2}.
+                  I = \int_{0}^{1}(x-1) f(x)\,\mathrm{d}x = {} & \frac{1}{2}\int_{0}^{1}f(x)\,\mathrm{d}(x-1)^{2}                                                  \\
+                  = {} & \left.\frac{1}{2}f(x)(x-1)^{2}\right|_{0}^{1}-\frac{1}{2}\int_{0}^{1}(x-1)^{2}f'(x)\,\mathrm{d}x  \\
+                  = {} & \frac{1}{2}\int_{0}^{1}(x-1)\sin x\,\mathrm{d}x = -\frac{1}{2}\int_{0}^{1}(x-1)\,\mathrm{d}\cos x \\
+                  = {} & -\frac{1}{2}\left[(x-1)\cos x\bigg|_{0}^{1}-\int_{0}^{1}\cos x\,\mathrm{d}x\right]                \\
+                  = {} & \frac{\sin 1-1}{2}.
               \end{aligned}
           \]
 
@@ -391,8 +391,8 @@
           由一阶非齐次线性微分方程的通解公式得
           \[
               \begin{aligned}
-                  y = & \mathrm{e}^{-\int\frac{1}{x}\,\mathrm{d}x}\left(C+\int\mathrm{e}^{x}\mathrm{e}^{\int\frac{1}{x}\,\mathrm{d}x}\,\mathrm{d}x\right) \\
-                  =   & \frac{1}{x}\left(C+\int x\mathrm{e}^{x}\,\mathrm{d}x\right) = \frac{1}{x}\left(C+x\mathrm{e}^{x}-\mathrm{e}^{x}\right).
+                  y = {} & \mathrm{e}^{-\int\frac{1}{x}\,\mathrm{d}x}\left(C+\int\mathrm{e}^{x}\mathrm{e}^{\int\frac{1}{x}\,\mathrm{d}x}\,\mathrm{d}x\right) \\
+                  = {} & \frac{1}{x}\left(C+\int x\mathrm{e}^{x}\,\mathrm{d}x\right) = \frac{1}{x}\left(C+x\mathrm{e}^{x}-\mathrm{e}^{x}\right).
               \end{aligned}
           \]
 
@@ -412,8 +412,8 @@
           旋转体的体积$V=$
           \[
               \begin{aligned}
-                  \int_{0}^{1}\pi f^{2}(x)\,\mathrm{d}x = & \pi\int_{0}^{1}\left[(4-b)x+\frac{3}{2}bx^{2}\right]^{2}\,\mathrm{d}x=\pi\int_{0}^{1}\left[\frac{9}{4}b^{2}x^{4}+3(4-b)bx^{3}+(4-b)^{2} x^{2}\right]\mathrm{d}x \\
-                  =                                       & \pi\left[\frac{9}{20}b^{2}+\frac{3}{4}(4-b)b+\frac{1}{3}(4-b)^{2}\right] = \left(\frac{1}{30}b^{2}+\frac{1}{3}b+\frac{16}{3}\right)\pi.
+                  \int_{0}^{1}\pi f^{2}(x)\,\mathrm{d}x = {} & \pi\int_{0}^{1}\left[(4-b)x+\frac{3}{2}bx^{2}\right]^{2}\,\mathrm{d}x=\pi\int_{0}^{1}\left[\frac{9}{4}b^{2}x^{4}+3(4-b)bx^{3}+(4-b)^{2} x^{2}\right]\mathrm{d}x \\
+                  = {} & \pi\left[\frac{9}{20}b^{2}+\frac{3}{4}(4-b)b+\frac{1}{3}(4-b)^{2}\right] = \left(\frac{1}{30}b^{2}+\frac{1}{3}b+\frac{16}{3}\right)\pi.
               \end{aligned}
           \]
 
@@ -430,9 +430,9 @@
               f(t)\,\mathrm{d}t\int_{0}^{x}g(t)\,\mathrm{d}t$，则$F(0)=0$.
           \[
               \begin{aligned}
-                  F'(x) = & \int_{0}^{x}f(t)g(t)\,\mathrm{d}t+x f(x)g(x)-f(x)\int_{0}^{x}g(t)\,\mathrm{d}t-g(x)\int_{0}^{x}f(t)\,\mathrm{d}t \\
-                  =       & \int_{0}^{x}\left[f(t)g(t)+f(x)g(x)-f(x)g(t)-g(x)f(t)\right]\mathrm{d}t                                          \\
-                  =       & \int_{0}^{x}\left[f(x)-f(t)\right]\cdot\left[g(x)-g(t)\right]\mathrm{d}t.
+                  F'(x) = {} & \int_{0}^{x}f(t)g(t)\,\mathrm{d}t+x f(x)g(x)-f(x)\int_{0}^{x}g(t)\,\mathrm{d}t-g(x)\int_{0}^{x}f(t)\,\mathrm{d}t \\
+                  = {} & \int_{0}^{x}\left[f(t)g(t)+f(x)g(x)-f(x)g(t)-g(x)f(t)\right]\mathrm{d}t                                          \\
+                  = {} & \int_{0}^{x}\left[f(x)-f(t)\right]\cdot\left[g(x)-g(t)\right]\mathrm{d}t.
               \end{aligned}
           \]
 

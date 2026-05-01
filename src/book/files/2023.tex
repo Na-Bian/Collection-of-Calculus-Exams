@@ -95,26 +95,26 @@
     \item \textbf{Solution}.
           \[
               \begin{aligned}
-                  l= & \lim_{n\infty}(-1)^{n} n\sin\left((\sqrt{n^2+1}-n)\pi+n\pi\right)                                                    \\
-                  =  & \lim_{n\to\infty}n\sin\left((\sqrt{n^2+1}-n)\pi\right)=\lim_{n\to\infty}n\sin\left(\frac{\pi}{\sqrt{n^2+1}+n}\right) \\
-                  =  & \lim_{n\to\infty}\frac{n}{\sqrt{n^2+1}+n}\pi=\frac{\pi}{2}.
+                  l= {} & \lim_{n\infty}(-1)^{n} n\sin\left((\sqrt{n^2+1}-n)\pi+n\pi\right)                                                    \\
+                  = {} & \lim_{n\to\infty}n\sin\left((\sqrt{n^2+1}-n)\pi\right)=\lim_{n\to\infty}n\sin\left(\frac{\pi}{\sqrt{n^2+1}+n}\right) \\
+                  = {} & \lim_{n\to\infty}\frac{n}{\sqrt{n^2+1}+n}\pi=\frac{\pi}{2}.
               \end{aligned}
           \]
 
     \item \textbf{Solution}.
           \[
               \begin{aligned}
-                  l= & \lim_{x\to 0}\frac{\mathrm{e}^{x}(\mathrm{e}^{\tan x -x}-1)}{x-\sin x}=\lim_{x\to0}\frac{\tan x-x}{x-\sin x} \\
-                  =  & \lim_{x\to0}\frac{\sec ^2 x-1}{1-\cos x}=\lim_{x\to0}\frac{\tan^2 x}{\frac{1}{2}x^2}=2.
+                  l= {} & \lim_{x\to 0}\frac{\mathrm{e}^{x}(\mathrm{e}^{\tan x -x}-1)}{x-\sin x}=\lim_{x\to0}\frac{\tan x-x}{x-\sin x} \\
+                  = {} & \lim_{x\to0}\frac{\sec ^2 x-1}{1-\cos x}=\lim_{x\to0}\frac{\tan^2 x}{\frac{1}{2}x^2}=2.
               \end{aligned}
           \]
 
           或
           \[
               \begin{aligned}
-                  l= & \lim_{x\to 0}\mathrm{e}^{\xi}\frac{\tan x -x}{x-\sin x}\qquad (\xi\,\text{介于}\,x\,\text{与}\tan x\,\text{之间}) \\
-                  =  & \lim_{x\to 0}\frac{\tan x -x}{x-\sin x}                                                                      \\
-                  =  & \lim_{x\to0}\frac{\sec ^2 x-1}{1-\cos x}=\lim_{x\to0}\frac{\tan^2 x}{\frac{1}{2}x^2}=2.
+                  l= {} & \lim_{x\to 0}\mathrm{e}^{\xi}\frac{\tan x -x}{x-\sin x}\qquad (\xi\,\text{介于}\,x\,\text{与}\tan x\,\text{之间}) \\
+                  = {} & \lim_{x\to 0}\frac{\tan x -x}{x-\sin x}                                                                      \\
+                  = {} & \lim_{x\to0}\frac{\sec ^2 x-1}{1-\cos x}=\lim_{x\to0}\frac{\tan^2 x}{\frac{1}{2}x^2}=2.
               \end{aligned}
           \]
 
@@ -123,7 +123,7 @@
           \textbf{法一.}
           \[
               \begin{aligned}
-                  u=   & \frac{1}{\sqrt{1+\tan x}+\sqrt{1+\sin x}}(\tan x-\sin x)                    \\
+                  u= {} & \frac{1}{\sqrt{1+\tan x}+\sqrt{1+\sin x}}(\tan x-\sin x)                    \\
                   \sim & \frac{1}{2}(\tan x-\sin x)=\frac{1}{2}\tan x(1-\cos x)\sim\frac{1}{4}x^{3},
               \end{aligned}
           \]
@@ -133,9 +133,9 @@
           \textbf{法二.}由题意得$\lim_{x\to0}\frac{u}{cx^{k}}=1$. 而
           \[
               \begin{aligned}
-                  \lim_{x\to0}\frac{u}{cx^k}= & \frac{\tan x-\sin x}{cx^k(\sqrt{1+\tan x}+\sqrt{1+\sin x})}              \\
-                  =                           & \lim_{x\to0}\frac{\tan x(1-\cos x)}{2cx^k}                               \\
-                  =                           & \lim_{x\to0}\frac{\frac{1}{2}x^3}{2cx^k}=\lim_{x\to0}\frac{x^{3-k}}{4c},
+                  \lim_{x\to0}\frac{u}{cx^k}= {} & \frac{\tan x-\sin x}{cx^k(\sqrt{1+\tan x}+\sqrt{1+\sin x})}              \\
+                  = {} & \lim_{x\to0}\frac{\tan x(1-\cos x)}{2cx^k}                               \\
+                  = {} & \lim_{x\to0}\frac{\frac{1}{2}x^3}{2cx^k}=\lim_{x\to0}\frac{x^{3-k}}{4c},
               \end{aligned}
           \]
 
@@ -144,10 +144,10 @@
     \item \textbf{Solution}.
           \[
               \begin{aligned}
-                  l= & \lim_{x\to0}\mathrm{e}^{\frac{1}{x^2}\ln\left(\frac{\arcsin x}{x}\right)}=\mathrm{e}^{\lim\limits_{x\to0}\frac{1}{x^2}\ln\left(\frac{\arcsin x}{x}\right)}                                                                                                                            \\
+                  l= {} & \lim_{x\to0}\mathrm{e}^{\frac{1}{x^2}\ln\left(\frac{\arcsin x}{x}\right)}=\mathrm{e}^{\lim\limits_{x\to0}\frac{1}{x^2}\ln\left(\frac{\arcsin x}{x}\right)}                                                                                                                            \\
                   \
-                  =  & \mathrm{e}^{\lim\limits_{x\to0}\frac{1}{x^2}\left(\frac{\arcsin x}{x}-1\right)}=\mathrm{e}^{\lim\limits_{x\to0}\frac{\arcsin x-x}{x^3}}=\mathrm{e}^{\lim\limits_{x\to0}\frac{\frac{1}{\sqrt{1-x^2}}-1}{3x^2}}=\mathrm{e}^{\lim\limits_{x\to0}\frac{1-\sqrt{1-x^2}}{3x^2\sqrt{1-x^2}}} \\
-                  =  & \mathrm{e}^{\lim\limits_{x\to0}\frac{\frac{1}{2}x^2}{3x^2\sqrt{1-x^2}}}=\mathrm{e}^{\frac{1}{6}}.
+                  = {} & \mathrm{e}^{\lim\limits_{x\to0}\frac{1}{x^2}\left(\frac{\arcsin x}{x}-1\right)}=\mathrm{e}^{\lim\limits_{x\to0}\frac{\arcsin x-x}{x^3}}=\mathrm{e}^{\lim\limits_{x\to0}\frac{\frac{1}{\sqrt{1-x^2}}-1}{3x^2}}=\mathrm{e}^{\lim\limits_{x\to0}\frac{1-\sqrt{1-x^2}}{3x^2\sqrt{1-x^2}}} \\
+                  = {} & \mathrm{e}^{\lim\limits_{x\to0}\frac{\frac{1}{2}x^2}{3x^2\sqrt{1-x^2}}}=\mathrm{e}^{\frac{1}{6}}.
               \end{aligned}
           \]
 
@@ -159,8 +159,8 @@
           因
           \[
               \begin{aligned}
-                  \lim_{x\to0}f(x)= & \lim_{x\to0}\frac{x-x^2}{\sin\pi x}=\lim_{x\to0}\frac{\pi x}{\sin\pi x}\cdot\frac{1-x}{\pi}=\frac{1}{\pi}; \\
-                  \lim_{x\to1}f(x)= & \lim_{x\to1}\frac{\pi(1-x)}{\sin\pi(1-x)}\cdot\frac{x}{\pi}=\frac{1}{\pi},
+                  \lim_{x\to0}f(x)= {} & \lim_{x\to0}\frac{x-x^2}{\sin\pi x}=\lim_{x\to0}\frac{\pi x}{\sin\pi x}\cdot\frac{1-x}{\pi}=\frac{1}{\pi}; \\
+                  \lim_{x\to1}f(x)= {} & \lim_{x\to1}\frac{\pi(1-x)}{\sin\pi(1-x)}\cdot\frac{x}{\pi}=\frac{1}{\pi},
               \end{aligned}
           \]
 
@@ -225,8 +225,8 @@
           由公式$\left(\frac{1}{(1+x)}\right)^{(n)}=\frac{(-1)^{n}\,n!}{(1+x)^{n+1}}$，得
           \[
               \begin{aligned}
-                  y^{(n)}(x)= & \frac{1}{5}\left(\frac{1}{x+2}\right)^{(n)}-\frac{2}{5}\left(\frac{1}{2x-1}\right)^{(n)}=\frac{1}{5}\frac{(-1)^n\cdot n!}{(x+2)^{n+1}}-\frac{2}{5}\frac{(-1)^n\cdot2^n\cdot n!}{(2x-1)^{n+1}} \\
-                  =           & \frac{n!}{5}\left(\frac{(-1)^n}{(x+2)^{n+1}}-\frac{(-1)^n2^{n+1}}{(2x-1)^{n+1}}\right),
+                  y^{(n)}(x)= {} & \frac{1}{5}\left(\frac{1}{x+2}\right)^{(n)}-\frac{2}{5}\left(\frac{1}{2x-1}\right)^{(n)}=\frac{1}{5}\frac{(-1)^n\cdot n!}{(x+2)^{n+1}}-\frac{2}{5}\frac{(-1)^n\cdot2^n\cdot n!}{(2x-1)^{n+1}} \\
+                  = {} & \frac{n!}{5}\left(\frac{(-1)^n}{(x+2)^{n+1}}-\frac{(-1)^n2^{n+1}}{(2x-1)^{n+1}}\right),
               \end{aligned}
           \]
 
@@ -238,8 +238,8 @@
           所以
           \[
               \begin{aligned}
-                  y'=  & 2\sin 2x, \\
-                  y''= & 4\cos 2x.
+                  y'= {} & 2\sin 2x, \\
+                  y''= {} & 4\cos 2x.
               \end{aligned}
           \]
 \end{enumerate}
@@ -275,8 +275,8 @@
 
           \[
               \begin{aligned}
-                  x_{n+1}= & \frac{b_1}{1+b_1}+\frac{b_2}{(1+b_1)(1+b_2)}+\cdots+\frac{b_n}{(1+b_1)(1+b_2)\cdots(1+b_n)}+\frac{b_{n+1}}{(1+b_1)(1+b_2)\cdots(1+b_{n+1})} \\
-                  =        & x_{n}+\frac{b_{n+1}}{(1+b_1)(1+b_2)\cdots(1+b_{n+1})}\geq x_{n},
+                  x_{n+1}= {} & \frac{b_1}{1+b_1}+\frac{b_2}{(1+b_1)(1+b_2)}+\cdots+\frac{b_n}{(1+b_1)(1+b_2)\cdots(1+b_n)}+\frac{b_{n+1}}{(1+b_1)(1+b_2)\cdots(1+b_{n+1})} \\
+                  = {} & x_{n}+\frac{b_{n+1}}{(1+b_1)(1+b_2)\cdots(1+b_{n+1})}\geq x_{n},
               \end{aligned}
           \]
 
@@ -301,16 +301,16 @@
           当$x=0$时，
           \[
               \begin{aligned}
-                  f'(0)= & \lim_{x\to0}\frac{\frac{g(x)-\mathrm{e}^{-x}}{x}-0}{x}=\lim_{x\to0}\frac{g(x)-\mathrm{e}^{-x}}{x^2}=\lim_{x\to0}\frac{g'(x)+\mathrm{e}^{-x}}{2x} \\
-                  =      & \lim_{x\to0}\frac{g'(x)+1+\mathrm{e}^{-x}-1}{2x}=\lim_{x\to0}\frac{g'(x)-g'(0)+\mathrm{e}^{-x}-1}{2x}=\frac{1}{2}(g''(0)-1),
+                  f'(0)= {} & \lim_{x\to0}\frac{\frac{g(x)-\mathrm{e}^{-x}}{x}-0}{x}=\lim_{x\to0}\frac{g(x)-\mathrm{e}^{-x}}{x^2}=\lim_{x\to0}\frac{g'(x)+\mathrm{e}^{-x}}{2x} \\
+                  = {} & \lim_{x\to0}\frac{g'(x)+1+\mathrm{e}^{-x}-1}{2x}=\lim_{x\to0}\frac{g'(x)-g'(0)+\mathrm{e}^{-x}-1}{2x}=\frac{1}{2}(g''(0)-1),
               \end{aligned}
           \]
 
           因
           \[
               \begin{aligned}
-                  \lim_{x\to 0}f'(x)= & \lim_{x\to0}\frac{x(g'(x)+\mathrm{e}^{-x})}{x^2}=\lim_{x\to0}\left(\frac{g'(x)+\mathrm{e}^{-x}}{x}-\frac{g(x)-\mathrm{e}^{-x}}{x^2}\right)            \\
-                  =                   & \lim_{x\to0}\frac{g'(x)+\mathrm{e}^{-x}}{x}=-\lim_{x\to0}\frac{g(x)-\mathrm{e}^{-x}}{x^2}=g''(0)-1-\frac{1}{2}(g''(0)-1)=\frac{1}{2}(g''(0)-1)=f'(0),
+                  \lim_{x\to 0}f'(x)= {} & \lim_{x\to0}\frac{x(g'(x)+\mathrm{e}^{-x})}{x^2}=\lim_{x\to0}\left(\frac{g'(x)+\mathrm{e}^{-x}}{x}-\frac{g(x)-\mathrm{e}^{-x}}{x^2}\right)            \\
+                  = {} & \lim_{x\to0}\frac{g'(x)+\mathrm{e}^{-x}}{x}=-\lim_{x\to0}\frac{g(x)-\mathrm{e}^{-x}}{x^2}=g''(0)-1-\frac{1}{2}(g''(0)-1)=\frac{1}{2}(g''(0)-1)=f'(0),
               \end{aligned}
           \]
 

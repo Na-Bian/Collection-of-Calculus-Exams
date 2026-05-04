@@ -39,7 +39,7 @@
   },
   "latex-workshop.latex.outDir": "%DIR%/.build",
   "latex-workshop.formatting.latex": "latexindent",
-  "latex-workshop.formatting.latexindent.path": "${workspaceFolder}/.vscode/latexindent-local.sh",
+  "latex-workshop.formatting.latexindent.path": "/Users/nabian/Documents/Collection-of-Calculus-Exams/.vscode/latexindent-local.sh",
   "latex-workshop.formatting.latexindent.args": [
     "-c",
     "%DIR%",

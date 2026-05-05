@@ -16,9 +16,9 @@
           \vspace{11em}
 
     \item 求极限$l=\lim_{x\to0}\frac{\sqrt{1-x^2}-\cos 3x}{\mathrm{e}^{x}-1-x}$.
-          \vspace{8em}
+          \vspace{9em}
 
-    \item 设函数$f(x)=\frac{\sqrt{1+\sin x+\sin^{2}x}-(\alpha+\beta\sin x)}{\sin^{2}x}$，且点$x
+    \item 设函数$f(x)=\frac{\sqrt{1+\sin x+\sin^{2}x}-(\alpha+\beta\sin x)}{\sin^{2}x}$，$x
               =0$是$f(x)$的可去间断点，试求常数$\alpha,\beta$的值.
           \vspace{9em}
 
@@ -89,14 +89,13 @@
           \[
               \frac{n}{n+\sqrt[3]{n}}\leq x_{n}\leq \frac{n}{n+1}.
           \]
-
           且$\lim_{n\to\infty}\frac{n}{n+\sqrt[3]{n}}=\lim_{n\to\infty}\frac{n}{n+1}=
               1$，由夹逼定理得$\lim_{n\to\infty}x_{n}=1$.
 
     \item \textbf{Solution}.
           \[
               \begin{aligned}
-                  l=- & \lim_{x\to 0}\mathrm{e}^{x}\frac{\mathrm{e}^{x\cos x-x}-1}{x^3}=-\lim_{x\to0}\frac{x\cos x-x}{x^3} \\
+                  l=-  & \lim_{x\to 0}\mathrm{e}^{x}\frac{\mathrm{e}^{x\cos x-x}-1}{x^3}=-\lim_{x\to0}\frac{x\cos x-x}{x^3} \\
                   = {} & \lim_{x\to0}\frac{1-\cos x}{x^2}=\lim_{x\to0}\frac{\frac{1}{2}x^2}{x^2}=\frac{1}{2}.
               \end{aligned}
           \]
@@ -105,20 +104,19 @@
           \[
               \begin{aligned}
                   u=\left(\frac{2+\cos x}{3}\right)^{x^2}-1= {} & \exp\left({x^2\ln\frac{2+\cos x}{3}}\right)-1       \\
-                  \sim                                       & x^{2}\ln\frac{2+\cos x}{3}                          \\
-                  \sim                                       & x^{2}\ln\left(1-\frac{x^2}{6}\right)                \\
-                  \sim                                       & x^{2}\left(-\frac{x^2}{6}\right)=-\frac{1}{6}x^{4}.
+                  \sim  {}                                      & x^{2}\ln\frac{2+\cos x}{3}                          \\
+                  \sim  {}                                      & x^{2}\ln\left(1-\frac{x^2}{6}\right)                \\
+                  \sim  {}                                      & x^{2}\left(-\frac{x^2}{6}\right)=-\frac{1}{6}x^{4}.
               \end{aligned}
           \]
-
           所以$u$的主部为$-\frac{1}{6}x^{4}$，阶数为4.
 
     \item \textbf{Solution}.
           \[
               \begin{aligned}
                   l= {} & \lim_{x\to0}\frac{(\sqrt{1-x^2}-1)+(1-\cos 3x)}{1+x+\frac{1}{2}x^2+o(x^2)-1-x}  \\
-                  = {} & \lim_{x\to0}\frac{-\frac{1}{2}x^2+\frac{9}{2}x^2+o(x^2)}{\frac{1}{2}x^2+o(x^2)} \\
-                  = {} & 8.
+                  = {}  & \lim_{x\to0}\frac{-\frac{1}{2}x^2+\frac{9}{2}x^2+o(x^2)}{\frac{1}{2}x^2+o(x^2)} \\
+                  = {}  & 8.
               \end{aligned}
           \]
 
@@ -126,12 +124,11 @@
           \[
               \begin{aligned}
                   \lim_{x\to0}f(x)= {} & \lim_{x\to0}\frac{\sqrt{1+\sin x+\sin^2 x}-(\alpha+\beta\sin x)}{\sin^2 x}                                                                  \\
-                  = {} & \lim_{x\to0}\frac{1+\frac{1}{2}\sin x+\frac{1}{2}\sin^2 x-\frac{1}{8}(\sin x+\sin^2 x)^2+o(\sin x+\sin^2 x)^2-\alpha-\beta\sin x}{\sin^2 x} \\
-                  = {} & \lim_{x\to0}\frac{1+\frac{1}{2}\sin x+\frac{1}{2}\sin^2 x-\frac{1}{8}\sin^2 x+o(\sin^2 x)-\alpha-\beta\sin x}{\sin^2 x}                     \\
-                  = {} & \lim_{x\to0}\frac{(1-\alpha)+(\frac{1}{2}-\beta)\sin x+\frac{3}{8}\sin^2 x+o(\sin^2 x)}{\sin^2 x}.
+                  = {}                 & \lim_{x\to0}\frac{1+\frac{1}{2}\sin x+\frac{1}{2}\sin^2 x-\frac{1}{8}(\sin x+\sin^2 x)^2+o(\sin x+\sin^2 x)^2-\alpha-\beta\sin x}{\sin^2 x} \\
+                  = {}                 & \lim_{x\to0}\frac{1+\frac{1}{2}\sin x+\frac{1}{2}\sin^2 x-\frac{1}{8}\sin^2 x+o(\sin^2 x)-\alpha-\beta\sin x}{\sin^2 x}                     \\
+                  = {}                 & \lim_{x\to0}\frac{(1-\alpha)+(\frac{1}{2}-\beta)\sin x+\frac{3}{8}\sin^2 x+o(\sin^2 x)}{\sin^2 x}.
               \end{aligned}
           \]
-
           因为点$x=0$是$f(x)$的可去间断点，故$\lim_{x\to0}f(x)$存在，所以$1-\alpha=0$，$\frac{1}{2}
               -\beta=0$，解得$\alpha=1,\beta=\frac{1}{2}$.
 
@@ -157,19 +154,17 @@
           \[
               \begin{aligned}
                   f'(x)= {} & f(x)\cdot\left(\frac{\frac{2x}{1+x^2}\sin x-\ln(1+x^2)\cos x}{\sin^2 x}\right)                            \\
-                  = {} & (1+x^{2})^{\frac{1}{\sin x}}\cdot\left(\frac{\frac{2x}{1+x^2}\sin x-\ln(1+x^2)\cos x}{\sin^2 x}\right)    \\
-                  = {} & (1+x^{2})^{\frac{1}{\sin x}}\cdot\left(\frac{2x}{(1+x^2)\sin x}-\frac{\ln(1+x^2)\cos x}{\sin^2 x}\right).
+                  = {}      & (1+x^{2})^{\frac{1}{\sin x}}\cdot\left(\frac{\frac{2x}{1+x^2}\sin x-\ln(1+x^2)\cos x}{\sin^2 x}\right)    \\
+                  = {}      & (1+x^{2})^{\frac{1}{\sin x}}\cdot\left(\frac{2x}{(1+x^2)\sin x}-\frac{\ln(1+x^2)\cos x}{\sin^2 x}\right).
               \end{aligned}
           \]
-
           当$x=0$时，
           \[
               \begin{aligned}
                   f'(0)= {} & \lim_{x\to0}\frac{(1+x^2)^{\frac{1}{\sin x}}-1}{x}=\lim_{x\to0}\frac{\mathrm{e}^{\frac{\ln(1+x^2)}{\sin x}}-1}{x} \\
-                  = {} & \lim_{x\to 0}\frac{\ln(1+x^2)}{x\sin x}=1.
+                  = {}      & \lim_{x\to 0}\frac{\ln(1+x^2)}{x\sin x}=1.
               \end{aligned}
           \]
-
           综上所述，$f'(x)=
               \begin{cases}
                   (1+x^{2})^{\frac{1}{\sin x}}\cdot\left(\frac{2x}{(1+x^2)\sin x}-\frac{\ln(1+x^2)\cos x}{\sin^2 x}\right), & x\neq0, \\
@@ -181,7 +176,6 @@
               -\sin(xy)(y\,\mathrm{d}x+x\,\mathrm{d}y)+\frac{1}{y}\,\mathrm{d}y-\mathrm{d}x=0
               .
           \]
-
           当$x=0$时，$y=1$，代入上式得$\left.\mathrm{d}y\right|_{x=0}=\mathrm{d}x$.
 
     \item \textbf{Solution}. 利用$\ln(1+x)=\sum_{n=1}^{\infty}(-1)^{n-1}\frac{x^{n}}{n}$，得
@@ -189,7 +183,6 @@
               f(x)=x^{3}-\frac{1}{2}x^{4}+\frac{1}{3}x^{5}-\frac{1}{4}x^{6}+\cdots=\sum
               _{n=1}^{\infty}(-1)^{n-1}\frac{x^{n+2}}{n}.
           \]
-
           由Taylor定理，将上式与$f(x)=\sum_{n=0}^{\infty}\frac{f^{(n)}(0)}{n!}x^{n}$对照，得$f
                   ^{(6)}(0)=-\frac{1}{4}\cdot 6!=-180.$
 \end{enumerate}
@@ -203,11 +196,10 @@
           \[
               \begin{aligned}
                   f(x)= {} & \lim_{n\to\infty}\frac{x^2\mathrm{e}^{n(x-1)}+ax+b}{\mathrm{e}^{n(x-1)}+1}                    \\
-                  = {} & \lim_{n\to\infty}\frac{x^2+\frac{ax+b}{\mathrm{e}^{n(x-1)}}}{1+\frac{1}{\mathrm{e}^{n(x-1)}}} \\
-                  = {} & x^{2}.
+                  = {}     & \lim_{n\to\infty}\frac{x^2+\frac{ax+b}{\mathrm{e}^{n(x-1)}}}{1+\frac{1}{\mathrm{e}^{n(x-1)}}} \\
+                  = {}     & x^{2}.
               \end{aligned}
           \]
-
           当$x=1$时，$\mathrm{e}^{n(x-1)}=1$，所以$f(1)=\left.\lim_{n\to\infty}\frac{x^{2}+ax+b}{2}
               \right|_{x=1}=\frac{1+a+b}{2}$.
 
@@ -239,7 +231,6 @@
               \left.\frac{\mathrm{d}y}{\mathrm{d}x}\right|_{x=\frac{\pi}{4}}=\frac{y'_{t}(1)}{x'_{t}(1)}
               =-4.
           \]
-
           所以切线方程为
           \[
               y-1=-4\left(x-\frac{\pi}{4}\right)\quad\text{或}\quad 4x+y-1-\pi=0.
@@ -249,13 +240,12 @@
 
           \[
               \begin{aligned}
-                  x_{n}-x_{n-1}= {} & \frac{1}{n^2},     \\
+                  x_{n}-x_{n-1}= {}   & \frac{1}{n^2},     \\
                   x_{n-1}-x_{n-2}= {} & \frac{1}{(n-1)^2}, \\
-                  \cdots           &                    \\
-                  x_{2}- x_{1}= {} & \frac{1}{2^2}.
+                  \cdots              &                    \\
+                  x_{2}- x_{1}= {}    & \frac{1}{2^2}.
               \end{aligned}
           \]
-
           将上述各式相加得$x_{n}=x_{1}+\frac{1}{2^{2}}+\frac{1}{3^{2}}+\cdots+\frac{1}{n^{2}}
               =\sum_{k=1}^{n}\frac{1}{k^{2}}$.
 
@@ -275,17 +265,19 @@
 
     \item \textbf{Solution}. 当$x=0$时，由方程得$y=f(0)=1$.
 
-          对方程$x^{3}+y^{3}+xy-1=0$两边求微分得$3x^{2}\,\mathrm{d}x+3y^{2}\,\mathrm{d}y+
-              y\,\mathrm{d}x+x\,\mathrm{d}y=0$，所以当$x=0,y=1$时，$f'(0)=\left.\frac{\mathrm{d}y}{\mathrm{d}x}
+          对方程$x^{3}+y^{3}+xy-1=0$两边求微分得
+          \[
+              3x^{2}\,\mathrm{d}x+3y^{2}\,\mathrm{d}y+y\,\mathrm{d}x+x\,\mathrm{d}y=0,
+          \]
+          所以当$x=0,y=1$时，$f'(0)=\left.\frac{\mathrm{d}y}{\mathrm{d}x}
               \right|_{x=0}=-\frac{1}{3}$.
 
           因此
           \[
               \begin{aligned}
                   \lim_{x\to 0}\frac{f(\cos x-1)-1}{\ln(1+x^2)}= {} & \lim_{x\to0}\frac{f(\cos x-1)-f(0)}{\cos x -1 -0}\cdot\frac{\cos x -1}{\ln(1+x^2)} \\
-                  = {} & f'(0)\cdot\lim_{x\to0}\frac{\cos x -1}{\ln(1+x^2)}                                 \\
-                  = {} & -\frac{1}{3}\cdot\lim_{x\to0}\frac{-\frac{1}{2}x^2}{x^2}                           \\
-                  = {} & \frac{1}{6}.
+                  = {}                                              & f'(0)\cdot\lim_{x\to0}\frac{\cos x -1}{\ln(1+x^2)}                                 \\
+                  = {}                                              & -\frac{1}{3}\lim_{x\to0}\frac{-\frac{1}{2}x^2}{x^2} = \frac{1}{6}.
               \end{aligned}
           \]
 \end{enumerate}

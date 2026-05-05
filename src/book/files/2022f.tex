@@ -54,7 +54,7 @@
     \item $\lim_{n\to\infty}\ln\sqrt[n]{\left(1+\frac{1^{2}}{n^{2}}\right)\left(1+\frac{2^{2}}{n^{2}}\right)\cdots\left(1+\frac{n^{2}}{n^{2}}\right)}
               =$（\qquad）.
 
-          \begin{tasks}[label=\textbf{\Alph*.}, label-width=1.5em, column-sep=1em](1)
+          \begin{tasks}[label=\textbf{\Alph*.}, label-width=1.5em, column-sep=1em](2)
               \task $\int_{1}^{2}\ln(1+x^{2})\,\mathrm{d}x$
               \task $2\int_{1}^{2}\ln x\,\mathrm{d}x$
               \task $\int_{0}^{1}\ln(1+x^{2})\,\mathrm{d}x$
@@ -67,19 +67,15 @@
     \setcounter{enumi}{6}
     \item 当$x\to0$时，无穷小量$\left(1+x\right)^{x^2}-1$的阶数是$=\underline
               {\hspace{3cm}}$.
-          \vspace{0.5em}
 
     \item 曲线$\cot\left(x+y+\frac{\pi}{4}\right)=\mathrm{e}^{y}$在点$(0,0)$处的切线方程为$\underline
               {\hspace{3cm}}$.
-          \vspace{0.5em}
 
     \item 若$\int_{0}^{x}f(t)\,\mathrm{d}t=x\mathrm{e}^{-x}$，则$\int_{1}^{+\infty}
               \frac{f(\ln x)}{x}\,\mathrm{d}x=\underline{\hspace{3cm}}$.
-          \vspace{0.5em}
 
     \item 曲线$y=\int_{0}^{x}\tan t\,\mathrm{d}t\left(0\leq x\leq \frac{\pi}{4}
               \right)$的弧长$s=\underline{\hspace{3cm}}$.
-          \vspace{0.5em}
 \end{enumerate}
 
 \section{计算题(每小题 7 分，共 42 分)}
@@ -91,13 +87,13 @@
     \item 设$f(x)$在$x=a$的某邻域内可导，且$f(a)=f'(a)=1$，求$l=\lim_{x\to a}
               \left(\frac{1}{x-a}-\frac{1}{\displaystyle\int_{a}^{x}f(t)\,\mathrm{d}t}\right
               )$.
-          \vspace{11em}
+          \vspace{12em}
 
     \item 求$I=\int\frac{1}{x(x^{n}+1)}\,\mathrm{d}x$，其中$n$为正整数.
-          \vspace{11em}
+          \vspace{12em}
 
     \item 求微分方程$\frac{\mathrm{d}y}{\mathrm{d}x}=\frac{y}{2x+y^{4}}$的通解.
-          \vspace{11em}
+          \vspace{12em}
 
     \item 设$f(x)=\int_{x}^{1}\sin t^{2}\,\mathrm{d}t$，计算$I=\int_{0}^{1}f(x
               )\,\mathrm{d}x$.
@@ -113,11 +109,11 @@
     \setcounter{enumi}{16}
     \item 已知函数$f(x)=\int_{1}^{x}\sqrt{1+t^{2}}\,\mathrm{d}t+\int_{x^2}^{1}
               \sqrt{1+t}\,\mathrm{d}t$，讨论方程$f(x)=0$的实根个数.
-          \vspace{12em}
+          \vspace{9em}
 
     \item 设$f(x)$满足$\int_{0}^{x}f(t-x)\,\mathrm{d}t=-\frac{x^{3}}{3}-x^{2}$，求曲线$y
               =f(x)$与$x$轴所围成的图形绕$y$轴旋转一周所得的旋转体的体积.
-          \vspace{13em}
+          \vspace{9em}
 \end{enumerate}
 
 \section{证明题(每小题 5 分，共 10 分)}
@@ -128,14 +124,14 @@
               \lim_{n\to\infty}\int_{0}^{1}g(x)\sqrt[n]{f(x)}\,\mathrm{d}x=\int_{0}^{1}g(
               x)\,\mathrm{d}x.
           \]
-          \vspace{14em}
+          \vspace{9em}
 
     \item 设$f(x)$在$[0,2]$上二阶可导，且$f'(0)=f'(2)=0$. 试证：存在$\xi\in(
               0,2)$，使
           \[
               |f''(\xi)|\geq|f(2)-f(0)|.
           \]
-          \vspace{14em}
+          \vspace{9em}
 \end{enumerate}
 
 \chapter{2022-2023学年微积分（一）（上）期末考试参考答案}
@@ -176,17 +172,19 @@
 
     \item \textbf{Solution}. D.
 
-          对于A，B，C选项，考虑$x_{n}=
+          对于A，B，C选项，考虑
+          \[
+              x_{n}=
               \begin{cases}
                   0, & n=2k-1, \\
                   n, & n=2k
-              \end{cases}$，$y_{n}=
+              \end{cases},\quad y_{n}=
               \begin{cases}
                   n, & n=2k-1, \\
                   0, & n=2k
-              \end{cases}$，其中$k$是正整数.
-
-          则$x_{n} y_{n}\equiv0$，但$x_{n}$，$y_{n}$均无界，且$\lim_{n\to\infty}x_{n}$，$\lim
+              \end{cases},
+          \]
+          其中$k$是正整数. 则$x_{n} y_{n}\equiv0$，但$x_{n}$，$y_{n}$均无界，且$\lim_{n\to\infty}x_{n}$，$\lim
               _{n\to\infty}y_{n}$均不存在.
 
     \item \textbf{Solution}. C.
@@ -219,7 +217,7 @@
           \[
               \begin{aligned}
                   \lim_{n\to\infty}\ln\sqrt[n]{\left(1+\frac{1^2}{n^2}\right)\left(1+\frac{2^2}{n^2}\right)\cdots\left(1+\frac{n^2}{n^2}\right)}= {} & \lim_{n\to\infty}\frac{1}{n}\sum_{k=1}^{n}\ln\left(1+\frac{k^2}{n^2}\right) \\
-                  = {} & \int_{0}^{1}\ln(1+x^{2})\,\mathrm{d}x.
+                  = {}                                                                                                                               & \int_{0}^{1}\ln(1+x^{2})\,\mathrm{d}x.
               \end{aligned}
           \]
 \end{enumerate}
@@ -229,9 +227,11 @@
     \setcounter{enumi}{6}
     \item \textbf{Solution}. $3$.
 
-          当$x\to0$时，$\left(1+x\right)^{x^2}-1 = \mathrm{e}^{x^2\ln(1+x)}-1 = \mathrm{e}
-              ^{x^2\left(x+o(x)\right)}-1= \mathrm{e}^{x^3+o(x^3)}-1 = x^{3}+o(x^{3})$.
-
+          当$x\to0$时，
+          \[
+              \left(1+x\right)^{x^2}-1 = \mathrm{e}^{x^2\ln(1+x)}-1 = \mathrm{e}
+              ^{x^2\left(x+o(x)\right)}-1= \mathrm{e}^{x^3+o(x^3)}-1 = x^{3}+o(x^{3}).
+          \]
           所以无穷小量$\left(1+x\right)^{x^2}-1$的阶数是$3$.
 
     \item \textbf{Solution}. $2x+3y=0$.
@@ -241,7 +241,6 @@
               -\csc^{2}\left(x+y+\frac{\pi}{4}\right)\cdot\left(1+y'\right)=\mathrm{e}^{y}
               y'.
           \]
-
           将$x=0$，$y=0$代入上式解得$y'(0)=-\frac{2}{3}$，所以切线方程为$2x+3y=0$.
 
     \item \textbf{Solution}. $0$.
@@ -253,8 +252,8 @@
           \[
               \begin{aligned}
                   \int_{1}^{+\infty}\frac{f(\ln x)}{x}\,\mathrm{d}x = {} & \int_{1}^{+\infty}\frac{1-\ln x}{x^2}\,\mathrm{d}x                                                                                                                    \\
-                  = {} & \int_{1}^{+\infty}\left(\ln x-1\right)\,\mathrm{d}\left(\frac{1}{x}\right)= \left.\frac{\ln x-1}{x}\right|_{1}^{+\infty}-\int_{1}^{+\infty}\frac{1}{x^2}\,\mathrm{d}x \\
-                  = {} & 1+\left.\frac{1}{x}\right|_{1}^{+\infty}= 0.
+                  = {}                                                   & \int_{1}^{+\infty}\left(\ln x-1\right)\,\mathrm{d}\left(\frac{1}{x}\right)= \left.\frac{\ln x-1}{x}\right|_{1}^{+\infty}-\int_{1}^{+\infty}\frac{1}{x^2}\,\mathrm{d}x \\
+                  = {}                                                   & 1+\left.\frac{1}{x}\right|_{1}^{+\infty}= 0.
               \end{aligned}
           \]
 
@@ -263,20 +262,24 @@
           $y'=\tan x$，所以$\mathrm{d}s=\sqrt{1+y'^{2}}\,\mathrm{d}x=\sqrt{1+\tan^{2} x}
               \mathrm{d}x=\sec x\,\mathrm{d}x$，
 
-          故$s=\int_{0}^{\frac{\pi}{4}}\sec x\,\mathrm{d}x=\ln\left|\sec x+\tan x\right
-              |\bigg|_{0}^{\frac{\pi}{4}}=\ln\left(1+\sqrt{2}\right)$.
+          故
+          \[
+              s=\int_{0}^{\frac{\pi}{4}}\sec x\,\mathrm{d}x=\ln\left|\sec x+\tan x\right
+              |\bigg|_{0}^{\frac{\pi}{4}}=\ln\left(1+\sqrt{2}\right).
+          \]
 \end{enumerate}
 \section{计算题(每小题 7 分，共 42 分)}
 \begin{enumerate}
     \setcounter{enumi}{10}
-    \item \textbf{Solution}. 曲线$C$没有竖直渐近线和水平渐近线.
-
-          $\lim_{x\to+\infty}\frac{y}{x}= \lim_{x\to+\infty}\arctan x = \frac{\pi}{2}$，
-
-          $\lim_{x\to+\infty}\left(y-\frac{\pi}{2}x\right)=\lim_{x\to+\infty}x\left(\arctan
+    \item \textbf{Solution}. 曲线$C$没有竖直渐近线和水平渐近线. 计算
+          \[
+              \lim_{x\to+\infty}\frac{y}{x}= \lim_{x\to+\infty}\arctan x = \frac{\pi}{2},
+          \]
+          \[
+              \lim_{x\to+\infty}\left(y-\frac{\pi}{2}x\right)=\lim_{x\to+\infty}x\left(\arctan
               x-\frac{\pi}{2}\right)=\lim_{x\to+\infty}\frac{\arctan x-\frac{\pi}{2}}{\frac{1}{x}}
-              =-\lim_{x\to+\infty}\frac{x^{2}}{1+x^{2}}=-1$.
-
+              =-\lim_{x\to+\infty}\frac{x^{2}}{1+x^{2}}=-1.
+          \]
           所以$y=\frac{\pi}{2}x-1$是曲线$C$的斜渐近线.
 
     \item \textbf{Solution}. 由积分中值定理，存在$\xi$介于$a$和$x$之间，使得$\int
@@ -286,17 +289,17 @@
           \[
               \begin{aligned}
                   l = {} & \lim_{x\to a}\frac{\displaystyle\int_{a}^{x}f(t)\,\mathrm{d}t-(x-a)}{(x-a)\displaystyle\int_{a}^{x}f(t)\,\mathrm{d}t}    \\
-                  = {} & \lim_{x\to a}\frac{\displaystyle\int_{a}^{x}f(t)\,\mathrm{d}t-(x-a)}{(x-a)^2 f(\xi)}= \lim_{x\to a}\frac{f(x)-1}{2(x-a)} \\
-                  = {} & \frac{1}{2}\lim_{x\to a}\frac{f(x)-f(a)}{x-a}=\frac{1}{2}f'(a)=\frac{1}{2}.
+                  = {}   & \lim_{x\to a}\frac{\displaystyle\int_{a}^{x}f(t)\,\mathrm{d}t-(x-a)}{(x-a)^2 f(\xi)}= \lim_{x\to a}\frac{f(x)-1}{2(x-a)} \\
+                  = {}   & \frac{1}{2}\lim_{x\to a}\frac{f(x)-f(a)}{x-a}=\frac{1}{2}f'(a)=\frac{1}{2}.
               \end{aligned}
           \]
 
     \item \textbf{Solution}.
           \[
               \begin{aligned}
-                  I = \int\frac{1}{x(x^n+1)}\,\mathrm{d}x = {} & \int\frac{x^{-n-1}}{x^{-n}+1}\,\mathrm{d}x                          \\
-                  = {} & -\frac{1}{n}\int\frac{1}{x^{-n}+1}\,\mathrm{d}\left(x^{-n}+1\right) \\
-                  = {} & -\frac{1}{n}\ln\left|x^{-n}+1\right|+C.
+                  I = {} & \int\frac{1}{x(x^n+1)}\,\mathrm{d}x = \int\frac{x^{-n-1}}{x^{-n}+1}\,\mathrm{d}x \\
+                  = {}   & -\frac{1}{n}\int\frac{1}{x^{-n}+1}\,\mathrm{d}\left(x^{-n}+1\right)              \\
+                  = {}   & -\frac{1}{n}\ln\left|x^{-n}+1\right|+C.
               \end{aligned}
           \]
 
@@ -307,19 +310,18 @@
           \[
               \begin{aligned}
                   x = {} & \mathrm{e}^{-\int\left(-\frac{2}{y}\right)\,\mathrm{d}y}\left(C+\int y^{3}\mathrm{e}^{\int\left(-\frac{2}{y}\right)\,\mathrm{d}y}\,\mathrm{d}y\right) \\
-                  = {} & y^{2}\left(C+\int y\,\mathrm{d}y\right) = y^{2}\left(C+\frac{1}{2}y^{2}\right) = Cy^{2}+\frac{1}{2}y^{4}.
+                  = {}   & y^{2}\left(C+\int y\,\mathrm{d}y\right) = y^{2}\left(C+\frac{1}{2}y^{2}\right) = Cy^{2}+\frac{1}{2}y^{4}.
               \end{aligned}
           \]
-
-          其中C为任意常数.
+          其中$C$为任意常数.
 
     \item \textbf{Solution}. 由题可知$f(1)=0$，$f'(x)=-\sin x^{2}$，所以
           \[
               \begin{aligned}
                   I = \int_{0}^{1}f(x)\,\mathrm{d}x = {} & xf(x)\bigg|_{0}^{1}-\int_{0}^{1}x f'(x)\,\mathrm{d}x                                      \\
-                  = {} & \int_{0}^{1}x\sin x^{2}\,\mathrm{d}x = \frac{1}{2}\int_{0}^{1}\sin x^{2}\,\mathrm{d}x^{2} \\
-                  = {} & -\frac{1}{2}\cos x^{2}\bigg|_{0}^{1}                                                      \\
-                  = {} & \frac{1-\cos 1}{2}.
+                  = {}                                   & \int_{0}^{1}x\sin x^{2}\,\mathrm{d}x = \frac{1}{2}\int_{0}^{1}\sin x^{2}\,\mathrm{d}x^{2} \\
+                  = {}                                   & -\frac{1}{2}\cos x^{2}\bigg|_{0}^{1}                                                      \\
+                  = {}                                   & \frac{1-\cos 1}{2}.
               \end{aligned}
           \]
 
@@ -330,11 +332,10 @@
           \[
               \begin{aligned}
                   \int \mathrm{e}^{-t}\sin t\,\mathrm{d}t = {} & -\int \mathrm{e}^{-t}\,\mathrm{d}\cos t = -\mathrm{e}^{-t}\cos t - \int \mathrm{e}^{-t}\cos t\,\mathrm{d}t \\
-                  = {} & -\mathrm{e}^{-t}\cos t - \int \mathrm{e}^{-t}\,\mathrm{d}\sin t                                            \\
-                  = {} & -\mathrm{e}^{-t}\cos t - \mathrm{e}^{-t}\sin t - \int \mathrm{e}^{-t}\sin t\,\mathrm{d}t
+                  = {}                                         & -\mathrm{e}^{-t}\cos t - \int \mathrm{e}^{-t}\,\mathrm{d}\sin t                                            \\
+                  = {}                                         & -\mathrm{e}^{-t}\cos t - \mathrm{e}^{-t}\sin t - \int \mathrm{e}^{-t}\sin t\,\mathrm{d}t
               \end{aligned}
           \]
-
           所以$\int \mathrm{e}^{-t}\sin t\,\mathrm{d}t=-\frac{1}{2}\mathrm{e}^{-t}(\sin
               t+\cos t)+C$，
 
@@ -350,21 +351,27 @@
           所以$f(x)$在$\left(-\infty,\frac{1}{2}\right)$上单调增加，在$\left(\frac{1}{2}
               ,+\infty\right)$上单调减少.
 
-          因为$f(0)=\int_{1}^{0}\sqrt{1+t^{2}}\,\mathrm{d}t+\int_{0}^{1}\sqrt{1+t}\,\mathrm{d}
-              t=\int_{0}^{1}\left(\sqrt{1+t}-\sqrt{1+t^{2}}\right)\,\mathrm{d}t>0$，
-
-          $f(1)=0$，$f(-1)=\int_{1}^{-1}\sqrt{1+t^{2}}\,\mathrm{d}t<0$，故方程$f(x)=0$有两个实根.
+          因为
+          \[
+              f(0)=\int_{1}^{0}\sqrt{1+t^{2}}\,\mathrm{d}t+\int_{0}^{1}\sqrt{1+t}\,\mathrm{d}
+              t=\int_{0}^{1}\left(\sqrt{1+t}-\sqrt{1+t^{2}}\right)\,\mathrm{d}t>0,
+          \]
+          \[
+              f(1)=0,\quad f(-1)=\int_{1}^{-1}\sqrt{1+t^{2}}\,\mathrm{d}t<0,
+          \]
+          故方程$f(x)=0$有两个实根.
 
     \item \textbf{Solution}. 令$t-x=u$，则$\int_{-x}^{0}f(u)\,\mathrm{d}u=-\frac{x^{3}}{3}
               -x^{2}$.
 
           方程两边求导得$f(-x)=-x^{2}-2x$，所以$f(x)=-x^{2}+2x$.
 
-          所以旋转体的体积$V=$
+          因而旋转体的体积
           \[
               \begin{aligned}
-                  \int_{0}^{2}2\pi xf(x)\,\mathrm{d}x = {} & 2\pi\int_{0}^{2}x(-x^{2}+2x)\,\mathrm{d}x = 2\pi\int_{0}^{2}(-x^{3}+2x^{2})\,\mathrm{d}x \\
-                  = {} & 2\pi\left[-\frac{x^4}{4}+\frac{2x^3}{3}\right]_{0}^{2}= \frac{8}{3}\pi.
+                  V= {} & \int_{0}^{2}2\pi xf(x)\,\mathrm{d}x = 2\pi\int_{0}^{2}x(-x^{2}+2x)\,\mathrm{d}x \\
+                  = {}  & 2\pi\int_{0}^{2}(-x^{3}+2x^{2})\,\mathrm{d}x                                    \\
+                  = {}  & 2\pi\left[-\frac{x^4}{4}+\frac{2x^3}{3}\right]_{0}^{2}= \frac{8}{3}\pi.
               \end{aligned}
           \]
 \end{enumerate}
@@ -377,15 +384,17 @@
               m\leq \frac{\displaystyle\int_{0}^{1}g(x)\sqrt[n]{f(x)}\,\mathrm{d}x}{\displaystyle\int_{0}^{1}g(x)\,\mathrm{d}x}
               \leq M.
           \]
-
           由介值定理，存在$\xi\in[0,1]$使得$\sqrt[n]{f(\xi)}=\frac{\displaystyle\int_{0}^{1}g(x)\sqrt[n]{f(x)}\,\mathrm{d}x}{\displaystyle\int_{0}^{1}g(x)\,\mathrm{d}x}$.
 
           上式两边取极限，由于$\lim_{n\to\infty}\sqrt[n]{f(\xi)}=1$，所以$\lim_{n\to\infty}
               \frac{\displaystyle\int_{0}^{1}g(x)\sqrt[n]{f(x)}\,\mathrm{d}x}{\displaystyle\int_{0}^{1}g(x)\,\mathrm{d}x}
               =1$，
 
-          即$\lim_{n\to\infty}\int_{0}^{1}g(x)\sqrt[n]{f(x)}\,\mathrm{d}x=\int_{0}^{1}g
-              (x)\,\mathrm{d}x$.
+          即
+          \[
+              \lim_{n\to\infty}\int_{0}^{1}g(x)\sqrt[n]{f(x)}\,\mathrm{d}x=\int_{0}^{1}g
+              (x)\,\mathrm{d}x.
+          \]
 
     \item \textbf{Proof}. 由Taylor公式，将$f(x)$分别在$x=0$和$x=2$处展开得
           \[
@@ -394,21 +403,20 @@
                   f(x)=f(2)+f'(2)(x-2)+\frac{1}{2}f''(\zeta)(x-2)^2=f(2)+\frac{1}{2}f''(\zeta)(x-2)^2,
               \end{gathered}
           \]
-
           两式相减得
           \[
               f(2)-f(0)=\frac{1}{2}\left[f''(\zeta)(x-2)^{2}-f''(\eta)x^{2}\right].
           \]
-
           所以
           \[
               |f(2)-f(0)|\leq\frac{1}{2}\left[\left|f''(\zeta)\right|(x-2)^{2}+\left|f''(\eta)\right|x^{2}\right].
           \]
-
-          取$|f''(\xi)|=\max\{|f''(\eta)|,|f''(\zeta)|\}$，
-
-          则$|f(2)-f(0)|\leq\frac{1}{2}|f''(\xi)|\left[(x-2)^{2}+x^{2}\right]\leq \frac{1}{2}
-              |f''(\xi)|\cdot 2=|f''(\xi)|$，即$|f''(\xi)|\geq|f(2)-f(0)|$.
+          取$|f''(\xi)|=\max\{|f''(\eta)|,|f''(\zeta)|\}$，则
+          \[
+              |f(2)-f(0)|\leq\frac{1}{2}|f''(\xi)|\left[(x-2)^{2}+x^{2}\right]\leq \frac{1}{2}
+              |f''(\xi)|\cdot 2=|f''(\xi)|,
+          \]
+          即$|f''(\xi)|\geq|f(2)-f(0)|$.
 \end{enumerate}
 \end{document}
 

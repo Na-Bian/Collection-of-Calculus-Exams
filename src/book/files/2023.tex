@@ -96,25 +96,27 @@
           \[
               \begin{aligned}
                   l= {} & \lim_{n\infty}(-1)^{n} n\sin\left((\sqrt{n^2+1}-n)\pi+n\pi\right)                                                    \\
-                  = {} & \lim_{n\to\infty}n\sin\left((\sqrt{n^2+1}-n)\pi\right)=\lim_{n\to\infty}n\sin\left(\frac{\pi}{\sqrt{n^2+1}+n}\right) \\
-                  = {} & \lim_{n\to\infty}\frac{n}{\sqrt{n^2+1}+n}\pi=\frac{\pi}{2}.
+                  = {}  & \lim_{n\to\infty}n\sin\left((\sqrt{n^2+1}-n)\pi\right)=\lim_{n\to\infty}n\sin\left(\frac{\pi}{\sqrt{n^2+1}+n}\right) \\
+                  = {}  & \lim_{n\to\infty}\frac{n}{\sqrt{n^2+1}+n}\pi=\frac{\pi}{2}.
               \end{aligned}
           \]
 
     \item \textbf{Solution}.
+
+          \textbf{法一.}
           \[
               \begin{aligned}
                   l= {} & \lim_{x\to 0}\frac{\mathrm{e}^{x}(\mathrm{e}^{\tan x -x}-1)}{x-\sin x}=\lim_{x\to0}\frac{\tan x-x}{x-\sin x} \\
-                  = {} & \lim_{x\to0}\frac{\sec ^2 x-1}{1-\cos x}=\lim_{x\to0}\frac{\tan^2 x}{\frac{1}{2}x^2}=2.
+                  = {}  & \lim_{x\to0}\frac{\sec ^2 x-1}{1-\cos x}=\lim_{x\to0}\frac{\tan^2 x}{\frac{1}{2}x^2}=2.
               \end{aligned}
           \]
 
-          或
+          \textbf{法二.}
           \[
               \begin{aligned}
                   l= {} & \lim_{x\to 0}\mathrm{e}^{\xi}\frac{\tan x -x}{x-\sin x}\qquad (\xi\,\text{介于}\,x\,\text{与}\tan x\,\text{之间}) \\
-                  = {} & \lim_{x\to 0}\frac{\tan x -x}{x-\sin x}                                                                      \\
-                  = {} & \lim_{x\to0}\frac{\sec ^2 x-1}{1-\cos x}=\lim_{x\to0}\frac{\tan^2 x}{\frac{1}{2}x^2}=2.
+                  = {}  & \lim_{x\to 0}\frac{\tan x -x}{x-\sin x}                                                                      \\
+                  = {}  & \lim_{x\to0}\frac{\sec ^2 x-1}{1-\cos x}=\lim_{x\to0}\frac{\tan^2 x}{\frac{1}{2}x^2}=2.
               \end{aligned}
           \]
 
@@ -124,37 +126,37 @@
           \[
               \begin{aligned}
                   u= {} & \frac{1}{\sqrt{1+\tan x}+\sqrt{1+\sin x}}(\tan x-\sin x)                    \\
-                  \sim & \frac{1}{2}(\tan x-\sin x)=\frac{1}{2}\tan x(1-\cos x)\sim\frac{1}{4}x^{3},
+                  \sim  & \frac{1}{2}(\tan x-\sin x)=\frac{1}{2}\tan x(1-\cos x)\sim\frac{1}{4}x^{3},
               \end{aligned}
           \]
-
           即$k=3,c=\frac{1}{4}$.
 
           \textbf{法二.}由题意得$\lim_{x\to0}\frac{u}{cx^{k}}=1$. 而
           \[
               \begin{aligned}
                   \lim_{x\to0}\frac{u}{cx^k}= {} & \frac{\tan x-\sin x}{cx^k(\sqrt{1+\tan x}+\sqrt{1+\sin x})}              \\
-                  = {} & \lim_{x\to0}\frac{\tan x(1-\cos x)}{2cx^k}                               \\
-                  = {} & \lim_{x\to0}\frac{\frac{1}{2}x^3}{2cx^k}=\lim_{x\to0}\frac{x^{3-k}}{4c},
+                  = {}                           & \lim_{x\to0}\frac{\tan x(1-\cos x)}{2cx^k}                               \\
+                  = {}                           & \lim_{x\to0}\frac{\frac{1}{2}x^3}{2cx^k}=\lim_{x\to0}\frac{x^{3-k}}{4c},
               \end{aligned}
           \]
-
           故$3-k=0,4c=1$，即$k=3,c=\frac{1}{4}$.
 
     \item \textbf{Solution}.
           \[
               \begin{aligned}
-                  l= {} & \lim_{x\to0}\mathrm{e}^{\frac{1}{x^2}\ln\left(\frac{\arcsin x}{x}\right)}=\mathrm{e}^{\lim\limits_{x\to0}\frac{1}{x^2}\ln\left(\frac{\arcsin x}{x}\right)}                                                                                                                            \\
+                  l= {} & \lim_{x\to0}\exp\left[{\frac{1}{x^2}\ln\left(\frac{\arcsin x}{x}\right)}\right]=\exp\left[{\lim\limits_{x\to0}\frac{1}{x^2}\ln\left(\frac{\arcsin x}{x}\right)}\right] \\
                   \
-                  = {} & \mathrm{e}^{\lim\limits_{x\to0}\frac{1}{x^2}\left(\frac{\arcsin x}{x}-1\right)}=\mathrm{e}^{\lim\limits_{x\to0}\frac{\arcsin x-x}{x^3}}=\mathrm{e}^{\lim\limits_{x\to0}\frac{\frac{1}{\sqrt{1-x^2}}-1}{3x^2}}=\mathrm{e}^{\lim\limits_{x\to0}\frac{1-\sqrt{1-x^2}}{3x^2\sqrt{1-x^2}}} \\
-                  = {} & \mathrm{e}^{\lim\limits_{x\to0}\frac{\frac{1}{2}x^2}{3x^2\sqrt{1-x^2}}}=\mathrm{e}^{\frac{1}{6}}.
+                  = {}  & \exp\left[{\lim\limits_{x\to0}\frac{1}{x^2}\left(\frac{\arcsin x}{x}-1\right)}\right]=\exp\left[{\lim\limits_{x\to0}\frac{\arcsin x-x}{x^3}}\right]                    \\
+                  = {}  & \exp\left[{\lim\limits_{x\to0}\frac{\frac{1}{\sqrt{1-x^2}}-1}{3x^2}}\right]=\exp\left[{\lim\limits_{x\to0}\frac{1-\sqrt{1-x^2}}{3x^2\sqrt{1-x^2}}}\right]              \\
+                  = {}  & \exp\left[{\lim\limits_{x\to0}\frac{\frac{1}{2}x^2}{3x^2\sqrt{1-x^2}}}\right]=\mathrm{e}^{\frac{1}{6}}.
               \end{aligned}
           \]
 
     \item \textbf{Solution}.
 
-          当$\sin\pi x=0$即$x=k,k=0,\pm1,\pm2,\cdots$时，$f(x)$无定义，故$x=k,k=0,\pm
-              1,\pm2\cdots$是$f(x)$的间断点.
+          当$\sin\pi x=0$即$x=k,k=0,\pm1,\pm2,\cdots$时，$f(x)$无定义，
+
+          故$x=k,k=0,\pm1,\pm2\cdots$是$f(x)$的间断点.
 
           因
           \[
@@ -163,23 +165,24 @@
                   \lim_{x\to1}f(x)= {} & \lim_{x\to1}\frac{\pi(1-x)}{\sin\pi(1-x)}\cdot\frac{x}{\pi}=\frac{1}{\pi},
               \end{aligned}
           \]
-
           所以$x=0,1$是可去间断点；
 
           当$k=-1,\pm2,\pm3,\cdots$时，$\lim_{x\to k}f(x)=\infty$，所以$x=-1,\pm2,\pm
               3,\cdots$是无穷间断点.
 
-    \item \textbf{Solution}.因$\ln y=\frac{1}{2}\left(\ln x+\ln\sin x+\frac{1}{2}
-              \ln\left(\mathrm{e}^{x}-1\right)\right)$，
+    \item \textbf{Solution}.因
+          \[
+              \ln y=\frac{1}{2}\left(\ln x+\ln\sin x+\frac{1}{2}\ln\left(\mathrm{e}^{x}-1\right)\right),
+          \]
+          所以
+          \[
+              y'=\frac{1}{2}\sqrt{x\sin x\sqrt{\mathrm{e}^{x}-1}}\left(\frac{1}{x}+\cot x+\frac{\mathrm{e}^{x}}{2(\mathrm{e}^{x}-1)}\right).
+          \]
 
-          所以$y'=\frac{1}{2}\sqrt{x\sin x\sqrt{\mathrm{e}^{x}-1}}\left(\frac{1}{x}+\cot
-              x+\frac{\mathrm{e}^{x}}{2(\mathrm{e}^{x}-1)}\right)$.
-
-    \item \textbf{Solution}.要$f(x)$在$x=0$处可导，必须$f(x)$在$x=0$处连续，即
+    \item \textbf{Solution}.要使得$f(x)$在$x=0$处可导，必须$f(x)$在$x=0$处连续，即
           \[
               \lim_{x\to0^+}f(x)=\lim_{x\to0^-}f(x)=f(0).
           \]
-
           因$f(0)=1$，$\lim_{x\to0^+}f(x)=\lim_{x\to0^+}(1+b\arctan x)=1=f(0)$，
 
           $\lim_{x\to0^-}f(x)=\lim_{x\to0^-}(a+x+\sqrt{1-x})=a+1$，所以$a+1=1$，即$a=
@@ -191,7 +194,7 @@
           $f'_{+}(0)=\lim_{x\to0}\frac{1+b\arctan x-1}{x}=\lim_{x\to0}\frac{b\arctan x}{x}
               =b$，
 
-          要$f(x)$在$x=0$处可导，必须$f'_{-}(0)=f'_{+}(0)$，所以$b=\frac{1}{2}$.
+          又必须$f'_{-}(0)=f'_{+}(0)$，所以$b=\frac{1}{2}$.
 
     \item \textbf{Solution}.
 
@@ -201,11 +204,15 @@
           \[
               y'=2\mathrm{e}^{y}y'\sin x+2\mathrm{e}^{y}\cos x-7,
           \]
-
-          即$y'=\frac{2\mathrm{e}^{y}\cos x-7}{1-2\mathrm{e}^{y}\sin x}$，
-
-          所以$\left.y'\right|_{x=0}=-5$，$\left.\mathrm{d}y\right|_{x=0}=\left.y'\right
-              |_{x=0}\,\mathrm{d}x=-5\,\mathrm{d}x$.
+          即
+          \[
+              y'=\frac{2\mathrm{e}^{y}\cos x-7}{1-2\mathrm{e}^{y}\sin x},
+          \]
+          所以
+          \[
+              \left.y'\right|_{x=0}=-5,\qquad\left.\mathrm{d}y\right|_{x=0}=\left.y'\right
+              |_{x=0}\,\mathrm{d}x=-5\,\mathrm{d}x.
+          \]
 
           \textbf{法二.} 当$x=0$时$y=0$.
 
@@ -214,10 +221,12 @@
               \mathrm{d}y=2\mathrm{e}^{y}\sin x\,\mathrm{d}y+2\mathrm{e}^{y}\cos x\,\mathrm{d}
               x-7\,\mathrm{d}x,
           \]
-
-          $\mathrm{d}y=\frac{2\mathrm{e}^{y}\cos x-7}{1-2\mathrm{e}^{y}\sin x}\,\mathrm{d}
-              x$，$\left.\mathrm{d}y\right|_{x=0}=\left.\frac{2\mathrm{e}^{y}\cos x-7}{1-2\mathrm{e}^{y}\sin
-                  x}\right|_{x=0}\,\mathrm{d}x=-5\,\mathrm{d}x$.
+          从而
+          \[
+              \mathrm{d}y=\frac{2\mathrm{e}^{y}\cos x-7}{1-2\mathrm{e}^{y}\sin x}\,\mathrm{d}
+              x,\qquad\left.\mathrm{d}y\right|_{x=0}=\left.\frac{2\mathrm{e}^{y}\cos x-7}{1-2\mathrm{e}^{y}\sin
+                  x}\right|_{x=0}\,\mathrm{d}x=-5\,\mathrm{d}x.
+          \]
 
     \item \textbf{Solution}.$y=\frac{1}{(1-2x)(x+2)}=\frac{1}{5}\cdot\frac{1}{x+2}
               -\frac{2}{5}\cdot\frac{1}{2x-1}$.
@@ -226,21 +235,18 @@
           \[
               \begin{aligned}
                   y^{(n)}(x)= {} & \frac{1}{5}\left(\frac{1}{x+2}\right)^{(n)}-\frac{2}{5}\left(\frac{1}{2x-1}\right)^{(n)}=\frac{1}{5}\frac{(-1)^n\cdot n!}{(x+2)^{n+1}}-\frac{2}{5}\frac{(-1)^n\cdot2^n\cdot n!}{(2x-1)^{n+1}} \\
-                  = {} & \frac{n!}{5}\left(\frac{(-1)^n}{(x+2)^{n+1}}-\frac{(-1)^n2^{n+1}}{(2x-1)^{n+1}}\right),
+                  = {}           & \frac{n!}{5}\left(\frac{(-1)^n}{(x+2)^{n+1}}-\frac{(-1)^n2^{n+1}}{(2x-1)^{n+1}}\right),
               \end{aligned}
           \]
-
           所以$y^{(n)}(0)=\frac{n!}{5}\left(\frac{(-1)^{n}}{2^{n+1}}+2^{n+1}\right)$.
 
-    \item \textbf{Solution}.$y=\sin^{4} x-\cos^{4} x=(\sin^{2} x+\cos^{2} x)(\sin
-              ^{2} x-\cos^{2} x)=-\cos 2x$,
-
+    \item \textbf{Solution}.因为
+          \[
+              y=\sin^{4} x-\cos^{4} x=(\sin^{2} x+\cos^{2} x)(\sin^{2} x-\cos^{2} x)=-\cos 2x,
+          \]
           所以
           \[
-              \begin{aligned}
-                  y'= {} & 2\sin 2x, \\
-                  y''= {} & 4\cos 2x.
-              \end{aligned}
+              y'=2\sin 2x,\qquad y''= 4\cos 2x.
           \]
 \end{enumerate}
 
@@ -266,31 +272,38 @@
 
           所以$f'(1)=2(\ln2+1)$.
 
-          $f(1)=3$，$g'(3)=\frac{1}{f'(1)}=\frac{1}{2(\ln2+1)}$，
-
-          $y'=g'(2+x^{2})\cdot 2x=2xg'(2+x^{2})$，$\left.y'\right|_{x=1}=g'(3)\cdot2=
-              \frac{1}{\ln2+1}$.
+          又
+          \[
+              f(1)=3,\quad g'(3)=\frac{1}{f'(1)}=\frac{1}{2(\ln2+1)},
+          \]
+          因此
+          \[
+              y'=g'(2+x^{2})\cdot 2x=2xg'(2+x^{2}),\quad\left.y'\right|_{x=1}=g'(3)\cdot2=
+              \frac{1}{\ln2+1}.
+          \]
 
     \item \textbf{Solution}.
-
           \[
               \begin{aligned}
                   x_{n+1}= {} & \frac{b_1}{1+b_1}+\frac{b_2}{(1+b_1)(1+b_2)}+\cdots+\frac{b_n}{(1+b_1)(1+b_2)\cdots(1+b_n)}+\frac{b_{n+1}}{(1+b_1)(1+b_2)\cdots(1+b_{n+1})} \\
-                  = {} & x_{n}+\frac{b_{n+1}}{(1+b_1)(1+b_2)\cdots(1+b_{n+1})}\geq x_{n},
+                  = {}        & x_{n}+\frac{b_{n+1}}{(1+b_1)(1+b_2)\cdots(1+b_{n+1})}\geq x_{n},
               \end{aligned}
           \]
-
-          故数列$\{x_{n}\}$单调递增.
-
-          因$\frac{b_{k}}{(1+b_{1})(1+b_{2})\cdots(1+b_{k})}=\frac{1}{(1+b_{1})(1+b_{2})\cdots(1+b_{k-1})}
-              -\frac{1}{(1+b_{1})(1+b_{2})\cdots(1+b_{k})}$，
-
-          所以$x_{n}=1-\frac{1}{1+b_{1}}+\left(\frac{1}{1+b_{1}}-\frac{1}{(1+b_{1})(1+b_{2})}
-              \right)+\cdots+\left(\frac{1}{(1+b_{1})(1+b_{2})\cdots(1+b_{n-1})}-\frac{1}{(1+b_{1})(1+b_{2})\cdots(1+b_{n})}
-              \right)$，
-
-          故$x_{n}=1-\frac{1}{(1+b_{1})(1+b_{2})\cdots(1+b_{n})}<1$.
-
+          故数列$\{x_{n}\}$单调递增. 因
+          \[
+              \frac{b_{k}}{(1+b_{1})(1+b_{2})\cdots(1+b_{k})}=\frac{1}{(1+b_{1})(1+b_{2})\cdots(1+b_{k-1})}
+              -\frac{1}{(1+b_{1})(1+b_{2})\cdots(1+b_{k})},
+          \]
+          所以
+          \[
+              \begin{aligned}
+                  x_{n}={} & 1-\frac{1}{1+b_{1}}+\left(\frac{1}{1+b_{1}}-\frac{1}{(1+b_{1})(1+b_{2})}
+                  \right)+\cdots                                                                                             \\
+                  +{}      & \left(\frac{1}{(1+b_{1})(1+b_{2})\cdots(1+b_{n-1})}-\frac{1}{(1+b_{1})(1+b_{2})\cdots(1+b_{n})}
+                  \right)                                                                                                    \\
+                  ={}      & 1-\frac{1}{(1+b_{1})(1+b_{2})\cdots(1+b_{n})}<1.
+              \end{aligned}
+          \]
           从而数列$\{x_{n}\}$有上界，由单调有界准则知数列得极限存在.
 
     \item \textbf{Solution}.
@@ -302,25 +315,23 @@
           \[
               \begin{aligned}
                   f'(0)= {} & \lim_{x\to0}\frac{\frac{g(x)-\mathrm{e}^{-x}}{x}-0}{x}=\lim_{x\to0}\frac{g(x)-\mathrm{e}^{-x}}{x^2}=\lim_{x\to0}\frac{g'(x)+\mathrm{e}^{-x}}{2x} \\
-                  = {} & \lim_{x\to0}\frac{g'(x)+1+\mathrm{e}^{-x}-1}{2x}=\lim_{x\to0}\frac{g'(x)-g'(0)+\mathrm{e}^{-x}-1}{2x}=\frac{1}{2}(g''(0)-1),
+                  = {}      & \lim_{x\to0}\frac{g'(x)+1+\mathrm{e}^{-x}-1}{2x}=\lim_{x\to0}\frac{g'(x)-g'(0)+\mathrm{e}^{-x}-1}{2x}=\frac{1}{2}(g''(0)-1),
               \end{aligned}
           \]
-
           因
           \[
               \begin{aligned}
-                  \lim_{x\to 0}f'(x)= {} & \lim_{x\to0}\frac{x(g'(x)+\mathrm{e}^{-x})}{x^2}=\lim_{x\to0}\left(\frac{g'(x)+\mathrm{e}^{-x}}{x}-\frac{g(x)-\mathrm{e}^{-x}}{x^2}\right)            \\
-                  = {} & \lim_{x\to0}\frac{g'(x)+\mathrm{e}^{-x}}{x}=-\lim_{x\to0}\frac{g(x)-\mathrm{e}^{-x}}{x^2}=g''(0)-1-\frac{1}{2}(g''(0)-1)=\frac{1}{2}(g''(0)-1)=f'(0),
+                  \lim_{x\to 0}f'(x)= {} & \lim_{x\to0}\frac{x(g'(x)+\mathrm{e}^{-x})}{x^2}=\lim_{x\to0}\left(\frac{g'(x)+\mathrm{e}^{-x}}{x}-\frac{g(x)-\mathrm{e}^{-x}}{x^2}\right) \\
+                  = {}                   & \lim_{x\to0}\frac{g'(x)+\mathrm{e}^{-x}}{x}=-\lim_{x\to0}\frac{g(x)-\mathrm{e}^{-x}}{x^2}                                                  \\
+                  = {}                   & g''(0)-1-\frac{1}{2}(g''(0)-1)=\frac{1}{2}(g''(0)-1)=f'(0),
               \end{aligned}
           \]
-
           故$f'(x)$在$x=0$处连续.
 
     \item \textbf{Solution}. 设时刻$t$飞机离观察者的水平距离为$x\mathrm{km}$，望远镜视角为$\theta$弧度，则有
           \[
               \frac{\mathrm{d}x}{\mathrm{d}t}=-16\mathrm{km/min},\quad x=20\tan\theta,
           \]
-
           故$\theta=\arctan\frac{x}{20}$，于是$\frac{\mathrm{d}\theta}{\mathrm{d}t}=\frac{1}{20+\frac{x^2}{20}}
               \frac{\mathrm{d}x}{\mathrm{d}t}$.
 
@@ -336,36 +347,32 @@
     \item \textbf{Proof}.不妨设$a<x_{1}<x_{2}<\cdots<x_{n}<b$，显然$f(x)$在$[
                   x_{1},x_{n}]$上连续.
 
-          故$f(x)$在$[x_{1},x_{n}]$上必取得最大值$M$和最小值$m$，即$m\leq f(x)\leq M,
-              x\in[x_{1},x_{n}]$，从而有$m\leq f(x_{i})\leq M,i=1,2,\cdots,n$，故有
+          故$f(x)$在$[x_{1},x_{n}]$上必取得最大值$M$和最小值$m$，即$m\leq f(x)\leq M,\forall\,x\in[x_{1},x_{n}]$，
+
+          从而有$m\leq f(x_{i})\leq M,i=1,2,\cdots,n$，故
           \[
               m\leq\frac{1}{n}\left(f(x_{1})+f(x_{2})+\cdots+f(x_{n})\right)\leq M.
           \]
-
           由介值定理知至少存在一点$\xi\in[x_{1},x_{n}]\subset(a,b)$使得
           \[
               f(\xi)=\frac{1}{n}\left(f(x_{1})+f(x_{2})+\cdots+f(x_{n})\right).
           \]
 
-          使得$f(\xi)=0$即$\alpha\xi=\tan\xi$，故方程$\alpha x=\tan x$在$\left(0,\frac{\pi}{2}
-              \right)$内至少有一个实根.
-
     \item \textbf{Proof}.
 
-          \textbf{法一.} 令$F(x)=f(x)-\frac{1}{2}x^{2}$，
+          \textbf{法一.} 令$F(x)=f(x)-\frac{1}{2}x^{2}$，则$F(x)$在$[0,1]$上连续，在$(0,1)$内可导，
 
-          则$F(x)$在$[0,1]$上连续，在$(0,1)$内可导，且$F(0)=f(0)=0$，$F(1)=f(1)-\frac{1}{2}
-              =0$，
+          且$F(0)=f(0)=0$，$F(1)=f(1)-\frac{1}{2}=0$.
 
-          函数$F(x)$在$\left[0,\frac{1}{2}\right],\left[\frac{1}{2},1\right]$上分别应用Lagrange中值定理得，$\exists
-              \,\eta\in\left(0,\frac{1}{2}\right),\xi\in\left(\frac{1}{2},1\right)$，使得
+          函数$F(x)$在$\left[0,\frac{1}{2}\right],\left[\frac{1}{2},1\right]$上分别应用Lagrange中值定理，
+
+          $\exists\,\eta\in\left(0,\frac{1}{2}\right),\xi\in\left(\frac{1}{2},1\right)$，使得
           \[
               \begin{gathered}
                   F\left(\frac{1}{2}\right)-F(0)=F'(\eta)\frac{1}{2},\qquad\text{即}\,2F\left(\frac{1}{2}\right)=f'(\eta)-\eta,\\
                   F(1)-F\left(\frac{1}{2}\right)=F'(\xi)\frac{1}{2},\qquad\text{即}\,-2F\left(\frac{1}{2}\right)=f'(\xi)-\xi,
               \end{gathered}
           \]
-
           两式相加得$f'(\eta)-\eta+f'(\xi)-\xi=0$，即$f'(\xi)+f'(\eta)=\xi+\eta$.
 
           \textbf{法二.} 令$G(x)=f(x)-f(1-x)$，则
@@ -373,13 +380,11 @@
               G'(x)=f'(x)+f'(1-x),\quad G(0)=f(0)-f(1)=-\frac{1}{2},\quad G\left(\frac{1}{2}
               \right)=0.
           \]
-
           应用Lagrange中值定理得，$\exists\,\xi\in\left(0,\frac{1}{2}\right)$，使
           \[
               G\left(\frac{1}{2}\right)-G(0)=G'(\xi)\left(\frac{1}{2}-0\right)\quad\text{即}
               \quad f'(\xi)+f'(1-\xi)=1.
           \]
-
           令$\eta=1-\xi\in\left(\frac{1}{2},1\right)$，即得$f'(\xi)+f'(\eta)=\xi+\eta$.
 \end{enumerate}
 \end{document}

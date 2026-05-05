@@ -92,43 +92,47 @@
           \[
               \sqrt[3]{x}-1=(1+x-1)^{\frac{1}{3}}-1\sim\frac{1}{3}(x-1).
           \]
-
           故主部为$\frac{1}{3}(x-1)$.
 
     \item \textbf{Solution}.
           \[
               \begin{aligned}
                   l= {} & \lim_{x\to0}\frac{\sin x-x\cos x}{-\frac{1}{2}x^3} \\
-                  = {} & -2\lim_{x\to0}\frac{x\sin x}{3x^2}=-\frac{2}{3}.
+                  = {}  & -2\lim_{x\to0}\frac{x\sin x}{3x^2}=-\frac{2}{3}.
               \end{aligned}
           \]
 
     \item \textbf{Solution}.
           \[
               \begin{aligned}
-                  l= {} & \lim_{x\to0}\left(\mathrm{e}^{x}-\sin x\right)^{\frac{1}{x^2}}=\mathrm{e}^{\lim\limits_{x\to0} \frac{1}{x^2}\ln\left(\mathrm{e}^x-\sin x\right)}                 \\
-                  = {} & \mathrm{e}^{\lim\limits_{x\to0}\frac{\mathrm{e}^x-\cos x}{\mathrm{e}^x-\sin x}\cdot\frac{1}{2x}}= \mathrm{e}^{\lim\limits_{x\to0}\frac{\mathrm{e}^x-\cos x}{2x}} \\
-                  = {} & \mathrm{e}^{\lim\limits_{x\to0}\frac{\mathrm{e}^x+\sin x}{2}}=\sqrt{\mathrm{e}}.
+                  l= {} & \lim_{x\to0}\left(\mathrm{e}^{x}-\sin x\right)^{\frac{1}{x^2}}=\exp\left[{\lim\limits_{x\to0} \frac{1}{x^2}\ln\left(\mathrm{e}^x-\sin x\right)}\right]                 \\
+                  = {}  & \exp\left({\lim\limits_{x\to0}\frac{\mathrm{e}^x-\cos x}{\mathrm{e}^x-\sin x}\cdot\frac{1}{2x}}\right)= \mathrm{e}^{\lim\limits_{x\to0}\frac{\mathrm{e}^x-\cos x}{2x}} \\
+                  = {}  & \exp\left({\lim\limits_{x\to0}\frac{\mathrm{e}^x+\sin x}{2}}\right)=\sqrt{\mathrm{e}}.
               \end{aligned}
           \]
 
-    \item \textbf{Solution}. $\ln f(x)=\tan x\ln x$，
+    \item \textbf{Solution}. 因为$\ln f(x)=\tan x\ln x$，
 
-          所以$f'(x)=f(x)\cdot\left(\tan x\ln x\right)'=x^{\tan x}\left(\sec^{2} x \ln
-              x + \frac{\tan x}{x}\right)$，
-
+          所以
+          \[
+              f'(x)=f(x)\cdot\left(\tan x\ln x\right)'=x^{\tan x}\left(\sec^{2} x \ln
+              x + \frac{\tan x}{x}\right),
+          \]
           代入$x=\frac{\pi}{4}$得$f'\left(\frac{\pi}{4}\right)=1+\frac{\pi}{2}\ln\frac{\pi}{4}$.
 
     \item \textbf{Solution}. 方程两边对$x$求导得到
           \[
               -\sin x+\frac{1}{y-x}(y'-1)=2yy',
           \]
-
           代入$x=0,y=1$解得$y'(0)=-1$，所以切线方程为$x+y=1$.
 
-    \item \textbf{Solution}. $y'=f'(\sin x)\cos x$，
-
-          $y''=f''(\sin x)\cos^{2} x-f'(\sin x)\sin x$.
+    \item \textbf{Solution}.
+          \[
+              y'=f'(\sin x)\cos x,
+          \]
+          \[
+              y''=f''(\sin x)\cos^{2} x-f'(\sin x)\sin x.
+          \]
 
     \item \textbf{Solution}.
 
@@ -136,8 +140,8 @@
           \[
               \begin{aligned}
                   y^{(6)}= {} & x\left(\ln x\right)^{(6)}+6\left(\ln x\right)^{(5)}             \\
-                  = {} & x\left(\frac{1}{x}\right)^{(5)}+6\left(\frac{1}{x}\right)^{(4)} \\
-                  = {} & \frac{24}{x^5}.
+                  = {}        & x\left(\frac{1}{x}\right)^{(5)}+6\left(\frac{1}{x}\right)^{(4)} \\
+                  = {}        & \frac{24}{x^5}.
               \end{aligned}
           \]
 
@@ -147,17 +151,22 @@
               .
           \]
 
-    \item \textbf{Solution}. 直接得到$f\left(0^{+}\right)=b$，$f\left(0^{-}\right
-              )=1$，所以$b=1$.
+    \item \textbf{Solution}. $f\left(0^{+}\right)=b$，$f\left(0^{-}\right
+              )=1$，由连续性知$b=1$.
 
-          求导得到$f'_{+}(0)=-2$，$f'_{-}(0)=a$，所以$a=-2$.
+          求导得到$f'_{+}(0)=-2$，$f'_{-}(0)=a$，由导数存在知$a=-2$.
 
-    \item \textbf{Solution}. $\frac{\mathrm{d}y}{\mathrm{d}x}=\frac{\frac{\mathrm{d}y}{\mathrm{d}t}}{\frac{\mathrm{d}x}{\mathrm{d}t}}
-              =\frac{1+\frac{1}{t}}{2t+2}=\frac{1}{2t}$.
+    \item \textbf{Solution}.
 
-          $\frac{\mathrm{d}^{2} y}{\mathrm{d}x^{2}}=\frac{\mathrm{d}}{\mathrm{d}t}\left
+          \[
+              \frac{\mathrm{d}y}{\mathrm{d}x}=\frac{\frac{\mathrm{d}y}{\mathrm{d}t}}{\frac{\mathrm{d}x}{\mathrm{d}t}}
+              =\frac{1+\frac{1}{t}}{2t+2}=\frac{1}{2t},
+          \]
+          \[
+              \frac{\mathrm{d}^{2} y}{\mathrm{d}x^{2}}=\frac{\mathrm{d}}{\mathrm{d}t}\left
               (\frac{\mathrm{d}y}{\mathrm{d}x}\right)\cdot\frac{\mathrm{d}t}{\mathrm{d}x}
-              =-\frac{1}{2t^{2}}\cdot\frac{1}{2t+2}=-\frac{1}{4t^{2}(t+1)}$.
+              =-\frac{1}{2t^{2}}\cdot\frac{1}{2t+2}=-\frac{1}{4t^{2}(t+1)}.
+          \]
 \end{enumerate}
 
 \section{综合题(每小题 6 分，共 30 分)}
@@ -168,27 +177,26 @@
               \lim_{x\to0}f(x)=-\infty,\quad f(-1^{+})=-\frac{\pi\mathrm{e}}{2},\quad f
                   (-1^{-})=\frac{\pi\mathrm{e}}{2},
           \]
-
           所以$x=0$是无穷间断点，$x=-1$是跳跃间断点.
 
     \item \textbf{Solution}. 当$n$为奇数时，显然有
           \[
               f\left(+\infty\right)=+\infty,\quad f\left(-\infty\right)=-\infty.
           \]
-
           于是存在$x_{1},x_{2}$使得$f(x_{1})<0<f(x_{2})$.
 
-          函数$f(x)$显然连续，由介值定理知，存在$x_{0}\in(x_{1},x_{2})$使得$f(x_{0})=
-              0$，即方程$f(x)=0$至少有一个实根.
+          函数$f(x)$显然连续，由介值定理知，存在$x_{0}\in(x_{1},x_{2})$使得$f(x_{0})=0$，
+
+          即方程$f(x)=0$至少有一个实根.
 
     \item \textbf{Solution}.
           \[
               \begin{aligned}
-                  \lim_{x\to\infty}\left[\frac{f\left(2+\frac{1}{x}\right)}{f(2)}\right]^{x} = {} & \mathrm{e}^{\lim\limits_{x\to\infty}x\ln\frac{f\left(2+\frac{1}{x}\right)}{f(2)}}                       \\
-                  = {} & \mathrm{e}^{\lim\limits_{x\to\infty}x\ln\left(1+\frac{f\left(2+\frac{1}{x}\right)-f(2)}{f(2)}\right)}   \\
-                  = {} & \mathrm{e}^{\frac{1}{f(2)}\lim\limits_{x\to\infty}x\left[f\left(2+\frac{1}{x}\right)-f(2)\right]}       \\
-                  = {} & \mathrm{e}^{\frac{1}{f(2)}\lim\limits_{x\to\infty}\frac{f\left(2+\frac{1}{x}\right)-f(2)}{\frac{1}{x}}} \\
-                  = {} & \mathrm{e}^{\frac{f'(2)}{f(2)}}.
+                  \lim_{x\to\infty}\left[\frac{f\left(2+\frac{1}{x}\right)}{f(2)}\right]^{x} = {} & \exp\left[{\lim\limits_{x\to\infty}x\ln\frac{f\left(2+\frac{1}{x}\right)}{f(2)}}\right]                       \\
+                  = {}                                                                            & \exp\left[{\lim\limits_{x\to\infty}x\ln\left(1+\frac{f\left(2+\frac{1}{x}\right)-f(2)}{f(2)}\right)}\right]   \\
+                  = {}                                                                            & \exp\left[{\frac{1}{f(2)}\lim\limits_{x\to\infty}x\left[f\left(2+\frac{1}{x}\right)-f(2)\right]}\right]       \\
+                  = {}                                                                            & \exp\left[{\frac{1}{f(2)}\lim\limits_{x\to\infty}\frac{f\left(2+\frac{1}{x}\right)-f(2)}{\frac{1}{x}}}\right] \\
+                  = {}                                                                            & \exp\left[{\frac{f'(2)}{f(2)}}\right].
               \end{aligned}
           \]
 
@@ -196,13 +204,11 @@
           \[
               V=\frac{4\pi r^{3}}{3}.
           \]
-
           两边对$t$求导得到
           \[
               \frac{\mathrm{d}V}{\mathrm{d}t}=4\pi r^{2}\cdot\frac{\mathrm{d}r}{\mathrm{d}t}
               .
           \]
-
           代入$\frac{\mathrm{d}V}{\mathrm{d}t}=-2$以及$r=10$解得$\frac{\mathrm{d}r}{\mathrm{d}t}
               =-\frac{1}{200\pi}$.
 
@@ -212,7 +218,6 @@
           \[
               \cos x=1-\frac{1}{2}x^{2}+\frac{1}{24}x^{4}+o(x^{4}),
           \]
-
           进而
           \[
               f(x)=x\cos x=x-\frac{1}{2}x^{3}+\frac{1}{24}x^{5}+o(x^{5}).
@@ -222,9 +227,7 @@
 \section{证明题(每小题 5 分，共 10 分)}
 \begin{enumerate}
     \setcounter{enumi}{15}
-    \item \textbf{Proof}.
-
-          显然$x_{2}>x_{1}$，设$x_{k+1}>x_{k}$，由$x_{k+2}^{2}-x_{k+1}^{2}=6+x_{k+1}-
+    \item \textbf{Proof}. 显然$x_{2}>x_{1}$，设$x_{k+1}>x_{k}$，由$x_{k+2}^{2}-x_{k+1}^{2}=6+x_{k+1}-
               6-x_{k}=x_{k+1}-x_{k}>0$知$x_{k+2}>x_{k+1}$.
 
           由数学归纳法知$\{x_{n}\}$严格单调增加.
@@ -238,14 +241,13 @@
               =3$.
 
     \item \textbf{Proof}. 显然函数$F(x)=\frac{f(x)}{x}$和$G(x)=\frac{1}{x}$在闭区间$[
-                  a,b]$上连续，在开区间$(a,b) $内可导，并且$G(x)$的导数不为0.
+                  a,b]$上连续，在开区间$(a,b) $内可导，
 
-          由Cauchy中值定理知存在$\xi\in(a,b)$使得
+          并且$G(x)$的导数不为0.由Cauchy中值定理知存在$\xi\in(a,b)$使得
           \[
               \frac{af(b)-bf(a)}{a-b}=\frac{F(b)-F(a)}{G(b)-G(a)}=\frac{F'(\xi)}{G'(\xi)}
               =\xi f'(\xi)-f(\xi).
           \]
-
           两边变号即得所证.
 \end{enumerate}
 \end{document}

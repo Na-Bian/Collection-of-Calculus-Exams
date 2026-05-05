@@ -101,18 +101,21 @@
     \item \textbf{Solution}. 由题意可知$y_{2}-y_{1}=2\mathrm{e}^{x}$，$y_{3}-y_{2}
               =3x\mathrm{e}^{x}$是齐次方程$y''+a(x)y'+b(x)y=0$的两个特解，
 
-          将其代入，得$\begin{cases}
+          将其代入，得
+          \[
+              \begin{cases}
                   2\mathrm{e}^{x}+2a(x)\mathrm{e}^{x}+2b(x)\mathrm{e}^{x}=0, \\
                   3(x+2)\mathrm{e}^{x}+3a(x)(x+1)\mathrm{e}^{x}+3xb(x)\mathrm{e}^{x}=0.
-              \end{cases}$解得$\begin{cases}
+              \end{cases}
+          \]
+          解得$\begin{cases}
                   a(x)\equiv -2, \\
                   b(x)\equiv 1.
-              \end{cases}$
+              \end{cases}$ 所以齐次方程为$y''-2y'+y=0$，
 
-          所以齐次方程为$y''-2y'+y=0$，对应的特征方程为$r^{2}-2r+1=0$，解得二重根$r=1$，
+          对应的特征方程为$r^{2}-2r+1=0$，解得二重根$r=1$，因此通解为$(Ax+B)\mathrm{e}^{x}$，
 
-          因此通解为$(Ax+B)\mathrm{e}^{x}$，故原方程的通解为$y = (Ax+B)\mathrm{e}^{x}
-              + x$，其中$A,B$为任意常数.
+          故原方程的通解为$y = (Ax+B)\mathrm{e}^{x}+ x$，其中$A,B$为任意常数.
 
     \item \textbf{Solution}. 取直线$L_{1}$的方向向量$\boldsymbol{s}_{1}=(1,-3,1)\times
               (2,-4,1)=(1,1,2)$，直线$L_{2}$的方向向量$\boldsymbol{s}_{2}=(1,3,4)$.
@@ -164,13 +167,15 @@
           方程组$\begin{cases}
                   F(x,y,z) = x^{2}+y^{2}+z^{2}-4=0, \\
                   G(x,y,z)=(x-1)^{2}+y^{2}-1=0
-              \end{cases}$两边对$x$求导，得 $\begin{cases}
-                  2x+2y\frac{\mathrm{d}y}{\mathrm{d}x}+2z\frac{\mathrm{d}z}{\mathrm{d}x}= 0, \\
+              \end{cases}$两边对$x$求导，得
+          \[
+              \begin{cases}
+                  2x+2y\frac{\mathrm{d}y}{\mathrm{d}x}+2z\frac{\mathrm{d}z}{\mathrm{d}x}= 0, \\[6pt]
                   2(x-1)+2y\frac{\mathrm{d}y}{\mathrm{d}x}= 0.
-              \end{cases}$
-
+              \end{cases}
+          \]
           解得$\begin{cases}
-                  \frac{\mathrm{d}y}{\mathrm{d}x} = \frac{1-x}{y}, \\
+                  \frac{\mathrm{d}y}{\mathrm{d}x} = \frac{1-x}{y}, \\[6pt]
                   \frac{\mathrm{d}z}{\mathrm{d}x} = -\frac{1}{z}
               \end{cases}$，所以法平面的法向量可取为$\sqrt{2}\left(1,\frac{\mathrm{d}y}{\mathrm{d}x}
               ,\frac{\mathrm{d}z}{\mathrm{d}x}\right)_{P}=\left(\sqrt{2},0,-1\right)$，
@@ -248,9 +253,9 @@
               \[
                   \begin{aligned}
                       I = {} & \iint\limits_{D}x^{2} y^{2}\,\mathrm{d}x\,\mathrm{d}y = 4\iint\limits_{D_1}x^{2} y^{2}\,\mathrm{d}x\,\mathrm{d}y          \\
-                      = {} & 4\int_{0}^{1}x^{2}\,\mathrm{d}x\int_{0}^{1-x}y^{2}\,\mathrm{d}y = \frac{4}{3}\int_{0}^{1}x^{2}(1-x)^{3}\,\mathrm{d}x      \\
-                      = {} & \frac{4}{3}\int_{0}^{1}(1-x)^{2} x^{3}\,\mathrm{d}x = \frac{4}{3}\int_{0}^{1}\left(x^{5}-2x^{4}+x^{3}\right)\,\mathrm{d}x \\
-                      = {} & \frac{4}{3}\left(\frac{1}{6}-\frac{2}{5}+\frac{1}{4}\right) = \frac{1}{45}.
+                      = {}   & 4\int_{0}^{1}x^{2}\,\mathrm{d}x\int_{0}^{1-x}y^{2}\,\mathrm{d}y = \frac{4}{3}\int_{0}^{1}x^{2}(1-x)^{3}\,\mathrm{d}x      \\
+                      = {}   & \frac{4}{3}\int_{0}^{1}(1-x)^{2} x^{3}\,\mathrm{d}x = \frac{4}{3}\int_{0}^{1}\left(x^{5}-2x^{4}+x^{3}\right)\,\mathrm{d}x \\
+                      = {}   & \frac{4}{3}\left(\frac{1}{6}-\frac{2}{5}+\frac{1}{4}\right) = \frac{1}{45}.
                   \end{aligned}
               \]
           \end{minipage}
@@ -270,9 +275,9 @@
               \[
                   \begin{aligned}
                       I = {} & \iint\limits_{D}xy\,\mathrm{d}x\,\mathrm{d}y = \int_{\frac{\pi}{4}}^{\frac{\pi}{2}}\,\mathrm{d}\theta\int_{0}^{2\sin \theta}r^{3}\cos \theta\sin \theta\,\mathrm{d}r                                      \\
-                      = {} & \int_{\frac{\pi}{4}}^{\frac{\pi}{2}}\cos \theta\sin \theta\,\mathrm{d}\theta\int_{0}^{2\sin \theta}r^{3}\,\mathrm{d}r = 4\int_{\frac{\pi}{4}}^{\frac{\pi}{2}}\cos \theta\sin^{5} \theta\,\mathrm{d}\theta \\
-                      = {} & 4\int_{\frac{\pi}{4}}^{\frac{\pi}{2}}\sin^{5}\theta\,\mathrm{d}\sin\theta = \left.\frac{2}{3}\sin^{6}\theta\right|_{\frac{\pi}{4}}^{\frac{\pi}{2}}                                                        \\
-                      = {} & \frac{2}{3}\left(1-\frac{1}{8}\right) = \frac{7}{12}.
+                      = {}   & \int_{\frac{\pi}{4}}^{\frac{\pi}{2}}\cos \theta\sin \theta\,\mathrm{d}\theta\int_{0}^{2\sin \theta}r^{3}\,\mathrm{d}r = 4\int_{\frac{\pi}{4}}^{\frac{\pi}{2}}\cos \theta\sin^{5} \theta\,\mathrm{d}\theta \\
+                      = {}   & 4\int_{\frac{\pi}{4}}^{\frac{\pi}{2}}\sin^{5}\theta\,\mathrm{d}\sin\theta = \left.\frac{2}{3}\sin^{6}\theta\right|_{\frac{\pi}{4}}^{\frac{\pi}{2}}                                                        \\
+                      = {}   & \frac{2}{3}\left(1-\frac{1}{8}\right) = \frac{7}{12}.
                   \end{aligned}
               \]
           \end{minipage}
@@ -285,8 +290,8 @@
           \[
               \begin{aligned}
                   I = {} & \int_{0}^{1}\,\mathrm{d}x\int_{x}^{1}\mathrm{e}^{-y^{2}}\,\mathrm{d}y = \int_{0}^{1}\,\mathrm{d}y\int_{0}^{y}\mathrm{e}^{-y^{2}}\,\mathrm{d}x \\
-                  = {} & \int_{0}^{1}y\mathrm{e}^{-y^{2}}\,\mathrm{d}y = -\frac{1}{2}\int_{0}^{1}\mathrm{e}^{-y^{2}}\,\mathrm{d}(-y^{2})                               \\
-                  = {} & \left.-\frac{1}{2}\mathrm{e}^{-y^{2}}\right|_{0}^{1}= \frac{1}{2}\left(1-\frac{1}{\mathrm{e}}\right).
+                  = {}   & \int_{0}^{1}y\mathrm{e}^{-y^{2}}\,\mathrm{d}y = -\frac{1}{2}\int_{0}^{1}\mathrm{e}^{-y^{2}}\,\mathrm{d}(-y^{2})                               \\
+                  = {}   & \left.-\frac{1}{2}\mathrm{e}^{-y^{2}}\right|_{0}^{1}= \frac{1}{2}\left(1-\frac{1}{\mathrm{e}}\right).
               \end{aligned}
           \]
 
@@ -295,8 +300,8 @@
           \[
               \begin{aligned}
                   I = {} & \iiint\limits_{\Omega}\frac{1}{\sqrt{x^2+y^2+z^2}}\,\mathrm{d}v = \int_{0}^{2\pi}\,\mathrm{d}\theta\int_{0}^{\frac{\pi}{4}}\,\mathrm{d}\varphi\int_{0}^{\frac{1}{\cos \varphi}}\frac{\rho^{2}\sin \varphi}{\rho}\,\mathrm{d}\rho \\
-                  = {} & 2\pi\int_{0}^{\frac{\pi}{4}}\sin \varphi\,\mathrm{d}\varphi\int_{0}^{\frac{1}{\cos \varphi}}\rho\,\mathrm{d}\rho = 2\pi\int_{0}^{\frac{\pi}{4}}\sin \varphi \cdot \frac{1}{2}\cdot \frac{1}{\cos^{2} \varphi}\,\mathrm{d}\varphi \\
-                  = {} & -\pi\int_{0}^{\frac{\pi}{4}}\frac{1}{\cos^2 \varphi}\,\mathrm{d}(\cos \varphi) = \left.\pi\cdot \frac{1}{\cos \varphi}\right|_{0}^{\frac{\pi}{4}}= \pi\left(\sqrt{2}-1\right).
+                  = {}   & 2\pi\int_{0}^{\frac{\pi}{4}}\sin \varphi\,\mathrm{d}\varphi\int_{0}^{\frac{1}{\cos \varphi}}\rho\,\mathrm{d}\rho = 2\pi\int_{0}^{\frac{\pi}{4}}\sin \varphi \cdot \frac{1}{2}\cdot \frac{1}{\cos^{2} \varphi}\,\mathrm{d}\varphi \\
+                  = {}   & -\pi\int_{0}^{\frac{\pi}{4}}\frac{1}{\cos^2 \varphi}\,\mathrm{d}(\cos \varphi) = \left.\pi\cdot \frac{1}{\cos \varphi}\right|_{0}^{\frac{\pi}{4}}= \pi\left(\sqrt{2}-1\right).
               \end{aligned}
           \]
 \end{enumerate}
@@ -315,36 +320,43 @@
           所以$\frac{\partial u}{\partial x}= \frac{\partial v}{\partial x}= 1$，$\frac{\partial
                   u}{\partial y}= -\frac{1}{\sqrt{y}}$，$\frac{\partial v}{\partial y}= \frac{1}{\sqrt{y}}$.
 
-          由链式法则，$\frac{\partial z}{\partial x}= \frac{\partial z}{\partial u}\cdot
+          由链式法则，
+          \[
+              \frac{\partial z}{\partial x}= \frac{\partial z}{\partial u}\cdot
               \frac{\partial u}{\partial x}+ \frac{\partial z}{\partial v}\cdot \frac{\partial
                   v}{\partial x}= \frac{\partial z}{\partial u}+ \frac{\partial z}{\partial
-                  v}$，$\frac{\partial z}{\partial y}= \frac{\partial z}{\partial u}\cdot \frac{\partial
+                  v},
+          \]
+          \[
+              \frac{\partial z}{\partial y}= \frac{\partial z}{\partial u}\cdot \frac{\partial
                   u}{\partial y}+ \frac{\partial z}{\partial v}\cdot \frac{\partial v}{\partial
                   y}= -\frac{1}{\sqrt{y}}\cdot \frac{\partial z}{\partial u}+ \frac{1}{\sqrt{y}}
-              \cdot \frac{\partial z}{\partial v}$，
-
-          $\frac{\partial^{2} z}{\partial x^{2}}= \frac{\partial}{\partial x}\left(\frac{\partial
+              \cdot \frac{\partial z}{\partial v},
+          \]
+          \[
+              \frac{\partial^{2} z}{\partial x^{2}}= \frac{\partial}{\partial x}\left(\frac{\partial
                   z}{\partial u}+ \frac{\partial z}{\partial v}\right) = \frac{\partial^{2} z}{\partial
                   u^{2}}\cdot \frac{\partial u}{\partial x}+ \frac{\partial^{2} z}{\partial
                   u\partial v}\cdot \frac{\partial v}{\partial x}+ \frac{\partial^{2} z}{\partial
                   v\partial u}\cdot \frac{\partial u}{\partial x}+ \frac{\partial^{2} z}{\partial
                   v^{2}}\cdot \frac{\partial v}{\partial x}= \frac{\partial^{2} z}{\partial
                   u^{2}}+ 2\frac{\partial^{2} z}{\partial u\partial v}+ \frac{\partial^{2} z}{\partial
-                  v^{2}}$，
+                  v^{2}},
+          \]
           \[
               \begin{aligned}
                   \frac{\partial^{2} z}{\partial y^{2}} = {} & \frac{\partial}{\partial y}\left(-\frac{1}{\sqrt{y}}\cdot \frac{\partial z}{\partial u} + \frac{1}{\sqrt{y}}\cdot \frac{\partial z}{\partial v}\right)                                                                                                                                                                                                                                                                                                                                                    \\
-                  = {} & \frac{1}{2y\sqrt{y}}\cdot \frac{\partial z}{\partial u} - \frac{1}{\sqrt{y}}\left(\frac{\partial^{2} z}{\partial u^{2}}\cdot \frac{\partial u}{\partial y} + \frac{\partial^{2} z}{\partial u \partial v}\cdot \frac{\partial v}{\partial y}\right) - \frac{1}{2y\sqrt{y}}\cdot \frac{\partial z}{\partial v} + \frac{1}{\sqrt{y}}\left(\frac{\partial^{2} z}{\partial v \partial u}\cdot \frac{\partial u}{\partial y} + \frac{\partial^{2} z}{\partial v^{2}}\cdot \frac{\partial v}{\partial y}\right) \\
-                  = {} & \frac{1}{2y\sqrt{y}}\cdot \left(\frac{\partial z}{\partial u} - \frac{\partial z}{\partial v}\right) + \frac{1}{y}\left(\frac{\partial^{2} z}{\partial u^{2}} - 2\frac{\partial^{2} z}{\partial u \partial v} + \frac{\partial^{2} z}{\partial v^{2}}\right).
+                  = {}                                       & \frac{1}{2y\sqrt{y}}\cdot \frac{\partial z}{\partial u} - \frac{1}{\sqrt{y}}\left(\frac{\partial^{2} z}{\partial u^{2}}\cdot \frac{\partial u}{\partial y} + \frac{\partial^{2} z}{\partial u \partial v}\cdot \frac{\partial v}{\partial y}\right) - \frac{1}{2y\sqrt{y}}\cdot \frac{\partial z}{\partial v} + \frac{1}{\sqrt{y}}\left(\frac{\partial^{2} z}{\partial v \partial u}\cdot \frac{\partial u}{\partial y} + \frac{\partial^{2} z}{\partial v^{2}}\cdot \frac{\partial v}{\partial y}\right) \\
+                  = {}                                       & \frac{1}{2y\sqrt{y}}\cdot \left(\frac{\partial z}{\partial u} - \frac{\partial z}{\partial v}\right) + \frac{1}{y}\left(\frac{\partial^{2} z}{\partial u^{2}} - 2\frac{\partial^{2} z}{\partial u \partial v} + \frac{\partial^{2} z}{\partial v^{2}}\right).
               \end{aligned}
           \]
 
-          所以
+          所以$\frac{\partial^{2} z}{\partial x^{2}} - y\frac{\partial^{2} z}{\partial y^{2}} - \frac{1}{2}\frac{\partial z}{\partial y}=$
           \[
               \begin{aligned}
-                    & \frac{\partial^{2} z}{\partial x^{2}} - y\frac{\partial^{2} z}{\partial y^{2}} - \frac{1}{2}\frac{\partial z}{\partial y}                                                                                                                                                                                                                                                                                                                                                                                                                                        \\
-                  = {} & \left(\frac{\partial^{2} z}{\partial u^{2}} + 2\frac{\partial^{2} z}{\partial u \partial v} + \frac{\partial^{2} z}{\partial v^{2}}\right) - y\left[\frac{1}{2y\sqrt{y}}\cdot \left(\frac{\partial z}{\partial u} - \frac{\partial z}{\partial v}\right) + \frac{1}{y}\left(\frac{\partial^{2} z}{\partial u^{2}} - 2\frac{\partial^{2} z}{\partial u \partial v} + \frac{\partial^{2} z}{\partial v^{2}}\right)\right] - \frac{1}{2}\left[-\frac{1}{\sqrt{y}}\cdot \frac{\partial z}{\partial u} + \frac{1}{\sqrt{y}}\cdot \frac{\partial z}{\partial v}\right] \\
-                  = {} & \frac{\partial^{2} z}{\partial u^{2}} + 2\frac{\partial^{2} z}{\partial u \partial v} + \frac{\partial^{2} z}{\partial v^{2}} - \frac{1}{2\sqrt{y}}\cdot \left(\frac{\partial z}{\partial u} - \frac{\partial z}{\partial v}\right) - \left(\frac{\partial^{2} z}{\partial u^{2}} - 2\frac{\partial^{2} z}{\partial u \partial v} + \frac{\partial^{2} z}{\partial v^{2}}\right) + \frac{1}{2\sqrt{y}}\cdot \left(\frac{\partial z}{\partial u} - \frac{\partial z}{\partial v}\right)                                                                           \\
+                  {}   & \left(\frac{\partial^{2} z}{\partial u^{2}} + 2\frac{\partial^{2} z}{\partial u \partial v} + \frac{\partial^{2} z}{\partial v^{2}}\right) - y\left[\frac{1}{2y\sqrt{y}}\cdot \left(\frac{\partial z}{\partial u} - \frac{\partial z}{\partial v}\right) + \frac{1}{y}\left(\frac{\partial^{2} z}{\partial u^{2}} - 2\frac{\partial^{2} z}{\partial u \partial v} + \frac{\partial^{2} z}{\partial v^{2}}\right)\right]                                                                \\
+                  - {} & \frac{1}{2}\left[-\frac{1}{\sqrt{y}}\cdot \frac{\partial z}{\partial u} + \frac{1}{\sqrt{y}}\cdot \frac{\partial z}{\partial v}\right]                                                                                                                                                                                                                                                                                                                                                 \\
+                  = {} & \frac{\partial^{2} z}{\partial u^{2}} + 2\frac{\partial^{2} z}{\partial u \partial v} + \frac{\partial^{2} z}{\partial v^{2}} - \frac{1}{2\sqrt{y}}\cdot \left(\frac{\partial z}{\partial u} - \frac{\partial z}{\partial v}\right) - \left(\frac{\partial^{2} z}{\partial u^{2}} - 2\frac{\partial^{2} z}{\partial u \partial v} + \frac{\partial^{2} z}{\partial v^{2}}\right) + \frac{1}{2\sqrt{y}}\cdot \left(\frac{\partial z}{\partial u} - \frac{\partial z}{\partial v}\right) \\
                   = {} & 4\frac{\partial^{2} z}{\partial u \partial v}.
               \end{aligned}
           \]
@@ -362,14 +374,19 @@
 
           又$f(x,0)=f(0,y)\equiv 0$，所以$f_{x}(0,0)=f_{y}(0,0)=0$，因此函数$f(x,y)$在原点处的偏导数存在.
 
-          考察$\lim_{\substack{x\to 0 \\ y\to 0}}\frac{f(x,y)-f(0,0)-f_{x}(0,0)x-f_{y}(0,0)y}{\sqrt{x^{2}+y^{2}}}
-              = \lim_{\substack{x\to 0 \\ y\to 0}}\frac{x^{2} y^{2}}{\left(x^{2}+y^{2}\right)^{2}}$.
+          考察
+          \[
+              \lim_{\substack{x\to 0 \\ y\to 0}}\frac{f(x,y)-f(0,0)-f_{x}(0,0)x-f_{y}(0,0)y}{\sqrt{x^{2}+y^{2}}}
+              = \lim_{\substack{x\to 0 \\ y\to 0}}\frac{x^{2} y^{2}}{\left(x^{2}+y^{2}\right)^{2}}.
+          \]
 
-          当$y=x,x\to0,y\to0$时，$\lim_{\substack{x\to 0 \\ y\to 0}}\frac{x^{2} y^{2}}{\left(x^{2}+y^{2}\right)^{2}}
-              = \lim_{x\to0}\frac{x^{4}}{(2x^{2})^{2}}= \frac{1}{4}$，所以$\lim_{\substack{x\to 0 \\ y\to 0}}
-              \frac{x^{2} y^{2}}{\left(x^{2}+y^{2}\right)^{2}}\neq 0$，
-
-          因此函数$f(x,y)$在原点处不可微.
+          当$y=x,x\to0,y\to0$时，
+          \[
+              \lim_{\substack{x\to 0 \\ y\to 0}}\frac{x^{2} y^{2}}{\left(x^{2}+y^{2}\right)^{2}}
+              = \lim_{x\to0}\frac{x^{4}}{(2x^{2})^{2}}= \frac{1}{4},
+          \]
+          所以$\lim_{\substack{x\to 0 \\ y\to 0}}
+              \frac{x^{2} y^{2}}{\left(x^{2}+y^{2}\right)^{2}}\neq 0$，因此函数$f(x,y)$在原点处不可微.
 
     \item \textbf{Solution}. $\nabla F |_{M}= \left.\left(ay^{2}+3cx^{2} z^{2}
               , 2axy+bz, 2cx^{3} z + by\right)\right|_{(1,2,-1)}=(4a+3c, 4a-b, 2b-2c)$，
@@ -394,8 +411,8 @@
               \[
                   \begin{aligned}
                       I = {} & \iiint\limits_{\Omega}z\,\mathrm{d}v = \int_{1}^{2}\,\mathrm{d}z\iint\limits_{x^2+y^2\leq 2z}z\,\mathrm{d}x\,\mathrm{d}y \\
-                      = {} & 2\pi\int_{1}^{2}z^{2}\,\mathrm{d}z                                                                                       \\
-                      = {} & \frac{2\pi}{3}\left(8-1\right) = \frac{14\pi}{3}.
+                      = {}   & 2\pi\int_{1}^{2}z^{2}\,\mathrm{d}z                                                                                       \\
+                      = {}   & \frac{2\pi}{3}\left(8-1\right) = \frac{14\pi}{3}.
                   \end{aligned}
               \]
           \end{minipage}
@@ -420,10 +437,10 @@
               \[
                   \begin{aligned}
                       V_{2} = {} & \iiint\limits_{\Omega_2}\,\mathrm{d}v = \int_{0}^{1}\,\mathrm{d}z\iint\limits_{x^2+y^2\leq 4z-z^2}\,\mathrm{d}x\,\mathrm{d}y + \int_{1}^{4}\,\mathrm{d}z\iint\limits_{x^2+y^2\leq 4-z}\,\mathrm{d}x\,\mathrm{d}y \\
-                      = {} & \pi\int_{0}^{1}\left(4z-z^{2}\right)\,\mathrm{d}z + \pi\int_{1}^{4}\left(4-z\right)\,\mathrm{d}z                                                                                                                 \\
-                      = {} & \pi\left[\left.\left(2z^{2}-\frac{z^3}{3}\right)\right|_{0}^{1}+ \left.\left(4z-\frac{z^2}{2}\right)\right|_{1}^{4}\right]                                                                                       \\
-                      = {} & \pi\left[\left(2-\frac{1}{3}\right) + \left(16-8-4+\frac{1}{2}\right)\right]                                                                                                                                     \\
-                      = {} & \pi\left(\frac{5}{3}+ \frac{9}{2}\right) = \frac{37\pi}{6}.
+                      = {}       & \pi\int_{0}^{1}\left(4z-z^{2}\right)\,\mathrm{d}z + \pi\int_{1}^{4}\left(4-z\right)\,\mathrm{d}z                                                                                                                 \\
+                      = {}       & \pi\left[\left.\left(2z^{2}-\frac{z^3}{3}\right)\right|_{0}^{1}+ \left.\left(4z-\frac{z^2}{2}\right)\right|_{1}^{4}\right]                                                                                       \\
+                      = {}       & \pi\left[\left(2-\frac{1}{3}\right) + \left(16-8-4+\frac{1}{2}\right)\right]                                                                                                                                     \\
+                      = {}       & \pi\left(\frac{5}{3}+ \frac{9}{2}\right) = \frac{37\pi}{6}.
                   \end{aligned}
               \]
           \end{minipage}

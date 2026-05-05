@@ -125,29 +125,29 @@
     \item 设$f(x)$在$(-\infty,+\infty)$上可导，其反函数存在为$g(x)$，若$\int
               _{0}^{f(x)}g(t)\,\mathrm{d}t+\int_{0}^{x}f(t)\,\mathrm{d}t=x\mathrm{e}^{x}-\mathrm{e}
               ^{x}+1$，求$f(x)$.
-          \vspace{12em}
+          \vspace{9em}
 
     \item 设函数$f(x)=ax+\frac{3}{2}bx^{2}$在区间$(0,1)$内恒大于$0$，其中$a,
               b$为未知常数.曲线$y=f(x)$与直线$x=1,y=0$所围成的区域$D$的面积为$2$. 求$a,b$的值，使得$D$绕$x$轴旋转一周得到的旋转体的体积最小，并求出此最小值.
-          \vspace{13em}
+          \vspace{9em}
 \end{enumerate}
 
 \section{证明题(每小题 5 分，共 10 分)}
 \begin{enumerate}
     \setcounter{enumi}{18}
-    \item 设函数$f(x),g(x)$在区间$[0,a]$上连续且单调增加，其中$a>0$.证明
+    \item 设函数$f(x),g(x)$在区间$[0,a]$上连续且单调增加，其中$a>0$.证明：
           \[
               a\int_{0}^{a}f(x)g(x)\,\mathrm{d}x\geq \int_{0}^{a}f(x)\,\mathrm{d}x\int_{0}^{a}
               g(x)\,\mathrm{d}x.
           \]
-          \vspace{14em}
+          \vspace{9em}
 
     \item 设$f(x)$在$[a,b]$上有二阶导数，且$f'(a)=f'(b)=0$. 证明：存在$\xi\in
               (a,b)$，使得
           \[
               (b-a)^{2}|f''(\xi)|\geq 4|f(b)-f(a)|.
           \]
-          \vspace{14em}
+          \vspace{8em}
 \end{enumerate}
 
 \chapter{2023-2024学年微积分（一）（上）期末考试参考答案}
@@ -176,12 +176,16 @@
 
     \item \textbf{Solution}. C.
 
-          $\lim_{x\to+\infty}\frac{y}{x}=\lim_{x\to+\infty}\frac{\frac{1}{x}+\ln\left(1+\mathrm{e}^{x}\right)}{x}
-              =\lim_{x\to+\infty}\frac{\ln\left(1+\mathrm{e}^{x}\right)}{x}=1$，
-
-          $\lim_{x\to+\infty}(y-x)=\lim_{x\to+\infty}\left[\frac{1}{x}+\ln\left(1+\mathrm{e}
+          计算
+          \[
+              \lim_{x\to+\infty}\frac{y}{x}=\lim_{x\to+\infty}\frac{\frac{1}{x}+\ln\left(1+\mathrm{e}^{x}\right)}{x}
+              =\lim_{x\to+\infty}\frac{\ln\left(1+\mathrm{e}^{x}\right)}{x}=1,
+          \]
+          \[
+              \lim_{x\to+\infty}(y-x)=\lim_{x\to+\infty}\left[\frac{1}{x}+\ln\left(1+\mathrm{e}
                   ^{x}\right)-x\right]=\lim_{x\to+\infty}\ln\left(\frac{1+\mathrm{e}^{x}}{\mathrm{e}^{x}}
-              \right)=\lim_{x\to+\infty}\ln\left(1+\mathrm{e}^{-x}\right)=0$，
+              \right)=\lim_{x\to+\infty}\ln\left(1+\mathrm{e}^{-x}\right)=0,
+          \]
 
           所以斜渐近线方程为$y=x$.
 
@@ -210,8 +214,11 @@
                   x^{2}, & x>0, \\
                   0,     & x=0, \\
                   -x+1,  & x<0
-              \end{cases}$，则$\lim_{x\to0^+}f'(x)=\lim_{x\to0^+}2x=0$，$\lim_{x\to0^-}f'
-              (x)=\lim_{x\to0^-}(-1)= -1$，
+              \end{cases}$，则
+          \[
+              \lim_{x\to0^+}f'(x)=\lim_{x\to0^+}2x=0,\quad\lim_{x\to0^-}f'
+              (x)=\lim_{x\to0^-}(-1)= -1,
+          \]
 
           但显然$f(x)$在$x=0$处不连续.
 
@@ -221,10 +228,9 @@
           \[
               \begin{aligned}
                   \lim_{x\to0}\frac{\ln\left(f(x+1)+\mathrm{e}^{x^2}\right)}{x^2}= {} & \lim_{x\to0}\frac{f(x+1)+\mathrm{e}^{x^2}-1}{x^2}              \\
-                  = {} & \lim_{x\to0}\frac{f(x+1)}{x^2}+\lim_{x\to0}\frac{x^2}{x^2}= 2,
+                  = {}                                                                & \lim_{x\to0}\frac{f(x+1)}{x^2}+\lim_{x\to0}\frac{x^2}{x^2}= 2,
               \end{aligned}
           \]
-
           因此$\lim_{x\to0}\frac{f(x+1)}{x^{2}}=1$.由$f(x)$在$x=1$处的连续性易知$f(1)
               =0$.
 
@@ -253,10 +259,11 @@
     \setcounter{enumi}{6}
     \item \textbf{Solution}. $-3$.
 
-          由题可知$f(2)=3$，$f'(2)=(2x-1)\bigg|_{x=2}=3$，
-
-          所以$\lim_{n\to\infty}n\left[f\left(2-\frac{1}{n}\right)-3\right] = -\lim_{n\to\infty}
-              \frac{f\left(2-\dfrac{1}{n}\right)-f(2)}{-\dfrac{1}{n}}= -f'(2) = -3$.
+          由题可知$f(2)=3$，$f'(2)=(2x-1)\bigg|_{x=2}=3$，所以
+          \[
+              \lim_{n\to\infty}n\left[f\left(2-\frac{1}{n}\right)-3\right] = -\lim_{n\to\infty}
+              \frac{f\left(2-\dfrac{1}{n}\right)-f(2)}{-\dfrac{1}{n}}= -f'(2) = -3.
+          \]
 
     \item \textbf{Solution}. $1$.
 
@@ -266,10 +273,13 @@
                   y^{\alpha-1}\right]y'=\left[-y^{\alpha}+(1-y)\alpha y^{\alpha-1}\right](1
               -y)y^{\alpha}.
           \]
-
-          由题意可知$y(t)=\frac{1}{2}$，$y''(t)=0$，代入得$\left[-\left(\frac{1}{2}\right
+          由题意可知$y(t)=\frac{1}{2}$，$y''(t)=0$，代入得
+          \[
+              \left[-\left(\frac{1}{2}\right
                   )^{\alpha}+\frac{1}{2}\alpha \left(\frac{1}{2}\right)^{\alpha-1}\right]\left
-              (\frac{1}{2}\right)^{\alpha+1}=0$，解得$\alpha=1$.
+              (\frac{1}{2}\right)^{\alpha+1}=0,
+          \]
+          解得$\alpha=1$.
 
     \item \textbf{Solution}. $\frac{1}{4}$.
 
@@ -277,8 +287,8 @@
           \[
               \begin{aligned}
                   \int_{-\frac{1}{2}}^{0}xf(2x)\,\mathrm{d}x = {} & \int_{-\frac{1}{2}}^{0}x\cdot\left(-\mathrm{e}^{-2x}\right)\,\mathrm{d}x                                                                                                               \\
-                  = {} & \frac{1}{2}\int_{-\frac{1}{2}}^{0}x\,\mathrm{d}\mathrm{e}^{-2x}= \frac{1}{2}x\mathrm{e}^{-2x}\bigg|_{-\frac{1}{2}}^{0}-\frac{1}{2}\int_{-\frac{1}{2}}^{0}\mathrm{e}^{-2x}\,\mathrm{d}x \\
-                  = {} & \frac{1}{4}\mathrm{e}+\frac{1}{4}\mathrm{e}^{-2x}\bigg|_{-\frac{1}{2}}^{0}= \frac{1}{4}.
+                  = {}                                            & \frac{1}{2}\int_{-\frac{1}{2}}^{0}x\,\mathrm{d}\mathrm{e}^{-2x}= \frac{1}{2}x\mathrm{e}^{-2x}\bigg|_{-\frac{1}{2}}^{0}-\frac{1}{2}\int_{-\frac{1}{2}}^{0}\mathrm{e}^{-2x}\,\mathrm{d}x \\
+                  = {}                                            & \frac{1}{4}\mathrm{e}+\frac{1}{4}\mathrm{e}^{-2x}\bigg|_{-\frac{1}{2}}^{0}= \frac{1}{4}.
               \end{aligned}
           \]
 
@@ -301,25 +311,23 @@
           \[
               \mathrm{e}^{y}y'+6y+6xy'+2x=0.
           \]
-
           将$x=0$，$y=0$代入上式得$y'(0)=0$.
 
           方程两边关于$x$再次求导得
           \[
               \mathrm{e}^{y}(y')^{2}+\mathrm{e}^{y}y''+12y'+6xy''+2=0.
           \]
-
           将$x=0$，$y=0$，$y'(0)=0$代入上式得$y''(0)=-2$.
 
     \item \textbf{Solution}. 由Taylor公式可得
           \[
               \begin{aligned}
-                  f(x)=\mathrm{e}^{x}\ln(1+x)-x\left(1+\frac{1}{2}x\right) = {} & \left(1+x+\frac{1}{2}x^{2}+o(x^{2})\right)\left(x-\frac{1}{2}x^{2}+\frac{1}{3}x^{3}+o(x^{3})\right)-x-\frac{1}{2}x^{2} \\
-                  = {} & x-\frac{1}{2}x^{2}+\frac{1}{3}x^{3}+x^{2}-\frac{1}{2}x^{3}+\frac{1}{2}x^{3}+o(x^{3})-x-\frac{1}{2}x^{2}                \\
-                  = {} & \frac{1}{3}x^{3}+o(x^{3}).
+                  f(x)= {} & \mathrm{e}^{x}\ln(1+x)-x\left(1+\frac{1}{2}x\right)                                                                    \\
+                  = {}     & \left(1+x+\frac{1}{2}x^{2}+o(x^{2})\right)\left(x-\frac{1}{2}x^{2}+\frac{1}{3}x^{3}+o(x^{3})\right)-x-\frac{1}{2}x^{2} \\
+                  = {}     & x-\frac{1}{2}x^{2}+\frac{1}{3}x^{3}+x^{2}-\frac{1}{2}x^{3}+\frac{1}{2}x^{3}+o(x^{3})-x-\frac{1}{2}x^{2}                \\
+                  = {}     & \frac{1}{3}x^{3}+o(x^{3}).
               \end{aligned}
           \]
-
           所以$f(x)$的主部为$\frac{1}{3}x^{3}$，阶数为$3$.
 
     \item \textbf{Solution}. 令$u=x-t$，则$\int_{0}^{x}\sin(x-t)^{2} \mathrm{d}
@@ -328,8 +336,9 @@
           故
           \[
               \begin{aligned}
-                  l = \lim_{x\to0}\frac{\mathrm{e}^{\sin x}}{x\sin x^2}\int_{0}^{x}\sin(x-t)^{2} \mathrm{d}t = {} & \lim_{x\to0}\frac{\displaystyle\int_{0}^{x}\sin u^2\,\mathrm{d}u}{x^3} \\
-                  = {} & \lim_{x\to0}\frac{\sin x^2}{3x^2}= \frac{1}{3}.
+                  l = {} & \lim_{x\to0}\frac{\mathrm{e}^{\sin x}}{x\sin x^2}\int_{0}^{x}\sin(x-t)^{2} \mathrm{d}t \\
+                  = {}   & \lim_{x\to0}\frac{\displaystyle\int_{0}^{x}\sin u^2\,\mathrm{d}u}{x^3}                 \\
+                  = {}   & \lim_{x\to0}\frac{\sin x^2}{3x^2}= \frac{1}{3}.
               \end{aligned}
           \]
 
@@ -337,8 +346,8 @@
           \[
               \begin{aligned}
                   l= {} & \lim_{n\to\infty}\frac{1}{n}\sum_{k=1}^{n}\ln\left(1+\frac{k}{n}\right)                            \\
-                  = {} & \int_{0}^{1}\ln(1+x)\,\mathrm{d}x = x\ln(1+x)\bigg|_{0}^{1}-\int_{0}^{1}\frac{x}{1+x}\,\mathrm{d}x \\
-                  = {} & \ln 2 -\left(x-\ln(1+x)\right)\bigg|_{0}^{1}= \ln 2 - (1-\ln 2) = 2\ln 2 -1.
+                  = {}  & \int_{0}^{1}\ln(1+x)\,\mathrm{d}x = x\ln(1+x)\bigg|_{0}^{1}-\int_{0}^{1}\frac{x}{1+x}\,\mathrm{d}x \\
+                  = {}  & \ln 2 -\left(x-\ln(1+x)\right)\bigg|_{0}^{1}= \ln 2 - (1-\ln 2) = 2\ln 2 -1.
               \end{aligned}
           \]
 
@@ -346,10 +355,10 @@
           \[
               \begin{aligned}
                   I = \int_{0}^{1}(x-1) f(x)\,\mathrm{d}x = {} & \frac{1}{2}\int_{0}^{1}f(x)\,\mathrm{d}(x-1)^{2}                                                  \\
-                  = {} & \left.\frac{1}{2}f(x)(x-1)^{2}\right|_{0}^{1}-\frac{1}{2}\int_{0}^{1}(x-1)^{2}f'(x)\,\mathrm{d}x  \\
-                  = {} & \frac{1}{2}\int_{0}^{1}(x-1)\sin x\,\mathrm{d}x = -\frac{1}{2}\int_{0}^{1}(x-1)\,\mathrm{d}\cos x \\
-                  = {} & -\frac{1}{2}\left[(x-1)\cos x\bigg|_{0}^{1}-\int_{0}^{1}\cos x\,\mathrm{d}x\right]                \\
-                  = {} & \frac{\sin 1-1}{2}.
+                  = {}                                         & \left.\frac{1}{2}f(x)(x-1)^{2}\right|_{0}^{1}-\frac{1}{2}\int_{0}^{1}(x-1)^{2}f'(x)\,\mathrm{d}x  \\
+                  = {}                                         & \frac{1}{2}\int_{0}^{1}(x-1)\sin x\,\mathrm{d}x = -\frac{1}{2}\int_{0}^{1}(x-1)\,\mathrm{d}\cos x \\
+                  = {}                                         & -\frac{1}{2}\left[(x-1)\cos x\bigg|_{0}^{1}-\int_{0}^{1}\cos x\,\mathrm{d}x\right]                \\
+                  = {}                                         & \frac{\sin 1-1}{2}.
               \end{aligned}
           \]
 
@@ -359,27 +368,31 @@
           对于$f(x)=4\mathrm{e}^{x}$，$\lambda = 1$是特征方程的单根，故可设特解为$y^{*}
               =Ax\mathrm{e}^{x}$，
 
-          代入方程得$A(x+2)\mathrm{e}^{x}+2A(x+1)\mathrm{e}^{x}-3Ax\mathrm{e}^{x}=4\mathrm{e}
-              ^{x}$，解得$A=1$，
+          代入方程得
+          \[
+              A(x+2)\mathrm{e}^{x}+2A(x+1)\mathrm{e}^{x}-3Ax\mathrm{e}^{x}=4\mathrm{e}^{x},
+          \]
+          解得$A=1$，所以非齐次方程的通解为$y=C_{1}\mathrm{e}^{-3x}+C_{2}\mathrm{e}^{x}+x\mathrm{e}^{x}$.
 
-          所以非齐次方程的通解为$y=C_{1}\mathrm{e}^{-3x}+C_{2}\mathrm{e}^{x}+x\mathrm{e}
-              ^{x}$.
-
-          由题可知$y(0)=1$，$y'(0)=\tan\frac{3\pi}{4}=-1$，代入得$\begin{cases}
+          由题可知$y(0)=1$，$y'(0)=\tan\frac{3\pi}{4}=-1$，代入得
+          \[
+              \begin{cases}
                   C_{1}+C_{2}=1, \\
                   -3C_{1}+C_{2}+1=-1
-              \end{cases}$，解得$C_{1}=\frac{3}{4}$，$C_{2}=\frac{1}{4}$.
-
-          因此$f(x)=\frac{3}{4}\mathrm{e}^{-3x}+\frac{1}{4}\mathrm{e}^{x}+x\mathrm{e}
-              ^{x}$.
+              \end{cases}
+          \]
+          解得$C_{1}=\frac{3}{4}$，$C_{2}=\frac{1}{4}$. 因此$f(x)=\frac{3}{4}\mathrm{e}^{-3x}+\frac{1}{4}\mathrm{e}^{x}+x\mathrm{e}^{x}$.
 \end{enumerate}
 
 \section{综合题(每小题 7 分，共 14 分)}
 \begin{enumerate}
     \setcounter{enumi}{16}
-    \item \textbf{Solution}. 方程$\int_{0}^{f(x)}g(t)\,\mathrm{d}t+\int_{0}^{x}
-              f(t)\,\mathrm{d}t=x\mathrm{e}^{x}-\mathrm{e}^{x}+1$两边关于$x$求导得$g(f(x))\cdot
-              f'(x)+f(x)=x\mathrm{e}^{x}$.
+    \item \textbf{Solution}. 方程
+          \[
+              \int_{0}^{f(x)}g(t)\,\mathrm{d}t+\int_{0}^{x}
+              f(t)\,\mathrm{d}t=x\mathrm{e}^{x}-\mathrm{e}^{x}+1
+          \]
+          两边关于$x$求导得$g(f(x))\cdot f'(x)+f(x)=x\mathrm{e}^{x}$.
 
           由反函数的性质，$g(f(x))=x$，所以上式即$xf'(x)+f(x)=x\mathrm{e}^{x}$.
 
@@ -387,37 +400,44 @@
           \[
               f'(x)+\frac{1}{x}f(x)=\mathrm{e}^{x}.
           \]
-
           由一阶非齐次线性微分方程的通解公式得
           \[
               \begin{aligned}
                   y = {} & \mathrm{e}^{-\int\frac{1}{x}\,\mathrm{d}x}\left(C+\int\mathrm{e}^{x}\mathrm{e}^{\int\frac{1}{x}\,\mathrm{d}x}\,\mathrm{d}x\right) \\
-                  = {} & \frac{1}{x}\left(C+\int x\mathrm{e}^{x}\,\mathrm{d}x\right) = \frac{1}{x}\left(C+x\mathrm{e}^{x}-\mathrm{e}^{x}\right).
+                  = {}   & \frac{1}{x}\left(C+\int x\mathrm{e}^{x}\,\mathrm{d}x\right) = \frac{1}{x}\left(C+x\mathrm{e}^{x}-\mathrm{e}^{x}\right).
               \end{aligned}
           \]
-
-          由$f(x)$在$x=0$处连续，所以$\lim_{x\to0}\frac{1}{x}\left(C+x\mathrm{e}^{x}-
+          由$f(x)$在$x=0$处连续，所以
+          \[
+              \lim_{x\to0}\frac{1}{x}\left(C+x\mathrm{e}^{x}-
               \mathrm{e}^{x}\right)=\lim_{x\to0}\left[\mathrm{e}^{x}+\frac{C-\mathrm{e}^{x}}{x}
-                  \right]=f(0)=0$，解得$C=1$.
-
-          所以$f(x)=
+                  \right]=f(0)=0,
+          \]
+          解得$C=1$. 所以
+          \[
+              f(x)=
               \begin{cases}
                   0,                                                        & x=0,    \\
                   \frac{1}{x}\left(1+x\mathrm{e}^{x}-\mathrm{e}^{x}\right), & x\neq0.
-              \end{cases}$
-
-    \item \textbf{Solution}. 由题可知$\int_{0}^{1}\left(ax+\frac{3}{2}bx^{2}
-              \right)\,\mathrm{d}x=\frac{a}{2}+\frac{b}{2}=2$，所以$a=4-b$.
-
-          旋转体的体积$V=$
-          \[
-              \begin{aligned}
-                  \int_{0}^{1}\pi f^{2}(x)\,\mathrm{d}x = {} & \pi\int_{0}^{1}\left[(4-b)x+\frac{3}{2}bx^{2}\right]^{2}\,\mathrm{d}x=\pi\int_{0}^{1}\left[\frac{9}{4}b^{2}x^{4}+3(4-b)bx^{3}+(4-b)^{2} x^{2}\right]\mathrm{d}x \\
-                  = {} & \pi\left[\frac{9}{20}b^{2}+\frac{3}{4}(4-b)b+\frac{1}{3}(4-b)^{2}\right] = \left(\frac{1}{30}b^{2}+\frac{1}{3}b+\frac{16}{3}\right)\pi.
-              \end{aligned}
+              \end{cases}
           \]
 
-          $V'=\left(\frac{1}{3}+\frac{1}{15}b\right)\pi$，令$V'=0$解得$b=-5$，此时$V''(-5)=\frac{\pi}{15}>0$，所以$V$的最小值存在，$V(-5)=\frac{9}{2}\pi$.
+    \item \textbf{Solution}. 由题可知
+          \[
+              \int_{0}^{1}\left(ax+\frac{3}{2}bx^{2}
+              \right)\,\mathrm{d}x=\frac{a}{2}+\frac{b}{2}=2,
+          \]
+          所以$a=4-b$.旋转体的体积$V=$
+          \[
+              \begin{aligned}
+                  \int_{0}^{1}\pi f^{2}(x)\,\mathrm{d}x = {} & \pi\int_{0}^{1}\left[(4-b)x+\frac{3}{2}bx^{2}\right]^{2}\,\mathrm{d}x                                                                   \\
+                  = {}                                       & \pi\int_{0}^{1}\left[\frac{9}{4}b^{2}x^{4}+3(4-b)bx^{3}+(4-b)^{2} x^{2}\right]\mathrm{d}x                                               \\
+                  = {}                                       & \pi\left[\frac{9}{20}b^{2}+\frac{3}{4}(4-b)b+\frac{1}{3}(4-b)^{2}\right] = \left(\frac{1}{30}b^{2}+\frac{1}{3}b+\frac{16}{3}\right)\pi.
+              \end{aligned}
+          \]
+          $V'=\left(\frac{1}{3}+\frac{1}{15}b\right)\pi$，令$V'=0$解得$b=-5$，
+
+          此时$V''(-5)=\frac{\pi}{15}>0$，所以$V$的最小值存在，$V(-5)=\frac{9}{2}\pi$.
 
           故当$a=9$，$b=-5$时，$D$绕$x$轴旋转一周得到的旋转体的体积最小，此最小值为$\frac{9}{2}
               \pi$.
@@ -431,11 +451,10 @@
           \[
               \begin{aligned}
                   F'(x) = {} & \int_{0}^{x}f(t)g(t)\,\mathrm{d}t+x f(x)g(x)-f(x)\int_{0}^{x}g(t)\,\mathrm{d}t-g(x)\int_{0}^{x}f(t)\,\mathrm{d}t \\
-                  = {} & \int_{0}^{x}\left[f(t)g(t)+f(x)g(x)-f(x)g(t)-g(x)f(t)\right]\mathrm{d}t                                          \\
-                  = {} & \int_{0}^{x}\left[f(x)-f(t)\right]\cdot\left[g(x)-g(t)\right]\mathrm{d}t.
+                  = {}       & \int_{0}^{x}\left[f(t)g(t)+f(x)g(x)-f(x)g(t)-g(x)f(t)\right]\mathrm{d}t                                          \\
+                  = {}       & \int_{0}^{x}\left[f(x)-f(t)\right]\cdot\left[g(x)-g(t)\right]\mathrm{d}t.
               \end{aligned}
           \]
-
           由题可知$f(x),g(x)$在$[0,a]$上单调增加，所以$\forall\,t\in[0,x]$，$f(x)-f(t
               )\geq0$，$g(x)-g(t)\geq0$，
 
@@ -451,20 +470,18 @@
     \item \textbf{Proof}. 由Taylor公式，将$f\left(\frac{a+b}{2}\right)$分别在$x
               =a$和$x=b$处展开得
           \[
-              \begin{gathered}
-                  f\left(\frac{a+b}{2}\right)=f(a)+f'(a)\left(\frac{a+b}{2}-a\right)+\frac{1}{2}f''(\xi_1)\left(\frac{a+b}{2}-a\right)^{2},\\
-                  f\left(\frac{a+b}{2}\right)=f(b)+f'(b)\left(\frac{a+b}{2}-b\right)+\frac{1}{2}f''(\xi_2)\left(\frac{a+b}{2}-b\right)^{2}.
-              \end{gathered}
+              f\left(\frac{a+b}{2}\right)=f(a)+f'(a)\left(\frac{a+b}{2}-a\right)+\frac{1}{2}f''(\xi_1)\left(\frac{a+b}{2}-a\right)^{2},
           \]
-
+          \[
+              f\left(\frac{a+b}{2}\right)=f(b)+f'(b)\left(\frac{a+b}{2}-b\right)+\frac{1}{2}f''(\xi_2)\left(\frac{a+b}{2}-b\right)^{2}.
+          \]
           因$f'(a)=f'(b)=0$，所以上式即
           \[
-              \begin{gathered}
-                  f\left(\frac{a+b}{2}\right)=f(a)+\frac{1}{8}f''(\xi_1)(b-a)^{2},\\
-                  f\left(\frac{a+b}{2}\right)=f(b)+\frac{1}{8}f''(\xi_2)(b-a)^{2},
-              \end{gathered}
+              f\left(\frac{a+b}{2}\right)=f(a)+\frac{1}{8}f''(\xi_1)(b-a)^{2},
           \]
-
+          \[
+              f\left(\frac{a+b}{2}\right)=f(b)+\frac{1}{8}f''(\xi_2)(b-a)^{2},
+          \]
           其中$\xi_{1}\in\left(a,\frac{a+b}{2}\right)$，$\xi_{2}\in\left(\frac{a+b}{2}
               ,b\right)$.
 
@@ -473,17 +490,15 @@
               0=f\left(\frac{a+b}{2}\right)-f\left(\frac{a+b}{2}\right)=f(a)-f(b)+\frac{1}{8}
               \left[f''(\xi_{1})-f''(\xi_{2})\right](b-a)^{2},
           \]
-
           所以
           \[
               |f(b)-f(a)|=\frac{(b-a)^{2}}{8}\left|f''(\xi_{1})-f''(\xi_{2})\right|\leq
               \frac{(b-a)^{2}}{8}\left(|f''(\xi_{1})|+|f''(\xi_{2})|\right).
           \]
-
-          取$|f''(\xi)|=\max\{|f''(\xi_{1})|,|f''(\xi_{2})|\}$，
-
-          则$|f(b)-f(a)|\leq \frac{(b-a)^{2}}{8}\cdot 2|f''(\xi)|$，即$(b-a)^{2}|f''(
-              \xi)|\geq 4|f(b)-f(a)|$.
+          取$|f''(\xi)|=\max\{|f''(\xi_{1})|,|f''(\xi_{2})|\}$，则$|f(b)-f(a)|\leq \frac{(b-a)^{2}}{8}\cdot 2|f''(\xi)|$，即
+          \[
+              (b-a)^{2}|f''(\xi)|\geq 4|f(b)-f(a)|.
+          \]
 \end{enumerate}
 \end{document}
 

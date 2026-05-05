@@ -78,8 +78,8 @@
           \[
               \begin{aligned}
                   y = {} & \mathrm{e}^{-\int\left(-\frac{1}{x}\right)\,\mathrm{d}x}\left(C+\int\left(x\cos x\right)\mathrm{e}^{\int\left(-\frac{1}{x}\right)\,\mathrm{d}x}\,\mathrm{d}x\right) \\
-                  = {} & x\left[C+\int\left(x\cos x\right)\cdot\frac{1}{x}\,\mathrm{d}x\right] = x\left(C+\int\cos x\,\mathrm{d}x\right) = x(C+\sin x)                                       \\
-                  = {} & Cx+x\sin x.
+                  = {}   & x\left[C+\int\left(x\cos x\right)\cdot\frac{1}{x}\,\mathrm{d}x\right] = x\left(C+\int\cos x\,\mathrm{d}x\right) = x(C+\sin x)                                       \\
+                  = {}   & Cx+x\sin x.
               \end{aligned}
           \]
 
@@ -108,11 +108,15 @@
                   -1 & 0 & 1
               \end{vmatrix}\right| = \frac{1}{6}.$
 
-    \item \textbf{Solution}. $z_{x} = y\left(f_{1}+f_{2}\cdot 2xy\right)=y\left(f
-                  _{1}+2x y f_{2}\right)$，
-
-          $z_{xy}= f_{1}+2xy f_{2} + y\left[x^{2}f_{12}+2x\left(f_{2}+yf_{22}\cdot x^{2}
-                  \right)\right] = f_{1}+4xyf_{2} + x^{2}y f_{12}+ 2x^{3} y^{2} f_{22}$.
+    \item \textbf{Solution}.
+          \[
+              z_{x} = y\left(f_{1}+f_{2}\cdot 2xy\right)=y\left(f
+                  _{1}+2x y f_{2}\right),
+          \]
+          \[
+              z_{xy}= f_{1}+2xy f_{2} + y\left[x^{2}f_{12}+2x\left(f_{2}+yf_{22}\cdot x^{2}
+                  \right)\right] = f_{1}+4xyf_{2} + x^{2}y f_{12}+ 2x^{3} y^{2} f_{22}.
+          \]
 
     \item \textbf{Solution}. 设$F(x,y,z) = x^{2}+y^{2}-z$，$G(x,y,z)=x+y+z-4$.
 
@@ -131,11 +135,13 @@
           方程组$\begin{cases}
                   F(x,y,z) = x^{2}+y^{2}-z=0, \\
                   G(x,y,z)=x+y+z-4=0
-              \end{cases}$两边对$x$求导，得 $\begin{cases}
+              \end{cases}$两边对$x$求导，得
+          \[
+              \begin{cases}
                   2x+2y\frac{\mathrm{d}y}{\mathrm{d}x}-\frac{\mathrm{d}z}{\mathrm{d}x}=0, \\[6pt]
                   1+\frac{\mathrm{d}y}{\mathrm{d}x}+\frac{\mathrm{d}z}{\mathrm{d}x}=0.
-              \end{cases}$
-
+              \end{cases}
+          \]
           将$x=1$，$y=1$代入上式，得$\begin{cases}
                   2\frac{\mathrm{d}y}{\mathrm{d}x}-\frac{\mathrm{d}z}{\mathrm{d}x}=-2, \\[6pt]
                   \frac{\mathrm{d}y}{\mathrm{d}x}+\frac{\mathrm{d}z}{\mathrm{d}x}=-1
@@ -144,9 +150,12 @@
                   \frac{\mathrm{d}z}{\mathrm{d}x}= 0.
               \end{cases}$
 
-          所以$\frac{\mathrm{d}w}{\mathrm{d}x}= 2xyz + x^{2} z \cdot \frac{\mathrm{d}y}{\mathrm{d}x}
+          所以
+          \[
+              \frac{\mathrm{d}w}{\mathrm{d}x}= 2xyz + x^{2} z \cdot \frac{\mathrm{d}y}{\mathrm{d}x}
               + x^{2} y \cdot \frac{\mathrm{d}z}{\mathrm{d}x}= 4+2\frac{\mathrm{d}y}{\mathrm{d}x}
-              +\frac{\mathrm{d}z}{\mathrm{d}x}= 2$.
+              +\frac{\mathrm{d}z}{\mathrm{d}x}= 2.
+          \]
 
     \item \textbf{Solution}. 设$F(x,y,z) = x^{2}+y^{2}+z^{2}-3$，则$\nabla F = (2
               x,2y,2z)$，
@@ -167,8 +176,8 @@
               \[
                   \begin{aligned}
                       I = {} & \int_{0}^{1}\,\mathrm{d}y\int_{1-y}^{1+y^2}f(x,y)\,\mathrm{d}x                                                                  \\
-                      = {} & \iint\limits_{D_1}f(x,y)\,\mathrm{d}x\,\mathrm{d}y + \iint\limits_{D_2}f(x,y)\,\mathrm{d}x\,\mathrm{d}y                         \\
-                      = {} & \int_{0}^{1}\,\mathrm{d}x\int_{1-x}^{1}f(x,y)\,\mathrm{d}y + \int_{1}^{2}\,\mathrm{d}x\int_{\sqrt{x-1}}^{1}f(x,y)\,\mathrm{d}y.
+                      = {}   & \iint\limits_{D_1}f(x,y)\,\mathrm{d}x\,\mathrm{d}y + \iint\limits_{D_2}f(x,y)\,\mathrm{d}x\,\mathrm{d}y                         \\
+                      = {}   & \int_{0}^{1}\,\mathrm{d}x\int_{1-x}^{1}f(x,y)\,\mathrm{d}y + \int_{1}^{2}\,\mathrm{d}x\int_{\sqrt{x-1}}^{1}f(x,y)\,\mathrm{d}y.
                   \end{aligned}
               \]
           \end{minipage}
@@ -182,9 +191,12 @@
           \textbf{法一}. $\Omega$是由平面$x+y+z=1$与三个坐标面所围成的四面体，其体积$V
               = \frac{1}{6}$，形心坐标为$\left(\frac{1}{4},\frac{1}{4},\frac{1}{4}\right)$.
 
-          故$I = \iiint\limits_{\Omega}(x+2y+3z)\,\mathrm{d}v = \iiint\limits_{\Omega}x
+          故
+          \[
+              I = \iiint\limits_{\Omega}(x+2y+3z)\,\mathrm{d}v = \iiint\limits_{\Omega}x
               \mathrm{d}v + 2\iiint\limits_{\Omega}y\,\mathrm{d}v + 3\iiint\limits_{\Omega}
-              z\,\mathrm{d}v = (1+2+3)\cdot \frac{1}{4}V = \frac{1}{4}$.
+              z\,\mathrm{d}v = (1+2+3)\cdot \frac{1}{4}V = \frac{1}{4}.
+          \]
 
           \textbf{法二}. 令$\begin{cases}
                   u = x+y+z,             \\
@@ -206,12 +218,12 @@
           \[
               \begin{aligned}
                   I = {} & \iiint\limits_{\Omega}(x+2y+3z)\,\mathrm{d}x\,\mathrm{d}y\,\mathrm{d}z = \int_{0}^{1}\,\mathrm{d}u\int_{0}^{1}\,\mathrm{d}v\int_{0}^{1}\left[u(1-v)+2uv(1-w)+3uvw\right]u^{2} v\,\mathrm{d}w \\
-                  = {} & \int_{0}^{1}u^{3}\,\mathrm{d}u\int_{0}^{1}v\,\mathrm{d}v\int_{0}^{1}\left(1+v+vw\right)\,\mathrm{d}w = \frac{1}{4}\int_{0}^{1}v\left(1+v+\frac{v}{2}\right)\,\mathrm{d}v = \frac{1}{4}.
+                  = {}   & \int_{0}^{1}u^{3}\,\mathrm{d}u\int_{0}^{1}v\,\mathrm{d}v\int_{0}^{1}\left(1+v+vw\right)\,\mathrm{d}w = \frac{1}{4}\int_{0}^{1}v\left(1+v+\frac{v}{2}\right)\,\mathrm{d}v = \frac{1}{4}.
               \end{aligned}
           \]
+          此代换考虑比例关系，先确定总量$u=x+y+z$，再确定后两项$y+z$占总量的比例$v$，
 
-          此代换考虑比例关系，先确定总量$u=x+y+z$，再确定后两项$y+z$占总量的比例$v$，最后确定$z$占后两项的总和$y
-              +z$的比例$w$，从而把积分限转化为常数.
+          最后确定$z$占后两项的总和$y+z$的比例$w$，从而把积分限转化为常数.
 
           再考虑一例：计算$I=\iint\limits_{D}x^{2} y\,\mathrm{d}x\,\mathrm{d}y$，其中$D$是以$(
               0,0)$，$(3,0)$，$(0,4)$为顶点的三角形及其内部.
@@ -232,7 +244,7 @@
           \[
               \begin{aligned}
                   I = {} & \iint\limits_{D}x^{2} y\,\mathrm{d}x\,\mathrm{d}y = \int_{0}^{1}\,\mathrm{d}u\int_{0}^{1}\left[3u(1-v)\right]^{2} \cdot 4uv \cdot 12u\,\mathrm{d}v \\
-                  = {} & 432\int_{0}^{1}u^{4}\,\mathrm{d}u\int_{0}^{1}v(1-v)^{2}\,\mathrm{d}v = 432\cdot\frac{1}{5}\cdot\frac{2!}{4!}= \frac{36}{5}.
+                  = {}   & 432\int_{0}^{1}u^{4}\,\mathrm{d}u\int_{0}^{1}v(1-v)^{2}\,\mathrm{d}v = 432\cdot\frac{1}{5}\cdot\frac{2!}{4!}= \frac{36}{5}.
               \end{aligned}
           \]
 
@@ -241,8 +253,8 @@
           \[
               \begin{aligned}
                   I = {} & \iiint\limits_{\Omega}\sqrt{x^2+y^2+z^2}\,\mathrm{d}x\,\mathrm{d}y\,\mathrm{d}z = \int_{0}^{2\pi}\,\mathrm{d}\theta\int_{0}^{\frac{\pi}{4}}\,\mathrm{d}\varphi\int_{0}^{\frac{1}{\cos \varphi}}\rho^{3}\sin \varphi\,\mathrm{d}\rho \\
-                  = {} & 2\pi\int_{0}^{\frac{\pi}{4}}\sin \varphi\,\mathrm{d}\varphi\int_{0}^{\frac{1}{\cos \varphi}}\rho^{3}\,\mathrm{d}\rho = \frac{\pi}{2}\int_{0}^{\frac{\pi}{4}}\frac{\sin \varphi}{\cos^{4} \varphi}\,\mathrm{d}\varphi                \\
-                  = {} & -\frac{\pi}{2}\int_{0}^{\frac{\pi}{4}}\frac{1}{\cos^4 \varphi}\,\mathrm{d}(\cos \varphi) = \left.\frac{\pi}{2}\cdot \frac{1}{3\cos^{3} \varphi}\right|_{0}^{\frac{\pi}{4}}= \frac{\pi}{6}\left(2\sqrt{2}-1\right).
+                  = {}   & 2\pi\int_{0}^{\frac{\pi}{4}}\sin \varphi\,\mathrm{d}\varphi\int_{0}^{\frac{1}{\cos \varphi}}\rho^{3}\,\mathrm{d}\rho = \frac{\pi}{2}\int_{0}^{\frac{\pi}{4}}\frac{\sin \varphi}{\cos^{4} \varphi}\,\mathrm{d}\varphi                \\
+                  = {}   & -\frac{\pi}{2}\int_{0}^{\frac{\pi}{4}}\frac{1}{\cos^4 \varphi}\,\mathrm{d}(\cos \varphi) = \left.\frac{\pi}{2}\cdot \frac{1}{3\cos^{3} \varphi}\right|_{0}^{\frac{\pi}{4}}= \frac{\pi}{6}\left(2\sqrt{2}-1\right).
               \end{aligned}
           \]
 
@@ -257,10 +269,11 @@
           \[
               \begin{aligned}
                   S = {} & \iint\limits_{S}\,\mathrm{d}S = \iint\limits_{D}\sqrt{1+\left(\frac{\partial z}{\partial x}\right)^2+\left(\frac{\partial z}{\partial y}\right)^2}\,\mathrm{d}x\,\mathrm{d}y \\
-                  = {} & \iint\limits_{D}\sqrt{1+\frac{x^2}{x^2+y^2}+\frac{y^2}{x^2+y^2}}\,\mathrm{d}x\,\mathrm{d}y = \sqrt{2}\iint\limits_{D}\,\mathrm{d}x\,\mathrm{d}y                              \\
-                  = {} & \sqrt{2}\pi.
+                  = {}   & \iint\limits_{D}\sqrt{1+\frac{x^2}{x^2+y^2}+\frac{y^2}{x^2+y^2}}\,\mathrm{d}x\,\mathrm{d}y = \sqrt{2}\iint\limits_{D}\,\mathrm{d}x\,\mathrm{d}y                              \\
+                  = {}   & \sqrt{2}\pi.
               \end{aligned}
           \]
+
 \end{enumerate}
 
 \section{综合题(每小题 8 分，共 40 分)}
@@ -327,7 +340,6 @@
                   \frac{\partial L}{\partial \mu}= 4x+2y+z-30 = 0.
               \end{cases}
           \]
-
           $\frac{\partial L}{\partial x}-2\frac{\partial L}{\partial y}$，得$2\lambda
               x = 8\lambda y$，所以$x=4y$或$\lambda=0$.
 
@@ -359,10 +371,10 @@
               \[
                   \begin{aligned}
                       I = {} & \iint\limits_{D}\left(y\mathrm{e}^{x}+\sqrt{x^2+y^2}\right)\,\mathrm{d}x\,\mathrm{d}y                                                                                                     \\
-                      = {} & 2 \iint\limits_{D_1}\sqrt{x^2+y^2}\,\mathrm{d}x\,\mathrm{d}y                                                                                                                              \\
-                      = {} & 2\int_{0}^{\pi}\,\mathrm{d}\theta\int_{0}^{a\left(1+\cos \theta\right)}r^{2}\,\mathrm{d}r = \frac{2a^3}{3}\int_{0}^{\pi}\left(1+\cos \theta\right)^{3}\,\mathrm{d}\theta                  \\
-                      = {} & \frac{2a^3}{3}\int_{0}^{\pi}\left(1+3\cos \theta + 3\cos^{2} \theta + \cos^{3} \theta\right)\,\mathrm{d}\theta                                                                            \\
-                      = {} & \frac{2a^3}{3}\int_{0}^{\pi}\left(1+3\cos^{2} \theta\right)\,\mathrm{d}\theta = \frac{2\pi a^3}{3}+ 4a^{3}\int_{0}^{\frac{\pi}{2}}\cos^{2} \theta\,\mathrm{d}\theta = \frac{5\pi a^3}{3}.
+                      = {}   & 2 \iint\limits_{D_1}\sqrt{x^2+y^2}\,\mathrm{d}x\,\mathrm{d}y                                                                                                                              \\
+                      = {}   & 2\int_{0}^{\pi}\,\mathrm{d}\theta\int_{0}^{a\left(1+\cos \theta\right)}r^{2}\,\mathrm{d}r = \frac{2a^3}{3}\int_{0}^{\pi}\left(1+\cos \theta\right)^{3}\,\mathrm{d}\theta                  \\
+                      = {}   & \frac{2a^3}{3}\int_{0}^{\pi}\left(1+3\cos \theta + 3\cos^{2} \theta + \cos^{3} \theta\right)\,\mathrm{d}\theta                                                                            \\
+                      = {}   & \frac{2a^3}{3}\int_{0}^{\pi}\left(1+3\cos^{2} \theta\right)\,\mathrm{d}\theta = \frac{2\pi a^3}{3}+ 4a^{3}\int_{0}^{\frac{\pi}{2}}\cos^{2} \theta\,\mathrm{d}\theta = \frac{5\pi a^3}{3}.
                   \end{aligned}
               \]
           \end{minipage}
@@ -377,19 +389,22 @@
               |f(x,y)-f(0,0)| = \sqrt{|xy|}\leq \sqrt{\frac{x^{2}+y^{2}}{2}}< \frac{\delta}{\sqrt{2}}
               = \varepsilon
           \]
-
           所以$\lim_{\substack{x\to 0 \\ y\to 0}}\sqrt{|xy|}=0=f(0,0)$，函数$f(x,y)$在原点处连续.
 
           又$f(x,0)=f(0,y)\equiv 0$，所以$f_{x}(0,0)=f_{y}(0,0)=0$，因此函数$f(x,y)$在原点处的偏导数存在.
 
-          考察$\lim_{\substack{x\to 0 \\ y\to 0}}\frac{f(x,y)-f(0,0)-f_{x}(0,0)x-f_{y}(0,0)y}{\sqrt{x^{2}+y^{2}}}
-              = \lim_{\substack{x\to 0 \\ y\to 0}}\sqrt{\frac{|xy|}{x^{2}+y^{2}}}$.
+          考察
+          \[
+              \lim_{\substack{x\to 0 \\ y\to 0}}\frac{f(x,y)-f(0,0)-f_{x}(0,0)x-f_{y}(0,0)y}{\sqrt{x^{2}+y^{2}}}
+              = \lim_{\substack{x\to 0 \\ y\to 0}}\sqrt{\frac{|xy|}{x^{2}+y^{2}}}.
+          \]
+          当$y=x,x\to0,y\to0$时，
+          \[
+              \lim_{\substack{x\to 0 \\ y\to 0}}\sqrt{\frac{|xy|}{x^{2}+y^{2}}}
+              = \lim_{x\to0}\sqrt{\frac{|x^{2}|}{2x^{2}}}= \frac{1}{\sqrt{2}},
+          \]
+          所以$\lim _{\substack{x\to 0 \\ y\to 0}}\sqrt{\frac{|xy|}{x^{2}+y^{2}}}\neq 0$，函数$f(x,y)$在原点处不可微.
 
-          当$y=x,x\to0,y\to0$时，$\lim_{\substack{x\to 0 \\ y\to 0}}\sqrt{\frac{|xy|}{x^{2}+y^{2}}}
-              = \lim_{x\to0}\sqrt{\frac{|x^{2}|}{2x^{2}}}= \frac{1}{\sqrt{2}}$，所以$\lim
-              _{\substack{x\to 0 \\ y\to 0}}\sqrt{\frac{|xy|}{x^{2}+y^{2}}}\neq 0$，
-
-          因此函数$f(x,y)$在原点处不可微.
 \end{enumerate}
 \end{document}
 

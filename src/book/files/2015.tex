@@ -103,11 +103,15 @@
               \frac{1+2+\cdots+n}{n^{2}+n+n}< x_{n} < \frac{1+2+\cdots+n}{n^{2}+n+1},
           \]
 
-          又$\lim_{n\to\infty}\frac{1+2+\cdots+n}{n^{2}+n+n}=\lim_{n\to\infty}\frac{n(n+1)}{2(n^{2}+2n)}
-              =\frac{1}{2}$,
-
-          $\lim_{n\to\infty}\frac{1+2+\cdots+n}{n^{2}+n+1}=\lim_{n\to\infty}\frac{n(n+1)}{2(n^{2}+n+1)}
-              =\frac{1}{2}$,
+          又
+          \[
+              \begin{gathered}
+                  \lim_{n\to\infty}\frac{1+2+\cdots+n}{n^{2}+n+n}=\lim_{n\to\infty}\frac{n(n+1)}{2(n^{2}+2n)}
+                  =\frac{1}{2}, \\
+                  \lim_{n\to\infty}\frac{1+2+\cdots+n}{n^{2}+n+1}=\lim_{n\to\infty}\frac{n(n+1)}{2(n^{2}+n+1)}
+                  =\frac{1}{2},
+              \end{gathered}
+          \]
 
           由夹逼定理得$\lim_{n\to\infty}x_{n}=\frac{1}{2}$.
 
@@ -115,9 +119,9 @@
           \[
               \begin{aligned}
                   l = {} & \exp\left[\lim_{x\to0}\frac{1}{x}\ln\left(\frac{\mathrm{e}^x+\mathrm{e}^{2x}+\cdots+\mathrm{e}^{nx}}{n}\right)\right]                                           \\
-                  = {} & \exp\left[\lim_{x\to0}\frac{1}{x}\left(\frac{\mathrm{e}^x+\mathrm{e}^{2x}+\cdots+\mathrm{e}^{nx}}{n}-1\right)\right]                                            \\
-                  = {} & \exp\left[\lim_{x\to0}\frac{1}{n}\left(\frac{\left(\mathrm{e}^x-1\right)+\left(\mathrm{e}^{2x}-1\right)+\cdots+\left(\mathrm{e}^{nx}-1\right)}{x}\right)\right] \\
-                  = {} & \exp\left[\frac{1}{n}(1+2+\cdots+n)\right]=\mathrm{e}^{\frac{n+1}{2}}.
+                  = {}   & \exp\left[\lim_{x\to0}\frac{1}{x}\left(\frac{\mathrm{e}^x+\mathrm{e}^{2x}+\cdots+\mathrm{e}^{nx}}{n}-1\right)\right]                                            \\
+                  = {}   & \exp\left[\lim_{x\to0}\frac{1}{n}\left(\frac{\left(\mathrm{e}^x-1\right)+\left(\mathrm{e}^{2x}-1\right)+\cdots+\left(\mathrm{e}^{nx}-1\right)}{x}\right)\right] \\
+                  = {}   & \exp\left[\frac{1}{n}(1+2+\cdots+n)\right]=\mathrm{e}^{\frac{n+1}{2}}.
               \end{aligned}
           \]
 
@@ -125,8 +129,8 @@
           \[
               \begin{aligned}
                   l= {} & \lim_{x\to+\infty}\frac{\ln\left(x\sin\frac{1}{x}\right)}{\frac{1}{x^2}}= \lim_{t\to0^+}\frac{\ln\left(\frac{\sin t}{t}\right)}{t^2} \\
-                  = {} & \lim_{t\to0^+}\frac{\frac{\sin t}{t}-1}{t^2}=\lim_{t\to0^+}\frac{\sin t-t}{t^3}                                                      \\
-                  = {} & \lim_{t\to0^+}\frac{\cos t-1}{3t^2}=-\frac{1}{6}.
+                  = {}  & \lim_{t\to0^+}\frac{\frac{\sin t}{t}-1}{t^2}=\lim_{t\to0^+}\frac{\sin t-t}{t^3}                                                      \\
+                  = {}  & \lim_{t\to0^+}\frac{\cos t-1}{3t^2}=-\frac{1}{6}.
               \end{aligned}
           \]
 
@@ -141,11 +145,10 @@
           \[
               \begin{aligned}
                   1= {} & \lim_{x\to0}\frac{\arcsin x- x}{cx^{r}}=\lim_{x\to0}\frac{\frac{1}{\sqrt{1-x^{2}}}-1}{crx^{r-1}} \\
-                  = {} & \lim_{x\to0}\frac{1}{\sqrt{1-x^2}}\cdot\frac{1-\sqrt{1-x^2}}{crx^{r-1}}                          \\
-                  = {} & \lim_{x\to0}\frac{\frac{1}{2}x^2}{crx^{r-1}},
+                  = {}  & \lim_{x\to0}\frac{1}{\sqrt{1-x^2}}\cdot\frac{1-\sqrt{1-x^2}}{crx^{r-1}}                          \\
+                  = {}  & \lim_{x\to0}\frac{\frac{1}{2}x^2}{crx^{r-1}},
               \end{aligned}
           \]
-
           因此必须$\begin{cases}
                   r-1=2, \\
                   cr=\frac{1}{2},
@@ -153,24 +156,25 @@
 
           所以$u(x)$的主部为$\frac{1}{6}x^{3}$，阶数为3.
 
-    \item \textbf{Solution}. $y=\frac{1}{2}\left[\ln\frac{2}{\pi}+\ln\arctan\frac{1}{x}
-                  \right]$，
-
-          所以
+    \item \textbf{Solution}. 因为$y=\frac{1}{2}\left[\ln\frac{2}{\pi}+\ln\arctan\frac{1}{x}
+                  \right]$，所以
           \[
               \begin{aligned}
                   y' & =\frac{1}{2}\cdot\frac{1}{\arctan\frac{1}{x}}\cdot\frac{1}{1+\frac{1}{x^{2}}}\cdot\left(-\frac{1}{x^{2}}\right) \\
                      & = -\frac{1}{2(x^{2}+1)\arctan\frac{1}{x}}.
               \end{aligned}
           \]
-
           代入$x=1$得$y'(1)=-\frac{1}{4\arctan 1}=-\frac{1}{\pi}$.
 
-    \item \textbf{Solution}. $\frac{\mathrm{d}y}{\mathrm{d}x}=\frac{x\cos x-\sin x}{x^{2}}$，
-
-          $\frac{\mathrm{d}y}{\mathrm{d}(\cot x)}=\frac{\frac{\mathrm{d}y}{\mathrm{d}x}}{\frac{\mathrm{d}(\cot
+    \item \textbf{Solution}.
+          \[
+              \frac{\mathrm{d}y}{\mathrm{d}x}=\frac{x\cos x-\sin x}{x^{2}},
+          \]
+          \[
+              \frac{\mathrm{d}y}{\mathrm{d}(\cot x)}=\frac{\frac{\mathrm{d}y}{\mathrm{d}x}}{\frac{\mathrm{d}(\cot
                       x)}{\mathrm{d}x}}=\frac{x\cos x-\sin x}{-x^{2}\csc^{2} x}=\frac{\sin^{3} x-x\sin^{2}
-                  x\cos x}{x^{2}}$.
+                  x\cos x}{x^{2}}.
+          \]
 
     \item \textbf{Solution}. 当$x=0$时，$f(0)=\frac{1}{2^{0}}-0^{3}=1$.所以
           \[
@@ -181,20 +185,24 @@
               \end{aligned}
           \]
 
-    \item \textbf{Solution}. $y=\frac{1}{x-1}-\frac{2}{2x-1}$，所以
+    \item \textbf{Solution}. 因为$y=\frac{1}{x-1}-\frac{2}{2x-1}$，所以
           \[
               \begin{aligned}
                   y^{(10)}(x) = {} & \frac{(-1)^{10}\,10!}{(x-1)^{11}}-\frac{2\cdot(-1)^{10}\,10!\cdot 2^{10}}{(2x-1)^{11}} \\
-                  = {} & \frac{10!}{(x-1)^{11}}-\frac{2^{11}\cdot 10!}{(2x-1)^{11}}.
+                  = {}             & \frac{10!}{(x-1)^{11}}-\frac{2^{11}\cdot 10!}{(2x-1)^{11}}.
               \end{aligned}
           \]
 
-    \item \textbf{Solution}. $\frac{\mathrm{d}y}{\mathrm{d}x}=\frac{\frac{\mathrm{d}y}{\mathrm{d}t}}{\frac{\mathrm{d}x}{\mathrm{d}t}}
-              =\frac{1-\frac{1}{1+t^{2}}}{\frac{2t}{1+t^{2}}}=\frac{t}{2}$，
-
-          $\frac{\mathrm{d}^{2}y}{\mathrm{d}x^{2}}=\frac{\mathrm{d}}{\mathrm{d}t}\left
+    \item \textbf{Solution}.
+          \[
+              \frac{\mathrm{d}y}{\mathrm{d}x}=\frac{\frac{\mathrm{d}y}{\mathrm{d}t}}{\frac{\mathrm{d}x}{\mathrm{d}t}}
+              =\frac{1-\frac{1}{1+t^{2}}}{\frac{2t}{1+t^{2}}}=\frac{t}{2},
+          \]
+          \[
+              \frac{\mathrm{d}^{2}y}{\mathrm{d}x^{2}}=\frac{\mathrm{d}}{\mathrm{d}t}\left
               (\frac{\mathrm{d}y}{\mathrm{d}x}\right)\cdot\frac{\mathrm{d}t}{\mathrm{d}x}
-              =\left(\frac{t}{2}\right)'\cdot\frac{1+t^{2}}{2t}=\frac{1+t^{2}}{4t}$.
+              =\left(\frac{t}{2}\right)'\cdot\frac{1+t^{2}}{2t}=\frac{1+t^{2}}{4t}.
+          \]
 
     \item \textbf{Solution}. 函数$f(x)$的间断点为$x=0,\pm1$.
 
@@ -216,12 +224,10 @@
           \[
               x^{2}(t)+h^{2}=y^{2}(t),
           \]
-
           其中$h=3\mathrm{km}$，方程两边对$t$求导得
           \[
               x\frac{\mathrm{d}x}{\mathrm{d}t}=y\frac{\mathrm{d}y}{\mathrm{d}t},
           \]
-
           由题设知，在$t=t_{0}$时刻，$y(t_{0})=5\mathrm{km}$，$\left.\frac{\mathrm{d}y}{\mathrm{d}t}
               \right|_{t=t_0}=-160\mathrm{km/h}$，$x(t_{0})=4\mathrm{km}$，
 
@@ -255,7 +261,6 @@
               \frac{\mathrm{d}y}{\mathrm{d}x}=\cos(x+y)\cdot\left(1+\frac{\mathrm{d}y}{\mathrm{d}x}
               \right),
           \]
-
           解得$\frac{\mathrm{d}y}{\mathrm{d}x}=\frac{\cos(x+y)}{1-\cos(x+y)}$.
 
           在方程$y'=\cos(x+y)(1+y')$两边再对$x$求导得
@@ -263,9 +268,11 @@
               \frac{\mathrm{d}^{2}y}{\mathrm{d}x^{2}}= -\sin(x+y)\cdot\left(1+\frac{\mathrm{d}y}{\mathrm{d}x}
               \right)^{2}+\cos(x+y)\cdot\frac{\mathrm{d}^{2}y}{\mathrm{d}x^{2}}
           \]
-
-          解得$\frac{\mathrm{d}^{2}y}{\mathrm{d}x^{2}}=\frac{-\sin(x+y)(1+y')^{2}}{1-\cos(x+y)}
-              =\frac{-\sin(x+y)}{[1-\cos(x+y)]^{3}}$.
+          解得
+          \[
+              \frac{\mathrm{d}^{2}y}{\mathrm{d}x^{2}}=\frac{-\sin(x+y)(1+y')^{2}}{1-\cos(x+y)}
+              =\frac{-\sin(x+y)}{[1-\cos(x+y)]^{3}}.
+          \]
 
     \item \textbf{Solution}. 由于$f''(0)$存在，则$f(x)$在$x=0$的邻域内可导.
 
@@ -276,7 +283,6 @@
                                                            & =\lim_{x\to0}\frac{f'(\xi)-f'(0)}{\xi-0}\cdot\frac{\xi}{x}\cdot\frac{x-\ln(1+x)}{x^2}.
               \end{aligned}
           \]
-
           当$x\to0$时，$\ln(1+x)\to0$，所以由夹逼准则可知$\xi\to0$.
 
           同时，$\frac{\xi}{x}$介于$1$与$\frac{\ln(1+x)}{x}$之间，显然$\lim_{x\to0}\frac{\xi}{x}
@@ -294,12 +300,11 @@
           \[
               \begin{aligned}
                   \lim_{x\to0}\frac{f(1+\sin x)-3f(1-\sin x)}{x}= {} & \lim_{x\to0}\frac{8x+o(x)}{x}=8                                                                                                      \\
-                  = {} & \lim_{x\to0}\frac{f(1+\sin x)-f(1)}{x}-3\lim_{x\to0}\frac{f(1-\sin x)-f(1)}{x}                                                       \\
-                  = {} & \lim_{x\to0}\frac{f(1+\sin x)-f(1)}{\sin x}\cdot\frac{\sin x}{x}-3\lim_{x\to0}\frac{f(1-\sin x)-f(1)}{-\sin x}\cdot\frac{-\sin x}{x} \\
-                  = {} & 4f'(1).
+                  = {}                                               & \lim_{x\to0}\frac{f(1+\sin x)-f(1)}{x}-3\lim_{x\to0}\frac{f(1-\sin x)-f(1)}{x}                                                       \\
+                  = {}                                               & \lim_{x\to0}\frac{f(1+\sin x)-f(1)}{\sin x}\cdot\frac{\sin x}{x}-3\lim_{x\to0}\frac{f(1-\sin x)-f(1)}{-\sin x}\cdot\frac{-\sin x}{x} \\
+                  = {}                                               & 4f'(1).
               \end{aligned}
           \]
-
           所以$f'(1)=2$.
 
           又$f(x)$的周期为5，所以$f(6)=f(1)=0$，$f'(6)=f'(1)=2$，
@@ -312,11 +317,10 @@
           \[
               \begin{aligned}
                   0\leq|x_{n+1}-l|= {} & \left|\left(2+\frac{1}{x_n}\right)-1-\sqrt{2}\right|=\frac{\left|x_n-\left(\sqrt{2}+1\right)\right|}{\left(\sqrt{2}+1\right)x_n} \\
-                  \leq              & \frac{1}{2}|x_{n}-l|                                                                                                             \\
-                  \leq              & \cdots \leq \frac{1}{2^{n-1}}|x_{2}-l|.
+                  \leq {}              & \frac{1}{2}|x_{n}-l|                                                                                                             \\
+                  \leq {}              & \cdots \leq \frac{1}{2^{n-1}}|x_{2}-l|.
               \end{aligned}
           \]
-
           由迫敛性知$|x_{n}-l|$收敛到$0$，故数列$\{x_{n}\}$以$l$为极限.
 \end{enumerate}
 
@@ -331,7 +335,6 @@
                   f'_{-}(b) = {} & \lim_{x\to b^-}\frac{f(x)-f(b)}{x-b}=\lim_{x\to b^-}\frac{f(x)}{x-b}\leq0,
               \end{aligned}
           \]
-
           这与$f'_{+}(a)\cdot f'_{-}(b)>0$矛盾，所以至少存在一点$\xi\in(a,b)$使得$f(\xi
               )=0$.
 
@@ -350,14 +353,12 @@
                   f(1)=f(c)+f'(c)(1-c)+\frac{f''(\xi_{2})}{2}(1-c)^2,\quad 0<c<\xi_2<1.
               \end{gathered}
           \]
-
           两式相减，得$f(1)-f(0)=f'(c)+\frac{1}{2}\left[f''(\xi_{2})(1-c)^{2}-f''(\xi
                   _{1})c^{2}\right]$，所以
           \[
               f'(c)=f(1)-f(0)-\frac{1}{2}\left[f''(\xi_{2})(1-c)^{2}-f''(\xi_{1})c^{2}\right
               ].
           \]
-
           由$|f(x)|\leq a$，$|f''(x)|\leq b$，得$|f'(c)|\leq 2a+\frac{b}{2}\left[(1-c
                   )^{2}+c^{2}\right]\leq 2a+\frac{b}{2}$.
 \end{enumerate}

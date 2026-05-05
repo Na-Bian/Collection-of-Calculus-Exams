@@ -111,8 +111,8 @@
           \[
               \begin{aligned}
                   l = {} & \lim_{x\to \pi^+}\frac{\sqrt{2\cos^2 \frac{x}{2}}}{\sin x}=\lim_{x\to\pi^+}\frac{\sqrt{2}\left|\cos\frac{x}{2}\right|}{\sin x} \\
-                  = {} & \lim_{x\to\pi^+}\frac{-\sqrt{2}\cos\frac{x}{2}}{2\sin \frac{x}{2}\cos \frac{x}{2}}                                             \\
-                  = {} & -\frac{\sqrt{2}}{2}.
+                  = {}   & \lim_{x\to\pi^+}\frac{-\sqrt{2}\cos\frac{x}{2}}{2\sin \frac{x}{2}\cos \frac{x}{2}}                                             \\
+                  = {}   & -\frac{\sqrt{2}}{2}.
               \end{aligned}
           \]
 
@@ -120,16 +120,17 @@
           \[
               \begin{aligned}
                   l= {} & \exp\left\{\lim_{x\to0}\frac{1}{\mathrm{e}^x-1}\left[\frac{\ln(1+x)}{x}-1\right]\right\}                              \\
-                  = {} & \exp\left[\lim_{x\to0}\frac{\ln(1+x)-x}{x^2}\right]=\exp\left[\lim_{x\to0}\frac{x-\frac{x^2}{2}+o(x^2)-x}{x^2}\right] \\
-                  = {} & \frac{1}{\sqrt{e}}.
+                  = {}  & \exp\left[\lim_{x\to0}\frac{\ln(1+x)-x}{x^2}\right]=\exp\left[\lim_{x\to0}\frac{x-\frac{x^2}{2}+o(x^2)-x}{x^2}\right] \\
+                  = {}  & \frac{1}{\sqrt{\mathrm{e}}}.
               \end{aligned}
           \]
 
     \item \textbf{Solution}.
           \[
               \begin{aligned}
-                  l = {} & \lim_{x\to0}\frac{\left(\sqrt{1+2x}-1-x\right)\left(\sqrt{1+2x}+1+x\right)}{x^2\left(\sqrt{1+2x}+1+x\right)}=\lim_{x\to0}\frac{1+2x-(1+x)^2}{x^2\left(\sqrt{1+2x}+1+x\right)} \\
-                  = {} & \lim_{x\to0}\frac{1+2x-1-2x-x^2}{x^2\left(\sqrt{1+2x}+1+x\right)}=-\frac{1}{2}.
+                  l = {} & \lim_{x\to0}\frac{\left(\sqrt{1+2x}-1-x\right)\left(\sqrt{1+2x}+1+x\right)}{x^2\left(\sqrt{1+2x}+1+x\right)} \\
+                  = {}   & \lim_{x\to0}\frac{1+2x-(1+x)^2}{x^2\left(\sqrt{1+2x}+1+x\right)}                                             \\
+                  = {}   & \lim_{x\to0}\frac{1+2x-1-2x-x^2}{x^2\left(\sqrt{1+2x}+1+x\right)}=-\frac{1}{2}.
               \end{aligned}
           \]
 
@@ -137,9 +138,9 @@
           \[
               \begin{aligned}
                   f'(1) = {} & \lim_{x\to1}\frac{f(x)-f(1)}{x-1}                                        \\
-                  = {} & \lim_{x\to1}\frac{(x-1)(x-2)\cdots(x-100)}{(x+1)(x+2)\cdots(x+100)(x-1)} \\
-                  = {} & \lim_{x\to1}\frac{(x-2)\cdots(x-100)}{(x+1)(x+2)\cdots(x+100)}           \\
-                  = {} & \frac{(-1)^{99}\cdot 99!}{101!}=-\frac{1}{10100}.
+                  = {}       & \lim_{x\to1}\frac{(x-1)(x-2)\cdots(x-100)}{(x+1)(x+2)\cdots(x+100)(x-1)} \\
+                  = {}       & \lim_{x\to1}\frac{(x-2)\cdots(x-100)}{(x+1)(x+2)\cdots(x+100)}           \\
+                  = {}       & \frac{(-1)^{99}\cdot 99!}{101!}=-\frac{1}{10100}.
               \end{aligned}
           \]
 
@@ -147,11 +148,10 @@
           \[
               \begin{aligned}
                   f'(x) = {} & \left[\frac{1}{2}\ln\left(x+\sqrt{x+\sqrt{x+1}}\right)\right]'                                                                  \\
-                  = {} & \frac{1}{2\left(x+\sqrt{x+\sqrt{x+1}}\right)}\left(x+\sqrt{x+\sqrt{x+1}}\right)'                                                \\
-                  = {} & \frac{1}{2\left(x+\sqrt{x+\sqrt{x+1}}\right)}\left[1+\frac{1}{2\sqrt{x+\sqrt{x+1}}}\left(1+\frac{1}{2\sqrt{x+1}}\right)\right].
+                  = {}       & \frac{1}{2\left(x+\sqrt{x+\sqrt{x+1}}\right)}\left(x+\sqrt{x+\sqrt{x+1}}\right)'                                                \\
+                  = {}       & \frac{1}{2\left(x+\sqrt{x+\sqrt{x+1}}\right)}\left[1+\frac{1}{2\sqrt{x+\sqrt{x+1}}}\left(1+\frac{1}{2\sqrt{x+1}}\right)\right].
               \end{aligned}
           \]
-
           将$x=0$代入上式得$f'(0)=\frac{1}{2}\left(1+\frac{1}{2}\cdot\frac{3}{2}\right
               )=\frac{7}{8}$.
 
@@ -160,16 +160,21 @@
               \frac{1}{x}\,\mathrm{d}x + f'(y)\,\mathrm{d}y = \ln x \mathrm{d}y + y\cdot\frac{1}{x}
               \mathrm{d}x.
           \]
+          整理得
+          \[
+              \mathrm{d}y=\frac{y-1}{x\left[f'(y)-\ln x\right]}\,\mathrm{d}x.
+          \]
 
-          整理得$\mathrm{d}y=\frac{y-1}{x\left[f'(y)-\ln x\right]}\,\mathrm{d}x$.
-
-    \item \textbf{Solution}. $\frac{\mathrm{d}y}{\mathrm{d}x}=\frac{\frac{\mathrm{d}y}{\mathrm{d}t}}{\frac{\mathrm{d}x}{\mathrm{d}t}}
-              =\frac{mt^{m-1}}{\frac{2}{2t}}=mt^{m}$，
-
-          $\frac{\mathrm{d}^{2}y}{\mathrm{d}x^{2}}=\frac{\mathrm{d}}{\mathrm{d}t}\left
+    \item \textbf{Solution}. 计算
+          \[
+              \frac{\mathrm{d}y}{\mathrm{d}x}=\frac{\frac{\mathrm{d}y}{\mathrm{d}t}}{\frac{\mathrm{d}x}{\mathrm{d}t}}
+              =\frac{mt^{m-1}}{\frac{2}{2t}}=mt^{m},
+          \]
+          \[
+              \frac{\mathrm{d}^{2}y}{\mathrm{d}x^{2}}=\frac{\mathrm{d}}{\mathrm{d}t}\left
               (\frac{\mathrm{d}y}{\mathrm{d}x}\right)\cdot\frac{\mathrm{d}t}{\mathrm{d}x}
-              =\left(mt^{m}\right)'_{t}\cdot\frac{1}{\frac{1}{t}}=m^{2} t^{m}$.
-
+              =\left(mt^{m}\right)'_{t}\cdot\frac{1}{\frac{1}{t}}=m^{2} t^{m}.
+          \]
           设$\frac{\mathrm{d}^{k} y}{\mathrm{d}x^{k}}=m^{k} t^{m}$，则$\frac{\mathrm{d}^{k+1}y}{\mathrm{d}x^{k+1}}
               =\frac{\mathrm{d}}{\mathrm{d}t}\left (\frac{\mathrm{d}^{k} y}{\mathrm{d}x^{k}}
               \right)\cdot\frac{\mathrm{d}t}{\mathrm{d}x}=\left(m^{k} t^{m}\right)'\cdot\frac{1}{\frac{1}{t}}
@@ -183,14 +188,18 @@
               u = \sqrt[3]{1-x+x^{2}-x^{3}}-1 = 1+\frac{1}{3}(-x+x^{2}-x^{3})+o(-x+x^{2}
               -x^{3})-1=-\frac{1}{3}x+o(x).
           \]
-
           所以$u\sim -\frac{1}{3}x$，即$c=-\frac{1}{3}$，$k=1$.
 
-    \item \textbf{Solution}. $g(0)=0$，因$g'_{-}(0)=\lim_{x\to0^-}\frac{g(x)-g(0)}{x}
-              =\lim_{x\to0^-}\arctan \frac{1}{x}=-\frac{\pi}{2}=g'_{+}(0)=b$，所以$b=-\frac{\pi}{2}$.
-
-          $\left.\frac{\mathrm{d}}{\mathrm{d}x}f\left(g(x)\right)\right|_{x=0}=f'(g(0
-              ))\cdot g'(0)=\cos 0 \cdot b=-\frac{\pi}{2}$.
+    \item \textbf{Solution}. $g(0)=0$，因
+          \[
+              g'_{-}(0)=\lim_{x\to0^-}\frac{g(x)-g(0)}{x}
+              =\lim_{x\to0^-}\arctan \frac{1}{x}=-\frac{\pi}{2}=g'_{+}(0)=b,
+          \]
+          所以$b=-\frac{\pi}{2}$. 故
+          \[
+              \left.\frac{\mathrm{d}}{\mathrm{d}x}f\left(g(x)\right)\right|_{x=0}=f'(g(0
+              ))\cdot g'(0)=\cos 0 \cdot b=-\frac{\pi}{2}.
+          \]
 
     \item \textbf{Solution}. $f(x)=\frac{1}{2x-1}+\frac{1}{x+1}$，所以
           \[
@@ -232,24 +241,22 @@
           \[
               \begin{aligned}
                   \lim_{\theta\to0}\frac{a(\theta)}{b(\theta)}= {} & \lim_{\theta\to0}\frac{\sin\theta(1-\cos\theta)}{\tan\theta-\theta}                                                         \\
-                  = {} & \frac{1}{2}\lim_{\theta\to0}\frac{\theta^3}{\tan\theta-\theta}=\frac{1}{2}\lim_{\theta\to0}\frac{3\theta^2}{\sec^2\theta-1} \\
-                  = {} & \frac{3}{2}\lim_{\theta\to0}\frac{\theta^2}{\tan^2\theta}=\frac{3}{2}.
+                  = {}                                             & \frac{1}{2}\lim_{\theta\to0}\frac{\theta^3}{\tan\theta-\theta}=\frac{1}{2}\lim_{\theta\to0}\frac{3\theta^2}{\sec^2\theta-1} \\
+                  = {}                                             & \frac{3}{2}\lim_{\theta\to0}\frac{\theta^2}{\tan^2\theta}=\frac{3}{2}.
               \end{aligned}
           \]
-
           所以当$\theta\to0$时，$a(\theta)$与$b(\theta)$是同阶无穷小.
 
     \item \textbf{Solution}. 计算
           \[
               \begin{aligned}
                   \lim_{x\to+\infty}\frac{\left(\sqrt[x]{x}-1\right)^{\frac{1}{x}}\left(\sqrt{1+\frac{1}{x^2}}-1\right)}{\frac{1}{x^2}}= {} & \lim_{x\to+\infty}\left(\sqrt[x]{x}-1\right)^{\frac{1}{x}}\cdot\lim_{x\to+\infty}\frac{\frac{1}{2x^2}+o\left(\frac{1}{x^2}\right)}{\frac{1}{x^2}}                                                                                              \\
-                  = {} & \frac{1}{2}\lim_{x\to+\infty}\left(\sqrt[x]{x}-1\right)^{\frac{1}{x}}=\frac{1}{2}\lim_{x\to+\infty}\left(\mathrm{e}^{\frac{\ln x}{x}}-1\right)^{\frac{1}{x}}                                                                                   \\
-                  = {} & \frac{1}{2}\exp\left[\lim_{x\to+\infty}\frac{\ln\left(\mathrm{e}^{\frac{\ln x}{x}}-1\right)}{x}\right]                                                                                                                                         \\
-                  = {} & \frac{1}{2}\exp\left[\lim_{x\to+\infty}\frac{\mathrm{e}^{\frac{\ln x}{x}}\cdot\frac{1-\ln x}{x^2}}{\mathrm{e}^{\frac{\ln x}{x}}-1}\right] = \frac{1}{2}\exp\left[\lim_{x\to+\infty}\frac{\mathrm{e}^{\frac{\ln x}{x}}(1-\ln x)}{x\ln x}\right] \\
-                  = {} & \frac{1}{2}\exp\left[\lim_{x\to+\infty}\frac{1-\ln x}{x\ln x}\right] = \frac{1}{2}\exp\left[\lim_{x\to+\infty}\frac{\frac{1}{\ln x}-1}{x}\right]=\frac{1}{2}.
+                  = {}                                                                                                                      & \frac{1}{2}\lim_{x\to+\infty}\left(\sqrt[x]{x}-1\right)^{\frac{1}{x}}=\frac{1}{2}\lim_{x\to+\infty}\left(\mathrm{e}^{\frac{\ln x}{x}}-1\right)^{\frac{1}{x}}                                                                                   \\
+                  = {}                                                                                                                      & \frac{1}{2}\exp\left[\lim_{x\to+\infty}\frac{\ln\left(\mathrm{e}^{\frac{\ln x}{x}}-1\right)}{x}\right]                                                                                                                                         \\
+                  = {}                                                                                                                      & \frac{1}{2}\exp\left[\lim_{x\to+\infty}\frac{\mathrm{e}^{\frac{\ln x}{x}}\cdot\frac{1-\ln x}{x^2}}{\mathrm{e}^{\frac{\ln x}{x}}-1}\right] = \frac{1}{2}\exp\left[\lim_{x\to+\infty}\frac{\mathrm{e}^{\frac{\ln x}{x}}(1-\ln x)}{x\ln x}\right] \\
+                  = {}                                                                                                                      & \frac{1}{2}\exp\left[\lim_{x\to+\infty}\frac{1-\ln x}{x\ln x}\right] = \frac{1}{2}\exp\left[\lim_{x\to+\infty}\frac{\frac{1}{\ln x}-1}{x}\right]=\frac{1}{2}.
               \end{aligned}
           \]
-
           所以$\lim_{n\to\infty}\frac{\left(\sqrt[n]{n}-1\right)^{\frac{1}{n}}\left(\sqrt{1+\frac{1}{n^2}}-1\right)}{\frac{1}{n^{2}}}
               =\frac{1}{2}<1$，
 
@@ -264,18 +271,19 @@
           设$N=\max\{N_{1},N_{2}\}$，则当$n>N$时，$x_{n}<a+\varepsilon=\frac{a+b}{2}<
               b-\varepsilon<y_{n}$.
 
-    \item \textbf{Solution}. （1）由题设$r=\sqrt{x^{2}+y^{2}}=\sqrt{x^{2}+x}$，所以$\frac{\mathrm{d}r}{\mathrm{d}t}
-              =\frac{2x+1}{2\sqrt{x^{2}+x}}\cdot\frac{\mathrm{d}x}{\mathrm{d}t}=\frac{(2x+1)A}{2\sqrt{x^{2}+x}}$.
+    \item \textbf{Solution}. （1）由题设$r=\sqrt{x^{2}+y^{2}}=\sqrt{x^{2}+x}$，所以
+          \[
+              \frac{\mathrm{d}r}{\mathrm{d}t}=\frac{2x+1}{2\sqrt{x^{2}+x}}\cdot\frac{\mathrm{d}x}{\mathrm{d}t}=\frac{(2x+1)A}{2\sqrt{x^{2}+x}}.
+          \]
 
-          （2）
+          （2）计算
           \[
               \begin{aligned}
                   \frac{\mathrm{d}^2 r}{\mathrm{d}t^2}= {} & \frac{\mathrm{d}}{\mathrm{d}x}\left[\frac{(2x+1)A}{2\sqrt{x^2+x}}\right]\cdot\frac{\mathrm{d}x}{\mathrm{d}t}    \\
-                  = {} & \frac{1}{2}\cdot\frac{2\sqrt{x^2+x}-\frac{(2x+1)^2}{2\sqrt{x^2+x}}}{x^2+x}\cdot A^{2}                           \\
-                  = {} & \frac{1}{2}\cdot\frac{4(x^2+x)-(2x+1)^2}{2(x^2+x)\sqrt{x^2+x}}\cdot A^{2} = -\frac{A^2}{(x^2+x)\sqrt{x^2+x}}<0.
+                  = {}                                     & \frac{1}{2}\cdot\frac{2\sqrt{x^2+x}-\frac{(2x+1)^2}{2\sqrt{x^2+x}}}{x^2+x}\cdot A^{2}                           \\
+                  = {}                                     & \frac{1}{2}\cdot\frac{4(x^2+x)-(2x+1)^2}{2(x^2+x)\sqrt{x^2+x}}\cdot A^{2} = -\frac{A^2}{(x^2+x)\sqrt{x^2+x}}<0.
               \end{aligned}
           \]
-
           所以$\frac{\mathrm{d}r}{\mathrm{d}t}$逐渐变小.
 
           （3）$\lim_{x\to+\infty}\frac{\mathrm{d}r}{\mathrm{d}t}=\lim_{x\to+\infty}\frac{(2x+1)A}{2\sqrt{x^{2}+x}}
@@ -293,7 +301,6 @@
               \frac{f(b)-f(a)}{\mathrm{e}^{b}-\mathrm{e}^{a}}=\frac{f'(\eta)}{\mathrm{e}^{\eta}}
               .
           \]
-
           对函数$f(x)$应用Lagrange中值定理，存在$\xi\in(a,b)$使得$f(b)-f(a)=f'(\xi)(b
               -a)$，
 
@@ -306,11 +313,11 @@
           注意到
           \[
               \begin{aligned}
-                  \frac{F(0)+F\left(\frac{1}{4}\right)+F\left(\frac{2}{4}\right)+F\left(\frac{3}{4}\right)}{4}= {} & \frac{1}{4}\left[f(0)-f\left(\frac{1}{4}\right)+f\left(\frac{1}{4}\right)-f\left(\frac{2}{4}\right)+f\left(\frac{2}{4}\right)-f\left(\frac{3}{4}\right)+f\left(\frac{3}{4}\right)-f(1)\right] \\
+                       & \frac{F(0)+F\left(\frac{1}{4}\right)+F\left(\frac{2}{4}\right)+F\left(\frac{3}{4}\right)}{4}                                                                                                  \\
+                  = {} & \frac{1}{4}\left[f(0)-f\left(\frac{1}{4}\right)+f\left(\frac{1}{4}\right)-f\left(\frac{2}{4}\right)+f\left(\frac{2}{4}\right)-f\left(\frac{3}{4}\right)+f\left(\frac{3}{4}\right)-f(1)\right] \\
                   = {} & \frac{1}{4}\left[f(0)-f(1)\right]=0.
               \end{aligned}
           \]
-
           由介值定理，存在$x_{0}\in\left[0,\frac{3}{4}\right]\subset[0,1]$，使得$F(x_{0}
               )=0$，即$f(x_{0})=f\left(x_{0}+\frac{1}{4}\right)$.
 \end{enumerate}

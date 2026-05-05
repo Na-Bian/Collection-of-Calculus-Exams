@@ -146,7 +146,6 @@
         \[
           f(x,y)-1=2(x^2+y^2)+o(x^2+y^2)
         \]
-
         易知$f(0,0)=1$，所以
         \[
           f(x,y)-f(0,0)=o\left(\sqrt{x^2+y^2}\right).
@@ -216,6 +215,7 @@
           \le \frac{1}{2}\sum_{n=1}^{\infty}\left(a_n^2+\frac{1}{n^2}\right) < \infty,
         \]
         因而 \(\sum \frac{a_n}{n}\) 绝对收敛.
+
 \end{enumerate}
 
 \section{填空题(每小题 4 分，共 16 分)}
@@ -258,7 +258,6 @@
         \[
           \arctan\frac{1-x}{1+x}=\frac{\pi}{4}-\arctan x.
         \]
-
         而$\arctan x = \int_{0}^{x}\frac{1}{1+t^2}\,\mathrm{d}t=\sum_{n=0}^{\infty}\int_{0}^{x}(-1)^n t^{2n}\,\mathrm{d}t=\sum_{n=0}^{\infty}(-1)^n \frac{x^{2n+1}}{2n+1}$，
 
         由Taylor定理对照可知
@@ -276,6 +275,7 @@
         \[
           S\left(-\frac{5\pi}{2}\right)=f\left(-\frac{\pi}{2}\right)=f\left(\frac{\pi}{2}\right)=\frac{\pi}{2}-1.
         \]
+
 \end{enumerate}
 
 \section{基本计算题(每小题 7 分，共 42 分)}
@@ -314,7 +314,6 @@
         \[
           f_u(1,1)=3,\qquad f_v(1,1)=4.
         \]
-
         计算$\frac{\mathrm{d}y}{\mathrm{d}x}=f_u \cdot (-\sin x)+f_v \cdot 2x$，
 
         $\frac{\mathrm{d}^2 y}{\mathrm{d}x^2}=-\frac{\mathrm{d}f_u}{\mathrm{d}x}\sin x-f_u\cos x + 2x\frac{\mathrm{d}f_v}{\mathrm{d}x} + 2f_v$.
@@ -344,9 +343,9 @@
         \[
           \begin{aligned}
             \iint\limits_D\sqrt{1-x^2-y^2}\,\mathrm{d}x\,\mathrm{d}y
-            = {} & \int_0^\pi\,\mathrm{d}\theta\int_0^{\sin\theta}\sqrt{1-r^2}\,r\,\mathrm{d}r                         \\
-            = {} & -\frac{1}{3}\int_{0}^{\pi}\left(1-r^2\right)^{\frac{3}{2}}\bigg|_{0}^{\sin\theta}\,\mathrm{d}\theta \\
-            = {} & -\frac{1}{3}\int_0^\pi\left(|\cos\theta|^3-1\right)\,\mathrm{d}\theta=\frac{\pi}{3}-\frac{4}{9}.
+                                                                     = {} & \int_0^\pi\,\mathrm{d}\theta\int_0^{\sin\theta}\sqrt{1-r^2}\,r\,\mathrm{d}r                    \\
+            = {}                                                     & -\frac{1}{3}\int_{0}^{\pi}\left(1-r^2\right)^{\frac{3}{2}}\bigg|_{0}^{\sin\theta}\,\mathrm{d}\theta \\
+            = {}                                                     & -\frac{1}{3}\int_0^\pi\left(|\cos\theta|^3-1\right)\,\mathrm{d}\theta=\frac{\pi}{3}-\frac{4}{9}.
           \end{aligned}
         \]
         所以
@@ -381,15 +380,14 @@
         \[
           I=\iint\limits_S x\,\mathrm{d}y\,\mathrm{d}z+(z+1)^2\,\mathrm{d}x\,\mathrm{d}y.
         \]
-
         记$S'$为$x^2+y^2\leq 1,z=0$取下侧，$\Sigma = S\cup S'$，则
         \[
           \begin{aligned}
             I= {} & \oiint\limits_{\Sigma}x\,\mathrm{d}y\,\mathrm{d}z+(z+1)^2\,\mathrm{d}x\,\mathrm{d}y-\iint\limits_{S'}x\,\mathrm{d}y\,\mathrm{d}z+(z+1)^2\,\mathrm{d}x\,\mathrm{d}y                                                                                 \\
-            = {} & -\iiint\limits_{\substack{x^2+y^2+z^2\leq 1\\z\leq0}}(1+2z+2) \mathrm{d}x\,\mathrm{d}y\,\mathrm{d}z-\iint\limits_{S'}\,\mathrm{d}x\,\mathrm{d}y                                                                                                    \\
-            = {} & -3\iiint\limits_{\substack{x^2+y^2+z^2\leq 1\\z\leq0}} \mathrm{d}x\,\mathrm{d}y\,\mathrm{d}z-2\iiint\limits_{\substack{x^2+y^2+z^2\leq 1\\z\leq0}} z\,\mathrm{d}x\,\mathrm{d}y\,\mathrm{d}z+\iint\limits_{x^2+y^2\leq 1}\,\mathrm{d}x\,\mathrm{d}y \\
-            = {} & -2\pi-2\int_{-1}^{0} z\cdot \pi(1-z^2)\,\mathrm{d}z+\pi                                                                                                                                                                                            \\
-            = {} & -2\pi+\frac{\pi}{2}+\pi=-\frac{\pi}{2}.
+            = {}  & -\iiint\limits_{\substack{x^2+y^2+z^2\leq 1\\z\leq0}}(1+2z+2) \mathrm{d}x\,\mathrm{d}y\,\mathrm{d}z-\iint\limits_{S'}\,\mathrm{d}x\,\mathrm{d}y                                                                                                    \\
+            = {}  & -3\iiint\limits_{\substack{x^2+y^2+z^2\leq 1\\z\leq0}} \mathrm{d}x\,\mathrm{d}y\,\mathrm{d}z-2\iiint\limits_{\substack{x^2+y^2+z^2\leq 1\\z\leq0}} z\,\mathrm{d}x\,\mathrm{d}y\,\mathrm{d}z+\iint\limits_{x^2+y^2\leq 1}\,\mathrm{d}x\,\mathrm{d}y \\
+            = {}  & -2\pi-2\int_{-1}^{0} z\cdot \pi(1-z^2)\,\mathrm{d}z+\pi                                                                                                                                                                                            \\
+            = {}  & -2\pi+\frac{\pi}{2}+\pi=-\frac{\pi}{2}.
           \end{aligned}
         \]
 
@@ -408,6 +406,7 @@
           =-\frac{2}{27}+\frac{2}{9}+\frac{2}{3}
           =\frac{22}{27}.
         \]
+
 \end{enumerate}
 
 \section{综合题(每小题 7 分，共 14 分)}
@@ -435,7 +434,6 @@
         \[
           z=1-a^2-b^2+2ax+2by.
         \]
-
         圆柱面$x^2+y^2=2x$在$xOy$平面上的投影区域为圆域
         \[
           D:x^2+y^2\le2x,z=0.
@@ -444,30 +442,28 @@
         \[
           V(a,b)=\iint\limits_{D}\,\mathrm{d}x\,\mathrm{d}y\int_{1-a^2-b^2+2ax+2by}^{1+x^2+y^2}\,\mathrm{d}z,
         \]
-
         即
         \[
           V(a,b)=\iint\limits_{D}\left(x^2+y^2\right)\,\mathrm{d}x\,\mathrm{d}y-2a\iint\limits_{D}x\,\mathrm{d}x\,\mathrm{d}y-2b\iint\limits_{D}y\,\mathrm{d}x\,\mathrm{d}y+\pi(a^2+b^2).
         \]
-
         因为$D$的形心为$(1,0)$，所以$\iint\limits_{D}x\,\mathrm{d}x\,\mathrm{d}y=\pi$，$\iint\limits_{D}y\,\mathrm{d}x\,\mathrm{d}y=0$，
 
         故
         \[
           \begin{aligned}
             V(a,b)= {} & \iint\limits_{D}\left(x^2+y^2\right)\,\mathrm{d}x\,\mathrm{d}y-2a\pi+\pi(a^2+b^2)                               \\
-            = {} & \int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}\,\mathrm{d}\theta\int_0^{2\cos\theta} r^3\,\mathrm{d}r-2a\pi+\pi(a^2+b^2) \\
-            = {} & 8\int_{0}^{\frac{\pi}{2}}\cos^4\theta\,\mathrm{d}\theta-2a\pi+\pi(a^2+b^2)                                      \\
-            = {} & \frac{3\pi}{2}-2a\pi+\pi(a^2+b^2)=\pi\left[(a-1)^2+b^2+\frac{1}{2}\right].
+            = {}       & \int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}\,\mathrm{d}\theta\int_0^{2\cos\theta} r^3\,\mathrm{d}r-2a\pi+\pi(a^2+b^2) \\
+            = {}       & 8\int_{0}^{\frac{\pi}{2}}\cos^4\theta\,\mathrm{d}\theta-2a\pi+\pi(a^2+b^2)                                      \\
+            = {}       & \frac{3\pi}{2}-2a\pi+\pi(a^2+b^2)=\pi\left[(a-1)^2+b^2+\frac{1}{2}\right].
           \end{aligned}
         \]
-
         显然当 \(a=1\) 且 \(b=0\) 时，\(V(a,b)\) 取得最小值 \(V_{\min}=\dfrac{\pi}{2}\).
 
         此时切点为 \((1,0,2)\)，切平面方程为$z=2x+0\cdot y+1-1-0$，即
         \[
           z=2x.
         \]
+
 \end{enumerate}
 
 \section{证明题(每小题 5 分，共 10 分)}
@@ -489,14 +485,13 @@
         \[
           \iint\limits_D f(y)\,\mathrm{d}x\,\mathrm{d}y=\iint\limits_D f(x)\,\mathrm{d}x\,\mathrm{d}y.
         \]
-
         所以
         \[
           \begin{aligned}
             \oint_L xf(y)\,\mathrm{d}y-\frac{y}{f(x)}\,\mathrm{d}x
-            = {} & \iint\limits_D\left(f(y)+\frac1{f(x)}\right)\,\mathrm{d}x\,\mathrm{d}y \\
-            = {} & \iint\limits_D\left(f(x)+\frac1{f(x)}\right)\,\mathrm{d}x\,\mathrm{d}y \\
-            \ge & 2\iint\limits_D \mathrm{d}x\,\mathrm{d}y=2\pi a^2.
+                                                                   = {} & \iint\limits_D\left(f(y)+\frac1{f(x)}\right)\,\mathrm{d}x\,\mathrm{d}y \\
+            = {}                                                   & \iint\limits_D\left(f(x)+\frac1{f(x)}\right)\,\mathrm{d}x\,\mathrm{d}y      \\
+            \ge                                                    & 2\iint\limits_D \mathrm{d}x\,\mathrm{d}y=2\pi a^2.
           \end{aligned}
         \]
 
@@ -528,6 +523,7 @@
           \sum_{n=1}^{\infty}(-1)^n\sin(\pi\alpha_n)
         \]
         收敛. 故原级数条件收敛.
+
 \end{enumerate}
 \end{document}
 

@@ -1,4 +1,4 @@
-\documentclass[../Main.tex]{subfiles}
+\documentclass[../main.tex]{subfiles}
 \begin{document}
 \chapter{2023-2024学年微积分（一）（下）期末考试}
 
@@ -25,7 +25,7 @@
           \vspace{0.5em}
 
     \item 设$D$是$xOy$平面上以$(1,1),(-1,1),(-1,-1)$为顶点的三角形区域，$D_1$是$D$在第一象限的部分，则
-          \(\iint\limits_{D}(xy+\cos x\sin y)\,\mathrm{d}\sigma=（\qquad）.\)
+          \(\iint\limits_{D}(xy+\cos x\sin y)\,\mathrm{d}\sigma=\text{（\qquad）}.\)
 
           \begin{tasks}[label=\textbf{\Alph*.}, label-width=1.5em, column-sep=1em](2)
               \task $2\iint\limits_{D_1}\cos x\sin y\,\mathrm{d}\sigma$
@@ -36,7 +36,7 @@
           \vspace{0.5em}
 
     \item \begin{minipage}[t]{0.93\linewidth}
-              已知函数$f(x)=1-x(0\leq x\leq\pi)$，$S(x)=\sum_{n=1}^{\infty}b_n\sin nx\left(-\infty<x<\infty\right)$，其中$b_n=\dfrac2\pi\int_0^\pi f(x)\sin nx\,\mathrm{d}x(n=1,2,\ldots)$，则$S\left(-\dfrac\pi2\right)=（\qquad）$.
+              已知函数$f(x)=1-x(0\leq x\leq\pi)$，$S(x)=\sum_{n=1}^{\infty}b_n\sin nx\left(-\infty<x<\infty\right)$，其中$b_n=\dfrac2\pi\int_0^\pi f(x)\sin nx\,\mathrm{d}x(n=1,2,\ldots)$，则$S\left(-\dfrac\pi2\right)=\text{（\qquad）}$.
 
               \begin{tasks}[label=\textbf{\Alph*.}, label-width=1.5em, column-sep=1em](2)
                   \task $-\dfrac\pi2-1$
@@ -48,7 +48,7 @@
           \vspace{0.5em}
 
     \item \begin{minipage}[t]{0.93\linewidth}
-              设$\Gamma$是球面$x^2+y^2+z^2=4$与平面$x+y+z=0$的交线，则\(\oint_\Gamma(y+2z)\,\mathrm{d}s=（\qquad）\).
+              设$\Gamma$是球面$x^2+y^2+z^2=4$与平面$x+y+z=0$的交线，则\(\oint_\Gamma(y+2z)\,\mathrm{d}s=\text{（\qquad）}\).
 
               \begin{tasks}[label=\textbf{\Alph*.}, label-width=1.5em, column-sep=1em](2)
                   \task $\pi$
@@ -113,7 +113,7 @@
 \section{证明题(每小题 5 分，共 10 分)}
 \begin{enumerate}
     \setcounter{enumi}{18}
-    \item 设$D=\{(x,y)\mid0\leq x\leq1,0\leq y\leq1\}$，证明：$1\leq\iint\limits_{D}(\cos y^2+\sin x^2)\,\mathrm{d}x\,\mathrm{d}y\leq2$.
+    \item 设$D=\{(x,y)\mid0\leq x\leq1,0\leq y\leq1\}$，证明：$1\leq\iint\limits_{D}(\cos y^2+\sin x^2)\,\mathrm{d}x\,\mathrm{d}y\leq\sqrt{2}$.
           \vspace{10em}
     \item 设$a_n=\dfrac{(-1)^n}{\sqrt{n+(-1)^n}}(n=2,3,\cdots)$，证明：$\displaystyle\sum_{n=2}^{\infty}a_n$收敛.
           \vspace{10em}
@@ -128,7 +128,6 @@
               L_1:(x,y,z)=(-1,0,1)+t(1,1,2),\qquad
               L_2:(x,y,z)=(0,-1,2)+s(1,3,3)
           \]
-
           解得$\begin{cases}s=1,\\t=2\end{cases}$，所以两直线相交于点$(1,2,5)$.
 
     \item \textbf{Solution}. C.
@@ -152,10 +151,10 @@
               \[
                   \begin{aligned}
                       \iint\limits_D\left(xy+\cos x\sin y\right)\,\mathrm{d}\sigma
-                      = & \iint\limits_{D_2}\left(xy+\cos x\sin y\right)\,\mathrm{d}\sigma   \\
-                        & + \iint\limits_{D_3}\left(xy+\cos x\sin y\right)\,\mathrm{d}\sigma \\
-                      = & \iint\limits_{D_2}\cos x\sin y\,\mathrm{d}\sigma                   \\
-                      = & 2\iint\limits_{D_1}\cos x\sin y\,\mathrm{d}\sigma.
+                                                                                 = {} & \iint\limits_{D_2}\left(xy+\cos x\sin y\right)\,\mathrm{d}\sigma \\
+                                                                                   & + \iint\limits_{D_3}\left(xy+\cos x\sin y\right)\,\mathrm{d}\sigma  \\
+                      = {}                                                         & \iint\limits_{D_2}\cos x\sin y\,\mathrm{d}\sigma                    \\
+                      = {}                                                         & 2\iint\limits_{D_1}\cos x\sin y\,\mathrm{d}\sigma.
                   \end{aligned}
               \]
           \end{minipage}
@@ -200,6 +199,7 @@
               \le \frac{1}{2}\sum_{n=1}^{\infty}\left(a_n^2+\frac{1}{n^2}\right) < \infty,
           \]
           因而 \(\sum \frac{|a_n|}{n}\) 收敛.
+
 \end{enumerate}
 
 \section{填空题(每小题 4 分，共 16 分)}
@@ -252,6 +252,7 @@
     \item \textbf{Solution}. $x\mathrm{e}^{-\frac{x^2}{2}}$.
 
           $\sum_{n=0}^{\infty}\frac{(-1)^n}{n!2^n}x^{2n+1}=x\sum_{n=0}^{\infty}\frac{1}{n!}\left(-\frac{x^2}{2}\right)^{n}=x\mathrm{e}^{-\frac{x^2}{2}}$.
+
 \end{enumerate}
 
 \section{基本计算题(每小题 7 分，共 42 分)}
@@ -278,12 +279,10 @@
                   \frac{\partial z}{\partial y}=2y\mathrm{e}^{-\arctan\frac{x}{y}}+\left(x^2+y^2\right)\mathrm{e}^{-\arctan\frac{x}{y}}\cdot\frac{\frac{x}{y^2}}{1+\frac{x^2}{y^2}}=(2y+x)\mathrm{e}^{-\arctan\frac{x}{y}}.
               \end{gathered}
           \]
-
           因而
           \[
               \mathrm{d}z=\frac{\partial z}{\partial x}\,\mathrm{d}x+\frac{\partial z}{\partial y}\,\mathrm{d}y=\mathrm{e}^{-\arctan\frac{x}{y}}\left[(2x-y)\,\mathrm{d}x+(2y+x)\,\mathrm{d}y\right].
           \]
-
           由$z_x(x,y)=(2x-y)\mathrm{e}^{-\arctan\frac{x}{y}}$可知$z_x(0,y)=-y\cdot\mathrm{e}^{-\arctan 0}=-y$，所以$\left.\dfrac{\partial^2z}{\partial x\partial y}\right|_{(0,1)}=-1$.
 
 
@@ -303,9 +302,9 @@
           故
           \[
               \begin{aligned}
-                  I= & 2\iint\limits_D y\,\mathrm{d}x\,\mathrm{d}y - \int_{\pi}^{0} (-1)\mathrm{d}x \\
-                  =  & 2\int_0^{\pi}\mathrm{d}x\int_0^{\sin x} y\,\mathrm{d}y - \pi                 \\
-                  =  & 2\int_0^{\frac{\pi}{2}}\sin^2 x\,\mathrm{d}x - \pi=-\frac{\pi}{2}.
+                  I= {} & 2\iint\limits_D y\,\mathrm{d}x\,\mathrm{d}y - \int_{\pi}^{0} (-1)\mathrm{d}x \\
+                  = {}  & 2\int_0^{\pi}\mathrm{d}x\int_0^{\sin x} y\,\mathrm{d}y - \pi                 \\
+                  = {}  & 2\int_0^{\frac{\pi}{2}}\sin^2 x\,\mathrm{d}x - \pi=-\frac{\pi}{2}.
               \end{aligned}
           \]
 
@@ -318,9 +317,9 @@
               \[
                   \begin{aligned}
                       V
-                      = & \iint\limits_{D}\,\mathrm{d}x\,\mathrm{d}y\int_{\frac{r^2}{2}}^{r}\,\mathrm{d}z     \\
-                      = & \int_{0}^{2\pi}\,\mathrm{d}\theta\int_0^2\left(r-\frac{r^2}{2}\right)r\,\mathrm{d}r \\
-                      = & \frac{4\pi}{3}.
+                          = {} & \iint\limits_{D}\,\mathrm{d}x\,\mathrm{d}y\int_{\frac{r^2}{2}}^{r}\,\mathrm{d}z     \\
+                      = {}     & \int_{0}^{2\pi}\,\mathrm{d}\theta\int_0^2\left(r-\frac{r^2}{2}\right)r\,\mathrm{d}r \\
+                      = {}     & \frac{4\pi}{3}.
                   \end{aligned}
               \]
           \end{minipage}
@@ -332,20 +331,20 @@
     \item \textbf{Solution}. 记$S$所围成的区域为$\Omega$. 由Gauss公式，
           \[
               \begin{aligned}
-                  I= & \oiint\limits_{S}[(x^3+z^2)\cos\alpha+(y^3+x^2)\cos\beta+(z^3+y^2)\cos\gamma]\mathrm{d}S                                                                \\
-                  =  & \oiint\limits_{S}\left(x^3+z^2\right)\mathrm{d}y\,\mathrm{d}z+\left(y^3+x^2\right)\mathrm{d}z\,\mathrm{d}x+\left(z^3+y^2\right)\mathrm{d}x\,\mathrm{d}y \\
-                  =  & \iiint\limits_{\Omega}\left[3x^2+3y^2+3z^2\right]\mathrm{d}x\,\mathrm{d}y\,\mathrm{d}z.
+                  I= {} & \oiint\limits_{S}[(x^3+z^2)\cos\alpha+(y^3+x^2)\cos\beta+(z^3+y^2)\cos\gamma]\mathrm{d}S                                                                \\
+                  = {}  & \oiint\limits_{S}\left(x^3+z^2\right)\mathrm{d}y\,\mathrm{d}z+\left(y^3+x^2\right)\mathrm{d}z\,\mathrm{d}x+\left(z^3+y^2\right)\mathrm{d}x\,\mathrm{d}y \\
+                  = {}  & \iiint\limits_{\Omega}\left[3x^2+3y^2+3z^2\right]\mathrm{d}x\,\mathrm{d}y\,\mathrm{d}z.
               \end{aligned}
           \]
-
           用球坐标代换，
           \[
               \begin{aligned}
-                  I= & 3\int_0^{2\pi}\mathrm{d}\theta\int_0^{\frac{\pi}{4}}\sin\varphi\mathrm{d}\varphi\int_0^1 r^4\,\mathrm{d}r \\
-                  =  & \frac{6\pi}{5}\int_0^{\frac{\pi}{4}}\sin\varphi\,\mathrm{d}\varphi
+                  I= {} & 3\int_0^{2\pi}\mathrm{d}\theta\int_0^{\frac{\pi}{4}}\sin\varphi\mathrm{d}\varphi\int_0^1 r^4\,\mathrm{d}r \\
+                  = {}  & \frac{6\pi}{5}\int_0^{\frac{\pi}{4}}\sin\varphi\,\mathrm{d}\varphi
                   =\frac{6\pi}{5}(1-\cos \frac{\pi}{4})=\frac{3\left(2-\sqrt2\right)\pi}{5}.
               \end{aligned}
           \]
+
     \item \textbf{Solution}. 由
           \[
               \frac{1}{1-t}=\sum_{n=0}^{\infty}t^n,\qquad |t|<1,
@@ -362,6 +361,7 @@
           \[
               f^{(20)}(0)=\frac{21!}{4^{22}}.
           \]
+
 \end{enumerate}
 
 \section{综合题(每小题 7 分，共 14 分)}
@@ -371,22 +371,18 @@
           \[
               \boldsymbol{\tau}=(1,4,-8),\qquad \boldsymbol{\tau}_0=\frac{1}{9}(1,4,-8).
           \]
-
           计算
           \[
               \nabla u=\left(\frac{y^2+z^2}{(x^2+y^2+z^2)^\frac{3}{2}},\,-\frac{xy}{(x^2+y^2+z^2)^{\frac{3}{2}}},\,-\frac{xz}{(x^2+y^2+z^2)^{\frac{3}{2}}}\right).
           \]
-
           在 \(P_0\) 处
           \[
               \nabla u(P_0)=\left(\frac{8}{27},\,-\frac{2}{27},\,\frac{2}{27}\right).
           \]
-
           因而沿切线方向的方向导数为
           \[
               \left.\frac{\partial u}{\partial \boldsymbol{l}}\right|_{P_0}=\nabla u(P_0)\cdot \boldsymbol{\tau}_0=\left(\frac{8}{27},\,-\frac{2}{27},\,\frac{2}{27}\right)\cdot \frac{1}{9}(1,4,-8)=-\frac{16}{243}.
           \]
-
           最大变化率即
           \[
               |\nabla u(P_0)|=\frac{1}{27}\sqrt{8^2+2^2+2^2}=\frac{2\sqrt{2}}{9}.
@@ -413,7 +409,6 @@
           \[
               x^2+xy+y^2=3.
           \]
-
           在曲线$f(x,y)=0$上任取一点$(x,y)$，则$(-1,-1)$到该点的距离为$d=\sqrt{(x+1)^2+(y+1)^2}$.
 
           用Lagrange乘数法，设$F(x,y,\lambda)=(x+1)^2+(y+1)^2+\lambda(x^2+xy+y^2-3)$，令
@@ -424,7 +419,6 @@
                   \frac{\partial F}{\partial \lambda}=x^2+xy+y^2-3=0,
               \end{cases}
           \]
-
           解得$\begin{cases}
                   x=1, \\
                   y=1,
@@ -472,11 +466,15 @@
           利用Taylor公式$(1+x)^{\alpha}=1+\alpha x+o(x)$，
           \[
               \begin{aligned}
-                  a_n= & \frac{(-1)^n}{\sqrt{n}}\left[1-\frac{1}{2}\cdot\frac{(-1)^n}{n}+o\left(\frac{1}{n}\right)\right] \\
-                  =    & \frac{(-1)^n}{\sqrt{n}}-\frac{1}{2n\sqrt{n}}+o\left(\frac{1}{n\sqrt{n}}\right).
+                  a_n= {} & \frac{(-1)^n}{\sqrt{n}}\left[1-\frac{1}{2}\cdot\frac{(-1)^n}{n}+o\left(\frac{1}{n}\right)\right] \\
+                  = {}    & \frac{(-1)^n}{\sqrt{n}}-\frac{1}{2n\sqrt{n}}+o\left(\frac{1}{n\sqrt{n}}\right).
               \end{aligned}
           \]
-
           由于$\sum \frac{(-1)^n}{\sqrt{n}}$和$\sum \frac{1}{n\sqrt{n}}$都收敛，所以$\sum a_n$收敛.
+
 \end{enumerate}
 \end{document}
+
+
+
+

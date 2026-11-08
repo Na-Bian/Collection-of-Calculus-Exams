@@ -153,14 +153,14 @@
               \end{aligned}
           \]
 
-    \item \textbf{Solution}. B.
+    \item \textbf{Solution}. A.
 
           因
           \[
               \lim_{x\to0}F(x)=\lim_{x\to0}\frac{f(x)}{x}=\lim_{x\to0}\frac{f(x)-f(0)}{x-0}
               =f'(0)=1,
           \]
-          且$F(0)=0$，所以$x=0$是$F(x)$的可去间断点.
+          且$F(0)=f'(0)=1$，故$\lim\limits_{x\to0}F(x)=F(0)$，所以$x=0$是$F(x)$的连续点.
 
     \item \textbf{Solution}. B.
 
@@ -211,10 +211,9 @@
 \section{填空题(每小题 4 分，共 16 分)}
 \begin{enumerate}
     \setcounter{enumi}{6}
-    \item \textbf{Solution}. $0$.
+    \item \textbf{Solution}. $1$.
 
-          利用$\frac{1}{x}\leq\left[\frac{1}{x}\right]\leq\frac{1}{x}+1$，且$\lim_{x\to0}
-              x\cdot\frac{1}{x}=1=\lim_{x\to0}x\left(\frac{1}{x}+1\right)$，
+          利用$\frac{1}{x}-1<\left[\frac{1}{x}\right]\leq\frac{1}{x}$，且$x\to0^{+}$时$1-x<x\left[\frac{1}{x}\right]\leq1$、$x\to0^{-}$时$1\leq x\left[\frac{1}{x}\right]<1-x$，两侧均趋于$1$，
 
           由夹逼定理可知$\lim_{x\to0}x\left[\frac{1}{x}\right]=1$.
 
@@ -254,7 +253,7 @@
           故斜渐近线方程为$y=x+2$.
 \end{enumerate}
 
-\section{基本计算题(每小题 6 分，共 30 分)}
+\section{基本计算题(每小题 7 分，共 42 分)}
 \begin{enumerate}
     \setcounter{enumi}{10}
     \item \textbf{Solution}. 利用Taylor公式，
@@ -368,7 +367,7 @@
     \item \textbf{Proof}. 假设$\forall\,x\in(0,2)$，$|f'(x)|<M$.
 
           由Lagrange中值定理，$\exists\,\eta,\delta\in\left(0,2\right)$，$|f(x)|=|f'(
-              \eta)|x$，$|f(x)|=|f'(\delta)|(x-2)$.
+              \eta)|x$，$|f(x)|=|f'(\delta)|(2-x)$.
 
           所以$|f(x)|<Mx$，$|f(x)|<M(2-x)$，相加得$|f(x)|<M$，这与$M=\max_{x\in(0,2)}
               \{|f(x)|\}$矛盾.

@@ -447,14 +447,14 @@
         由Gauss公式，
         \[
           \begin{aligned}
-            \varPhi={} & \oiint\limits_{S+S_{1}}\left(2x^3,2y^3,2z^3\right)\cdot\boldsymbol{n}\,\mathrm{d}S-\iint\limits_{S_{1}}3(z^{2}-1)\,\mathrm{d}x\,\mathrm{d}y \\
-            ={}        & \iiint\limits_{V}\left(6x^2+6y^2+6z\right)\,\mathrm{d}v+3\iint\limits_{S_{1}}\,\mathrm{d}x\,\mathrm{d}y.
+            \varPhi={} & \oiint\limits_{S+S_{1}}\left(2x^3,2y^3,3(z^{2}-1)\right)\cdot\boldsymbol{n}\,\mathrm{d}S-\iint\limits_{S_{1}}3(z^{2}-1)\,\mathrm{d}x\,\mathrm{d}y \\
+            ={}        & \iiint\limits_{V}\left(6x^2+6y^2+6z\right)\,\mathrm{d}v-3\iint\limits_{S_{1}}\,\mathrm{d}x\,\mathrm{d}y.
           \end{aligned}
         \]
         用柱坐标代换，
         \[
           \begin{aligned}
-            \varPhi= {} & 6\iiint\limits_{V}\left(x^2+y^2+z\right)\,\mathrm{d}v+3\iint\limits_{S_{1}}\,\mathrm{d}x\,\mathrm{d}y                                                                       \\
+            \varPhi= {} & 6\iiint\limits_{V}\left(x^2+y^2+z\right)\,\mathrm{d}v-3\iint\limits_{S_{1}}\,\mathrm{d}x\,\mathrm{d}y                                                                       \\
             = {}        & 6\int_{0}^{1}\,\mathrm{d}z\int_{0}^{2\pi}\,\mathrm{d}\theta\int_{0}^{\sqrt{1-z}}r\left(r^2+z\right)\,\mathrm{d}r-3\iint\limits_{x^{2}+y^{2}\leq1}\,\mathrm{d}x\,\mathrm{d}y \\
             = {}        & 12\pi\int_{0}^{1}\left[\frac{1}{4}(1-z)^2+\frac{1}{2}(1-z)z\right]\,\mathrm{d}z-3\pi                                                                                        \\
             = {}        & 3\pi\int_{0}^{1}\left(1-z^2\right)\,\mathrm{d}z-3\pi=-\pi.

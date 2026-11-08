@@ -139,7 +139,7 @@
           \[
               \begin{aligned}
                   \lim_{x\to0}\frac{1}{\mathrm{e}^x-1}\ln\frac{\ln(1+x)}{x}= {} & \lim_{x\to0}\frac{1}{\mathrm{e}^x-1}\left[\frac{\ln(1+x)}{x}-1\right] \\
-                  = {}                                                          & \lim_{x\to}\frac{\ln(1+x)-x}{x^2}                                     \\
+                  = {}                                                          & \lim_{x\to0}\frac{\ln(1+x)-x}{x^2}                                     \\
                   = {}                                                          & \lim_{x\to0}\frac{\frac{1}{1+x}-1}{2x}                                \\
                   = {}                                                          & \lim_{x\to0}\frac{1}{1+x}\cdot\frac{1-1-x}{2x}=-\frac{1}{2}.
               \end{aligned}
@@ -204,7 +204,7 @@
           \]
           所以
           \[
-              y^{(n)}(0)=(-1)^{n-3}n(n-1)(n-3)!=\frac{(-1)^{n}n!}{n-2}(n>2).
+              y^{(n)}(0)=(-1)^{n-3}n(n-1)(n-3)!=\frac{(-1)^{n+1}n!}{n-2}(n>2).
           \]
           而$y'(0)=y''(0)=0$.
 
@@ -247,7 +247,7 @@
 
           所以切线方程为$y=\mathrm{e}(1-\mathrm{e})x+\mathrm{e}$.
 
-    \item \textbf{Solution}. $y'(x)=2f(x)f'(x)$，
+    \item \textbf{Solution}.
 
           \[
               \begin{aligned}
@@ -274,7 +274,7 @@
 
           且$x\neq0$时，$f'(x)=2x\cos\frac{1}{x}+\sin\frac{1}{x}$，所以
           \[
-              f(x)=
+              f'(x)=
               \begin{cases}
                   2x\cos\frac{1}{x}+\sin\frac{1}{x}, & x\neq 0, \\
                   0,                                 & x=0.

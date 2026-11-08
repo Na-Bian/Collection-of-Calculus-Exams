@@ -65,7 +65,7 @@
 \section{填空题(每小题 4 分，共 16 分)}
 \begin{enumerate}
     \setcounter{enumi}{6}
-    \item 当$x\to0$时，无穷小量$\left(1+x\right)^{x^2}-1$的阶数是$=\underline
+    \item 当$x\to0$时，无穷小量$\left(1+x\right)^{x^2}-1$的阶数是$\underline
               {\hspace{3cm}}$.
 
     \item 曲线$\cot\left(x+y+\frac{\pi}{4}\right)=\mathrm{e}^{y}$在点$(0,0)$处的切线方程为$\underline
@@ -172,7 +172,7 @@
 
     \item \textbf{Solution}. D.
 
-          对于A，B，C选项，考虑
+          对于A，B选项，考虑
           \[
               x_{n}=
               \begin{cases}
@@ -186,6 +186,8 @@
           \]
           其中$k$是正整数. 则$x_{n} y_{n}\equiv0$，但$x_{n}$，$y_{n}$均无界，且$\lim_{n\to\infty}x_{n}$，$\lim
               _{n\to\infty}y_{n}$均不存在.
+
+          对于C选项，考虑$x_{n}=(-1)^{n}$，$y_{n}=(-1)^{n}+\frac{1}{n}$，则$\lim_{n\to\infty}(x_{n}-y_{n})=\lim_{n\to\infty}\left(-\frac{1}{n}\right)=0$，但$\{x_{n}\}$与$\{y_{n}\}$均发散.
 
     \item \textbf{Solution}. C.
 
@@ -339,8 +341,8 @@
           所以$\int \mathrm{e}^{-t}\sin t\,\mathrm{d}t=-\frac{1}{2}\mathrm{e}^{-t}(\sin
               t+\cos t)+C$，
 
-          因此极值$F(0)=\left.-\frac{1}{2}\mathrm{e}^{-t}(\sin t+\cos t)\right|_{-\frac{\pi}{2}}
-              ^{0}=-\frac{1}{2}\left(\mathrm{e}^{\frac{\pi}{2}}+1\right)$.
+          因此极小值$F(0)=\left.-\frac{1}{2}\mathrm{e}^{-t}(\sin t+\cos t)\right|_{-\frac{\pi}{2}}
+              ^{0}=-\frac{1}{2}\left(\mathrm{e}^{\frac{\pi}{2}}+1\right)$（$F'(x)$在$x=0$左侧为负、右侧为正），无极大值.
 \end{enumerate}
 
 \section{综合题(每小题 7 分，共 14 分)}
@@ -411,9 +413,9 @@
           \[
               |f(2)-f(0)|\leq\frac{1}{2}\left[\left|f''(\zeta)\right|(x-2)^{2}+\left|f''(\eta)\right|x^{2}\right].
           \]
-          取$|f''(\xi)|=\max\{|f''(\eta)|,|f''(\zeta)|\}$，则
+          特别地，取$x=1$，则$(x-2)^{2}+x^{2}=2$；再取$|f''(\xi)|=\max\{|f''(\eta)|,|f''(\zeta)|\}$，则
           \[
-              |f(2)-f(0)|\leq\frac{1}{2}|f''(\xi)|\left[(x-2)^{2}+x^{2}\right]\leq \frac{1}{2}
+              |f(2)-f(0)|\leq\frac{1}{2}|f''(\xi)|\left[(x-2)^{2}+x^{2}\right]= \frac{1}{2}
               |f''(\xi)|\cdot 2=|f''(\xi)|,
           \]
           即$|f''(\xi)|\geq|f(2)-f(0)|$.

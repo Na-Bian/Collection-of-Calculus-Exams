@@ -4,7 +4,7 @@
 
 \section{基本计算题(每小题 6 分，共 60 分)}
 \begin{enumerate}
-    \item 求极限$l=\lim_{n\to\infty}(-1)^{n}\sin\left(\sqrt{n^{2}+1}\pi\right)$.
+    \item 求极限$l=\lim_{n\to\infty}(-1)^{n}n\sin\left(\sqrt{n^{2}+1}\pi\right)$.
           \vspace{11em}
 
     \item 求极限$l=\lim_{x\to0}\frac{\mathrm{e}^{\tan x}-\mathrm{e}^{x}}{x-\sin
@@ -95,7 +95,7 @@
     \item \textbf{Solution}.
           \[
               \begin{aligned}
-                  l= {} & \lim_{n\infty}(-1)^{n} n\sin\left((\sqrt{n^2+1}-n)\pi+n\pi\right)                                                    \\
+                  l= {} & \lim_{n\to\infty}(-1)^{n} n\sin\left((\sqrt{n^2+1}-n)\pi+n\pi\right)                                                    \\
                   = {}  & \lim_{n\to\infty}n\sin\left((\sqrt{n^2+1}-n)\pi\right)=\lim_{n\to\infty}n\sin\left(\frac{\pi}{\sqrt{n^2+1}+n}\right) \\
                   = {}  & \lim_{n\to\infty}\frac{n}{\sqrt{n^2+1}+n}\pi=\frac{\pi}{2}.
               \end{aligned}
@@ -145,7 +145,6 @@
           \[
               \begin{aligned}
                   l= {} & \lim_{x\to0}\exp\left[{\frac{1}{x^2}\ln\left(\frac{\arcsin x}{x}\right)}\right]=\exp\left[{\lim\limits_{x\to0}\frac{1}{x^2}\ln\left(\frac{\arcsin x}{x}\right)}\right] \\
-                  \
                   = {}  & \exp\left[{\lim\limits_{x\to0}\frac{1}{x^2}\left(\frac{\arcsin x}{x}-1\right)}\right]=\exp\left[{\lim\limits_{x\to0}\frac{\arcsin x-x}{x^3}}\right]                    \\
                   = {}  & \exp\left[{\lim\limits_{x\to0}\frac{\frac{1}{\sqrt{1-x^2}}-1}{3x^2}}\right]=\exp\left[{\lim\limits_{x\to0}\frac{1-\sqrt{1-x^2}}{3x^2\sqrt{1-x^2}}}\right]              \\
                   = {}  & \exp\left[{\lim\limits_{x\to0}\frac{\frac{1}{2}x^2}{3x^2\sqrt{1-x^2}}}\right]=\mathrm{e}^{\frac{1}{6}}.
@@ -262,7 +261,7 @@
           即$y-(4t_{0}-t_{0}^{2})=\frac{2-t_{0}}{t_{0}}(x-t_{0}^{2}-1)$化简得$y=\frac{2-t_{0}}{t_{0}}
               x+2t_{0}-\frac{2-t_{0}}{t_{0}}$，
 
-          切线过$(-1,0)$，故代入方程得$t_{0}^{2}-t_{0}-2=0$，解得：$t_{0}=-2$（不合题意），$t
+          切线过$(-1,0)$，故代入方程得$t_{0}^{2}+t_{0}-2=0$，解得：$t_{0}=-2$（不合题意），$t
                   _{0}=1$，
 
           由$t_{0}=1$得$(x_{0},y_{0})=(2,3)$，故所求切线方程为$y=x+1$.
@@ -304,7 +303,7 @@
                   ={}      & 1-\frac{1}{(1+b_{1})(1+b_{2})\cdots(1+b_{n})}<1.
               \end{aligned}
           \]
-          从而数列$\{x_{n}\}$有上界，由单调有界准则知数列得极限存在.
+          从而数列$\{x_{n}\}$有上界，由单调有界准则知数列的极限存在.
 
     \item \textbf{Solution}.
 
@@ -321,24 +320,26 @@
           因
           \[
               \begin{aligned}
-                  \lim_{x\to 0}f'(x)= {} & \lim_{x\to0}\frac{x(g'(x)+\mathrm{e}^{-x})}{x^2}=\lim_{x\to0}\left(\frac{g'(x)+\mathrm{e}^{-x}}{x}-\frac{g(x)-\mathrm{e}^{-x}}{x^2}\right) \\
+                  \lim_{x\to 0}f'(x)= {} & \lim_{x\to0}\frac{x(g'(x)+\mathrm{e}^{-x})-(g(x)-\mathrm{e}^{-x})}{x^2}=\lim_{x\to0}\left(\frac{g'(x)+\mathrm{e}^{-x}}{x}-\frac{g(x)-\mathrm{e}^{-x}}{x^2}\right) \\
                   = {}                   & \lim_{x\to0}\frac{g'(x)+\mathrm{e}^{-x}}{x}=-\lim_{x\to0}\frac{g(x)-\mathrm{e}^{-x}}{x^2}                                                  \\
                   = {}                   & g''(0)-1-\frac{1}{2}(g''(0)-1)=\frac{1}{2}(g''(0)-1)=f'(0),
               \end{aligned}
           \]
           故$f'(x)$在$x=0$处连续.
 
-    \item \textbf{Solution}. 设时刻$t$飞机离观察者的水平距离为$x\mathrm{km}$，望远镜视角为$\theta$弧度，则有
+    \item \textbf{Solution}. 设时刻$t$飞机离观察者的水平距离为$x\mathrm{km}$，望远镜视角（视线与水平线之间的夹角）为$\theta$，
+    
+    则有
           \[
-              \frac{\mathrm{d}x}{\mathrm{d}t}=-16\mathrm{km/min},\quad x=20\tan\theta,
+              \frac{\mathrm{d}x}{\mathrm{d}t}=-16\mathrm{km/min},\quad \tan\theta=\frac{20}{x},
           \]
-          故$\theta=\arctan\frac{x}{20}$，于是$\frac{\mathrm{d}\theta}{\mathrm{d}t}=\frac{1}{20+\frac{x^2}{20}}
+          故$\theta=\arctan\frac{20}{x}$，于是$\frac{\mathrm{d}\theta}{\mathrm{d}t}=-\frac{20}{x^{2}+400}
               \frac{\mathrm{d}x}{\mathrm{d}t}$.
 
           当$x=40\mathrm{km}$，$\frac{\mathrm{d}x}{\mathrm{d}t}=-16(\mathrm{km/min})$时，$\frac{\mathrm{d}\theta}{\mathrm{d}t}
-              =\frac{1}{20+\frac{40^2}{20}}(-16)=-\frac{4}{25}\mathrm{rad/min}$.
+              =-\frac{20}{2000}\times(-16)=\frac{4}{25}\mathrm{rad/min}$.
 
-          即望远镜视角改变的速率是$-\frac{4}{25}\mathrm{rad/min}$.
+          即望远镜视角改变的速率是$\frac{4}{25}\mathrm{rad/min}$.
 \end{enumerate}
 
 \section{证明题(每小题 5 分，共 10 分)}

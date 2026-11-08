@@ -461,7 +461,11 @@
 
           考虑路径$y=x$，由于$\lim_{\substack{x\to0 \\ y=x}}\frac{-xy^2}{(x^2+y^2)^{\frac{3}{2}}}=\lim_{x\to0}\frac{-x^3}{\left(2x^2\right)^{\frac{3}{2}}}=-\frac{1}{2\sqrt{2}}\lim_{x\to0}\frac{x^3}{\left|x^3\right|}$不存在，
 
-          这意味着$\lim_{\substack{x\to0 \\ y\to0}}\frac{f(x,y)-f(0,0)-f_x(0,0)x-f_y(0,0)y}{\sqrt{x^2+y^2}}$不存在，因此函数$f(x,y)$在点$(0,0)$处不可微.
+          这意味着
+          \[
+              \lim_{\substack{x\to0 \\ y\to0}}\frac{f(x,y)-f(0,0)-f_x(0,0)x-f_y(0,0)y}{\sqrt{x^2+y^2}}
+          \]
+          不存在，因此函数$f(x,y)$在点$(0,0)$处不可微.
 
     \item \textbf{Proof}. 交换积分次序可得
           \[

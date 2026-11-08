@@ -314,10 +314,13 @@
         \[
           f_u(1,1)=3,\qquad f_v(1,1)=4.
         \]
-        计算$\frac{\mathrm{d}y}{\mathrm{d}x}=f_u \cdot (-\sin x)+f_v \cdot 2x$，
-
-        $\frac{\mathrm{d}^2 y}{\mathrm{d}x^2}=-\frac{\mathrm{d}f_u}{\mathrm{d}x}\sin x-f_u\cos x + 2x\frac{\mathrm{d}f_v}{\mathrm{d}x} + 2f_v$.
-
+        计算
+        \[
+          \frac{\mathrm{d}y}{\mathrm{d}x}=f_u \cdot (-\sin x)+f_v \cdot 2x,
+        \]
+        \[
+          \frac{\mathrm{d}^2 y}{\mathrm{d}x^2}=-\frac{\mathrm{d}f_u}{\mathrm{d}x}\sin x-f_u\cos x + 2x\frac{\mathrm{d}f_v}{\mathrm{d}x} + 2f_v.
+        \]
         将$x=0$代入上式得
         \[
           \left.\frac{\mathrm{d}^2 y}{\mathrm{d}x^2}\right|_{x=0}=-f_u(1,1)+2f_v(1,1)=-3+8=5.
@@ -491,7 +494,7 @@
             \oint_L xf(y)\,\mathrm{d}y-\frac{y}{f(x)}\,\mathrm{d}x
                                                                    = {} & \iint\limits_D\left(f(y)+\frac1{f(x)}\right)\,\mathrm{d}x\,\mathrm{d}y \\
             = {}                                                   & \iint\limits_D\left(f(x)+\frac1{f(x)}\right)\,\mathrm{d}x\,\mathrm{d}y      \\
-            \ge                                                    & 2\iint\limits_D \mathrm{d}x\,\mathrm{d}y=2\pi a^2.
+            \ge {}                                                 & 2\iint\limits_D \mathrm{d}x\,\mathrm{d}y=2\pi a^2.
           \end{aligned}
         \]
 
